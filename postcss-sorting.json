@@ -1,0 +1,50 @@
+{
+  "order": [
+    "at-rules",
+    {
+      "type": "at-rule",
+      "name": "util",
+      "hasBlock": true
+    },
+    "custom-properties",
+    "declarations",
+    {
+      "type": "at-rule",
+      "name": "media",
+      "hasBlock": true
+    },
+    "rules"
+  ],
+  "properties-order": [
+    {
+      "properties": [
+        "position",
+        "z-index",
+        "top",
+        "right",
+        "bottom",
+        "left"
+      ]
+    },
+    {
+      "properties": [
+        "display",
+        "visibility",
+        "float",
+        "clear",
+        "overflow",
+        "overflow-x",
+        "overflow-y",
+        "-ms-overflow-x",
+        "-ms-overflow-y",
+        "clip",
+        "zoom",
+        "flex-direction",
+        "flex-order",
+        "flex-pack",
+        "flex-align"
+      ]
+    }
+  ],
+  "unspecified-properties-position": "bottom"
+}

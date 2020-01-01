@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.css","main.scss"],"names":[],"mappings":"AAAA,gBAAgB;;ACAhB;EACI,SAAS;ADGb","file":"main.css","sourcesContent":["@charset \"UTF-8\";\n\n.contents {\n  margin: 0;\n}\n",".contents {\n    margin: 0;\n}"]}
