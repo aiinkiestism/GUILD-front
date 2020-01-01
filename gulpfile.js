@@ -62,7 +62,7 @@ const postcssOption = [
     assets({
         baseUrl: '/',
         basePath: 'src/',
-        bloadPaths: ['img/'],
+        loadPaths: ['img/'],
         cachebuster: true,
     }),
     flexBugsFixes,
@@ -181,7 +181,7 @@ function htmlLint() {
 }
 // sass Lint
 function sassLint() {
-	return gulp.src(pathsstyles.src).pipe(
+	return gulp.src(paths.styles.src).pipe(
 		scsslint({
 			config: 'scss-lint.yml'
 		}),
