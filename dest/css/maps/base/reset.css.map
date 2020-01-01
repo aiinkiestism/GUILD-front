@@ -1,1 +1,1 @@
-{"version":3,"sources":["base/reset.css"],"names":[],"mappings":"AAAA,gBAAgB","file":"base/reset.css","sourcesContent":["@charset \"UTF-8\";\n\n"]}
+{"version":3,"sources":["base/reset.css"],"names":[],"mappings":"AAAA,gBAAgB;;AAEhB;EACE,SAAS;AACX;;AAEA;EACE,YAAY;AACd","file":"base/reset.css","sourcesContent":["@charset \"UTF-8\";\n\nbody {\n  margin: 0;\n}\n\nhtml, body, .contents {\n  height: 100%;\n}\n"]}

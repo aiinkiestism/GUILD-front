@@ -1,18 +1,18 @@
 @charset "UTF-8";
 
-@import 'abstracts/variables';
-@import 'abstracts/functions';
-@import 'abstracts/mixins';
+@import './abstracts/variables';
+@import './abstracts/functions';
+@import './abstracts/mixins';
 
 // @import 'vendors/';
 
-@import 'base/reset';
-@import 'base/typography';
+@import './base/reset';
+@import './base/typography';
 
-@import 'layout/left-menu';
+@import './themes/theme';
 
-@import 'components/dashboard-item';
+@import './pages/dashboard';
 
-@import 'pages/dashboard';
+@import './layout/left-menu';
 
-@import 'themes/theme';
+@import './components/dashboard-item';

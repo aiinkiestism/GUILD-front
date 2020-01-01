@@ -225,7 +225,7 @@ function watchFiles(done) {
 	gulp.watch(paths.html.src).on('change', gulp.series(html, browserReload));
 }
 
-gulp.task('default', gulp.series(gulp.parallel(scripts, styles, html), gulp.series(browsersync, watchFiles)));
+gulp.task('default', gulp.series(gulp.parallel(scripts, styles, html, images), gulp.series(browsersync, watchFiles)));
 
 gulp.task('clean', cleanMapFiles);
 gulp.task('imagemin', images);

@@ -1,1 +1,1 @@
-{"version":3,"sources":["layout/left-menu.css"],"names":[],"mappings":"AAAA,gBAAgB","file":"layout/left-menu.css","sourcesContent":["@charset \"UTF-8\";\n\n"]}
+{"version":3,"sources":["layout/left-menu.css"],"names":[],"mappings":"AAAA,gBAAgB;;AAEhB;EACE,gBAAgB;EAChB,YAAY;AACd;;AAEA;EACE,UAAU;AACZ","file":"layout/left-menu.css","sourcesContent":["@charset \"UTF-8\";\n\n#left-menu {\n  max-width: 240px;\n  height: 100%;\n}\n\n#left-menu .top {\n  height: 6%;\n}\n"]}
