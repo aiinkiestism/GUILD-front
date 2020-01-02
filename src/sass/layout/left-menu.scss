@@ -91,7 +91,14 @@
 }
 
 @media screen and (max-width: 780px) {
-	#left-mwnu {
+	#left-menu {
 		width: 34%;
+		#left-menu--item {
+			.item-wrap {
+				p {
+					font-size: $small-font-size;
+				}
+			}
+		}
 	}
 }

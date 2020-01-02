@@ -2,9 +2,18 @@
 
 body {
   margin: 0;
+  overflow-y: hidden;
 }
 
 html, body, .contents {
   height: 100%;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+}
+
+*:focus {
+  outline: none;
 }
 /*# sourceMappingURL=../maps/base/reset.css.map */
