@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+.contents {
+    position: relative;
+}
 @import './abstracts/variables';
 @import './abstracts/functions';
 @import './abstracts/mixins';
@@ -15,5 +18,6 @@
 
 @import './layout/left-menu';
 @import './layout/top-nav';
+@import './layout/inner-content';
 
 @import './components/dashboard-item';

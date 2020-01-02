@@ -25,9 +25,9 @@
 			}
 			
 			#search-input::placeholder {
-				font-family: 'Roboto', sans-serif;
-				font-style: normal;
+				font-family: $base-font-family;
 				font-weight: 300;
+				font-style: normal;
 				font-size: $small-font-size;
 				line-height: 18px;
 				color: #ccc;

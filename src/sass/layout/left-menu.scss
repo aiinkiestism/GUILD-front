@@ -2,6 +2,7 @@
     width: 17%;
 	height: 100%;
 	background: $primary-black;
+	z-index: 5;
     .top {
 		height: 6%;
 		position: relative;
@@ -71,7 +72,7 @@
 			p {
 				margin-left: 39%;
 				margin-bottom: 10%;
-				font-family: 'Roboto', sans-serif;
+				font-family: $base-font-family;
 				font-style: normal;
 				font-weight: 300;
 				font-size: 18px;
@@ -79,6 +80,9 @@
 				/* identical to box height */
 				letter-spacing: 0.03em;
 				color: #9EA5A5;
+			}
+			p:hover {
+				color: #7ad2cc;
 			}
 		}
 	}
@@ -93,7 +97,7 @@
 @media screen and (max-width: 780px) {
 	#left-menu {
 		width: 34%;
-		#left-menu--item {
+		#left-menu-item {
 			.item-wrap {
 				p {
 					font-size: $small-font-size;

@@ -1,8 +1,12 @@
 @charset "UTF-8";
 
+.contents {
+  position: relative;
+}
+
 body {
   margin: 0;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 html, body, .contents {
@@ -21,6 +25,7 @@ textarea:focus, input:focus {
   width: 17%;
   height: 100%;
   background: #222626;
+  z-index: 5;
 }
 
 #left-menu .top {
@@ -105,7 +110,7 @@ textarea:focus, input:focus {
 #left-menu #left-menu-item .item-wrap p {
   margin-left: 39%;
   margin-bottom: 10%;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
@@ -113,6 +118,10 @@ textarea:focus, input:focus {
   /* identical to box height */
   letter-spacing: 0.03em;
   color: #9EA5A5;
+}
+
+#left-menu #left-menu-item .item-wrap p:hover {
+  color: #7ad2cc;
 }
 
 @media screen and (max-width: 1250px) {
@@ -125,7 +134,7 @@ textarea:focus, input:focus {
   #left-menu {
     width: 34%;
   }
-  #left-menu #left-menu--item .item-wrap p {
+  #left-menu #left-menu-item .item-wrap p {
     font-size: 12px;
   }
 }
@@ -161,45 +170,45 @@ textarea:focus, input:focus {
 }
 
 #top-nav #nav-wrap #search-wrap #search-input::-webkit-input-placeholder {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
+  font-style: normal;
   font-size: 12px;
   line-height: 18px;
   color: #ccc;
 }
 
 #top-nav #nav-wrap #search-wrap #search-input::-moz-placeholder {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
+  font-style: normal;
   font-size: 12px;
   line-height: 18px;
   color: #ccc;
 }
 
 #top-nav #nav-wrap #search-wrap #search-input:-ms-input-placeholder {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
+  font-style: normal;
   font-size: 12px;
   line-height: 18px;
   color: #ccc;
 }
 
 #top-nav #nav-wrap #search-wrap #search-input::-ms-input-placeholder {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
+  font-style: normal;
   font-size: 12px;
   line-height: 18px;
   color: #ccc;
 }
 
 #top-nav #nav-wrap #search-wrap #search-input::placeholder {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
+  font-style: normal;
   font-size: 12px;
   line-height: 18px;
   color: #ccc;
@@ -265,5 +274,128 @@ textarea:focus, input:focus {
   #top-nav #nav-wrap #serach-wrap #serach-input {
     width: 110px;
   }
+}
+
+#inner-content {
+  position: absolute;
+  top: 58px;
+  left: 17%;
+  width: 83%;
+  background: #e5e5e5;
+}
+
+#inner-content .top-text-box {
+  margin: 30px 0 30px 33%;
+}
+
+#inner-content .top-text-box h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 45px;
+  color: #000;
+}
+
+#inner-content .d-item-wrap {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 4%;
+}
+
+#inner-content .d-item-wrap .dashboard-item {
+  width: 250px;
+  height: 250px;
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  position: relative;
+}
+
+#inner-content .d-item-wrap .dashboard-item .img-wrap img {
+  position: absolute;
+}
+
+#inner-content .d-item-wrap .dashboard-item .img-wrap #voting-img {
+  top: 22%;
+  left: 34%;
+}
+
+#inner-content .d-item-wrap .dashboard-item .img-wrap #discussion-img, #inner-content .d-item-wrap .dashboard-item .img-wrap #funding-img {
+  top: 13%;
+  left: 16%;
+}
+
+#inner-content .d-item-wrap .dashboard-item .img-wrap #report-img {
+  top: 26%;
+  left: 28%;
+}
+
+#inner-content .d-item-wrap .dashboard-item .text-box {
+  text-align: center;
+  margin-top: 82%;
+}
+
+#inner-content .d-item-wrap .dashboard-item .text-box p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000;
+}
+
+#inner-content .d-item-wrap2 {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 4%;
+  margin-left: 7.2%;
+}
+
+#inner-content .d-item-wrap2 .dashboard-item {
+  margin-right: 7.4%;
+  width: 250px;
+  height: 250px;
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  position: relative;
+}
+
+#inner-content .d-item-wrap2 .dashboard-item .img-wrap img {
+  position: absolute;
+}
+
+#inner-content .d-item-wrap2 .dashboard-item .img-wrap #dashboard-img {
+  top: 13%;
+  left: 16%;
+}
+
+#inner-content .d-item-wrap2 .dashboard-item .text-box {
+  text-align: center;
+  margin-top: 82%;
+}
+
+#inner-content .d-item-wrap2 .dashboard-item .text-box p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000;
+}
+
+#inner-content .d-item-wrap2 .dashboard-item-none {
+  width: 250px;
+  height: 250px;
+  background: #e0e8e8;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  position: relative;
+}
+
+#inner-content .d-item-wrap2 .dashboard-item-none .img-wrap #plus-img {
+  position: absolute;
+  top: 32%;
+  left: 32%;
 }
 /*# sourceMappingURL=maps/main.css.map */

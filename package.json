@@ -16,7 +16,9 @@
     "url": "https://github.com/aiinkiestism/GUILD-front/issues"
   },
   "homepage": "https://github.com/aiinkiestism/GUILD-front#readme",
-  "dependencies": {},
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.7.7",
@@ -58,6 +60,7 @@
     "postcss-cli": "^6.1.3",
     "postcss-flexbugs-fixes": "^4.1.0",
     "postcss-sorting": "^5.0.1",
+    "sass-lint": "^1.13.1",
     "stylelint-order": "^3.1.1",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
