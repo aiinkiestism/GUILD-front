@@ -120,6 +120,10 @@ textarea:focus, input:focus {
   color: #9EA5A5;
 }
 
+#left-menu #left-menu-item .item-wrap .current {
+  color: #7ad2cc;
+}
+
 #left-menu #left-menu-item .item-wrap p:hover {
   color: #7ad2cc;
 }
@@ -445,5 +449,14 @@ textarea:focus, input:focus {
     min-height: 200px;
     height: 200px;
   }
+}
+
+#v-inner-content {
+  position: absolute;
+  top: 58px;
+  left: 17%;
+  width: 83%;
+  height: 100%;
+  background: #e5e5e5;
 }
 /*# sourceMappingURL=maps/main.css.map */

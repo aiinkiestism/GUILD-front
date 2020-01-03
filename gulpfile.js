@@ -205,10 +205,14 @@ function esLint() {
 const browserSyncOption = {
 	port: 8080,
 	server: {
-		baseDir: './dest/',
-		index: './src/index.html',
+		baseDir: './dest',
+		index: '/index.html',
+		routes: {
+			'/voting': 'voting'
+		},
 	},
 	reloadOnRestart: true,
+	notify: false,
 };
 function browsersync(done) {
 	browserSync.init(browserSyncOption);
