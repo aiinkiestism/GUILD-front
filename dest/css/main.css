@@ -281,6 +281,7 @@ textarea:focus, input:focus {
   top: 58px;
   left: 17%;
   width: 83%;
+  height: 100%;
   background: #e5e5e5;
 }
 
@@ -305,8 +306,8 @@ textarea:focus, input:focus {
 }
 
 #inner-content .d-item-wrap .dashboard-item {
-  width: 250px;
-  height: 250px;
+  min-width: 250px;
+  min-height: 250px;
   background: #fff;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
   border-radius: 5px;
@@ -347,16 +348,14 @@ textarea:focus, input:focus {
 #inner-content .d-item-wrap2 {
   display: -webkit-box;
   display: flex;
-  -webkit-box-pack: start;
-          justify-content: flex-start;
   margin-bottom: 4%;
-  margin-left: 7.2%;
+  -webkit-box-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 #inner-content .d-item-wrap2 .dashboard-item {
-  margin-right: 7.4%;
-  width: 250px;
-  height: 250px;
+  min-width: 250px;
+  min-height: 250px;
   background: #fff;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
   border-radius: 5px;
@@ -385,8 +384,8 @@ textarea:focus, input:focus {
 }
 
 #inner-content .d-item-wrap2 .dashboard-item-none {
-  width: 250px;
-  height: 250px;
+  min-width: 250px;
+  min-height: 250px;
   background: #e0e8e8;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
   border-radius: 10px;
@@ -397,5 +396,54 @@ textarea:focus, input:focus {
   position: absolute;
   top: 32%;
   left: 32%;
+}
+
+#inner-content #help-btn {
+  text-align: right;
+  margin-right: 6px;
+}
+
+@media screen and (max-width: 1500px) {
+  #inner-content .d-item-wrap2 .dashboard-item .img-wrap #funding-img {
+    top: 13%;
+    left: 16%;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  #inner-content {
+    left: 27%;
+    width: 73%;
+  }
+  #inner-content .d-item-wrap .dashboard-item {
+    min-width: 200px;
+    min-height: 200px;
+    height: 200px;
+  }
+  #inner-content .d-item-wrap .dashboard-item .img-wrap #voting-img {
+    width: 62px;
+  }
+  #inner-content .d-item-wrap .dashboard-item .img-wrap #discussion-img {
+    width: 131px;
+  }
+  #inner-content .d-item-wrap .dashboard-item .img-wrap #report-img {
+    width: 86px;
+  }
+  #inner-content .d-item-wrap2 .dashboard-item {
+    min-width: 200px;
+    min-height: 200px;
+    height: 200px;
+  }
+  #inner-content .d-item-wrap2 .dashboard-item .img-wrap #funding-img {
+    width: 138px;
+  }
+  #inner-content .d-item-wrap2 .dashboard-item .img-wrap #dashboard-img {
+    width: 138px;
+  }
+  #inner-content .d-item-wrap2 .dashboard-item-none {
+    min-width: 200px;
+    min-height: 200px;
+    height: 200px;
+  }
 }
 /*# sourceMappingURL=maps/main.css.map */
