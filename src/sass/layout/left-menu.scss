@@ -22,6 +22,7 @@
 			right: 18px;
 			-webkit-user-select: none;
 			user-select: none;
+			cursor: pointer;
 			span {
 				display: block;
 				width: 100%;
@@ -64,6 +65,7 @@
 	#left-menu-item {
 		margin-top: 20%;
 		.item-wrap {
+			cursor: pointer;
 			position: relative;
 			.img-wrap {
 				position: absolute;
@@ -107,6 +109,7 @@
 			left: 32%;
 			-webkit-user-select: none;
 			user-select: none;
+			cursor: pointer;
 			span {
 				display: block;
 				width: 100%;
@@ -138,6 +141,7 @@
 	#left-menu-item {
 		margin-top: 143px;
 		.item-wrap {
+			cursor: pointer;
 			.img-wrap {
 				text-align: center;
 				margin-bottom: 37px;

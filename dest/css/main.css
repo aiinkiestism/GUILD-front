@@ -53,6 +53,7 @@ textarea:focus, input:focus {
   -moz-user-select: none;
    -ms-user-select: none;
        user-select: none;
+  cursor: pointer;
 }
 
 #left-menu .top #toggle-menu span {
@@ -99,6 +100,7 @@ textarea:focus, input:focus {
 }
 
 #left-menu #left-menu-item .item-wrap {
+  cursor: pointer;
   position: relative;
 }
 
@@ -150,6 +152,7 @@ textarea:focus, input:focus {
   -moz-user-select: none;
    -ms-user-select: none;
        user-select: none;
+  cursor: pointer;
 }
 
 #left-menu-after .top #toggle-menu-after span {
@@ -182,6 +185,10 @@ textarea:focus, input:focus {
 
 #left-menu-after #left-menu-item {
   margin-top: 143px;
+}
+
+#left-menu-after #left-menu-item .item-wrap {
+  cursor: pointer;
 }
 
 #left-menu-after #left-menu-item .item-wrap .img-wrap {
@@ -289,6 +296,7 @@ textarea:focus, input:focus {
   right: 134px;
   display: -webkit-box;
   display: flex;
+  cursor: pointer;
 }
 
 #top-nav #nav-wrap #select-btn .img-wrap {
@@ -303,6 +311,7 @@ textarea:focus, input:focus {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  cursor: pointer;
 }
 
 #top-nav #nav-wrap #select-btn .img-wrap-bottom {
@@ -322,6 +331,11 @@ textarea:focus, input:focus {
 #top-nav #nav-wrap #top-nav-right #setting {
   margin-right: 15px;
   margin-left: 15px;
+  cursor: pointer;
+}
+
+#top-nav #nav-wrap #top-nav-right #notice {
+  cursor: pointer;
 }
 
 .top-nav-after {
@@ -390,6 +404,7 @@ textarea:focus, input:focus {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
   border-radius: 5px;
   position: relative;
+  cursor: pointer;
 }
 
 #inner-content .d-item-wrap .dashboard-item .img-wrap img {
@@ -438,6 +453,7 @@ textarea:focus, input:focus {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
   border-radius: 5px;
   position: relative;
+  cursor: pointer;
 }
 
 #inner-content .d-item-wrap2 .dashboard-item .img-wrap img {
@@ -468,6 +484,7 @@ textarea:focus, input:focus {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
   border-radius: 10px;
   position: relative;
+  cursor: pointer;
 }
 
 #inner-content .d-item-wrap2 .dashboard-item-none .img-wrap #plus-img {
@@ -480,6 +497,7 @@ textarea:focus, input:focus {
   position: absolute;
   bottom: 55px;
   right: 6px;
+  cursor: pointer;
 }
 
 .inner-content-after {
