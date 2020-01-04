@@ -69,6 +69,11 @@
 	}
 }
 
+.top-nav-after {
+	margin-left: 6% !important;
+	width: 94% !important;
+}
+
 @media screen and (max-width: 1250px) {
 	#top-nav {
 		#nav-wrap {
@@ -76,6 +81,10 @@
 				left: 145px;
 			}
 		}
+	}
+	.top-nav-after {
+		margin-left: -6% !important;
+		width: 107% !important;
 	}
 }
 

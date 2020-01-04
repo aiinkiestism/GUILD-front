@@ -44,7 +44,7 @@ textarea:focus, input:focus {
   height: 30px;
 }
 
-#left-menu .top .toggle-menu {
+#left-menu .top #toggle-menu {
   width: 28px;
   position: absolute;
   top: 15px;
@@ -55,7 +55,7 @@ textarea:focus, input:focus {
        user-select: none;
 }
 
-#left-menu .top .toggle-menu span {
+#left-menu .top #toggle-menu span {
   display: block;
   width: 100%;
   height: 1px;
@@ -126,6 +126,71 @@ textarea:focus, input:focus {
 
 #left-menu #left-menu-item .item-wrap p:hover {
   color: #7ad2cc;
+}
+
+#left-menu-after {
+  display: none;
+  width: 6%;
+  height: 100%;
+  background: #fff;
+  z-index: 5;
+}
+
+#left-menu-after .top {
+  height: 6%;
+  position: relative;
+}
+
+#left-menu-after .top #toggle-menu-after {
+  width: 28px;
+  position: absolute;
+  top: 32%;
+  left: 32%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+}
+
+#left-menu-after .top #toggle-menu-after span {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #000;
+  margin-bottom: 6px;
+  border-radius: 3px;
+}
+
+#left-menu-after .top:after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  margin: 0 auto;
+  width: 100%;
+  border-bottom: 1px solid #ebeded;
+}
+
+#left-menu-after #profile {
+  text-align: center;
+  padding-top: 53%;
+}
+
+#left-menu-after #profile .img-wrap #profile-img {
+  width: 40px;
+  height: 40px;
+}
+
+#left-menu-after #left-menu-item {
+  margin-top: 143px;
+}
+
+#left-menu-after #left-menu-item .item-wrap .img-wrap {
+  text-align: center;
+  margin-bottom: 37px;
+}
+
+#left-menu-after #left-menu-item .item-wrap .img-wrap img {
+  width: 29px;
 }
 
 @media screen and (max-width: 1250px) {
@@ -259,9 +324,18 @@ textarea:focus, input:focus {
   margin-left: 15px;
 }
 
+.top-nav-after {
+  margin-left: 6% !important;
+  width: 94% !important;
+}
+
 @media screen and (max-width: 1250px) {
   #top-nav #nav-wrap #search-wrap {
     left: 145px;
+  }
+  .top-nav-after {
+    margin-left: -6% !important;
+    width: 107% !important;
   }
 }
 
@@ -403,8 +477,14 @@ textarea:focus, input:focus {
 }
 
 #inner-content #help-btn {
-  text-align: right;
-  margin-right: 6px;
+  position: absolute;
+  bottom: 55px;
+  right: 6px;
+}
+
+.inner-content-after {
+  left: 6% !important;
+  width: 94% !important;
 }
 
 @media screen and (max-width: 1500px) {
@@ -448,6 +528,14 @@ textarea:focus, input:focus {
     min-width: 200px;
     min-height: 200px;
     height: 200px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  #inner-content .d-item-wrap2 .dashboard-item .img-wrap #report-img {
+    top: 20%;
+    left: 25%;
+    width: 99px;
   }
 }
 
