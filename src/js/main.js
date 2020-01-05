@@ -9,15 +9,22 @@
         lmenu = document.getElementById("left-menu"),
         lmenua = document.getElementById("left-menu-after"),
         ic = document.getElementById("inner-content"),
+        vic = document.getElementById("v-inner-content"),
         topnav = document.getElementById("top-nav"),
         di = document.getElementsByClassName("dashboard-item"),
         dinone = document.getElementsByClassName("dashboard-item-none"),
-        hbtn = document.getElementById("help-btn");
+        hbtn = document.getElementById("help-btn"),
+        outp = document.getElementsByClassName("outp"),
+        prog = document.getElementsByClassName("prog");
 
     // initialization process
-    dinone[1].setAttribute('style', "opacity: 0;");
-    dinone[2].setAttribute('style', "opacity: 0;");
-    dinone[3].setAttribute('style', "opacity: 0;");
+    try {
+        dinone[1].setAttribute('style', "opacity: 0;");
+        dinone[2].setAttribute('style', "opacity: 0;");
+        dinone[3].setAttribute('style', "opacity: 0;");
+    } catch {
+        console.log("dinone are nowhere.");
+    }
 
     // implement togglemenu
     toggle.addEventListener("click", function() {
@@ -25,6 +32,7 @@
         lmenua.setAttribute('style', "display: block;");
         topnav.classList.add("top-nav-after")
         ic.classList.add("inner-content-after");
+        vic.classList.add("v-inner-content-after");
     });
 
     togglea.addEventListener("click", function() {
@@ -32,6 +40,7 @@
         lmenu.setAttribute('style', "display: block;");
         topnav.classList.remove("top-nav-after");
         ic.classList.remove("inner-content-after");
+        vic.classList.remove("v-inner-content-after");
     });
 
     // deal with responsive3
@@ -69,20 +78,45 @@
     //     if (e.target.innerWidth)
     // })
 
+    //implement progress bar
+    // addEventListener("", function() {
+    //     switch(prog.value) {
+    //         case :
+    //             prog.value = ;
+    //             outp.value = ;
+    //             break;
+    //         case :
+    //             prog.value = ;
+    //             outp.value = ;
+    //             break;
+    //         default:
+    //             prog.value = ;
+    //             outp.value = ;
+    //     }
+    // });
+
     function resizeContent() {
-        let diwrap2 = di[4].parentNode,
-            diwrap3 = dinone[3].parentNode;
+        try {
+            let diwrap2 = di[4].parentNode,
+                diwrap3 = dinone[3].parentNode;
         diwrap2.insertBefore(di[3], di[4]);
         diwrap3.insertBefore(dinone[2], dinone[3]);
         diwrap3.insertBefore(dinone[1], dinone[2]);
+        } catch {
+            console.log("diwraps are nowhere.");
+        }
     }
 
     function revertContent() {
-        let diwrap = di[2].parentNode,
-            diwrap2 = dinone[0].parentNode;
+        try {
+            let diwrap = di[2].parentNode,
+                diwrap2 = dinone[0].parentNode;
         diwrap.insertBefore(di[3], null);
         diwrap2.insertBefore(dinone[1], null);
         diwrap2.insertBefore(dinone[2], null);
+        } catch {
+            console.log("diwraps are nowhere.");
+        }
     }
 
     // function resizeContent2() {
