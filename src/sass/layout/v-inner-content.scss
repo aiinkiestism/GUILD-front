@@ -93,9 +93,9 @@
                     border-radius: 20px;
                 }
                 @media screen and (-webkit-min-device-pixel-ratio: 0) {
-                    .prog {
-                        // height: 25px;
-                    }
+                    // .prog {
+                    //     height: 25px;
+                    // }
                 }
                 .prog::-webkit-progress-bar {
                     background: transparent;
@@ -106,7 +106,7 @@
                 }
             }
         }
-        .voting-item-none {
+        #voting-item-none {
             width: 38%;
             height: 255px;
             background: #e0e8e8;

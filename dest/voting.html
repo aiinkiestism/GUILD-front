@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/main.css">
     <!-- <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!-- <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet"> -->
     <!-- ogp setting -->
     <meta property="og:title" content="GUILD | " />
     <meta property="og:type" content="" />
@@ -219,7 +220,7 @@
               <progress class="prog" value="43" max="100">43%</progress>
             </div>
           </div>
-          <div class="voting-item-none">
+          <div id="voting-item-none">
             <div class="img-wrap">
               <img src="img/plus.png" alt="plus" id="plus-img">
             </div>
@@ -231,7 +232,145 @@
           </div>
         </div>
       </div>
-    </div>
+      <div id="voting-modals">
+        <div id="mask"></div>
+        <div id="new-first-modal" class="modal">
+          <div class="inner-modal">
+            <!-- <div class="close-btn"><i class="fas fa-times"></i></div> -->
+            <div class="top-text">New Voting</div>
+            <div class="inner-border"></div>
+            <div id="yn-btn">
+              <div class="img-wrap">
+                <img src="img/hand-stop.png" alt="hand">
+              </div>
+              <p>Yes/No</p>
+            </div>
+            <div id="select-btn">
+              <div class="img-wrap">
+                <img src="img/files.png" alt="papers">
+              </div>
+              <p>選択式</p>
+            </div>
+            <div id="pay-btn">
+              <div class="img-wrap">
+                <img src="img/pay.png" alt="pay">
+              </div>
+              <p>資金決済投票</p>
+            </div>
+          </div>
+        </div>
+        <div id="new-second-modal" class="modal">
+          <div class="inner-modal">
+            <!-- <div class="close-btn"><i class="fas fa-times"></i></div> -->
+            <div class="top-text">New Voting</div>
+            <div class="inner-border"></div>
+            <dl>
+              <dt>投票形式</dt>
+              <dd>
+                <select name="votting-format" id="voting-format">
+                  <option value="Yes/No(通常投票)">Yes/No(通常投票)</option>
+                  <option value="選択式">選択式</option>
+                  <option value="資金決済投票">資金決済投票</option>
+                </select>
+              </dd>
+              <div class="inner-border"></div>
+              <dt>最低参加率</dt>
+              <dd></dd>
+              <div class="inner-border"></div>
+              <dt>最低賛成率</dt>
+              <dd></dd>
+              <div class="inner-border"></div>
+              <dt>期間</dt>
+              <dd></dd>
+              <div class="inner-border"></div>
+              <dt>議題</dt>
+              <dd><textarea name="" id="" cols="30" rows="10"></textarea></dd>
+              <input type="button" id="confirm-btn" value="内容を確認する">
+            </dl>
+          </div>
+        </div>
+        <div id="new-third-modal" class="modal">
+          <div class="inner-modal">
+            <!-- <div class="close-btn"><i class="fas fa-times"></i></div> -->
+            <div class="top-text">New Voting</div>
+            <div class="inner-border"></div>
+            <dl>
+              <dt>投票形式</dt>
+              <dd>Yes/No(通常投票)</dd>
+              <div class="inner-border"></div>
+              <dt>最低参加率</dt>
+              <dd>43%</dd>
+              <div class="inner-border"></div>
+              <dt>期間</dt>
+              <dd>2019/12/01 〜 2019/12/24</dd>
+              <div class="inner-border"></div>
+              <dt>議題</dt>
+              <dd>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテ</p>
+              </dd>
+              <div class="inner-border"></div>
+              <div class="btn-wrap">
+                <input type="button" id="modify-btn" value="内容を修正する">
+                <input type="button" id="vote-btn" value="投票作成">
+              </div>
+            </dl>
+          </div>
+        </div>
+        <div id="new-final-modal" class="modal">
+          <div class="inner-modal">
+            <!-- <div class="close-btn"><i class="fas fa-times"></i></div> -->
+            <div class="top-text">
+              <p class="large-text">Completed!</p>
+              <p class="small-text">以下の内容で投票を作成しました</p>
+            </div>
+            <div class="inner-border"></div>
+            <dl>
+              <dt>投票形式</dt>
+              <dd>Yes/No(通常投票)</dd>
+              <div class="inner-border"></div>
+              <dt>最低参加率</dt>
+              <dd>43%</dd>
+              <div class="inner-border"></div>
+              <dt>最低賛成率</dt>
+              <dd>52%</dd>
+              <div class="inner-border"></div>
+              <dt>議題</dt>
+              <dd>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテ</dd>
+              <div class="inner-border"></div>
+              <input type="button" id="close-btn" value="閉じる">
+            </dl>
+          </div>
+        </div>
+        <div id="existing-modal" class="modal">
+          <div class="inner-modal">
+            <!-- <div class="close-btn"><i class="fas fa-times"></i></div> -->
+            <div class="top-text">Voting</div>
+            <div class="inner-border"></div>
+            <dl>
+              <dt>投票形式</dt>
+              <dd>Yes/No(通常投票)</dd>
+              <dt>最低参加率</dt>
+              <dd>43%</dd>
+              <dt>期間</dt>
+              <dd>2019/12/01 〜 2019/12/24</dd>
+              <div class="inner-border"></div>
+              <dt>議題</dt>
+              <dd>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテ</p>
+              </dd>
+              <div class="inner-border"></div>
+              <div class="select-wrap">
+                <p>選択肢</p>
+                <input type="checkbox" name="IOST" checked="checked">
+                <input type="checkbox" name="Ethereum">
+                <input type="checkbox" name="EOS"">
+                </div>
+            </dl>
+            <input type=" button" id="vote-btn2" value="投票する">
+              </div>
+          </div>
+        </div>
+      </div>
   </body>
   <script src="js/lib.min.js" sync></script>
 </html>

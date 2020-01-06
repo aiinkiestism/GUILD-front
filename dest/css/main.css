@@ -679,7 +679,7 @@ textarea:focus, input:focus {
   background: #7ad2cc;
 }
 
-#v-inner-content .voting-wrap .voting-item-none {
+#v-inner-content .voting-wrap #voting-item-none {
   width: 38%;
   height: 255px;
   background: #e0e8e8;
@@ -689,7 +689,7 @@ textarea:focus, input:focus {
   padding: 2%;
 }
 
-#v-inner-content .voting-wrap .voting-item-none #plus-img {
+#v-inner-content .voting-wrap #voting-item-none #plus-img {
   position: absolute;
   top: 40%;
   left: 40%;
@@ -752,5 +752,127 @@ textarea:focus, input:focus {
     left: 34%;
     width: 66%;
   }
+}
+
+#voting-modals #mask {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#voting-modals .modal {
+  position: fixed;
+  top: 6%;
+  left: 34%;
+  width: 600px;
+  height: 754px;
+  background: #fff;
+  box-shadow: 0px 0px 20px rgba(50, 82, 82, 0.5);
+  border-radius: 10px;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+#voting-modals .visible {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+#voting-modals #new-first-modal .inner-modal .top-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 170%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #3d4444;
+  padding: 6%;
+}
+
+#voting-modals #new-first-modal .inner-modal .inner-border {
+  text-align: center;
+  width: 90%;
+  height: 0px;
+  border-bottom: 1px solid #ebeded;
+  margin-bottom: 9%;
+}
+
+#voting-modals #new-first-modal .inner-modal #yn-btn, #voting-modals #new-first-modal .inner-modal #select-btn, #voting-modals #new-first-modal .inner-modal #pay-btn {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  width: 80%;
+  height: 10%;
+  background: #7ad2cc;
+  border-radius: 10px;
+  color: #fff;
+  margin: 0 auto 6%;
+}
+
+#voting-modals #new-first-modal .inner-modal #yn-btn .img-wrap, #voting-modals #new-first-modal .inner-modal #select-btn .img-wrap, #voting-modals #new-first-modal .inner-modal #pay-btn .img-wrap {
+  margin: 10px 6px 0 0;
+}
+
+#voting-modals #new-second-modal .inner-modal .top-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 170%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #3d4444;
+  padding: 6%;
+}
+
+#voting-modals #new-second-modal .inner-modal .inner-border {
+  text-align: center;
+  width: 90%;
+  height: 0px;
+  border-bottom: 1px solid #ebeded;
+  margin-bottom: 7%;
+}
+
+#voting-modals #new-second-modal .inner-modal dl .inner-border {
+  text-align: center;
+  width: 90%;
+  height: 0px;
+  border-bottom: 1px solid #ebeded;
+  margin-bottom: 5%;
+}
+
+#voting-modals #new-second-modal .inner-modal dl dt {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 170%;
+  letter-spacing: 0.04em;
+  color: #000;
+  margin-left: 4%;
+  display: inline-block;
+}
+
+#voting-modals #new-second-modal .inner-modal dl dd {
+  display: inline-block;
+  margin-left: 16%;
+}
+
+#voting-modals #new-second-modal .inner-modal dl dd #voting-format {
+  background: #eaeeee;
+  border: none;
+  color: #444;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  border-radius: 3px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=maps/main.css.map */

@@ -15,32 +15,63 @@
         dinone = document.getElementsByClassName("dashboard-item-none"),
         hbtn = document.getElementById("help-btn"),
         outp = document.getElementsByClassName("outp"),
-        prog = document.getElementsByClassName("prog");
+        prog = document.getElementsByClassName("prog"),
+        modal = document.getElementsByClassName("modal");
+    
+    // try {
+    const vinone = document.getElementById("voting-item-none"),
+        ynbtn = document.getElementById("yn-btn"),
+        cbtn = document.getElementById("confirm-btn"),
+        mbtn = document.getElementById("modify-btn"),
+        vbtn = document.getElementById("vote-btn"),
+        clbtn = document.getElementById("close-btn"),
+        mask = document.getElementById("mask");
+    // } catch (e) {
+    //     console.log("consts are nowhere");
+    // }
 
     // initialization process
     try {
         dinone[1].setAttribute('style', "opacity: 0;");
         dinone[2].setAttribute('style', "opacity: 0;");
         dinone[3].setAttribute('style', "opacity: 0;");
-    } catch {
-        console.log("dinone are nowhere.");
+    } catch (e) {
+        console.log("dinones are nowhere.");
     }
+
+    
 
     // implement togglemenu
     toggle.addEventListener("click", function() {
         lmenu.setAttribute('style', "display: none;");
         lmenua.setAttribute('style', "display: block;");
         topnav.classList.add("top-nav-after")
-        ic.classList.add("inner-content-after");
-        vic.classList.add("v-inner-content-after");
+        try {
+            ic.classList.add("inner-content-after");
+        } catch (e) {
+            console.log("ic is nowhere.");
+        }
+        try {
+            vic.classList.add("v-inner-content-after");
+        } catch (e) {
+            console.log("vic is nowhere.");
+        }
     });
 
     togglea.addEventListener("click", function() {
         lmenua.setAttribute('style', "display: none");
         lmenu.setAttribute('style', "display: block;");
         topnav.classList.remove("top-nav-after");
-        ic.classList.remove("inner-content-after");
-        vic.classList.remove("v-inner-content-after");
+        try {
+            ic.classList.remove("inner-content-after");
+        } catch (e) {
+            console.log("ic is nowhere.");
+        }
+        try {
+            vic.classList.remove("v-inner-content-after");
+        } catch (e) {
+            console.log("vic is nowhere.");
+        }
     });
 
     // deal with responsive3
@@ -94,6 +125,64 @@
     //             outp.value = ;
     //     }
     // });
+
+    // implememt new voting
+    // try {
+        vinone.addEventListener("click", function() {
+            modal[0].classList.toggle('visible');
+            mask.classList.toggle('visible');
+        });
+        ynbtn.addEventListener("click", function() {
+            modal[0].classList.toggle('visible');
+            modal[1].classList.toggle('visible');
+        });
+        cbtn.addEventListener("click", function() {
+            modal[1].classList.toggle('visible');
+            modal[2].classList.toggle('visible');
+        });
+        mbtn.addEventListener("click", function() {
+            modal[1].classList.toggle('visible');
+            modal[2].classList.toggle('visible');
+        });
+        vbtn.addEventListener("click", function() {
+            modal[2].classList.toggle('visible');
+            modal[3].classList.toggle('visible');
+        });
+        clbtn.addEventListener("click", function() {
+            modal[3].classList.toggle('visible');
+            mask.classList.toggle('visible');
+        });
+        if(mask.classList.contains("visible")) {
+            mask.addEventListener("click", function() {
+                console.log("clicked");
+                modal[0].classList.remove("visible");
+                modal[1].classList.remove("visible");
+                modal[2].classList.remove("visible");
+                modal[3].classList.remove("visible");
+                mask.classList.remove("visible");
+            });
+        }
+        // if(modal[0].classList.contains("visible") || 
+        // modal[1].classList.contains("visible") ||
+        // modal[2].classList.contains("visible") ||
+        // modal[3].classList.contains("visible")) {
+        //     window.addEventListener("click", function(e) {
+        //         if(e.target != modal) {
+        //             console.log("clicked");
+        //             modal[0].classList.remove("visible");
+        //             modal[1].classList.remove("visible");
+        //             modal[2].classList.remove("visible");
+        //             modal[3].classList.remove("visible");
+        //             mask.classList.remove("visible");
+        //         } 
+        //      });
+        // }
+    // } catch(e) {
+    //     console.log("this is not voting page.");
+    // }
+
+
+
 
     function resizeContent() {
         try {

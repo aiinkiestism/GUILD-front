@@ -1,0 +1,121 @@
+#voting-modals {
+    #mask {
+        background: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 99;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .modal {
+        position: fixed;
+        top: 6%;
+        left: 34%;
+        width: 600px;
+        height: 754px;
+        background: #fff;
+        box-shadow: 0px 0px 20px rgba(50, 82, 82, 0.5);
+        border-radius: 10px;
+        z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+        transition: .6s;
+    }
+    .visible {
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+    #new-first-modal {
+        .inner-modal {
+            .top-text {
+                font-family: $base-font-family;
+                font-weight: 300;
+                font-size: 26px;
+                line-height: 170%;
+                text-align: center;
+                letter-spacing: 0.04em;
+                color: #3d4444;
+                padding: 6%;
+            }
+            .inner-border {
+                text-align: center;
+                width: 90%;
+                height: 0px;
+                border-bottom: 1px solid #ebeded;
+                margin-bottom: 9%;
+            }
+            #yn-btn, #select-btn, #pay-btn {
+                display: flex;
+                justify-content: center;
+                width: 80%;
+                height: 10%;
+                background: #7ad2cc;
+                border-radius: 10px;
+                color: #fff;
+                margin: 0 auto 6%;
+                .img-wrap {
+                    margin: 10px 6px 0 0;
+                }
+            }
+        }
+    }
+    #new-second-modal {
+        .inner-modal {
+            .top-text {
+                font-family: $base-font-family;
+                font-weight: 300;
+                font-size: 26px;
+                line-height: 170%;
+                text-align: center;
+                letter-spacing: 0.04em;
+                color: #3d4444;
+                padding: 6%;
+            }
+            .inner-border {
+                text-align: center;
+                width: 90%;
+                height: 0px;
+                border-bottom: 1px solid #ebeded;
+                margin-bottom: 7%;
+            }
+            dl {
+                .inner-border {
+                    text-align: center;
+                    width: 90%;
+                    height: 0px;
+                    border-bottom: 1px solid #ebeded;
+                    margin-bottom: 5%;
+                }
+                dt {
+                    font-family: $base-font-family;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 170%;
+                    letter-spacing: 0.04em;
+                    color: #000;
+                    margin-left: 4%;
+                    display: inline-block;
+                }
+                dd {
+                    display: inline-block;
+                    margin-left: 16%;
+                    #voting-format {
+                        background: #eaeeee;
+                        border: none;
+                        color: #444;
+                        font-size: 12px;
+                        font-family: $base-font-family;
+                        // -webkit-appearance: none;
+                        // -moz-appearance: none;
+                        // appearance: none;
+                        border-radius: 3px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
