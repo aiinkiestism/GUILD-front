@@ -38,7 +38,12 @@
                 top: 22%;
                 left: 34%;
             }
-            .img-wrap #discussion-img, .img-wrap #funding-img {
+            .img-wrap #discussion-img {
+                top: 13%;
+                left: 16%;
+                width: 174px;
+            }
+            .img-wrap #funding-img {
                 top: 13%;
                 left: 16%;
             }
@@ -76,8 +81,9 @@
                 position: absolute;
             }
             .img-wrap #dashboard-img {
-                top: 13%;
-                left: 16%;
+                top: 22%;
+                left: 26%;
+                width: 122px;
             }
             .text-box {
                 text-align: center;
@@ -165,7 +171,9 @@
                     width: 138px;
                 }
                 .img-wrap #dashboard-img {
-                    width: 138px;
+                    width: 100px;
+                    top: 19%;
+                    left: 25%;
                 }
             }
             .dashboard-item-none {
