@@ -10,7 +10,8 @@
 	<link rel="stylesheet" href="css/main.css">
 	<!-- <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-	<!-- <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet"> -->
+	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 	<!-- ogp setting -->
 	<meta property="og:title" content="GUILD | " />
 	<meta property="og:type" content="" />
@@ -29,5 +30,19 @@
 		<%- include('./inc/voting-modals.ejs') %>
 	</div>
 </body>
-<script src="js/lib.min.js" sync></script>
+<script src="js/lib.min.js" async></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js" async></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js" async></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js" async></script>
+<script>
+$(function() {
+	$('#reportrange').daterangepicker({
+		opens: 'left',
+		endDate: moment().add(7, 'day'),
+	}, function(start, end, label) {
+		console.log("A new datae selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+	});
+
+});
+</script>
 </html>

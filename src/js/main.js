@@ -20,12 +20,14 @@
     
     // try {
     const vinone = document.getElementById("voting-item-none"),
+        vi = document.getElementsByClassName("voting-item"),
         ynbtn = document.getElementById("yn-btn"),
         cbtn = document.getElementById("confirm-btn"),
         mbtn = document.getElementById("modify-btn"),
         vbtn = document.getElementById("vote-btn"),
         clbtn = document.getElementById("close-btn"),
-        mask = document.getElementById("mask");
+        mask = document.getElementById("mask"),
+        vbtn2 = document.getElementById("vote-btn2");
     // } catch (e) {
     //     console.log("consts are nowhere");
     // }
@@ -127,7 +129,7 @@
     // });
 
     // implememt new voting
-    // try {
+    try {
         vinone.addEventListener("click", function() {
             modal[0].classList.toggle('visible');
             mask.classList.toggle('visible');
@@ -177,9 +179,29 @@
         //         } 
         //      });
         // }
-    // } catch(e) {
-    //     console.log("this is not voting page.");
-    // }
+
+        vi[0].addEventListener("click", function() {
+            modal[4].classList.toggle("visible");
+            mask.classList.toggle('visible');
+        });
+        vi[1].addEventListener("click", function() {
+            modal[4].classList.toggle("visible");
+            mask.classList.toggle('visible');
+        });
+        vi[2].addEventListener("click", function() {
+            modal[4].classList.toggle("visible");
+            mask.classList.toggle('visible');
+        });
+        vbtn2.addEventListener("click", function() {
+            modal[4].classList.toggle("visible");
+            mask.classList.toggle('visible');
+        })
+
+    } catch(e) {
+        console.log("this is not voting page.");
+    }
+
+
 
 
 

@@ -26,6 +26,8 @@ textarea:focus, input:focus {
   height: 100%;
   background: #222626;
   z-index: 5;
+  -webkit-transition: .8s;
+  transition: .8s;
 }
 
 #left-menu .top {
@@ -137,6 +139,8 @@ textarea:focus, input:focus {
   height: 100%;
   background: #fff;
   z-index: 5;
+  -webkit-transition: .8s;
+  transition: .8s;
 }
 
 #left-menu-after .top {
@@ -222,6 +226,8 @@ textarea:focus, input:focus {
   top: 0;
   margin-left: 17%;
   width: 83%;
+  -webkit-transition: .6s;
+  transition: .6s;
 }
 
 #top-nav #nav-wrap {
@@ -378,6 +384,8 @@ textarea:focus, input:focus {
   width: 83%;
   height: 100%;
   background: #e5e5e5;
+  -webkit-transition: .6s;
+  transition: .6s;
 }
 
 #inner-content .top-text-box {
@@ -506,6 +514,8 @@ textarea:focus, input:focus {
 .inner-content-after {
   left: 6% !important;
   width: 94% !important;
+  -webkit-transition: .6s;
+  transition: .6s;
 }
 
 @media screen and (max-width: 1500px) {
@@ -568,6 +578,8 @@ textarea:focus, input:focus {
   width: 83%;
   height: 100%;
   background: #e5e5e5;
+  -webkit-transition: .6s;
+  transition: .6s;
 }
 
 #v-inner-content .top-text-box {
@@ -705,6 +717,8 @@ textarea:focus, input:focus {
 .v-inner-content-after {
   left: 6% !important;
   width: 94% !important;
+  -webkit-transition: .6s;
+  transition: .6s;
 }
 
 @media screen and (max-width: 1500px) {
@@ -842,7 +856,7 @@ textarea:focus, input:focus {
   width: 90%;
   height: 0px;
   border-bottom: 1px solid #ebeded;
-  margin-bottom: 7%;
+  margin-bottom: 3%;
   margin-left: 5%;
 }
 
@@ -924,6 +938,40 @@ textarea:focus, input:focus {
   margin-top: -4px;
 }
 
+#voting-modals #new-second-modal .inner-modal dl dd input[type="range"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  background-color: #7ad2cc;
+  height: 9px;
+  width: 343px;
+  border-radius: 6px;
+}
+
+#voting-modals #new-second-modal .inner-modal dl dd input[type="range"]:focus, #voting-modals #new-second-modal .inner-modal dl dd input[type="range"]:active {
+  outline: none;
+}
+
+#voting-modals #new-second-modal .inner-modal dl dd input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  width: 22px;
+  height: 22px;
+  display: block;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+#voting-modals #new-second-modal .inner-modal dl dd input[type="range"]:active::-webkit-slider-thumb {
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.6);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
 #voting-modals #new-second-modal .inner-modal dl dd .outp-label {
   position: absolute;
   top: -28px;
@@ -946,13 +994,66 @@ textarea:focus, input:focus {
   margin-top: 17px;
 }
 
+#voting-modals #new-second-modal .inner-modal dl dd #reportrange {
+  position: relative;
+  border: none;
+  margin-left: 14px;
+}
+
+#voting-modals #new-second-modal .inner-modal dl dd #reportrange i {
+  opacity: 0.4;
+  margin: 0 3px;
+}
+
+#voting-modals #new-second-modal .inner-modal dl dd #reportrange .dates-wrap {
+  display: inline-block;
+  background: #eaeeee;
+  padding: 12px;
+  border-radius: 3px;
+}
+
+#voting-modals #new-second-modal .inner-modal dl dd #reportrange .dates-wrap #calendar1 {
+  position: absolute;
+  top: 16px;
+  left: 23px;
+}
+
+#voting-modals #new-second-modal .inner-modal dl dd #reportrange .dates-wrap .start-date {
+  display: inline-block;
+  margin-left: 28px;
+  margin-right: 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 170%;
+  letter-spacing: 0.04em;
+  color: #444;
+}
+
+#voting-modals #new-second-modal .inner-modal dl dd #reportrange .dates-wrap #calendar2 {
+  position: absolute;
+  top: 16px;
+}
+
+#voting-modals #new-second-modal .inner-modal dl dd #reportrange .dates-wrap .end-date {
+  display: inline-block;
+  margin-left: 28px;
+  margin-right: 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 170%;
+  letter-spacing: 0.04em;
+  color: #444;
+}
+
 #voting-modals #new-second-modal .inner-modal dl dd .agenda-dt {
   position: 249px;
 }
 
 #voting-modals #new-second-modal .inner-modal dl dd #agenda {
   width: 540px;
-  height: 144px;
+  height: 116px;
   background: #fcfcfc;
   border: 1px solid #eee;
   box-sizing: border-box;
@@ -1046,6 +1147,7 @@ textarea:focus, input:focus {
   display: flex;
   -webkit-box-pack: center;
           justify-content: center;
+  margin-top: 34px;
 }
 
 #voting-modals #new-third-modal .inner-modal dl .btn-wrap #modify-btn {
@@ -1177,5 +1279,122 @@ textarea:focus, input:focus {
 
 #voting-modals #new-final-modal .inner-modal dl .per {
   color: #7ad2cc;
+}
+
+#voting-modals #existing-modal .inner-modal .top-text {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding: 3%;
+  line-height: 170%;
+  letter-spacing: 0.04em;
+  font-size: 26px;
+}
+
+#voting-modals #existing-modal .inner-modal .inner-border {
+  text-align: center;
+  width: 90%;
+  height: 0px;
+  border-bottom: 1px solid #ebeded;
+  margin-bottom: 4%;
+  margin-left: 5%;
+}
+
+#voting-modals #existing-modal .inner-modal dl .inner-border {
+  text-align: center;
+  width: 90%;
+  height: 0px;
+  border-bottom: 1px solid #ebeded;
+  margin-bottom: 3%;
+  margin-left: 5%;
+}
+
+#voting-modals #existing-modal .inner-modal dl dt {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 170%;
+  letter-spacing: 0.04em;
+  color: #000;
+  margin-left: 4%;
+  display: inline-block;
+}
+
+#voting-modals #existing-modal .inner-modal dl dd {
+  display: inline-block;
+  margin-left: 16%;
+  margin-bottom: 3%;
+  position: relative;
+}
+
+#voting-modals #existing-modal .inner-modal dl .agenda-dt {
+  position: 249px;
+}
+
+#voting-modals #existing-modal .inner-modal dl .agenda-text {
+  width: 540px;
+  height: 144px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 236px;
+  left: -66px;
+}
+
+#voting-modals #existing-modal .inner-modal dl .agenda-text p {
+  padding: 10px;
+  margin-top: 0;
+}
+
+#voting-modals #existing-modal .inner-modal dl .inner-border-bottom {
+  text-align: center;
+  width: 90%;
+  height: 0px;
+  border-bottom: 1px solid #ebeded;
+  margin-bottom: 3%;
+  margin-top: 115px;
+}
+
+#voting-modals #existing-modal .inner-modal dl .per {
+  color: #7ad2cc;
+}
+
+#voting-modals #existing-modal .inner-modal dl .select-wrap p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 170%;
+  letter-spacing: 0.04em;
+  color: #000;
+  margin-left: 4%;
+}
+
+#voting-modals #existing-modal .inner-modal dl .select-wrap .inner-wrap {
+  margin-left: 4%;
+}
+
+#voting-modals #existing-modal .inner-modal dl .select-wrap .inner-wrap p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 170%;
+  letter-spacing: 0.04em;
+  color: #444;
+  margin: 8px;
+  display: inline-block;
+}
+
+#voting-modals #existing-modal .inner-modal #vote-btn2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  display: block;
+  width: 220px;
+  height: 50px;
+  margin: 0 auto;
+  background: #7ad2cc;
+  border-radius: 5px;
+  color: #fff;
+  position: absolute;
+  bottom: 3%;
+  left: 32%;
 }
 /*# sourceMappingURL=maps/main.css.map */

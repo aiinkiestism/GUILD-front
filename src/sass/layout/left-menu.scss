@@ -3,6 +3,7 @@
 	height: 100%;
 	background: $primary-black;
 	z-index: 5;
+	transition: .8s;
     .top {
 		height: 6%;
 		position: relative;
@@ -100,6 +101,7 @@
 	height: 100%;
 	background: #fff;
 	z-index: 5;
+	transition: .8s;
 	.top {
 		height: 6%;
 		position: relative;

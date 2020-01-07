@@ -82,7 +82,7 @@
                 width: 90%;
                 height: 0px;
                 border-bottom: 1px solid #ebeded;
-                margin-bottom: 7%;
+                margin-bottom: 3%;
                 margin-left: 5%;
             }
             dl {
@@ -157,6 +157,38 @@
                         right: 10px;
                         margin-top: -4px;
                     }
+                    input[type="range"] {
+                        -webkit-appearance: none;
+                        appearance: none;
+                        background-color: #7ad2cc;
+                        height: 9px;
+                        width: 343px;
+                        border-radius: 6px;
+                      
+                        &:focus,
+                        &:active {
+                          outline: none;
+                        }
+                      
+                        &::-webkit-slider-thumb {
+                          -webkit-appearance: none;
+                          appearance: none;
+                          cursor: pointer;
+                          position: relative;
+                          border: 1px solid rgba(0, 0, 0, .4);
+                          width: 22px;
+                          height: 22px;
+                          display: block;
+                          background-color: #fff;
+                          border-radius: 50%;
+                          -webkit-border-radius: 50%;
+                        }
+                      
+                        &:active::-webkit-slider-thumb {
+                          box-shadow: 0 0 0 4px rgba(255, 255, 255, .6);
+                          transition: .4s;
+                        }
+                      }
                     .outp-label {
                         position: absolute;
                         top: -28px;
@@ -176,12 +208,58 @@
                     input {
                         margin-top: 17px;
                     }
+                    #reportrange {
+                        position: relative;
+                        border: none;
+                        margin-left: 14px;
+                        i {
+                            opacity: 0.4;
+                            margin: 0 3px;
+                        }
+                        .dates-wrap {
+                            display: inline-block;
+                            background: #eaeeee;
+                            padding: 12px;
+                            border-radius: 3px;
+                            #calendar1 {
+                                position: absolute;
+                                top: 16px;
+                                left: 23px;
+                            }
+                            .start-date {
+                                display: inline-block;
+                                margin-left: 28px;
+                                margin-right: 25px;
+                                font-family: $base-font-family;
+                                font-weight: 300;
+                                font-size: 12px;
+                                line-height: 170%;
+                                letter-spacing: 0.04em;
+                                color: #444;
+                            }
+                            #calendar2 {
+                                position: absolute;
+                                top: 16px;
+                            }
+                            .end-date {
+                                display: inline-block;
+                                margin-left: 28px;
+                                margin-right: 25px;
+                                font-family: $base-font-family;
+                                font-weight: 300;
+                                font-size: 12px;
+                                line-height: 170%;
+                                letter-spacing: 0.04em;
+                                color: #444;
+                            }
+                        }
+                    }
                     .agenda-dt {
                         position: 249px;
                     }
                     #agenda {
                         width: 540px;
-                        height: 144px;
+                        height: 116px;
                         background: #fcfcfc;
                         border: 1px solid #eee;
                         box-sizing: border-box;
@@ -267,6 +345,7 @@
                 .btn-wrap {
                     display: flex;
                     justify-content: center;
+                    margin-top: 34px;
                     #modify-btn {
                         width: 220px;
                         height: 50px;
@@ -386,6 +465,117 @@
                 .per {
                     color: #7ad2cc;
                 }
+            }
+        }
+    }
+    #existing-modal {
+        .inner-modal {
+            .top-text {
+                font-family: $base-font-family;
+                text-align: center;
+                padding: 3%;
+                line-height: 170%;
+                letter-spacing: 0.04em;
+                font-size: 26px;
+            }
+            .inner-border {
+                text-align: center;
+                width: 90%;
+                height: 0px;
+                border-bottom: 1px solid #ebeded;
+                margin-bottom: 4%;
+                margin-left: 5%;
+            }
+            dl {
+                .inner-border {
+                    text-align: center;
+                    width: 90%;
+                    height: 0px;
+                    border-bottom: 1px solid #ebeded;
+                    margin-bottom: 3%;
+                    margin-left: 5%;
+                }
+                dt {
+                    font-family: $base-font-family;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 170%;
+                    letter-spacing: 0.04em;
+                    color: #000;
+                    margin-left: 4%;
+                    display: inline-block;
+                }
+                dd {
+                    display: inline-block;
+                    margin-left: 16%;
+                    margin-bottom: 3%;
+                    position: relative;
+                }
+                .agenda-dt {
+                    position: 249px;
+                }
+                .agenda-text {
+                    width: 540px;
+                    height: 144px;
+                    box-sizing: border-box;
+                    border-radius: 5px;
+                    position: absolute;
+                    bottom: 236px;
+                    left: -66px;
+                    p {
+                        padding: 10px;
+                        margin-top: 0;
+                    }
+                }
+                .inner-border-bottom {
+                    text-align: center;
+                    width: 90%;
+                    height: 0px;
+                    border-bottom: 1px solid #ebeded;
+                    margin-bottom: 3%;
+                    margin-top: 115px;
+                }
+                .per {
+                    color: #7ad2cc;
+                }
+                .select-wrap {
+                    p {
+                        font-family: $base-font-family;
+                        font-weight: 300;
+                        font-size: 14px;
+                        line-height: 170%;
+                        letter-spacing: 0.04em;
+                        color: #000;
+                        margin-left: 4%;
+                    }
+                    .inner-wrap {
+                        margin-left: 4%;
+                        p {
+                            font-family: $base-font-family;
+                            font-weight: 300;
+                            font-size: 16px;
+                            line-height: 170%;
+                            letter-spacing: 0.04em;
+                            color: #444;
+                            margin: 8px;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+            #vote-btn2 {
+                font-family: $base-font-family;
+                font-size: 14px;
+                display: block;
+                width: 220px;
+                height: 50px;
+                margin: 0 auto;
+                background: #7ad2cc;
+                border-radius: 5px;
+                color: #fff;
+                position: absolute;
+                bottom: 3%;
+                left: 32%;
             }
         }
     }

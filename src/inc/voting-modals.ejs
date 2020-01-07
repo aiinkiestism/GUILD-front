@@ -55,7 +55,21 @@
                 </dd>
                 <div class="inner-border"></div>
                 <dt>期間</dt>
-                <dd></dd>
+                <dd>
+                    <div id="reportrange" style="cursor: pointer; padding: 5px 10px; width: 100%">
+                        <div class="dates-wrap">
+                            <img src="img/calendar.png" alt="calendar" id="calendar1">
+                            <div class="start-date">開始日</div>
+                            <i class="fa fa-angle-down"></i>
+                        </div>
+                        <p style="display: inline-block;">~</p>
+                        <div class="dates-wrap">
+                            <img src="img/calendar.png" alt="calendar" id="calendar2">
+                            <div class="end-date">終了日</div>
+                            <i class="fa fa-angle-down"></i>
+                        </div>
+                    </div>
+                </dd>
                 <div class="inner-border"></div>
                 <dt class="agenda-dt">議題</dt>
                 <dd><textarea name="agenda" id="agenda" cols="30" rows="10"></textarea></dd>
@@ -124,20 +138,35 @@
             <dl>
                 <dt>投票形式</dt>
                 <dd>Yes/No(通常投票)</dd>
+                <div class="inner-border"></div>
                 <dt>最低参加率</dt>
-                <dd>43%</dd>
+                <dd class="per">43%</dd>
+                <div class="inner-border"></div>
+                <dt>最低賛成率</dt>
+                <dd class="per">52%</dd>
+                <div class="inner-border"></div>
                 <dt>期間</dt>
                 <dd>2019/12/01 〜 2019/12/24</dd>
                 <div class="inner-border"></div>
-                <dt>議題</dt>
-                <dd><p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテ</p></dd>
-                <div class="inner-border"></div>
+                <dt class="agenda-dt">議題</dt>
+                <dd class="agenda-text"><p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキ</p></dd>
+                <div class="inner-border-bottom"></div>
                 <div class="select-wrap">
                     <p>選択肢</p>
-                    <input type="checkbox" name="IOST" checked="checked">
-                    <input type="checkbox" name="Ethereum">
-                    <input type="checkbox" name="EOS"">
+                    <div class="inner-wrap">
+                        <input type="radio" name="IOST" checked="checked">
+                        <p>IOST</p>
+                    </div>
+                    <div class="inner-wrap">
+                        <input type="radio" name="Ethereum">
+                        <p>Ethereum</p>
+                    </div>
+                    <div class="inner-wrap">
+                        <input type="radio" name="EOS"">
+                        <p>EOS</p>
+                    </div>
                 </div>
+                <div class="inner-border"></div>
             </dl>
             <input type="button" id="vote-btn2" value="投票する">
         </div>
