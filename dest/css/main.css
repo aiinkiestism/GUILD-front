@@ -769,7 +769,9 @@ textarea:focus, input:focus {
 #voting-modals .modal {
   position: fixed;
   top: 6%;
-  left: 34%;
+  left: 0;
+  right: 0;
+  margin: auto;
   width: 600px;
   height: 754px;
   background: #fff;
@@ -804,6 +806,7 @@ textarea:focus, input:focus {
   height: 0px;
   border-bottom: 1px solid #ebeded;
   margin-bottom: 9%;
+  margin-left: 5%;
 }
 
 #voting-modals #new-first-modal .inner-modal #yn-btn, #voting-modals #new-first-modal .inner-modal #select-btn, #voting-modals #new-first-modal .inner-modal #pay-btn {
@@ -840,6 +843,7 @@ textarea:focus, input:focus {
   height: 0px;
   border-bottom: 1px solid #ebeded;
   margin-bottom: 7%;
+  margin-left: 5%;
 }
 
 #voting-modals #new-second-modal .inner-modal dl .inner-border {
@@ -848,6 +852,20 @@ textarea:focus, input:focus {
   height: 0px;
   border-bottom: 1px solid #ebeded;
   margin-bottom: 5%;
+  margin-left: 5%;
+}
+
+#voting-modals #new-second-modal .inner-modal dl #confirm-btn {
+  display: block;
+  width: 220px;
+  height: 50px;
+  margin: 0 auto;
+  background: #7ad2cc;
+  border-radius: 5px;
+  color: #fff;
+  position: absolute;
+  bottom: 3%;
+  left: 32%;
 }
 
 #voting-modals #new-second-modal .inner-modal dl dt {
@@ -864,15 +882,300 @@ textarea:focus, input:focus {
 #voting-modals #new-second-modal .inner-modal dl dd {
   display: inline-block;
   margin-left: 16%;
+  margin-bottom: 3%;
+  position: relative;
 }
 
-#voting-modals #new-second-modal .inner-modal dl dd #voting-format {
+#voting-modals #new-second-modal .inner-modal dl dd .select-wrap {
   background: #eaeeee;
+  position: relative;
+  display: inline-block;
+  border: none;
+  border-radius: 3px;
+}
+
+#voting-modals #new-second-modal .inner-modal dl dd .select-wrap #voting-format {
   border: none;
   color: #444;
   font-size: 12px;
   font-family: "Roboto", sans-serif;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 3px;
   cursor: pointer;
+  position: relative;
+  width: 360px;
+  padding: 11px;
+}
+
+#voting-modals #new-second-modal .inner-modal dl dd .select-wrap::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border: 0px;
+  border-bottom: solid 2px #9ea2a2;
+  border-right: solid 2px #9ea2a2;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -4px;
+}
+
+#voting-modals #new-second-modal .inner-modal dl dd .outp-label {
+  position: absolute;
+  top: -28px;
+  left: 39%;
+  z-index: 1000;
+}
+
+#voting-modals #new-second-modal .inner-modal dl dd .outp-label p {
+  background: #7ad2cc;
+  padding: 4px 10px 4px;
+  border-radius: 3px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  line-height: 170%;
+  letter-spacing: 0.04em;
+}
+
+#voting-modals #new-second-modal .inner-modal dl dd input {
+  margin-top: 17px;
+}
+
+#voting-modals #new-second-modal .inner-modal dl dd .agenda-dt {
+  position: 249px;
+}
+
+#voting-modals #new-second-modal .inner-modal dl dd #agenda {
+  width: 540px;
+  height: 144px;
+  background: #fcfcfc;
+  border: 1px solid #eee;
+  box-sizing: border-box;
+  border-radius: 5px;
+  position: absolute;
+  top: 31px;
+  left: -124px;
+}
+
+#voting-modals #new-third-modal {
+  height: 635px;
+}
+
+#voting-modals #new-third-modal .inner-modal .top-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 170%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #3d4444;
+  padding: 3%;
+}
+
+#voting-modals #new-third-modal .inner-modal .inner-border {
+  text-align: center;
+  width: 90%;
+  height: 0px;
+  border-bottom: 1px solid #ebeded;
+  margin-bottom: 4%;
+  margin-left: 5%;
+}
+
+#voting-modals #new-third-modal .inner-modal dl .inner-border {
+  text-align: center;
+  width: 90%;
+  height: 0px;
+  border-bottom: 1px solid #ebeded;
+  margin-bottom: 3%;
+  margin-left: 5%;
+}
+
+#voting-modals #new-third-modal .inner-modal dl dt {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 170%;
+  letter-spacing: 0.04em;
+  color: #000;
+  margin-left: 4%;
+  display: inline-block;
+}
+
+#voting-modals #new-third-modal .inner-modal dl dd {
+  display: inline-block;
+  margin-left: 16%;
+  margin-bottom: 3%;
+  position: relative;
+}
+
+#voting-modals #new-third-modal .inner-modal dl .agenda-dt {
+  position: 249px;
+}
+
+#voting-modals #new-third-modal .inner-modal dl .agenda-text {
+  width: 540px;
+  height: 144px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 95px;
+  left: -66px;
+}
+
+#voting-modals #new-third-modal .inner-modal dl .agenda-text p {
+  padding: 10px;
+  margin-top: 0;
+}
+
+#voting-modals #new-third-modal .inner-modal dl .inner-border-bottom {
+  text-align: center;
+  width: 90%;
+  height: 0px;
+  border-bottom: 1px solid #ebeded;
+  margin-bottom: 3%;
+  margin-top: 137px;
+}
+
+#voting-modals #new-third-modal .inner-modal dl .btn-wrap {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+#voting-modals #new-third-modal .inner-modal dl .btn-wrap #modify-btn {
+  width: 220px;
+  height: 50px;
+  border-radius: 5px;
+  margin-left: 10px;
+  background: #98a9ab;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+#voting-modals #new-third-modal .inner-modal dl .btn-wrap #vote-btn {
+  width: 220px;
+  height: 50px;
+  border-radius: 5px;
+  margin-left: 10px;
+  background: #7ad2cc;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+#voting-modals #new-third-modal .inner-modal dl .per {
+  color: #7ad2cc;
+}
+
+#voting-modals #new-final-modal {
+  height: 636px;
+}
+
+#voting-modals #new-final-modal .inner-modal .top-text {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding: 3%;
+  line-height: 170%;
+  letter-spacing: 0.04em;
+}
+
+#voting-modals #new-final-modal .inner-modal .top-text .large-text {
+  font-weight: 300;
+  font-size: 44px;
+  color: #7ad2cc;
+  margin-bottom: 18px;
+}
+
+#voting-modals #new-final-modal .inner-modal .top-text .small-text {
+  font-weight: 300;
+  font-size: 15px;
+  color: #929e9d;
+}
+
+#voting-modals #new-final-modal .inner-modal .inner-border {
+  text-align: center;
+  width: 90%;
+  height: 0px;
+  border-bottom: 1px solid #ebeded;
+  margin-bottom: 4%;
+  margin-left: 5%;
+}
+
+#voting-modals #new-final-modal .inner-modal dl .inner-border {
+  text-align: center;
+  width: 90%;
+  height: 0px;
+  border-bottom: 1px solid #ebeded;
+  margin-bottom: 3%;
+  margin-left: 5%;
+}
+
+#voting-modals #new-final-modal .inner-modal dl dt {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 170%;
+  letter-spacing: 0.04em;
+  color: #000;
+  margin-left: 4%;
+  display: inline-block;
+}
+
+#voting-modals #new-final-modal .inner-modal dl dd {
+  display: inline-block;
+  margin-left: 16%;
+  margin-bottom: 3%;
+  position: relative;
+}
+
+#voting-modals #new-final-modal .inner-modal dl .agenda-dt {
+  position: 249px;
+}
+
+#voting-modals #new-final-modal .inner-modal dl .agenda-text {
+  width: 540px;
+  height: 144px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 73px;
+  left: -66px;
+}
+
+#voting-modals #new-final-modal .inner-modal dl .agenda-text p {
+  padding: 10px;
+  margin-top: 0;
+}
+
+#voting-modals #new-final-modal .inner-modal dl .inner-border-bottom {
+  text-align: center;
+  width: 90%;
+  height: 0px;
+  border-bottom: 1px solid #ebeded;
+  margin-bottom: 3%;
+  margin-top: 147px;
+  margin-left: 5%;
+}
+
+#voting-modals #new-final-modal .inner-modal dl #close-btn {
+  width: 220px;
+  height: 50px;
+  background: #98a9a8;
+  border-radius: 5px;
+  color: #fff;
+  margin-left: 30%;
+}
+
+#voting-modals #new-final-modal .inner-modal dl .per {
+  color: #7ad2cc;
 }
 /*# sourceMappingURL=maps/main.css.map */

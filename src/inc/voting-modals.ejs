@@ -33,24 +33,32 @@
             <dl>
                 <dt>投票形式</dt>
                 <dd>
-                    <select name="votting-format" id="voting-format">
-                        <option value="Yes/No(通常投票)">Yes/No(通常投票)</option>
-                        <option value="選択式">選択式</option>
-                        <option value="資金決済投票">資金決済投票</option>
-                    </select>
+                    <div class="select-wrap">
+                        <select name="voting-format" id="voting-format">
+                            <option value="Yes/No(通常投票)">Yes/No(通常投票)</option>
+                            <option value="選択式">選択式</option>
+                            <option value="資金決済投票">資金決済投票</option>
+                        </select>
+                    </div>
                 </dd>
                 <div class="inner-border"></div>
                 <dt>最低参加率</dt>
-                <dd></dd>
+                <dd>
+                    <label class="outp-label"><p><output class="outp">43</output>%</p></label>
+                    <input type="range" min="0" max="100" step="1" value="43">
+                </dd>
                 <div class="inner-border"></div>
                 <dt>最低賛成率</dt>
-                <dd></dd>
+                <dd>
+                    <label class="outp-label"><p><output class="outp">43</output>%</p></label>
+                    <input type="range" min="0" max="100" step="1" value="52">
+                </dd>
                 <div class="inner-border"></div>
                 <dt>期間</dt>
                 <dd></dd>
                 <div class="inner-border"></div>
-                <dt>議題</dt>
-                <dd><textarea name="" id="" cols="30" rows="10"></textarea></dd>
+                <dt class="agenda-dt">議題</dt>
+                <dd><textarea name="agenda" id="agenda" cols="30" rows="10"></textarea></dd>
                 <input type="button" id="confirm-btn" value="内容を確認する">
             </dl>
         </div>
@@ -65,14 +73,17 @@
                 <dd>Yes/No(通常投票)</dd>
                 <div class="inner-border"></div>
                 <dt>最低参加率</dt>
-                <dd>43%</dd>
+                <dd class="per">43%</dd>
+                <div class="inner-border"></div>
+                <dt>最低賛成率</dt>
+                <dd class="per">52%</dd>
                 <div class="inner-border"></div>
                 <dt>期間</dt>
                 <dd>2019/12/01 〜 2019/12/24</dd>
                 <div class="inner-border"></div>
-                <dt>議題</dt>
-                <dd><p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテ</p></dd>
-                <div class="inner-border"></div>
+                <dt class="agenda-dt">議題</dt>
+                <dd class="agenda-text"><p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテ</p></dd>
+                <div class="inner-border-bottom"></div>
                 <div class="btn-wrap">
                     <input type="button" id="modify-btn" value="内容を修正する">
                     <input type="button" id="vote-btn" value="投票作成">
@@ -93,14 +104,14 @@
                 <dd>Yes/No(通常投票)</dd>
                 <div class="inner-border"></div>
                 <dt>最低参加率</dt>
-                <dd>43%</dd>
+                <dd class="per">43%</dd>
                 <div class="inner-border"></div>
                 <dt>最低賛成率</dt>
-                <dd>52%</dd>
+                <dd class="per">52%</dd>
                 <div class="inner-border"></div>
-                <dt>議題</dt>
-                <dd>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテ</dd>
-                <div class="inner-border"></div>
+                <dt class="agenda-dt">議題</dt>
+                <dd class="agenda-text"><p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキ</p></dd>
+                <div class="inner-border-bottom"></div>
                 <input type="button" id="close-btn" value="閉じる">
             </dl>
         </div>
