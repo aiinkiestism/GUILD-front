@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+#left-menu {
+  max-width: 240px;
+  height: 100%;
+}
+
+#left-menu .top {
+  height: 6%;
+}
+/*# sourceMappingURL=../maps/layout/left-menu.css.map */

@@ -117,3 +117,24 @@
 		}
 	}
 }
+
+@media screen and (max-width: 580px) {
+	#top-nav {
+		#nav-wrap {
+			#search-wrap {
+				left: 97px;
+				width: 103px;
+			}
+			#select-btn {
+				right: 101px;
+			}
+			#top-nav-right {
+				right: 14px;
+				#setting {
+					margin-right: 9px;
+					margin-left: 9px;
+				}
+			}
+		}
+	}
+}

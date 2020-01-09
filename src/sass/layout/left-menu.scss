@@ -178,3 +178,18 @@
 		}
 	}
 }
+
+@media screen and (max-width: 580px) {
+	#left-menu {
+		transition: .8s;
+		width: 100%;
+	}
+	#left-menu-after {
+		#profile {
+			display: none;
+		}
+		#left-menu-item {
+			display: none;
+		}
+	}
+}

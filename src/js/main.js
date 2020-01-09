@@ -1,10 +1,10 @@
 (function() {
     'use strict';
 
-    let diwrap = document.getElementsByClassName("d-item-wrap"),
-        diwrap2 = document.getElementsByClassName("d-item-wrap2"),
-        diwrap3 = document.getElementsByClassName("d-item-wrap3");
-    const toggle = document.getElementById("toggle-menu"),
+    let diwrap = document.getElementById("d-item-wrap"),
+        diwrap2 = document.getElementById("d-item-wrap2"),
+        diwrap3 = document.getElementById("d-item-wrap3"),
+        toggle = document.getElementById("toggle-menu"),
         togglea = document.getElementById("toggle-menu-after"),
         lmenu = document.getElementById("left-menu"),
         lmenua = document.getElementById("left-menu-after"),
@@ -40,7 +40,6 @@
     } catch (e) {
         console.log("dinones are nowhere.");
     }
-
     
 
     // implement togglemenu
@@ -58,6 +57,9 @@
         } catch (e) {
             console.log("vic is nowhere.");
         }
+
+        ic.setAttribute('style', "display: block;");
+        topnav.setAttribute('style', "display: block;");
     });
 
     togglea.addEventListener("click", function() {
@@ -74,42 +76,95 @@
         } catch (e) {
             console.log("vic is nowhere.");
         }
+
+        if (window.matchMedia("screen and (max-width: 450px)").matches) {
+            ic.setAttribute('style', "display: none;");
+            topnav.setAttribute('style', "display: none;");
+        }
     });
 
-    // deal with responsive3
-    if(window.matchMedia("screen and (max-width: 1500px)").matches) {
+    // deal with responsive
+    if (window.matchMedia("screen and (max-width: 1500px)").matches) {
         resizeContent();
     } 
-    // if (window.matchMedia("screen and (max-width: 1050px)").matches) {
-    //     // resizeContent();
-    //     resizeContent2();
-    //     // console.log("hello");
-    // }
+    if (window.matchMedia("screen and (max-width: 1250px)").matches) {
+        resizeContent();
+        resizeContent3();
+        resizeContent2();
+    } 
+    if (window.matchMedia("screen and (max-width: 780px)").matches) {
+        lmenu.setAttribute('style', "display: none;");
+        lmenua.setAttribute('style', "display: block;");
+        topnav.classList.add("top-nav-after")
+        try {
+            ic.classList.add("inner-content-after");
+        } catch (e) {
+            console.log("ic is nowhere.");
+        }
+    }
+    if (window.matchMedia("screen and (max-width: 450px)").matches) {
+        resizeContent4();
+    }
 
     window.addEventListener('resize', function(e) {
         if (e.target.innerWidth <= 1500) {
             setTimeout(function() {
                 resizeContent();
+                if (di[2].parentNode == diwrap2) {
+                    revertContent2();
+                }
+                if (dinone[1].parentNode == diwrap2 || dinone[2].parentNode == diwrap2) {
+                    diwrap3.insertBefore(dinone[2], null);
+                    diwrap3.insertBefore(dinone[1], null);
+                }
             }, 0);
-        } else if (e.target.innerWidth > 1500) {
+        } 
+        if (e.target.innerWidth > 1500) {
             setTimeout(function() {
                 revertContent();
             }, 0);
-        } 
-        // else if (e.target.innerWidth <= 1050) {
-        //     setTimeout(function() {
-        //         resizeContent2();
-        //     }, 0);
-        //     if(e.target.innerWidth > 1050) {
-        //         setTimeout(function() {
-        //             revertContent2();
-        //         })
-        //     }
-        // }
+        }
+        if (e.target.innerWidth <= 1250) {
+            setTimeout(function() {
+                resizeContent3();
+                resizeContent2();
+            }, 0);
+        }
+        if (e.target.innerWidth > 780) {
+            lmenua.setAttribute('style', "display: none");
+            lmenu.setAttribute('style', "display: block;");
+            topnav.classList.remove("top-nav-after");
+            try {
+                ic.classList.remove("inner-content-after");
+            } catch (e) {
+                console.log("ic is nowhere.");
+            }
+            try {
+                vic.classList.remove("v-inner-content-after");
+            } catch (e) {
+                console.log("vic is nowhere.");
+            }
+        }
+        if (e.target.innerWidth <= 780) {
+            lmenu.setAttribute('style', "display: none;");
+            lmenua.setAttribute('style', "display: block;");
+            topnav.classList.add("top-nav-after")
+            try {
+                ic.classList.add("inner-content-after");
+            } catch (e) {
+                console.log("ic is nowhere.");
+            }
+
+            if(di[1].parentNode == diwrap2) {
+                revertContent4();
+            }
+        }
+        if (e.target.innerWidth <= 450) {
+            setTimeout(function() {
+                resizeContent4();
+            }, 0);
+        }
     });
-    // window.addEventListener('resize', function(e) {
-    //     if (e.target.innerWidth)
-    // })
 
     //implement progress bar
     // addEventListener("", function() {
@@ -202,14 +257,8 @@
     }
 
 
-
-
-
-
     function resizeContent() {
         try {
-            let diwrap2 = di[4].parentNode,
-                diwrap3 = dinone[3].parentNode;
         diwrap2.insertBefore(di[3], di[4]);
         diwrap3.insertBefore(dinone[2], dinone[3]);
         diwrap3.insertBefore(dinone[1], dinone[2]);
@@ -220,8 +269,6 @@
 
     function revertContent() {
         try {
-            let diwrap = di[2].parentNode,
-                diwrap2 = dinone[0].parentNode;
         diwrap.insertBefore(di[3], null);
         diwrap2.insertBefore(dinone[1], null);
         diwrap2.insertBefore(dinone[2], null);
@@ -230,23 +277,61 @@
         }
     }
 
-    // function resizeContent2() {
-    //     let diwrap2 = di[3].parentNode,
-    //         diwrap3 = dinone[1].parentNode;
-    //     diwrap2.insertBefore(di[2], di[3]);
-    //     diwrap3.insertBefore(dinone[0], dinone[1]);
-    //     diwrap3.insertBefore(di[4], dinone[0]);
-    // }
+    function resizeContent2() {
+        diwrap2.insertBefore(di[2], di[3]);
+        diwrap3.insertBefore(di[4], null);
+        diwrap3.insertBefore(dinone[0], null);
+    }
 
-    // function revertContent2() {
-    //     let diwrap = di[1].parentNode,
-    //         diwrap2 = di[3].parentNode;
-    //     diwrap.insertBefore(di[2], null);
-    //     diwrap2.insertBefore(di[4], null);
-    //     diwrap2.insertBefore(dinone[0], null);
-    // }
+    function revertContent2() {
+        diwrap.insertBefore(di[2], null);
+        diwrap2.insertBefore(di[4], null);
+        diwrap2.insertBefore(dinone[0], null);
+    }
 
     // ic.insertBefore(hbtn, null);
+    function resizeContent3() {
+        let diwrap4 = document.getElementById('d-item-wrap4'),
+            diwrap5 = document.getElementById('d-item-wrap5');
+        diwrap5.insertBefore(dinone[3], null);
+        diwrap4.insertBefore(dinone[2], null);
+        diwrap4.insertBefore(dinone[1], null);
+    }
 
+    function resizeContent4() {
+        let diwrap4 = document.getElementById('d-item-wrap4'),
+            diwrap5 = document.getElementById('d-item-wrap5'),
+            diwrap6 = document.getElementById('d-item-wrap6'),
+            diwrap7 = document.getElementById('d-item-wrap7'),
+            diwrap8 = document.getElementById('d-item-wrap8'),
+            diwrap9 = document.getElementById('d-item-wrap9'),
+            diwrap10 = document.getElementById('d-item-wrap10');
+
+        dinone[1].setAttribute('style', "display: none;");
+        dinone[2].setAttribute('style', "display: none;");
+        dinone[3].setAttribute('style', "display: none;");
+
+        diwrap6.insertBefore(dinone[0], null);
+        diwrap5.insertBefore(di[4], null);
+        diwrap4.insertBefore(di[3], null);
+        diwrap3.insertBefore(di[2], null);
+        diwrap2.insertBefore(di[1], null);
+    }
+
+    function revertContent4() {
+        let diwrap4 = document.getElementById('d-item-wrap4'),
+            diwrap5 = document.getElementById('d-item-wrap5'),
+            diwrap6 = document.getElementById('d-item-wrap6'),
+            diwrap7 = document.getElementById('d-item-wrap7'),
+            diwrap8 = document.getElementById('d-item-wrap8'),
+            diwrap9 = document.getElementById('d-item-wrap9'),
+            diwrap10 = document.getElementById('d-item-wrap10');
+
+        diwrap.insertBefore(di[1], null);
+        diwrap2.insertBefore(di[2], null);
+        diwrap2.insertBefore(di[3], null);
+        diwrap3.insertBefore(di[4], null);
+        diwrap3.insertBefore(dinone[0], null);        
+    }
 
 })();

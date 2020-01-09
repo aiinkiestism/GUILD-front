@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GUILD | </title>
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/logo.png" />
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" type="text/css" href="css/tooltip-range.css" />
+
+    <!-- ogp setting -->
+    <meta property="og:title" content="GUILD | " />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="GUILD | " />
+    <meta property="og:description" content="" />
+    <meta property="fb:app_id" content="" />
+    <meta name="twitter:card" content="" />
+  </head>
+  <body>
+    <div class="contents">
+      <div id="left-menu">
+        <div class="top">
+          <div class="img-wrap">
+            <img src="./img/logo.png" alt="GUILDのロゴ" id="left-menu-logo">
+          </div>
+          <div id="toggle-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div id="profile">
+          <div class="img-wrap">
+            <img src="img/profile.png" alt="プロフィール画像" id="profile-img">
+          </div>
+          <div class="text-box">
+            <p class="p-text-large">Jon Done</p>
+            <p class="p-text-small">developer</p>
+          </div>
+        </div>
+        <div id="left-menu-item">
+          <div class="item-wrap">
+            <div class="img-wrap">
+              <img src="img/home.png" alt="HOME" id="l-menu-item-img">
+            </div>
+            <p>HOME</p>
+          </div>
+          <div class="item-wrap">
+            <div class="img-wrap">
+              <img src="img/write.png" alt="VOTING" id="l-menu-item-img">
+            </div>
+            <p>VOTING</p>
+          </div>
+          <div class="item-wrap">
+            <div class="img-wrap">
+              <img src="img/comment-alt.png" alt="DISCUSSION" id="l-menu-item-img">
+            </div>
+            <p>DISCUSSION</p>
+          </div>
+          <div class="item-wrap">
+            <div class="img-wrap">
+              <img src="img/clipboard.png" alt="REPORT" id="l-menu-item-img">
+            </div>
+            <p>REPORT</p>
+          </div>
+          <div class="item-wrap">
+            <div class="img-wrap">
+              <img src="img/money.png" alt="FUNDING" id="l-menu-item-img">
+            </div>
+            <p>FUNDING</p>
+          </div>
+          <div class="item-wrap">
+            <div class="img-wrap">
+              <img src="img/chart.png" alt="DASHBOARD" id="l-menu-item-img">
+            </div>
+            <p>DASHBOARD</p>
+          </div>
+        </div>
+      </div>
+      <div id="left-menu-after">
+        <div class="top">
+          <div id="toggle-menu-after">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div id="profile">
+          <div class="img-wrap">
+            <img src="img/profile.png" alt="プロフィール画像" id="profile-img">
+          </div>
+        </div>
+        <div id="left-menu-item">
+          <div class="item-wrap">
+            <div class="img-wrap">
+              <img src="img/home.png" alt="HOME" id="l-menu-item-img">
+            </div>
+          </div>
+          <div class="item-wrap">
+            <div class="img-wrap">
+              <img src="img/write.png" alt="VOTING" id="l-menu-item-img">
+            </div>
+          </div>
+          <div class="item-wrap">
+            <div class="img-wrap">
+              <img src="img/comment-alt.png" alt="DISCUSSION" id="l-menu-item-img">
+            </div>
+          </div>
+          <div class="item-wrap">
+            <div class="img-wrap">
+              <img src="img/clipboard.png" alt="REPORT" id="l-menu-item-img">
+            </div>
+          </div>
+          <div class="item-wrap">
+            <div class="img-wrap">
+              <img src="img/money.png" alt="FUNDING" id="l-menu-item-img">
+            </div>
+          </div>
+          <div class="item-wrap">
+            <div class="img-wrap">
+              <img src="img/chart.png" alt="DASHBOARD" id="l-menu-item-img">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="top-nav">
+        <div id="nav-wrap">
+          <div id="search-wrap">
+            <a href="#" id="search-btn">
+				<div class="img-warp">
+					<img src="img/search.png" alt="検索" id="search-img">
+				</div>
+			</a>
+            <input type="text" placeholder="Search" id="search-input">
+          </div>
+          <div id="select-btn">
+            <div class="img-wrap">
+              <img src="img/select_icon.png" alt="#" id="select-icon">
+            </div>
+            <select name="projects" id="projects">
+              <option value="DAO project">DAO project</option>
+            </select>
+            <div class="img-wrap-bottom">
+              <img src="img/angle-down.png" alt="下向きのアイコン" id="arrow-down">
+            </div>
+          </div>
+          <div id="top-nav-right">
+            <div id="setting">
+              <div class="img-wrap">
+                <img src="img/setting.png" alt="" id="setting-img">
+              </div>
+            </div>
+            <div id="notice">
+              <div class="img-wrap">
+                <img src="img/notice.png" alt="" id="notice-img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="v-inner-content">
+        <div class="top-text-box">
+          <h2>進行中の投票</h2>
+        </div>
+        <div class="voting-wrap">
+          <div class="voting-item">
+            <div class="top-text">
+              <p>決定事項1</p>
+            </div>
+            <div class="inner-border"></div>
+            <div class="middle-text">
+              <p class="voting-title">タイトルタイトル</p>
+              <p class="voting-desc">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            </div>
+            <div class="bottom-chart">
+              <label class="outp-label">
+                <p><output class="outp">43</output>%</p>
+              </label>
+              <progress class="prog" value="43" max="100">43%</progress>
+            </div>
+          </div>
+          <div class="voting-item">
+            <div class="top-text">
+              <p>決定事項1</p>
+            </div>
+            <div class="inner-border"></div>
+            <div class="middle-text">
+              <p class="voting-title">タイトルタイトル</p>
+              <p class="voting-desc">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            </div>
+            <div class="bottom-chart">
+              <label class="outp-label">
+                <p><output class="outp">43</output>%</p>
+              </label>
+              <progress class="prog" value="43" max="100">43%</progress>
+            </div>
+          </div>
+        </div>
+        <div class="voting-wrap">
+          <div class="voting-item">
+            <div class="top-text">
+              <p>決定事項1</p>
+            </div>
+            <div class="inner-border"></div>
+            <div class="middle-text">
+              <p class="voting-title">タイトルタイトル</p>
+              <p class="voting-desc">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            </div>
+            <div class="bottom-chart">
+              <label class="outp-label">
+                <p><output class="outp">43</output>%</p>
+              </label>
+              <progress class="prog" value="43" max="100">43%</progress>
+            </div>
+          </div>
+          <div id="voting-item-none">
+            <div class="img-wrap">
+              <img src="img/plus.png" alt="plus" id="plus-img">
+            </div>
+          </div>
+        </div>
+        <div id="help-btn">
+          <div class="img-wrap">
+            <img src="img/help.png" alt="help">
+          </div>
+        </div>
+      </div>
+      <div id="voting-modals">
+        <div id="mask"></div>
+        <div id="new-first-modal" class="modal">
+          <div class="inner-modal">
+            <!-- <div class="close-btn"><i class="fas fa-times"></i></div> -->
+            <div class="top-text">New Voting</div>
+            <div class="inner-border"></div>
+            <div id="yn-btn">
+              <div class="img-wrap">
+                <img src="img/hand-stop.png" alt="hand">
+              </div>
+              <p>Yes/No</p>
+            </div>
+            <div id="select-btn">
+              <div class="img-wrap">
+                <img src="img/files.png" alt="papers">
+              </div>
+              <p>選択式</p>
+            </div>
+            <div id="pay-btn">
+              <div class="img-wrap">
+                <img src="img/pay.png" alt="pay">
+              </div>
+              <p>資金決済投票</p>
+            </div>
+          </div>
+        </div>
+        <div id="new-second-modal" class="modal">
+          <div class="inner-modal">
+            <!-- <div class="close-btn"><i class="fas fa-times"></i></div> -->
+            <div class="top-text">New Voting</div>
+            <div class="inner-border"></div>
+            <dl>
+              <dt>投票形式</dt>
+              <dd>
+                <div class="select-wrap">
+                  <select name="voting-format" id="voting-format">
+                    <option value="Yes/No(通常投票)">Yes/No(通常投票)</option>
+                    <option value="選択式">選択式</option>
+                    <option value="資金決済投票">資金決済投票</option>
+                  </select>
+                </div>
+              </dd>
+              <div class="inner-border"></div>
+              <dt>最低参加率</dt>
+              <dd>
+                <input type="range" id="min-voting-rate-01">
+              </dd>
+              <div class="inner-border"></div>
+              <dt>最低賛成率</dt>
+              <dd>
+                <input type="range" id="min-voting-rate-02">
+              </dd>
+              <div class="inner-border"></div>
+              <dt>期間</dt>
+              <dd>
+                <div id="reportrange" style="cursor: pointer; padding: 5px 10px; width: 100%">
+                  <div class="dates-wrap">
+                    <img src="img/calendar.png" alt="calendar" id="calendar1">
+                    <div class="start-date">開始日</div>
+                    <i class="fa fa-angle-down"></i>
+                  </div>
+                  <p style="display: inline-block;">~</p>
+                  <div class="dates-wrap">
+                    <img src="img/calendar.png" alt="calendar" id="calendar2">
+                    <div class="end-date">終了日</div>
+                    <i class="fa fa-angle-down"></i>
+                  </div>
+                </div>
+              </dd>
+              <div class="inner-border"></div>
+              <dt class="agenda-dt">議題</dt>
+              <dd><textarea name="agenda" id="agenda" cols="30" rows="10"></textarea></dd>
+              <input type="button" id="confirm-btn" value="内容を確認する">
+            </dl>
+          </div>
+        </div>
+        <div id="new-third-modal" class="modal">
+          <div class="inner-modal">
+            <!-- <div class="close-btn"><i class="fas fa-times"></i></div> -->
+            <div class="top-text">New Voting</div>
+            <div class="inner-border"></div>
+            <dl>
+              <dt>投票形式</dt>
+              <dd>Yes/No(通常投票)</dd>
+              <div class="inner-border"></div>
+              <dt>最低参加率</dt>
+              <dd class="per">43%</dd>
+              <div class="inner-border"></div>
+              <dt>最低賛成率</dt>
+              <dd class="per">52%</dd>
+              <div class="inner-border"></div>
+              <dt>期間</dt>
+              <dd>2019/12/01 〜 2019/12/24</dd>
+              <div class="inner-border"></div>
+              <dt class="agenda-dt">議題</dt>
+              <dd class="agenda-text">
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテ</p>
+              </dd>
+              <div class="inner-border-bottom"></div>
+              <div class="btn-wrap">
+                <input type="button" id="modify-btn" value="内容を修正する">
+                <input type="button" id="vote-btn" value="投票作成">
+              </div>
+            </dl>
+          </div>
+        </div>
+        <div id="new-final-modal" class="modal">
+          <div class="inner-modal">
+            <!-- <div class="close-btn"><i class="fas fa-times"></i></div> -->
+            <div class="top-text">
+              <p class="large-text">Completed!</p>
+              <p class="small-text">以下の内容で投票を作成しました</p>
+            </div>
+            <div class="inner-border"></div>
+            <dl>
+              <dt>投票形式</dt>
+              <dd>Yes/No(通常投票)</dd>
+              <div class="inner-border"></div>
+              <dt>最低参加率</dt>
+              <dd class="per">43%</dd>
+              <div class="inner-border"></div>
+              <dt>最低賛成率</dt>
+              <dd class="per">52%</dd>
+              <div class="inner-border"></div>
+              <dt class="agenda-dt">議題</dt>
+              <dd class="agenda-text">
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキ</p>
+              </dd>
+              <div class="inner-border-bottom"></div>
+              <input type="button" id="close-btn" value="閉じる">
+            </dl>
+          </div>
+        </div>
+        <div id="existing-modal" class="modal">
+          <div class="inner-modal">
+            <!-- <div class="close-btn"><i class="fas fa-times"></i></div> -->
+            <div class="top-text">Voting</div>
+            <div class="inner-border"></div>
+            <dl>
+              <dt>投票形式</dt>
+              <dd>Yes/No(通常投票)</dd>
+              <div class="inner-border"></div>
+              <dt>最低参加率</dt>
+              <dd class="per">43%</dd>
+              <div class="inner-border"></div>
+              <dt>最低賛成率</dt>
+              <dd class="per">52%</dd>
+              <div class="inner-border"></div>
+              <dt>期間</dt>
+              <dd>2019/12/01 〜 2019/12/24</dd>
+              <div class="inner-border"></div>
+              <dt class="agenda-dt">議題</dt>
+              <dd class="agenda-text">
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキ</p>
+              </dd>
+              <div class="inner-border-bottom"></div>
+              <div class="select-wrap">
+                <p>選択肢</p>
+                <div class="inner-wrap">
+                  <input type="radio" name="IOST" checked="checked">
+                  <p>IOST</p>
+                </div>
+                <div class="inner-wrap">
+                  <input type="radio" name="Ethereum">
+                  <p>Ethereum</p>
+                </div>
+                <div class="inner-wrap">
+                  <input type="radio" name="EOS"">
+                        <p>EOS</p>
+                    </div>
+                </div>
+                <div class=" inner-border"></div>
+            </dl>
+            <input type="button" id="vote-btn2" value="投票する">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/lib.min.js" async></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js" async></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js" async></script>
+  <script type="text/javascript" src="js/tooltip-range.js"></script>
+  <script>
+    $(function()
+    {
+      tooltipRange.options({
+        selecter: "#min-voting-rate-01",
+        tooltip: true,
+        min: 43,
+        step: 1
+      });
+
+      tooltipRange.options({
+        selecter: "#min-voting-rate-02",
+        tooltip: true,
+        min: 52,
+        step: 1
+      });
+
+      $('#reportrange').daterangepicker(
+      {
+        opens: 'left',
+        endDate: moment().add(7, 'day'),
+      }, function(start, end, label)
+      {
+        console.log("A new datae selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+      });
+    });
+  </script>
+</html>
