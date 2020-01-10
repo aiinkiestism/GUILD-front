@@ -125,10 +125,16 @@
     #help-btn {
         // text-align: right;
         // margin-right: 6px;
-        position: absolute;
-        bottom: 55px;
-        right: 6px;
+        position: fixed;
+        right: 55px;
+        bottom: 19px;
         cursor: pointer;
+        z-index: 10000;
+        .img-wrap {
+            img {
+                width: 81px;
+            }
+        }
     }
 }
 .v-inner-content-after {
@@ -201,7 +207,59 @@
 
 @media screen and (max-width: 780px) {
     #v-inner-content {
-                left: 34%;
-                width: 66%;
+        left: 34%;
+        width: 66%;
+        top: 67px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .v-inner-content-after {
+        left: 0% !important;
+        width: 100% !important;
+        transition: .6s;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    #v-inner-content {
+        #help-btn {
+            right: 21px;
+            bottom: 10px;
+            .img-wrap {
+                img {
+                    width: 66px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #v-inner-content {
+        .voting-wrap {
+            margin-bottom: 6%;
+            .voting-item {
+                width: 77%;
+                padding-bottom: 92px;
+            }
+            #voting-item-none {
+                width: 77%;
+                #plus-img {
+                    top: 35%;
+                    left: 36%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #v-inner-content {
+        .voting-wrap {
+            .voting-item {
+                padding-bottom: 114px;
+            }
+        }
     }
 }

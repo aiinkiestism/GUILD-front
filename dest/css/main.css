@@ -1150,10 +1150,15 @@ textarea:focus, input:focus {
 }
 
 #v-inner-content #help-btn {
-  position: absolute;
-  bottom: 55px;
-  right: 6px;
+  position: fixed;
+  right: 55px;
+  bottom: 19px;
   cursor: pointer;
+  z-index: 10000;
+}
+
+#v-inner-content #help-btn .img-wrap img {
+  width: 81px;
 }
 
 .v-inner-content-after {
@@ -1207,6 +1212,49 @@ textarea:focus, input:focus {
   #v-inner-content {
     left: 34%;
     width: 66%;
+    top: 67px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .v-inner-content-after {
+    left: 0% !important;
+    width: 100% !important;
+    -webkit-transition: .6s;
+    transition: .6s;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  #v-inner-content #help-btn {
+    right: 21px;
+    bottom: 10px;
+  }
+  #v-inner-content #help-btn .img-wrap img {
+    width: 66px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #v-inner-content .voting-wrap {
+    margin-bottom: 6%;
+  }
+  #v-inner-content .voting-wrap .voting-item {
+    width: 77%;
+    padding-bottom: 92px;
+  }
+  #v-inner-content .voting-wrap #voting-item-none {
+    width: 77%;
+  }
+  #v-inner-content .voting-wrap #voting-item-none #plus-img {
+    top: 35%;
+    left: 36%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #v-inner-content .voting-wrap .voting-item {
+    padding-bottom: 114px;
   }
 }
 

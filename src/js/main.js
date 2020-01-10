@@ -16,7 +16,8 @@
         hbtn = document.getElementById("help-btn"),
         outp = document.getElementsByClassName("outp"),
         prog = document.getElementsByClassName("prog"),
-        modal = document.getElementsByClassName("modal");
+        modal = document.getElementsByClassName("modal"),
+        vw = document.getElementsByClassName("voting-wrap");
     
     // try {
     const vinone = document.getElementById("voting-item-none"),
@@ -39,8 +40,7 @@
         dinone[3].setAttribute('style', "opacity: 0;");
     } catch (e) {
         console.log("dinones are nowhere.");
-    }
-    
+    }    
 
     // implement togglemenu
     toggle.addEventListener("click", function() {
@@ -49,16 +49,17 @@
         topnav.classList.add("top-nav-after")
         try {
             ic.classList.add("inner-content-after");
+            ic.setAttribute('style', "display: block;");
         } catch (e) {
             console.log("ic is nowhere.");
         }
         try {
             vic.classList.add("v-inner-content-after");
+            vic.setAttribute('style', "display: block;");
         } catch (e) {
             console.log("vic is nowhere.");
         }
 
-        ic.setAttribute('style', "display: block;");
         topnav.setAttribute('style', "display: block;");
         // if (window.matchMedia("screen and (max-width: 450px)").matches) {
         //     lmenu.classList.add("animation-before");
@@ -82,7 +83,16 @@
         }
 
         if (window.matchMedia("screen and (max-width: 700px)").matches) {
-            ic.setAttribute('style', "display: none;");
+            try {
+                ic.setAttribute('style', "display: none;");
+            } catch (e) {
+                console.log("ic is nowhere.");
+            }
+            try {
+                vic.setAttribute('style', "display: none;");
+            } catch (e) {
+                console.log("vic is nowhere.");
+            }
             topnav.setAttribute('style', "display: none;");
             // lmenu.classList.add("animation-after");
             // lmenu.classList.remove("animation-before");
@@ -101,12 +111,20 @@
     if (window.matchMedia("screen and (max-width: 780px)").matches) {
         lmenu.setAttribute('style', "display: none;");
         lmenua.setAttribute('style', "display: block;");
-        topnav.classList.add("top-nav-after")
+        topnav.classList.add("top-nav-after");
         try {
             ic.classList.add("inner-content-after");
         } catch (e) {
             console.log("ic is nowhere.");
         }
+        try {
+            vic.classList.add("v-inner-content-after");
+        } catch (e) {
+            console.log("vic is nowhere.");
+        }
+    }
+    if (window.matchMedia("screen and (max-width: 500px").matches) {
+        vResizeContent();
     }
     if (window.matchMedia("screen and (max-width: 450px)").matches) {
         resizeContent4();
@@ -118,13 +136,25 @@
         if (e.target.innerWidth <= 1500) {
             setTimeout(function() {
                 resizeContent();
-                dinone[3].setAttribute('style', "display: none;");
-                if (di[2].parentNode == diwrap2) {
-                    revertContent2();
+                try {
+                    dinone[3].setAttribute('style', "display: none;");
+                } catch (e) {
+                    console.log("dinone[3] is nowehre.");
                 }
-                if (dinone[1].parentNode == diwrap2 || dinone[2].parentNode == diwrap2) {
-                    diwrap3.insertBefore(dinone[2], null);
-                    diwrap3.insertBefore(dinone[1], null);
+                try {
+                    if (di[2].parentNode == diwrap2) {
+                        revertContent2();
+                    }
+                } catch (e) {
+                    console.log("diwraps are nowhere.");
+                }
+                try {
+                    if (dinone[1].parentNode == diwrap2 || dinone[2].parentNode == diwrap2) {
+                        diwrap3.insertBefore(dinone[2], null);
+                        diwrap3.insertBefore(dinone[1], null);
+                    }
+                } catch (e) {
+                    console.log("dinones are nowhere.");
                 }
             }, 0);
         } 
@@ -159,18 +189,40 @@
         if (e.target.innerWidth <= 780) {
             lmenu.setAttribute('style', "display: none;");
             lmenua.setAttribute('style', "display: block;");
-            topnav.classList.add("top-nav-after")
+            topnav.classList.add("top-nav-after");
             try {
                 ic.classList.add("inner-content-after");
             } catch (e) {
                 console.log("ic is nowhere.");
             }
 
-            if(di[1].parentNode == diwrap2) {
-                revertContent4();
-                // lmenu.classList.remove("animation-before");
-                // lmenu.classList.remove("animation-after");
+            try {
+                vic.classList.add("v-inner-content-after");
+            } catch (e) {
+                console.log("vic is nowhere.");
             }
+
+            try {
+                if(di[1].parentNode == diwrap2) {
+                    revertContent4();
+                    // lmenu.classList.remove("animation-before");
+                    // lmenu.classList.remove("animation-after");
+                }
+            } catch (e) {
+                console.log("di[1] is nowhere.");
+            }
+            try {
+                if (vinone.parentNode == vw[3]) {
+                    vRevertContent();
+                }
+            } catch (e) {
+                console.log("vi[1] is nowhere.");
+            }
+        }
+        if (e.target.innerWidth <= 500) {
+            setTimeout(function() {
+                vResizeContent();
+            }, 0);
         }
         if (e.target.innerWidth <= 450) {
             setTimeout(function() {
@@ -272,6 +324,7 @@
     }
 
 
+    // content management functions in home page
     function resizeContent() {
         try {
         diwrap2.insertBefore(di[3], di[4]);
@@ -293,9 +346,13 @@
     }
 
     function resizeContent2() {
-        diwrap2.insertBefore(di[2], di[3]);
-        diwrap3.insertBefore(di[4], null);
-        diwrap3.insertBefore(dinone[0], null);
+        try {
+            diwrap2.insertBefore(di[2], di[3]);
+            diwrap3.insertBefore(di[4], null);
+            diwrap3.insertBefore(dinone[0], null);
+        } catch (e) {
+            console.log("diwraps are nowhere.");
+        }
     }
 
     function revertContent2() {
@@ -305,15 +362,20 @@
     }
 
     function resizeContent3() {
-        let diwrap4 = document.getElementById('d-item-wrap4'),
-            diwrap5 = document.getElementById('d-item-wrap5');
-        diwrap5.insertBefore(dinone[3], null);
-        diwrap4.insertBefore(dinone[2], null);
-        diwrap4.insertBefore(dinone[1], null);
+        try {
+            let diwrap4 = document.getElementById('d-item-wrap4'),
+                diwrap5 = document.getElementById('d-item-wrap5');
+            diwrap5.insertBefore(dinone[3], null);
+            diwrap4.insertBefore(dinone[2], null);
+            diwrap4.insertBefore(dinone[1], null);
+        } catch (e) {
+            console.log("diwraps are nowhere.");
+        }
     }
 
     function resizeContent4() {
-        let diwrap4 = document.getElementById('d-item-wrap4'),
+        try {
+            let diwrap4 = document.getElementById('d-item-wrap4'),
             diwrap5 = document.getElementById('d-item-wrap5'),
             diwrap6 = document.getElementById('d-item-wrap6'),
             diwrap7 = document.getElementById('d-item-wrap7'),
@@ -332,6 +394,9 @@
         diwrap2.insertBefore(di[1], null);
 
         ic.insertBefore(hbtn, null);
+        } catch (e) {
+            console.log("home page's process was ignored.");
+        } 
     }
 
     function revertContent4() {
@@ -349,6 +414,27 @@
         diwrap3.insertBefore(di[4], null);
         diwrap3.insertBefore(dinone[0], null);
         dinone[0].setAttribute('style', "display: block;");   
+    }
+
+    // content management functions in voting page
+    function vResizeContent() {
+        try {
+            vw[3].insertBefore(vinone, null);
+            vw[2].insertBefore(vi[2], null);
+            vw[1].insertBefore(vi[1], null);
+        } catch (e) {
+            console.log("voitng page's process was ignored");
+        }
+    }
+
+    function vRevertContent() {
+        try {
+            vw[0].insertBefore(vi[1], null);
+            vw[1].insertBefore(vi[2], null);
+            vw[1].insertBefore(vinone, null);
+        } catch (e) {
+            console.log("voting page's process was ignored.");
+        }
     }
 
 })();
