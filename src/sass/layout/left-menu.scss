@@ -37,7 +37,7 @@
 	.top:after {
 		content: "";
 		position: absolute;
-		bottom: -8px;
+		bottom: -12px;
 		left: 24px;
 		margin: 0 auto;
 		width: 83%;
@@ -160,6 +160,16 @@
 	}
 }
 
+// .animation-before {
+// 	transform: translateX(-100%);
+// 	transition-duration: 0.5s;
+// }
+
+// .animation-after {
+// 	transform: translateX(0%);
+// 	transition-duration: 0.5s;
+// }
+
 @media screen and (max-width: 1250px) {
 	#left-menu {
 		width: 27%;
@@ -169,6 +179,9 @@
 @media screen and (max-width: 780px) {
 	#left-menu {
 		width: 34%;
+		.top:after {
+			bottom: -18px
+		}
 		#left-menu-item {
 			.item-wrap {
 				p {
@@ -177,14 +190,114 @@
 			}
 		}
 	}
+	#left-menu-after {
+		.top {
+			#toggle-menu-after {
+				top: 49%;
+			}
+		}
+		.top:after {
+			bottom: -18px;
+		}
+		#profile {
+			padding-top: 112%;
+		}
+	}
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 700px) {
 	#left-menu {
 		transition: .8s;
 		width: 100%;
+		overflow-y: scroll;
+		.top {
+			.img-wrap {
+				top: 18px;
+			}
+			#toggle-menu {
+				top: 20px;
+			}
+		}
+		.top:after {
+			bottom: -17px;
+			left: 0;
+			width: 100%;
+		}
+		#profile {
+			padding-top: 17%;
+			.img-wrap {
+				#profile-img {
+					width: 30%;
+					height: 30%;
+				}
+			}
+			.text-box {
+				.p-text-large {
+					font-size: 28px;
+					margin-bottom: 10px;
+				}
+				.p-text-small {
+					font-size: 18px;
+				}
+			}
+		}
+		#left-menu-item {
+			.item-wrap {
+				.img-wrap {
+					top: -7px;
+					img {
+						width: 35px;
+					}
+				}
+				p {
+					font-size: 28px;
+				}
+			}
+		}
 	}
 	#left-menu-after {
+		.top {
+			#toggle-menu-after {
+				top: 45%;
+				left: 49%;
+			}
+		}
+		.top:after {
+			display: none;
+		}
+		#profile {
+			display: none;
+		}
+		#left-menu-item {
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-width: 450px) {
+	#left-menu {
+		transition: .8s;
+		width: 100%;
+		overflow-y: scroll;
+		.top:after {
+			bottom: -17px;
+			left: 0;
+			width: 100%;
+		}
+		#left-menu-item {
+			margin-bottom: 26%;
+		}
+	}
+	#left-menu-after {
+		.top {
+			#toggle-menu-after {
+				top: 59%;
+				left: 58%;
+			}
+		}
+		.top:after {
+			display: none;
+		}
 		#profile {
 			display: none;
 		}

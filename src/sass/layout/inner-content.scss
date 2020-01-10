@@ -116,10 +116,17 @@
     #help-btn {
         // text-align: right;
         // margin-right: 6px;
-        position: absolute;
-        bottom: 55px;
-        right: 6px;
+        // position: absolute;
+        position: fixed;
+        right: 55px;
+        bottom: 19px;
         cursor: pointer;
+        z-index: 10000;
+        .img-wrap {
+            img {
+                width: 81px;
+            }
+        }
     }
 }
 
@@ -193,7 +200,7 @@
         #d-item-wrap3 {
             display: flex;
             justify-content: space-evenly;
-            margin-bottom: 4%;
+            margin-bottom: 33%;
             .dashboard-item {
                 min-width: 200px;
                 min-height: 200px;
@@ -276,6 +283,14 @@
     }
 }
 
+@media screen and (max-width: 700px) {
+    .inner-content-after {
+        left: 0% !important;
+        width: 100% !important;
+        transition: .6s;
+    }
+}
+
 @media screen and (max-width: 580px) {
     #inner-content {
         .top-text-box {
@@ -347,6 +362,15 @@
                 }
             }
         }
+        #help-btn {
+            right: 21px;
+            bottom: 10px;
+            .img-wrap {
+                img {
+                    width: 66px;
+                }
+            }
+        }
     }
     .inner-content-after {
         left: 0% !important;
@@ -357,11 +381,22 @@
 
 @media screen and (max-width: 450px) {
     #inner-content {
+        .top-text-box {
+            h2 {
+                font-size: 24px;
+            }
+        }
         #d-item-wrap {
             .dashboard-item {
                 min-width: 280px;
                 min-height: 280px;
                 height: 280px;
+                margin-bottom: 13%;
+                .img-wrap {
+                    #voting-img {
+                        width: 91px;
+                    }
+                }
             }
         }
         #d-item-wrap2 {
@@ -369,11 +404,12 @@
                 min-width: 280px;
                 min-height: 280px;
                 height: 280px;
+                margin-bottom: 13%;
                 .img-wrap {
                     #discussion-img {
-                        width: 106px;
-                        top: 18%;
-                        left: 19%;
+                        width: 155px;
+                        top:24%;
+                        left: 23%;
                     }
                 }
             }
@@ -383,11 +419,12 @@
                 min-width: 280px;
                 min-height: 280px;
                 height: 280px;
+                margin-bottom: 13%;
                 .img-wrap {
                     #report-img {
-                        width: 84px;
-                        top: 23%;
-                        left: 26%;
+                        width: 126px;
+                        top: 26%;
+                        left: 27%;
                     }
                 }
             }
@@ -395,7 +432,7 @@
         #d-item-wrap4 {
             display: flex;
             justify-content: space-evenly;
-            margin-bottom: 4%;
+            margin-bottom: 13%;
             .dashboard-item {
                 min-width: 280px;
                 min-height: 280px;
@@ -410,7 +447,7 @@
                 }
                 .img-wrap {
                     #funding-img {
-                        width: 121px;
+                        width: 187px;
                         top: 15%;
                         left: 16%;
                     }
@@ -430,7 +467,7 @@
         #d-item-wrap5 {
             display: flex;
             justify-content: space-evenly;
-            margin-bottom: 4%;
+            margin-bottom: 13%;
             .dashboard-item {
                 min-width: 280px;
                 min-height: 280px;
@@ -445,7 +482,7 @@
                 }
                 .img-wrap {
                     #dashboard-img {
-                        width: 79px;
+                        width: 120px;
                         top: 28%;
                         left: 28%;
                     }
@@ -481,6 +518,7 @@
                         position: absolute;
                         top: 30%;
                         left: 27%;
+                        width: 130px;
                     }
                 }
                 .text-box {
@@ -494,6 +532,11 @@
                     }
                 }
             }
+        }
+        #help-btn {
+            position: fixed;
+            bottom: 10px;
+            right: 19px;
         }
     }
 }

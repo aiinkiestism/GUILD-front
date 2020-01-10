@@ -60,6 +60,10 @@
 
         ic.setAttribute('style', "display: block;");
         topnav.setAttribute('style', "display: block;");
+        // if (window.matchMedia("screen and (max-width: 450px)").matches) {
+        //     lmenu.classList.add("animation-before");
+        //     lmenu.classList.remove("animation-after");
+        // }
     });
 
     togglea.addEventListener("click", function() {
@@ -77,9 +81,11 @@
             console.log("vic is nowhere.");
         }
 
-        if (window.matchMedia("screen and (max-width: 450px)").matches) {
+        if (window.matchMedia("screen and (max-width: 700px)").matches) {
             ic.setAttribute('style', "display: none;");
             topnav.setAttribute('style', "display: none;");
+            // lmenu.classList.add("animation-after");
+            // lmenu.classList.remove("animation-before");
         }
     });
 
@@ -104,12 +110,15 @@
     }
     if (window.matchMedia("screen and (max-width: 450px)").matches) {
         resizeContent4();
+        // lmenu.classList.add("animation-before");
+        // lmenu.classList.remove("animation-after");
     }
 
     window.addEventListener('resize', function(e) {
         if (e.target.innerWidth <= 1500) {
             setTimeout(function() {
                 resizeContent();
+                dinone[3].setAttribute('style', "display: none;");
                 if (di[2].parentNode == diwrap2) {
                     revertContent2();
                 }
@@ -121,7 +130,9 @@
         } 
         if (e.target.innerWidth > 1500) {
             setTimeout(function() {
-                revertContent();
+                revertContent();5
+                    dinone[2].setAttribute('style', "display: block; opacity: 0;");
+                    dinone[1].setAttribute('style', "display: block; opacity: 0;");
             }, 0);
         }
         if (e.target.innerWidth <= 1250) {
@@ -157,11 +168,15 @@
 
             if(di[1].parentNode == diwrap2) {
                 revertContent4();
+                // lmenu.classList.remove("animation-before");
+                // lmenu.classList.remove("animation-after");
             }
         }
         if (e.target.innerWidth <= 450) {
             setTimeout(function() {
                 resizeContent4();
+                // lmenu.classList.add("animation-before");
+                // lmenu.classList.remove("animation-after");
             }, 0);
         }
     });
@@ -289,7 +304,6 @@
         diwrap2.insertBefore(dinone[0], null);
     }
 
-    // ic.insertBefore(hbtn, null);
     function resizeContent3() {
         let diwrap4 = document.getElementById('d-item-wrap4'),
             diwrap5 = document.getElementById('d-item-wrap5');
@@ -316,6 +330,8 @@
         diwrap4.insertBefore(di[3], null);
         diwrap3.insertBefore(di[2], null);
         diwrap2.insertBefore(di[1], null);
+
+        ic.insertBefore(hbtn, null);
     }
 
     function revertContent4() {
@@ -331,7 +347,8 @@
         diwrap2.insertBefore(di[2], null);
         diwrap2.insertBefore(di[3], null);
         diwrap3.insertBefore(di[4], null);
-        diwrap3.insertBefore(dinone[0], null);        
+        diwrap3.insertBefore(dinone[0], null);
+        dinone[0].setAttribute('style', "display: block;");   
     }
 
 })();

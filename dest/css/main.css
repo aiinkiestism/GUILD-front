@@ -70,7 +70,7 @@ textarea:focus, input:focus {
 #left-menu .top:after {
   content: "";
   position: absolute;
-  bottom: -8px;
+  bottom: -12px;
   left: 24px;
   margin: 0 auto;
   width: 83%;
@@ -216,16 +216,100 @@ textarea:focus, input:focus {
   #left-menu {
     width: 34%;
   }
+  #left-menu .top:after {
+    bottom: -18px;
+  }
   #left-menu #left-menu-item .item-wrap p {
     font-size: 12px;
   }
+  #left-menu-after .top #toggle-menu-after {
+    top: 49%;
+  }
+  #left-menu-after .top:after {
+    bottom: -18px;
+  }
+  #left-menu-after #profile {
+    padding-top: 112%;
+  }
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 700px) {
   #left-menu {
     -webkit-transition: .8s;
     transition: .8s;
     width: 100%;
+    overflow-y: scroll;
+  }
+  #left-menu .top .img-wrap {
+    top: 18px;
+  }
+  #left-menu .top #toggle-menu {
+    top: 20px;
+  }
+  #left-menu .top:after {
+    bottom: -17px;
+    left: 0;
+    width: 100%;
+  }
+  #left-menu #profile {
+    padding-top: 17%;
+  }
+  #left-menu #profile .img-wrap #profile-img {
+    width: 30%;
+    height: 30%;
+  }
+  #left-menu #profile .text-box .p-text-large {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  #left-menu #profile .text-box .p-text-small {
+    font-size: 18px;
+  }
+  #left-menu #left-menu-item .item-wrap .img-wrap {
+    top: -7px;
+  }
+  #left-menu #left-menu-item .item-wrap .img-wrap img {
+    width: 35px;
+  }
+  #left-menu #left-menu-item .item-wrap p {
+    font-size: 28px;
+  }
+  #left-menu-after .top #toggle-menu-after {
+    top: 45%;
+    left: 49%;
+  }
+  #left-menu-after .top:after {
+    display: none;
+  }
+  #left-menu-after #profile {
+    display: none;
+  }
+  #left-menu-after #left-menu-item {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #left-menu {
+    -webkit-transition: .8s;
+    transition: .8s;
+    width: 100%;
+    overflow-y: scroll;
+  }
+  #left-menu .top:after {
+    bottom: -17px;
+    left: 0;
+    width: 100%;
+  }
+  #left-menu #left-menu-item {
+    margin-bottom: 26%;
+  }
+  #left-menu-after .top #toggle-menu-after {
+    top: 59%;
+    left: 58%;
+  }
+  #left-menu-after .top:after {
+    display: none;
   }
   #left-menu-after #profile {
     display: none;
@@ -390,20 +474,30 @@ textarea:focus, input:focus {
   }
 }
 
+@media screen and (max-width: 700px) {
+  #top-nav #nav-wrap #serach-wrap {
+    top: 30px;
+    left: 130px;
+  }
+}
+
 @media screen and (max-width: 580px) {
   #top-nav #nav-wrap #search-wrap {
+    top: 31px;
     left: 97px;
     width: 103px;
   }
   #top-nav #nav-wrap #select-btn {
     right: 101px;
+    display: none;
   }
   #top-nav #nav-wrap #top-nav-right {
-    right: 14px;
+    right: 17px;
+    border-left: none;
   }
   #top-nav #nav-wrap #top-nav-right #setting {
-    margin-right: 9px;
-    margin-left: 9px;
+    margin-right: 15px;
+    margin-left: 15px;
   }
 }
 
@@ -543,10 +637,15 @@ textarea:focus, input:focus {
 }
 
 #inner-content #help-btn {
-  position: absolute;
-  bottom: 55px;
-  right: 6px;
+  position: fixed;
+  right: 55px;
+  bottom: 19px;
   cursor: pointer;
+  z-index: 10000;
+}
+
+#inner-content #help-btn .img-wrap img {
+  width: 81px;
 }
 
 .inner-content-after {
@@ -613,7 +712,7 @@ textarea:focus, input:focus {
     display: flex;
     -webkit-box-pack: space-evenly;
             justify-content: space-evenly;
-    margin-bottom: 4%;
+    margin-bottom: 33%;
   }
   #inner-content #d-item-wrap3 .dashboard-item {
     min-width: 200px;
@@ -687,6 +786,15 @@ textarea:focus, input:focus {
   }
 }
 
+@media screen and (max-width: 700px) {
+  .inner-content-after {
+    left: 0% !important;
+    width: 100% !important;
+    -webkit-transition: .6s;
+    transition: .6s;
+  }
+}
+
 @media screen and (max-width: 580px) {
   #inner-content .top-text-box {
     margin: 70px auto;
@@ -743,6 +851,13 @@ textarea:focus, input:focus {
     top: 29%;
     left: 27%;
   }
+  #inner-content #help-btn {
+    right: 21px;
+    bottom: 10px;
+  }
+  #inner-content #help-btn .img-wrap img {
+    width: 66px;
+  }
   .inner-content-after {
     left: 0% !important;
     width: 100% !important;
@@ -752,37 +867,46 @@ textarea:focus, input:focus {
 }
 
 @media screen and (max-width: 450px) {
+  #inner-content .top-text-box h2 {
+    font-size: 24px;
+  }
   #inner-content #d-item-wrap .dashboard-item {
     min-width: 280px;
     min-height: 280px;
     height: 280px;
+    margin-bottom: 13%;
+  }
+  #inner-content #d-item-wrap .dashboard-item .img-wrap #voting-img {
+    width: 91px;
   }
   #inner-content #d-item-wrap2 .dashboard-item {
     min-width: 280px;
     min-height: 280px;
     height: 280px;
+    margin-bottom: 13%;
   }
   #inner-content #d-item-wrap2 .dashboard-item .img-wrap #discussion-img {
-    width: 106px;
-    top: 18%;
-    left: 19%;
+    width: 155px;
+    top: 24%;
+    left: 23%;
   }
   #inner-content #d-item-wrap3 .dashboard-item {
     min-width: 280px;
     min-height: 280px;
     height: 280px;
+    margin-bottom: 13%;
   }
   #inner-content #d-item-wrap3 .dashboard-item .img-wrap #report-img {
-    width: 84px;
-    top: 23%;
-    left: 26%;
+    width: 126px;
+    top: 26%;
+    left: 27%;
   }
   #inner-content #d-item-wrap4 {
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: space-evenly;
             justify-content: space-evenly;
-    margin-bottom: 4%;
+    margin-bottom: 13%;
   }
   #inner-content #d-item-wrap4 .dashboard-item {
     min-width: 280px;
@@ -798,7 +922,7 @@ textarea:focus, input:focus {
     position: absolute;
   }
   #inner-content #d-item-wrap4 .dashboard-item .img-wrap #funding-img {
-    width: 121px;
+    width: 187px;
     top: 15%;
     left: 16%;
   }
@@ -817,7 +941,7 @@ textarea:focus, input:focus {
     display: flex;
     -webkit-box-pack: space-evenly;
             justify-content: space-evenly;
-    margin-bottom: 4%;
+    margin-bottom: 13%;
   }
   #inner-content #d-item-wrap5 .dashboard-item {
     min-width: 280px;
@@ -833,7 +957,7 @@ textarea:focus, input:focus {
     position: absolute;
   }
   #inner-content #d-item-wrap5 .dashboard-item .img-wrap #dashboard-img {
-    width: 79px;
+    width: 120px;
     top: 28%;
     left: 28%;
   }
@@ -869,6 +993,7 @@ textarea:focus, input:focus {
     position: absolute;
     top: 30%;
     left: 27%;
+    width: 130px;
   }
   #inner-content #d-item-wrap6 .dashboard-item-none .text-box {
     text-align: center;
@@ -879,6 +1004,11 @@ textarea:focus, input:focus {
     font-size: 18px;
     line-height: 27px;
     color: #000;
+  }
+  #inner-content #help-btn {
+    position: fixed;
+    bottom: 10px;
+    right: 19px;
   }
 }
 

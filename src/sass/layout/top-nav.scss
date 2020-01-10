@@ -118,21 +118,35 @@
 	}
 }
 
+@media screen and (max-width: 700px) {
+	#top-nav {
+		#nav-wrap {
+			#serach-wrap {
+				top: 30px;
+				left: 130px;
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 580px) {
 	#top-nav {
 		#nav-wrap {
 			#search-wrap {
+				top: 31px;
 				left: 97px;
 				width: 103px;
 			}
 			#select-btn {
 				right: 101px;
+				display: none;
 			}
 			#top-nav-right {
-				right: 14px;
+				right: 17px;
+				border-left: none;
 				#setting {
-					margin-right: 9px;
-					margin-left: 9px;
+					margin-right: 15px;
+					margin-left: 15px;
 				}
 			}
 		}
