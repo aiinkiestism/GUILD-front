@@ -4,6 +4,126 @@
   position: relative;
 }
 
+/*!
+ * tooltip-range.css
+ *
+ * Copyright (c) 2020 kosamit
+ * Released under the MIT license.
+ * see https://opensource.org/licenses/MIT
+ *
+ */
+.tooltip-range {
+  position: relative;
+  height: 36px;
+}
+
+.tooltip-range input[type='range'] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  margin: 0;
+  background: #EEEEEE;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.24);
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.tooltip-range-custom input[type='range'] {
+  position: relative;
+  z-index: 99;
+  opacity: 0;
+  height: 28px;
+  top: 5px;
+}
+
+.tooltip-range-custom .tooltip-range-tracker-bg,
+.tooltip-range-custom .tooltip-range-tracker-bg::after,
+.tooltip-range-custom .tooltip-range-tracker-bg::before {
+  position: absolute;
+}
+
+.tooltip-range-custom .tooltip-range-tracker-bg {
+  top: 14px;
+  width: 100%;
+  height: 10px;
+  background-color: #E6E6E6;
+  border-radius: 7px;
+}
+
+.tooltip-range-custom .tooltip-range-tracker-thumb,
+.tooltip-range-custom .tooltip-range-tracker-thumb::after {
+  position: absolute;
+  background-color: #7AD2CC;
+}
+
+.tooltip-range-custom .tooltip-range-tracker-thumb {
+  top: 14px;
+  left: 0;
+  width: 0;
+  height: 10px;
+  -webkit-transition: width 150ms linear;
+  transition: width 150ms linear;
+  border-radius: 7px;
+}
+
+.tooltip-range-custom .tooltip-range-tracker-thumb::after {
+  content: '';
+  z-index: 2;
+  top: -10px;
+  right: -14px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+}
+
+.tooltip-range .tooltip,
+.tooltip-range .tooltip::after,
+.tooltip-range .tooltip::before {
+  position: absolute;
+}
+
+.tooltip-range .tooltip {
+  z-index: 0;
+  top: -32px;
+  left: 0;
+  padding: 5px 12px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 12px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.24);
+  border-radius: 3px;
+  -webkit-transition: left 100ms linear;
+  transition: left 100ms linear;
+  background: #7AD2CC;
+  color: #FFFFFF;
+}
+
+.tooltip-range .tooltip::after,
+.tooltip-range .tooltip::before {
+  content: '';
+  width: 0;
+  height: 0;
+}
+
+.tooltip-range .tooltip::after {
+  bottom: -4px;
+  left: calc(50% - 4px);
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #7AD2CC;
+}
+
+.tooltip-range .tooltip::before {
+  bottom: -5px;
+  left: calc(50% - 5px);
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #F1F1F1;
+}
+
 body {
   margin: 0;
   overflow: hidden;
@@ -1149,6 +1269,10 @@ textarea:focus, input:focus {
   left: 40%;
 }
 
+#v-inner-content #vw2 {
+  margin-bottom: 100px;
+}
+
 #v-inner-content #help-btn {
   position: fixed;
   right: 55px;
@@ -1249,6 +1373,9 @@ textarea:focus, input:focus {
   #v-inner-content .voting-wrap #voting-item-none #plus-img {
     top: 35%;
     left: 36%;
+  }
+  #v-inner-content #vw2 {
+    margin-bottom: 0;
   }
 }
 
@@ -1886,5 +2013,210 @@ textarea:focus, input:focus {
   position: absolute;
   bottom: 3%;
   left: 32%;
+}
+
+@media screen and (max-width: 830px) {
+  #voting-modals .modal {
+    width: 460px;
+    height: 564px;
+  }
+  #voting-modals #new-second-modal {
+    height: 612px;
+  }
+  #voting-modals #new-second-modal .inner-modal dl #confirm-btn {
+    bottom: 2%;
+    left: 27%;
+  }
+  #voting-modals #new-second-modal .inner-modal dl dd {
+    margin-left: 10%;
+  }
+  #voting-modals #new-second-modal .inner-modal dl dd .select-wrap #voting-format {
+    width: 300px;
+  }
+  #voting-modals #new-second-modal .inner-modal dl dd input[type="range"] {
+    width: 285px;
+  }
+  #voting-modals #new-second-modal .inner-modal dl dd #agenda {
+    width: 402px;
+    height: 62px;
+    top: 31px;
+    left: -73px;
+  }
+  #voting-modals #new-third-modal {
+    height: 557px;
+  }
+  #voting-modals #new-third-modal .inner-modal dl .agenda-text {
+    width: 446px;
+    height: 144px;
+    bottom: 77px;
+    left: -66px;
+  }
+  #voting-modals #new-third-modal .inner-modal dl .inner-border-bottom {
+    margin-left: 5%;
+  }
+  #voting-modals #new-third-modal .inner-modal dl .btn-wrap {
+    margin-top: 20px;
+  }
+  #voting-modals #new-third-modal .inner-modal dl .btn-wrap #modify-btn {
+    width: 175px;
+    height: 50px;
+    margin-left: 2px;
+  }
+  #voting-modals #new-third-modal .inner-modal dl .btn-wrap #vote-btn {
+    width: 175px;
+    height: 50px;
+    margin-left: 16px;
+  }
+  #voting-modals #new-final-modal {
+    height: 585px;
+  }
+  #voting-modals #new-final-modal .inner-modal dl .agenda-text {
+    width: 434px;
+    height: 144px;
+    bottom: 73px;
+    left: -66px;
+  }
+  #voting-modals #new-final-modal .inner-modal dl #close-btn {
+    margin-left: 26%;
+  }
+  #voting-modals #existing-modal {
+    height: 669px;
+  }
+  #voting-modals #existing-modal .inner-modal #vote-btn2 {
+    bottom: 2%;
+    left: 26%;
+  }
+  #voting-modals #existing-modal .inner-modal dl .agenda-text {
+    width: 434px;
+    height: 144px;
+    bottom: 195px;
+    left: -66px;
+  }
+  #voting-modals #existing-modal .inner-modal dl .inner-border-bottom {
+    margin-top: 91px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #voting-modals .modal {
+    width: 300px;
+    height: 370px;
+    top: 19%;
+  }
+  #voting-modals #new-first-modal .inner-modal .top-text {
+    font-size: 22px;
+    line-height: 120%;
+    padding: 5%;
+  }
+  #voting-modals #new-first-modal .inner-modal .inner-border {
+    margin-bottom: 8%;
+  }
+  #voting-modals #new-second-modal {
+    height: 530px;
+  }
+  #voting-modals #new-second-modal .inner-modal .top-text {
+    font-size: 22px;
+    line-height: 120%;
+    padding: 5%;
+  }
+  #voting-modals #new-second-modal .inner-modal dl #confirm-btn {
+    width: 200px;
+    height: 45px;
+    bottom: 2%;
+    left: 17%;
+  }
+  #voting-modals #new-second-modal .inner-modal dl dd {
+    margin-left: 3%;
+  }
+  #voting-modals #new-second-modal .inner-modal dl dd .select-wrap #voting-format {
+    width: 200px;
+  }
+  #voting-modals #new-second-modal .inner-modal dl dd input[type="range"] {
+    width: 183px;
+  }
+  #voting-modals #new-second-modal .inner-modal dl dd #agenda {
+    width: 271px;
+    height: 62px;
+    top: 28px;
+    left: -40px;
+  }
+  #voting-modals #new-third-modal {
+    height: 520px;
+  }
+  #voting-modals #new-third-modal .inner-modal dl .agenda-text {
+    width: 305px;
+    height: 144px;
+    bottom: 105px;
+    left: -48px;
+  }
+  #voting-modals #new-third-modal .inner-modal dl .inner-border-bottom {
+    margin-top: 156px;
+  }
+  #voting-modals #new-third-modal .inner-modal dl .btn-wrap #modify-btn {
+    width: 130px;
+    height: 45px;
+    margin-left: 2px;
+  }
+  #voting-modals #new-third-modal .inner-modal dl .btn-wrap #vote-btn {
+    width: 130px;
+    height: 45px;
+    margin-left: 8px;
+  }
+  #voting-modals #new-final-modal {
+    height: 523px;
+  }
+  #voting-modals #new-final-modal .inner-modal .top-text {
+    line-height: 120%;
+  }
+  #voting-modals #new-final-modal .inner-modal .top-text .large-text {
+    font-size: 38px;
+    margin-bottom: 16px;
+    margin-top: 30ppx;
+  }
+  #voting-modals #new-final-modal .inner-modal .top-text .small-text {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+  #voting-modals #new-final-modal .inner-modal dl .agenda-text {
+    width: 305px;
+    height: 144px;
+    bottom: 101px;
+    left: -48px;
+  }
+  #voting-modals #new-final-modal .inner-modal dl .inner-border-bottom {
+    margin-top: 177px;
+  }
+  #voting-modals #new-final-modal .inner-modal dl #close-btn {
+    margin-left: 16%;
+    width: 200px;
+    height: 45px;
+  }
+  #voting-modals #existing-modal {
+    height: 585px;
+  }
+  #voting-modals #existing-modal .inner-modal #vote-btn2 {
+    bottom: 2%;
+    left: 17%;
+    width: 200px;
+    height: 45px;
+  }
+  #voting-modals #existing-modal .inner-modal dl .agenda-text {
+    width: 291px;
+    height: 144px;
+    bottom: 173px;
+    left: -46px;
+  }
+  #voting-modals #existing-modal .inner-modal dl .select-wrap {
+    margin-bottom: 6px;
+  }
+  #voting-modals #existing-modal .inner-modal dl .select-wrap p {
+    margin: 0 0 0 4%;
+  }
+  #voting-modals #existing-modal .inner-modal dl .select-wrap .inner-wrap p {
+    margin: 0 auto;
+  }
+  #voting-modals #existing-modal .inner-modal dl .inner-border-bottom {
+    margin-top: 126px;
+  }
 }
 /*# sourceMappingURL=maps/main.css.map */

@@ -19,7 +19,6 @@
         modal = document.getElementsByClassName("modal"),
         vw = document.getElementsByClassName("voting-wrap");
     
-    // try {
     const vinone = document.getElementById("voting-item-none"),
         vi = document.getElementsByClassName("voting-item"),
         ynbtn = document.getElementById("yn-btn"),
@@ -29,9 +28,6 @@
         clbtn = document.getElementById("close-btn"),
         mask = document.getElementById("mask"),
         vbtn2 = document.getElementById("vote-btn2");
-    // } catch (e) {
-    //     console.log("consts are nowhere");
-    // }
 
     // initialization process
     try {
@@ -40,7 +36,7 @@
         dinone[3].setAttribute('style', "opacity: 0;");
     } catch (e) {
         console.log("dinones are nowhere.");
-    }    
+    }
 
     // implement togglemenu
     toggle.addEventListener("click", function() {
@@ -160,9 +156,20 @@
         } 
         if (e.target.innerWidth > 1500) {
             setTimeout(function() {
-                revertContent();5
+                try {
+                    if (di[2].parentNode == diwrap2) {
+                        revertContent2();
+                    }
+                } catch (e) {
+                    console.log("diwraps are nowhere.");
+                }
+                revertContent();
+                try {
                     dinone[2].setAttribute('style', "display: block; opacity: 0;");
                     dinone[1].setAttribute('style', "display: block; opacity: 0;");
+                } catch (e) {
+                    console.log("dinone is nowhere.");
+                }
             }, 0);
         }
         if (e.target.innerWidth <= 1250) {

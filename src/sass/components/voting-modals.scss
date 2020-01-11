@@ -580,3 +580,256 @@
         }
     }
 }
+
+@media screen and (max-width: 830px) {
+    #voting-modals {
+        .modal {
+            width: 460px;
+            height: 564px;
+        }
+        #new-second-modal {
+            height: 612px;
+            .inner-modal {
+                dl {
+                    #confirm-btn {
+                        bottom: 2%;
+                        left: 27%;
+                    }
+                    dd {
+                        margin-left: 10%;
+                        .select-wrap {
+                            #voting-format {
+                                width: 300px;
+                            }
+                        }
+                        input[type="range"] {
+                            width: 285px;
+                        }
+                        #agenda {
+                            width: 402px;
+                            height: 62px;
+                            top: 31px;
+                            left: -73px;
+                        }
+                    }
+                }
+            }
+        }
+        #new-third-modal {
+            height: 557px;
+            .inner-modal {
+                dl {
+                    .agenda-text {
+                        width: 446px;
+                        height: 144px;
+                        bottom: 77px;
+                        left: -66px;
+                    }
+                    .inner-border-bottom {
+                        margin-left: 5%;
+                    }
+                    .btn-wrap {
+                        margin-top: 20px;
+                        #modify-btn {
+                            width: 175px;
+                            height: 50px;
+                            margin-left: 2px;
+                        }
+                        #vote-btn {
+                            width: 175px;
+                            height: 50px;
+                            margin-left: 16px;
+                        }
+                    }
+                }
+            }
+        }
+        #new-final-modal {
+            height: 585px;
+            .inner-modal {
+                dl {
+                    .agenda-text {
+                        width: 434px;
+                        height: 144px;
+                        bottom: 73px;
+                        left: -66px;
+                    }
+                    #close-btn {
+                        margin-left: 26%;
+                    }
+                }
+            }
+        }
+        #existing-modal {
+            height: 669px;
+            .inner-modal {
+                #vote-btn2 {
+                    bottom: 2%;
+                    left: 26%;
+                }
+                dl {
+                    .agenda-text {
+                        width: 434px;
+                        height: 144px;
+                        bottom: 195px;
+                        left: -66px;
+                    }
+                    .inner-border-bottom {
+                        margin-top: 91px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #voting-modals {
+        .modal {
+            width: 300px;
+            height: 370px;
+            top: 19%;
+        }
+        #new-first-modal {
+            .inner-modal {
+                .top-text {
+                    font-size: 22px;
+                    line-height: 120%;
+                    padding: 5%;
+                }
+                .inner-border {
+                    margin-bottom: 8%;
+                }
+            }
+        }
+        #new-second-modal {
+            height: 530px;
+            .inner-modal {
+                .top-text {
+                    font-size: 22px;
+                    line-height: 120%;
+                    padding: 5%;
+                }
+                dl {
+                    #confirm-btn {
+                        width: 200px;
+                        height: 45px;
+                        bottom: 2%;
+                        left: 17%;
+                    }
+                    dd {
+                        margin-left: 3%;
+                        .select-wrap {
+                            #voting-format {
+                                width: 200px;
+                            }
+                        }
+                        input[type="range"] {
+                            width: 183px;
+                        }
+                        #agenda {
+                            width: 271px;
+                            height: 62px;
+                            top: 28px;
+                            left: -40px;
+                        }
+                    }
+                }
+            }
+        }
+        #new-third-modal {
+            height: 520px;
+            .inner-modal {
+                dl {
+                    .agenda-text {
+                        width: 305px;
+                        height: 144px;
+                        bottom: 105px;
+                        left: -48px;
+                    }
+                    .inner-border-bottom {
+                        margin-top: 156px;
+                    }
+                    .btn-wrap {
+                        #modify-btn {
+                            width: 130px;
+                            height: 45px;
+                            margin-left: 2px;
+                        }
+                        #vote-btn {
+                            width: 130px;
+                            height: 45px;
+                            margin-left: 8px;
+                        }
+                    }
+                }
+            }
+        }
+        #new-final-modal {
+            height: 523px;
+            .inner-modal {
+                .top-text {
+                    line-height: 120%;
+                    .large-text {
+                        font-size: 38px;
+                        margin-bottom: 16px;
+                        margin-top: 30ppx;
+                    }
+                    .small-text {
+                        font-size: 13px;
+                        margin-bottom: 5px;
+                    }
+                }
+                dl {
+                    .agenda-text {
+                        width: 305px;
+                        height: 144px;
+                        bottom: 101px;
+                        left: -48px;
+                    }
+                    .inner-border-bottom {
+                        margin-top: 177px;
+                    }
+                    #close-btn {
+                        margin-left: 16%;
+                        width: 200px;
+                        height: 45px;
+                    }
+                }
+            }
+        }
+        #existing-modal {
+            height: 585px;
+            .inner-modal {
+                #vote-btn2 {
+                    bottom: 2%;
+                    left: 17%;
+                    width: 200px;
+                    height: 45px;
+                }
+                dl {
+                    .agenda-text {
+                        width: 291px;
+                        height: 144px;
+                        bottom: 173px;
+                        left: -46px;
+                    }
+                    .select-wrap {
+                        margin-bottom: 6px;
+                        p {
+                            margin: 0 0 0 4%;
+                        }
+                        .inner-wrap {
+                            p {
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                    .inner-border-bottom {
+                        margin-top: 126px;
+                    }
+                }
+            }
+        }
+    }
+}
