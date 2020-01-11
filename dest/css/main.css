@@ -414,6 +414,7 @@ textarea:focus, input:focus {
     -webkit-transition: .8s;
     transition: .8s;
     width: 100%;
+    height: 100%;
     overflow-y: scroll;
   }
   #left-menu .top:after {
@@ -2101,7 +2102,7 @@ textarea:focus, input:focus {
   #voting-modals .modal {
     width: 300px;
     height: 370px;
-    top: 19%;
+    top: 4%;
   }
   #voting-modals #new-first-modal .inner-modal .top-text {
     font-size: 22px;
@@ -2139,6 +2140,12 @@ textarea:focus, input:focus {
     height: 62px;
     top: 28px;
     left: -40px;
+  }
+  #voting-modals #new-second-modal .inner-modal dl dd #reportrange .dates-wrap .start-date {
+    margin-right: 0px;
+  }
+  #voting-modals #new-second-modal .inner-modal dl dd #reportrange .dates-wrap .end-date {
+    margin-right: 0px;
   }
   #voting-modals #new-third-modal {
     height: 520px;
@@ -2192,7 +2199,7 @@ textarea:focus, input:focus {
     height: 45px;
   }
   #voting-modals #existing-modal {
-    height: 585px;
+    height: 539px;
   }
   #voting-modals #existing-modal .inner-modal #vote-btn2 {
     bottom: 2%;
@@ -2203,7 +2210,7 @@ textarea:focus, input:focus {
   #voting-modals #existing-modal .inner-modal dl .agenda-text {
     width: 291px;
     height: 144px;
-    bottom: 173px;
+    bottom: 130px;
     left: -46px;
   }
   #voting-modals #existing-modal .inner-modal dl .select-wrap {
@@ -2216,7 +2223,8 @@ textarea:focus, input:focus {
     margin: 0 auto;
   }
   #voting-modals #existing-modal .inner-modal dl .inner-border-bottom {
-    margin-top: 126px;
+    margin-top: 83px;
+    margin-left: 5%;
   }
 }
 /*# sourceMappingURL=maps/main.css.map */

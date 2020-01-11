@@ -40,7 +40,7 @@
 
     // implement togglemenu
     toggle.addEventListener("click", function() {
-        lmenu.setAttribute('style', "display: none;");
+        lmenu.setAttribute('style', "display: none !important;");
         lmenua.setAttribute('style', "display: block;");
         topnav.classList.add("top-nav-after")
         try {
@@ -65,7 +65,7 @@
 
     togglea.addEventListener("click", function() {
         lmenua.setAttribute('style', "display: none");
-        lmenu.setAttribute('style', "display: block;");
+        lmenu.setAttribute('style', "display: block !important;");
         topnav.classList.remove("top-nav-after");
         try {
             ic.classList.remove("inner-content-after");
@@ -127,6 +127,7 @@
         // lmenu.classList.add("animation-before");
         // lmenu.classList.remove("animation-after");
     }
+
 
     window.addEventListener('resize', function(e) {
         if (e.target.innerWidth <= 1500) {
@@ -239,23 +240,6 @@
             }, 0);
         }
     });
-
-    //implement progress bar
-    // addEventListener("", function() {
-    //     switch(prog.value) {
-    //         case :
-    //             prog.value = ;
-    //             outp.value = ;
-    //             break;
-    //         case :
-    //             prog.value = ;
-    //             outp.value = ;
-    //             break;
-    //         default:
-    //             prog.value = ;
-    //             outp.value = ;
-    //     }
-    // });
 
     // implememt new voting
     try {
