@@ -26,3 +26,13 @@
         left: 0;
     }
 }
+
+@media screen and (max-width: 600px) {
+    #login-content {
+        .logo-wrap {
+            p {
+                margin-bottom: 7px;
+            }
+        }
+    }
+}

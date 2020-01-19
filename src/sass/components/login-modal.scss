@@ -143,14 +143,25 @@
     #login-content {
         #login-modal {
             height: 58%;
-        }
-        form {
-            margin-top: 5%;
-            #keep-login-wrap {
-                margin-bottom: 11%;
+            .top-text {
+                p {
+                    font-size: 26px;
+                }
             }
-            #login-btn {
-                width: 192px;
+            form {
+                margin-top: 2%;
+                #login-email {
+                    height: 30px;
+                }
+                #login-pass {
+                    height: 30px;
+                }
+                #keep-login-wrap {
+                    margin-bottom: 8%;
+                }
+                #login-btn {
+                    width: 192px;
+                }
             }
         }
     }

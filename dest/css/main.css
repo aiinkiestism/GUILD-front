@@ -172,6 +172,12 @@ textarea:focus, input:focus {
   left: 0;
 }
 
+@media screen and (max-width: 600px) {
+  #login-content .logo-wrap p {
+    margin-bottom: 7px;
+  }
+}
+
 #left-menu {
   width: 17%;
   height: 100%;
@@ -2402,13 +2408,22 @@ textarea:focus, input:focus {
   #login-content #login-modal {
     height: 58%;
   }
-  #login-content form {
-    margin-top: 5%;
+  #login-content #login-modal .top-text p {
+    font-size: 26px;
   }
-  #login-content form #keep-login-wrap {
-    margin-bottom: 11%;
+  #login-content #login-modal form {
+    margin-top: 2%;
   }
-  #login-content form #login-btn {
+  #login-content #login-modal form #login-email {
+    height: 30px;
+  }
+  #login-content #login-modal form #login-pass {
+    height: 30px;
+  }
+  #login-content #login-modal form #keep-login-wrap {
+    margin-bottom: 8%;
+  }
+  #login-content #login-modal form #login-btn {
     width: 192px;
   }
 }
