@@ -141,6 +141,37 @@ textarea:focus, input:focus {
   outline: none;
 }
 
+#login-content {
+  background: #e5e5e5;
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+
+#login-content .logo-wrap {
+  padding: 4%;
+}
+
+#login-content .logo-wrap .img-wrap img {
+  width: 94px;
+}
+
+#login-content .logo-wrap p {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 27px;
+  letter-spacing: 0.03em;
+  margin-top: 7px;
+}
+
+#login-content small {
+  position: absolute;
+  right: 0;
+  bottom: 2%;
+  left: 0;
+}
+
 #left-menu {
   width: 17%;
   height: 100%;
@@ -2225,6 +2256,160 @@ textarea:focus, input:focus {
   #voting-modals #existing-modal .inner-modal dl .inner-border-bottom {
     margin-top: 83px;
     margin-left: 5%;
+  }
+}
+
+#login-content #login-modal {
+  width: 30%;
+  height: 49%;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+}
+
+#login-content #login-modal .top-text {
+  padding-top: 9%;
+}
+
+#login-content #login-modal .top-text p {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 45px;
+  color: #7ad2cc;
+}
+
+#login-content #login-modal form {
+  margin-top: 7%;
+}
+
+#login-content #login-modal form #login-email {
+  display: block;
+  margin: 0 auto;
+  width: 83%;
+  height: 45px;
+  padding: 8px;
+  background: #fcfcfc;
+  border: 1px solid #eee;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-bottom: 5%;
+  font-family: "Roboto", sans-serif;
+}
+
+#login-content #login-modal form #login-pass {
+  display: block;
+  margin: 0 auto;
+  width: 83%;
+  height: 45px;
+  padding: 8px;
+  background: #fcfcfc;
+  border: 1px solid #eee;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-bottom: 5%;
+  font-family: "Roboto", sans-serif;
+}
+
+#login-content #login-modal form #forgot-pass {
+  display: block;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 170%;
+  /* or 20px */
+  letter-spacing: 0.04em;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #3d4444;
+}
+
+#login-content #login-modal form #keep-login-wrap {
+  margin-bottom: 7%;
+}
+
+#login-content #login-modal form #keep-login-wrap #keep-login {
+  display: inline-block;
+}
+
+#login-content #login-modal form #keep-login-wrap label {
+  display: inline-block;
+}
+
+#login-content #login-modal form #keep-login-wrap label p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 170%;
+  /* or 20px */
+  letter-spacing: 0.04em;
+  color: #3d4444;
+  margin-bottom: 0;
+}
+
+#login-content #login-modal form #login-btn {
+  width: 220px;
+  height: 50px;
+  background: #7ad2cc;
+  border-radius: 5px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1250px) {
+  #login-content #login-modal form {
+    margin-top: 12%;
+  }
+  #login-content #login-modal form #keep-login-wrap {
+    margin-bottom: 12%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  #login-content #login-modal {
+    width: 46%;
+    height: 55%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #login-content #login-modal {
+    width: 63%;
+    height: 60%;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  #login-content #login-modal {
+    width: 70%;
+    height: 63%;
+  }
+  #login-content #login-modal form #login-pass {
+    margin-bottom: 7%;
+  }
+  #login-content #login-modal form #keep-login-wrap {
+    margin-bottom: 15%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #login-content #login-modal {
+    height: 58%;
+  }
+  #login-content form {
+    margin-top: 5%;
+  }
+  #login-content form #keep-login-wrap {
+    margin-bottom: 11%;
+  }
+  #login-content form #login-btn {
+    width: 192px;
   }
 }
 /*# sourceMappingURL=maps/main.css.map */

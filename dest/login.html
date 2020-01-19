@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LOGIN | GUILD</title>
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/logo.png" />
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <!-- ogp setting -->
+    <meta property="og:title" content="LOGIN | GUILD" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="LOGIN | GUILD" />
+    <meta property="og:description" content="" />
+    <meta property="fb:app_id" content="" />
+    <meta name="twitter:card" content="" />
+  </head>
+  <body>
+    <div class="contents">
+      <div id="login-content">
+        <div class="logo-wrap">
+          <div class="img-wrap">
+            <img src="img/logo.png" alt="logo">
+          </div>
+          <p>GUILD</p>
+        </div>
+        <div id="login-modal">
+          <div class="top-text">
+            <p>LOGIN</p>
+          </div>
+          <form action="/project-list.html" method="post">
+            <input type="email" name="email" id="login-email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="" placeholder="メールアドレス" required>
+            <input type="password" name=="pass" id="login-pass" placeholder="パスワード" required>
+            <a href="#" id="forgot-pass">パスワードを忘れた場合はこちら</a>
+            <div id="keep-login-wrap">
+              <input type="checkbox" name="keep-login" id="keep-login">
+              <label for="keep-login">
+                <p>ログイン状態を保持する</p>
+              </label>
+            </div>
+            <input type="submit" name="login" id="login-btn" value="ログイン">
+          </form>
+        </div>
+        <small>Copyright &copy; 2020 GUILD All Rights Reserved.</small>
+      </div>
+    </div>
+  </body>
+  <script src="js/lib.min.js" async></script>
+</html>

@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+#login-content #login-modal {
+  width: 30%;
+  height: 49%;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+}
+
+#login-content #login-modal .top-text {
+  padding-top: 9%;
+}
+
+#login-content #login-modal .top-text p {
+  margin: 0;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 45px;
+  color: #7ad2cc;
+}
+
+#login-content #login-modal form #login-email {
+  display: block;
+  margin: 0 auto;
+}
+
+#login-content #login-modal form #login-pass {
+  display: block;
+  margin: 0 auto;
+}
+
+#login-content #login-modal form #forgot-pass {
+  display: block;
+  margin: 0 auto;
+}
+
+#login-content #login-modal form #keep-login-wrap #keep-login {
+  display: inline-block;
+}
+
+#login-content #login-modal form #keep-login-wrap label {
+  display: inline-block;
+}
+/*# sourceMappingURL=../maps/components/login-modal.css.map */

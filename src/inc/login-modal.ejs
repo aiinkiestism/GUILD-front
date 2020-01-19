@@ -1,0 +1,15 @@
+<div id="login-modal">
+    <div class="top-text">
+        <p>LOGIN</p>
+    </div>
+    <form action="/project-list.html" method="post">
+        <input type="email" name="email" id="login-email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="" placeholder="メールアドレス" required>
+        <input type="password" name=="pass" id="login-pass" placeholder="パスワード" required>
+        <a href="#" id="forgot-pass">パスワードを忘れた場合はこちら</a>
+        <div id="keep-login-wrap">
+            <input type="checkbox" name="keep-login" id="keep-login">
+            <label for="keep-login"><p>ログイン状態を保持する</p></label>
+        </div>
+        <input type="submit" name="login" id="login-btn" value="ログイン">
+    </form>
+</div>

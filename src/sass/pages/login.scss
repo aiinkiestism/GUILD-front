@@ -1,0 +1,28 @@
+#login-content {
+    background: #e5e5e5;
+    text-align: center;
+    height: 100%;
+    position: relative;
+    .logo-wrap {
+        padding: 4%;
+        .img-wrap {
+            img {
+                width: 94px;
+            }
+        }
+        p {
+            font-family: $base-font-family;
+            font-weight: bold;
+            font-size: 34px;
+            line-height: 27px;
+            letter-spacing: 0.03em;
+            margin-top: 7px;
+        }
+    }
+    small {
+        position: absolute;
+        right: 0;
+        bottom: 2%;
+        left: 0;
+    }
+}

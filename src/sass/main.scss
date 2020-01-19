@@ -15,6 +15,7 @@
 @import './themes/theme';
 
 @import './pages/dashboard';
+@import './pages/login';
 
 @import './layout/left-menu';
 @import './layout/top-nav';
@@ -23,3 +24,4 @@
 
 @import './components/dashboard-item';
 @import './components/voting-modals';
+@import './components/login-modal';

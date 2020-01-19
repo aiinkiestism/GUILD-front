@@ -1,0 +1,157 @@
+#login-content {
+    #login-modal {
+        width: 30%;
+        height: 49%;
+        margin: 0 auto;
+        background: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
+        border-radius: 5px;
+        .top-text {
+            padding-top: 9%;
+            p {
+                margin: 0;
+                font-family: $base-font-family;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 30px;
+                line-height: 45px;
+                color: #7ad2cc;
+            }
+        }
+        form {
+            margin-top: 7%;
+            #login-email {
+                display: block;
+                margin: 0 auto;
+                width: 83%;
+                height: 45px;
+                padding: 8px;
+                background: #fcfcfc;
+                border: 1px solid #eee;
+                box-sizing: border-box;
+                border-radius: 5px;
+                margin-bottom: 5%;
+                font-family: $base-font-family;
+            }
+            #login-pass {
+                display: block;
+                margin: 0 auto;
+                width: 83%;
+                height: 45px;
+                padding: 8px;
+                background: #fcfcfc;
+                border: 1px solid #eee;
+                box-sizing: border-box;
+                border-radius: 5px;
+                margin-bottom: 5%;
+                font-family: $base-font-family;
+            }
+            #forgot-pass {
+                display: block;
+                margin: 0 auto;
+                font-family: $base-font-family;
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 170%;
+                /* or 20px */
+                letter-spacing: 0.04em;
+                text-decoration-line: underline;
+                color: #3d4444;
+            }
+            #keep-login-wrap {
+                margin-bottom: 7%;
+                #keep-login {
+                    display: inline-block;
+                }
+                label {
+                    display: inline-block;
+                    p {
+                        font-family: $base-font-family;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 12px;
+                        line-height: 170%;
+                        /* or 20px */
+                        letter-spacing: 0.04em;
+                        color: #3d4444;
+                        margin-bottom: 0;
+                    }
+                }    
+            }
+            #login-btn {
+                width: 220px;
+                height: 50px;
+                background: #7ad2cc;
+                border-radius: 5px;
+                color: #fff;
+                font-family: $base-font-family;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    #login-content {
+        #login-modal {
+            form {
+                margin-top: 12%;
+                #keep-login-wrap {
+                    margin-bottom: 12%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    #login-content {
+        #login-modal {
+            width: 46%;
+            height: 55%;
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #login-content {
+        #login-modal {
+            width: 63%;
+            height: 60%;
+        }
+    }
+}
+
+@media screen and (max-width: 730px) {
+    #login-content {
+        #login-modal {
+            width: 70%;
+            height: 63%;
+            form {
+                #login-pass {
+                    margin-bottom: 7%;
+                }
+                #keep-login-wrap {
+                    margin-bottom: 15%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #login-content {
+        #login-modal {
+            height: 58%;
+        }
+        form {
+            margin-top: 5%;
+            #keep-login-wrap {
+                margin-bottom: 11%;
+            }
+            #login-btn {
+                width: 192px;
+            }
+        }
+    }
+}
