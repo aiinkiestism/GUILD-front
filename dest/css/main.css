@@ -178,6 +178,194 @@ textarea:focus, input:focus {
   }
 }
 
+#p-inner-content {
+  background: #e5e5e5;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+#p-inner-content .p-top-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
+}
+
+#p-inner-content .p-top-nav .logo-wrap {
+  position: relative;
+}
+
+#p-inner-content .p-top-nav .logo-wrap .img-wrap {
+  display: inline-block;
+}
+
+#p-inner-content .p-top-nav .logo-wrap .img-wrap img {
+  width: 56px;
+  margin: 10px 0 10px 10px;
+}
+
+#p-inner-content .p-top-nav .logo-wrap p {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 34px;
+  letter-spacing: 3px;
+  position: absolute;
+  top: 13px;
+  left: 76px;
+  margin: 0;
+}
+
+#p-inner-content #p-inner-wrap {
+  background: #fff;
+  margin: 70px auto 0;
+  width: 45%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 7px;
+}
+
+#p-inner-content #p-inner-wrap .top-text {
+  padding-top: 5%;
+  padding-left: 10%;
+}
+
+#p-inner-content #p-inner-wrap .top-text .large-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 23px;
+  margin: 0;
+}
+
+#p-inner-content #p-inner-wrap .top-text .small-text {
+  font-family: "Roboto", sans-serif;
+  color: #a5aaaa;
+  margin-bottom: 8px;
+}
+
+#p-inner-content #p-inner-wrap .top-text #change-email {
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+#p-inner-content #p-inner-wrap .project-wrap .first-inner-border {
+  text-align: center;
+  width: 80%;
+  height: 0px;
+  border-bottom: 1px solid #ebeded;
+  margin-top: 6%;
+  margin-bottom: 3%;
+  margin-left: 10%;
+}
+
+#p-inner-content #p-inner-wrap .project-wrap .inner-border {
+  text-align: center;
+  width: 80%;
+  height: 0px;
+  border-bottom: 1px solid #ebeded;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  margin-left: 10%;
+}
+
+#p-inner-content #p-inner-wrap .project-wrap .inner-project-wrap {
+  margin-left: 10%;
+  margin-right: 10%;
+  position: relative;
+}
+
+#p-inner-content #p-inner-wrap .project-wrap .inner-project-wrap .inner-left {
+  display: -webkit-box;
+  display: flex;
+}
+
+#p-inner-content #p-inner-wrap .project-wrap .inner-project-wrap .inner-left .img-wrap img {
+  width: 56px;
+}
+
+#p-inner-content #p-inner-wrap .project-wrap .inner-project-wrap .inner-left .project-name {
+  margin-top: -9px;
+  margin-left: 8px;
+}
+
+#p-inner-content #p-inner-wrap .project-wrap .inner-project-wrap .inner-left .project-name .project-name-text {
+  font-size: 20px;
+}
+
+#p-inner-content #p-inner-wrap .project-wrap .inner-project-wrap .inner-right {
+  position: absolute;
+  top: 12%;
+  right: 0;
+}
+
+#p-inner-content #p-inner-wrap .project-wrap .inner-project-wrap .inner-right .enter-btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: #fff;
+  background: #34785c;
+  border-radius: 5px;
+  padding: 8px 14px;
+}
+
+#p-inner-content #p-inner-wrap #last-project-wrap {
+  margin-bottom: 11%;
+  padding-bottom: 4%;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 1000px) {
+  #p-inner-content #p-inner-wrap {
+    width: 60%;
+  }
+  #p-inner-content #p-inner-wrap .project-wrap .inner-project-wrap .inner-left .img-wrap img {
+    width: 50px;
+  }
+  #p-inner-content #p-inner-wrap .project-wrap .inner-project-wrap .inner-left .project-name {
+    margin-top: -6px;
+  }
+  #p-inner-content #p-inner-wrap .project-wrap .inner-project-wrap .inner-left .project-name .project-name-text {
+    font-size: 17px;
+  }
+  #p-inner-content #p-inner-wrap .project-wrap .inner-project-wrap .inner-right .enter-btn {
+    font-size: 14px;
+    padding: 7px 14px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #p-inner-content .p-top-nav .img-wrap img {
+    width: 50px;
+    margin: 10px 0 10px 10px;
+  }
+  #p-inner-content .p-top-nav .logo-wrap p {
+    font-size: 30px;
+    top: 18px;
+    left: 73px;
+  }
+  #p-inner-content #p-inner-wrap {
+    width: 80%;
+    margin: 64px auto 0;
+  }
+  #p-inner-content #p-inner-wrap .top-text {
+    padding-top: 12%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #p-inner-content #p-inner-wrap {
+    width: 100%;
+    border-radius: 0;
+  }
+  #p-inner-content #p-inner-wrap .project-wrap .first-inner-border {
+    margin-top: 9%;
+  }
+  #p-inner-content #p-inner-wrap #last-project-wrap {
+    margin-bottom: 0;
+  }
+}
+
 #left-menu {
   width: 17%;
   height: 100%;
