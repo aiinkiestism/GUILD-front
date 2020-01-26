@@ -844,6 +844,23 @@
 @media screen and (max-width: 430px) {
     #l-inner-content {
         .center-content {
+            .top-wrap {
+                .top-text {
+                    p {
+                        margin-top: 3px;
+                        margin-bottom: 10px;
+                    }
+                }
+                .participants-wrap {
+                    .participant {
+                        .img-wrap {
+                            img {
+                                width: 70px;
+                            }
+                        }
+                    }
+                }
+            }
             .center-wrap {
                 .left-text-box {
                     display: none;
@@ -859,6 +876,13 @@
             }
             .icons-wrap {
                 display: none;
+            }
+            .chats-wrap {
+                .date-border {
+                    img {
+                        width: 37%;
+                    }
+                }
             }
             #input-wrap {
                 form {

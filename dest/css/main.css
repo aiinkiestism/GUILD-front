@@ -2528,6 +2528,13 @@ textarea:focus, input:focus {
 }
 
 @media screen and (max-width: 430px) {
+  #l-inner-content .center-content .top-wrap .top-text p {
+    margin-top: 3px;
+    margin-bottom: 10px;
+  }
+  #l-inner-content .center-content .top-wrap .participants-wrap .participant .img-wrap img {
+    width: 70px;
+  }
   #l-inner-content .center-content .center-wrap .left-text-box {
     display: none;
   }
@@ -2543,6 +2550,9 @@ textarea:focus, input:focus {
   }
   #l-inner-content .center-content .icons-wrap {
     display: none;
+  }
+  #l-inner-content .center-content .chats-wrap .date-border img {
+    width: 37%;
   }
   #l-inner-content .center-content #input-wrap form .input-inner-wrap #input-message {
     width: 75%;

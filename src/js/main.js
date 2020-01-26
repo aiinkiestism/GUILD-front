@@ -376,13 +376,17 @@
 
 
     for (let i = 0; i < 100; i++) {
-        chatwrap[i].addEventListener("mouseenter", function() {
-            hovercontent[i].setAttribute('style', "display: block;");
-        }, false);
-
-        chatwrap[i].addEventListener("mouseleave", function() {
-            hovercontent[i].setAttribute('style', "display: none;");
-        }, false);
+        try {
+            chatwrap[i].addEventListener("mouseenter", function() {
+                hovercontent[i].setAttribute('style', "display: block;");
+            }, false);
+    
+            chatwrap[i].addEventListener("mouseleave", function() {
+                hovercontent[i].setAttribute('style', "display: none;");
+            }, false);
+        } catch (e) {
+            console.log("chatwraps or event is not inspected.");
+        }
     }
     
 
