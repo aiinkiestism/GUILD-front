@@ -10,6 +10,7 @@
         lmenua = document.getElementById("left-menu-after"),
         ic = document.getElementById("inner-content"),
         vic = document.getElementById("v-inner-content"),
+        lic = document.getElementById("l-inner-content"),
         topnav = document.getElementById("top-nav"),
         di = document.getElementsByClassName("dashboard-item"),
         dinone = document.getElementsByClassName("dashboard-item-none"),
@@ -17,7 +18,11 @@
         outp = document.getElementsByClassName("outp"),
         prog = document.getElementsByClassName("prog"),
         modal = document.getElementsByClassName("modal"),
-        vw = document.getElementsByClassName("voting-wrap");
+        vw = document.getElementsByClassName("voting-wrap"),
+        iw = document.getElementById("input-wrap"),
+        participant = document.getElementsByClassName("participant"),
+        chatwrap = document.getElementsByClassName("chat-wrap"),
+        hovercontent = document.getElementsByClassName("hover-content");
     
     const vinone = document.getElementById("voting-item-none"),
         vi = document.getElementsByClassName("voting-item"),
@@ -55,6 +60,14 @@
         } catch (e) {
             console.log("vic is nowhere.");
         }
+        try {
+            lic.classList.add("l-inner-content-after");
+            lic.setAttribute('style', "display: block;");
+            iw.classList.add("input-wrap-after");
+            iw.setAttribute('style', "display: block;");
+        } catch (e) {
+            console.log("lic and iw are nowhere.");
+        }
 
         topnav.setAttribute('style', "display: block;");
         // if (window.matchMedia("screen and (max-width: 450px)").matches) {
@@ -77,6 +90,12 @@
         } catch (e) {
             console.log("vic is nowhere.");
         }
+        try {
+            lic.classList.remove("l-inner-content-after");
+            iw.classList.remove("input-wrap-after");
+        } catch (e) {
+            console.log("lic iw are nowhere.");
+        }
 
         if (window.matchMedia("screen and (max-width: 700px)").matches) {
             try {
@@ -88,6 +107,11 @@
                 vic.setAttribute('style', "display: none;");
             } catch (e) {
                 console.log("vic is nowhere.");
+            }
+            try {
+                lic.setAttribute('style', "display: none;");
+            } catch (e) {
+                console.log("lic is nowhere.");
             }
             topnav.setAttribute('style', "display: none;");
             // lmenu.classList.add("animation-after");
@@ -103,6 +127,7 @@
         resizeContent();
         resizeContent3();
         resizeContent2();
+        lResizeContent();
     } 
     if (window.matchMedia("screen and (max-width: 780px)").matches) {
         lmenu.setAttribute('style', "display: none;");
@@ -118,8 +143,18 @@
         } catch (e) {
             console.log("vic is nowhere.");
         }
+        try {
+            lic.classList.add("l-inner-content-after");
+            iw.classList.add("input-wrap-after");
+        } catch (e) {
+            console.log("lic and iw are nowhere.");
+        }
     }
-    if (window.matchMedia("screen and (max-width: 500px").matches) {
+    if (window.matchMedia("screen and (max-width: 580px)").matches) {
+        lResizeContent();
+        lResizeContent2();
+    }
+    if (window.matchMedia("screen and (max-width: 500px)").matches) {
         vResizeContent();
     }
     if (window.matchMedia("screen and (max-width: 450px)").matches) {
@@ -153,6 +188,8 @@
                 } catch (e) {
                     console.log("dinones are nowhere.");
                 }
+                lRevertContent();
+                lRevertContent2();
             }, 0);
         } 
         if (e.target.innerWidth > 1500) {
@@ -171,12 +208,16 @@
                 } catch (e) {
                     console.log("dinone is nowhere.");
                 }
+                lRevertContent();
+                lRevertContent2();
             }, 0);
         }
         if (e.target.innerWidth <= 1250) {
             setTimeout(function() {
                 resizeContent3();
                 resizeContent2();
+                lResizeContent();
+                lRevertContent2();
             }, 0);
         }
         if (e.target.innerWidth > 780) {
@@ -192,6 +233,12 @@
                 vic.classList.remove("v-inner-content-after");
             } catch (e) {
                 console.log("vic is nowhere.");
+            }
+            try {
+                lic.classList.remove("l-inner-content-after");
+                iw.classList.remove("input-wrap-after");
+            } catch (e) {
+                console.log("lic is nowhere.");
             }
         }
         if (e.target.innerWidth <= 780) {
@@ -211,6 +258,13 @@
             }
 
             try {
+                lic.classList.add("l-inner-content-after");
+                iw.classList.add("input-wrap-after");
+            } catch (e) {
+                console.log("lic and iw are nowhere.");
+            }
+
+            try {
                 if(di[1].parentNode == diwrap2) {
                     revertContent4();
                     // lmenu.classList.remove("animation-before");
@@ -226,7 +280,13 @@
             } catch (e) {
                 console.log("vi[1] is nowhere.");
             }
+            lRevertContent2();
         }
+        if (e.target.innerWidth <= 580) {
+            setTimeout(function() {
+                lResizeContent2();
+            }, 0)
+        } 
         if (e.target.innerWidth <= 500) {
             setTimeout(function() {
                 vResizeContent();
@@ -315,7 +375,18 @@
     }
 
 
-    // content management functions in home page
+    for (let i = 0; i < 100; i++) {
+        chatwrap[i].addEventListener("mouseenter", function() {
+            hovercontent[i].setAttribute('style', "display: block;");
+        }, false);
+
+        chatwrap[i].addEventListener("mouseleave", function() {
+            hovercontent[i].setAttribute('style', "display: none;");
+        }, false);
+    }
+    
+
+    // functions
     function resizeContent() {
         try {
         diwrap2.insertBefore(di[3], di[4]);
@@ -427,5 +498,42 @@
             console.log("voting page's process was ignored.");
         }
     }
+
+    function lResizeContent() {
+        try {
+            participant[4].setAttribute('style', "display: none;");
+            participant[5].setAttribute('style', "display: none;");
+        } catch (e) {
+            console.log("participant are nowhere.");
+        }
+    }
+
+    function lRevertContent() {
+        try {
+            participant[4].setAttribute('style', "display: block;");
+            participant[5].setAttribute('style', "display: block;");
+        } catch (e) {
+            console.log("participant are nowhere.");
+        }
+    }
+
+    function lResizeContent2() {
+        try {
+            participant[3].setAttribute('style', "display: none;");
+            participant[2].setAttribute('style', "display: none;");
+        } catch (e) {
+            console.log("participant are nowhere.");
+        }
+    }
+
+    function lRevertContent2() {
+        try {
+            participant[3].setAttribute('style', "display: block;");
+            participant[2].setAttribute('style', "display: block;");
+        } catch (e) {
+            console.log("participant are nowhere.");
+        }
+    }
+
 
 })();

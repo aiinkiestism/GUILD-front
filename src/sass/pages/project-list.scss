@@ -43,8 +43,10 @@
             padding-left: 10%;
             .large-text {
                 font-family: $base-font-family;
-                font-weight: bold;
-                font-size: 23px;
+                font-weight: normal;
+                font-size: 30px;
+                line-height: 28px;
+                color: 28px;
                 margin: 0;
             }
             .small-text {
@@ -53,6 +55,12 @@
                 margin-bottom: 8px;
             }
             #change-email {
+                font-famaily: $base-font-family;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 170%;
+                letter-spacing: 0.04em;
+                color: #7ad2cc;
                 text-decoration: none;
                 opacity: 0.6;
             }
@@ -103,7 +111,7 @@
                         font-family: $base-font-family;
                         font-size: 15px;
                         color: #fff;
-                        background: #34785c;
+                        background: #7ad2cc;
                         border-radius: 5px;
                         padding: 8px 14px;
                     }
@@ -115,6 +123,10 @@
             padding-bottom: 4%;
             border-radius: 6px;
         }
+    }
+    .copyright {
+        text-align: center;
+        padding-bottom: 16px;
     }
 }
 
@@ -189,6 +201,10 @@
             #last-project-wrap {
                 margin-bottom: 0;
             }
+        }
+        .copyright {
+            padding-top: 30px;
+            background: #fff;
         }
     }
 }
