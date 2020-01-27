@@ -25,6 +25,9 @@
             }
             .left-arrow {
                 margin-bottom: 35px;
+                &:hover {
+                    cursor: pointer;
+                }
                 img {
 
                 }
@@ -34,6 +37,9 @@
                 justify-content: space-evenly;
                 align-items: center;
                 .participant {
+                    &:hover {
+                        cursor: pointer;
+                    }
                     .img-wrap {
                         img {
                             
@@ -43,6 +49,9 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
+                        &:hover {
+                            cursor: pointer;
+                        }
                         img {
                             margin-right: 5px;
                             margin-bottom: 3px;
@@ -58,6 +67,9 @@
             }
             .right-arrow {
                 margin-bottom: 35px;
+                &:hover {
+                    cursor: pointer;
+                }
                 img {
 
                 }
@@ -93,6 +105,9 @@
                         background: #bacac9;
                         border-radius: 3px;
                         padding: 4px 14px;
+                        &:hover {
+                            cursor: pointer;
+                        }
                         img {
                             display: inline-block;
                         }
@@ -110,6 +125,9 @@
                         background: #bacac9;
                         border-radius: 3px;
                         padding: 4px 14px;
+                        &:hover {
+                            cursor: pointer;
+                        }
                         img {
                             display: inline-block;
                         }
@@ -127,6 +145,9 @@
                         background: #bacac9;
                         border-radius: 3px;
                         padding: 4px 14px;
+                        &:hover {
+                            cursor: pointer;
+                        }
                         img {
                             display: inline-block;
                         }
@@ -148,6 +169,9 @@
             margin: 10px 18px -5px;
             .icons-wrap-img {
                 margin-right: 5px;
+                &:hover {
+                    cursor: pointer;
+                }
             }
         }
         .chats-wrap {
@@ -182,6 +206,7 @@
                 position: relative;
                 &:hover {
                     background: #f7faf8;
+                    cursor: pointer;
                 }
                 .img-wrap {
                     padding: 20px;
@@ -225,30 +250,35 @@
                         justify-content: space-evenly;
                         #hover-sticker {
                             margin: 10px 5px 5px 10px;
+                            cursor: pointer;
                             img {
 
                             }
                         }
                         #hover-reply {
                             margin: 10px 5px 5px 10px;
+                            cursor: pointer;
                             img {
 
                             }
                         }
                         #hover-arrow {
                             margin: 10px 5px 5px 10px;
+                            cursor: pointer;
                             img {
 
                             }
                         }
                         #hover-star {
                             margin: 10px 5px 5px 10px;
+                            cursor: pointer;
                             img {
 
                             }
                         }
                         #hover-others {
                              margin: 10px 10px 5px 5px;
+                             cursor: pointer;
                             img {
 
                             }
@@ -286,6 +316,9 @@
                         // margin-right: 7px;
                         background: rgba(0, 0, 0, 0);
                         border: none;
+                        &:hover {
+                            cursor: pointer;
+                        }
                     }
                 }
                 #submit-btn {
@@ -297,6 +330,9 @@
                     position: absolute;
                     top: 0;
                     right: 15px;
+                    &:hover {
+                        cursor: pointer;
+                    }
                 }
             }
         }
@@ -307,7 +343,7 @@
         width: 26%;
         height: 100%;
         position: absolute;
-        top: 0px;
+        top: 2px;
         right: 0px;
         border-left: 1px solid #eef1f1;
         overflow: hidden;
@@ -341,6 +377,9 @@
                         height: 24px;
                         margin-right: 18px;
                         text-align: center;
+                        &:hover {
+                            cursor: pointer;
+                        }
                         p {
                             margin: 0;
                             font-family: $base-font-family;
@@ -360,6 +399,9 @@
                         height: 24px;
                         margin-right: 18px;
                         text-align: center;
+                        &:hover {
+                            cursor: pointer;
+                        }
                         p {
                             margin: 0;
                             font-family: $base-font-family;
@@ -376,6 +418,9 @@
                 #inbox {
                     margin: 21px 16px 0;
                     position: relative;
+                    &:hover {
+                        cursor: pointer;
+                    }
                     img {
                         display: inline-block;
                         margin-right: 5px;
@@ -413,6 +458,9 @@
                 #unread {
                     margin: 0 16px;
                     position: relative;
+                    &:hover {
+                        cursor: pointer;
+                    }
                     img {
                         display: inline-block;
                         margin-right: 5px;
@@ -450,6 +498,9 @@
                 #mention {
                     margin: 0 16px;
                     position: relative;
+                    &:hover {
+                        cursor: pointer;
+                    }
                     img {
                         display: inline-block;
                         margin-right: 5px;
@@ -500,6 +551,9 @@
                     letter-spacing: 0.05em;
                     color: #949898;
                     margin: 9px 0 0 13px;
+                    &:hover {
+                        cursor: pointer;
+                    }
                 }
                 #imp-summary {
                     font-family: $base-font-family;
@@ -509,6 +563,9 @@
                     color: #949898;
                     margin: 7px 0 0 13px;
                     padding-bottom: 22px;
+                    &:hover {
+                        cursor: pointer;
+                    }
                 }
             }
         }

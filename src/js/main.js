@@ -22,7 +22,8 @@
         iw = document.getElementById("input-wrap"),
         participant = document.getElementsByClassName("participant"),
         chatwrap = document.getElementsByClassName("chat-wrap"),
-        hovercontent = document.getElementsByClassName("hover-content");
+        hovercontent = document.getElementsByClassName("hover-content"),
+        reportwrap = document.getElementsByClassName("report-wrap");
     
     const vinone = document.getElementById("voting-item-none"),
         vi = document.getElementsByClassName("voting-item"),
@@ -32,7 +33,8 @@
         vbtn = document.getElementById("vote-btn"),
         clbtn = document.getElementById("close-btn"),
         mask = document.getElementById("mask"),
-        vbtn2 = document.getElementById("vote-btn2");
+        vbtn2 = document.getElementById("vote-btn2"),
+        sbtn = document.getElementById("save-btn");
 
     // initialization process
     try {
@@ -42,6 +44,10 @@
     } catch (e) {
         console.log("dinones are nowhere.");
     }
+
+    // hover behaviours in left menu
+    let currentUrl = location.href;
+    // Promise
 
     // implement togglemenu
     toggle.addEventListener("click", function() {
@@ -375,7 +381,8 @@
     }
 
 
-    for (let i = 0; i < 100; i++) {
+    // hover event of chat unit in lobby page 
+    for (let i = 0; i < 50; i++) {
         try {
             chatwrap[i].addEventListener("mouseenter", function() {
                 hovercontent[i].setAttribute('style', "display: block;");
@@ -388,9 +395,28 @@
             console.log("chatwraps or event is not inspected.");
         }
     }
+
+    
+    //click event of report wraps in report list page
+    for (let i = 0; i < 50; i++) {
+        try {
+            reportwrap[i].addEventListener("click", function() {
+                location.replace("/report-detail.html");
+            }, false);
+        } catch (e) {
+            console.log("reportwrap is nowhere.");
+        }
+    }
+
+    // click event of save btn in report edit page
+    if (sbtn != null) {
+        sbtn.addEventListener("click", function() {
+            location.replace("report-list.html");
+        }, false);
+    }
     
 
-    // functions
+    // content management functions in top page
     function resizeContent() {
         try {
         diwrap2.insertBefore(di[3], di[4]);
@@ -503,6 +529,7 @@
         }
     }
 
+    // content management functions in lobby page
     function lResizeContent() {
         try {
             participant[4].setAttribute('style', "display: none;");
