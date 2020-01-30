@@ -11,6 +11,10 @@
         ic = document.getElementById("inner-content"),
         vic = document.getElementById("v-inner-content"),
         lic = document.getElementById("l-inner-content"),
+        pic = document.getElementById("p-inner-content"),
+        rlic = document.getElementById("rl-inner-content"),
+        rdic = document.getElementById("rd-inner-content"),
+        reic = document.getElementById("re-inner-content"),
         topnav = document.getElementById("top-nav"),
         di = document.getElementsByClassName("dashboard-item"),
         dinone = document.getElementsByClassName("dashboard-item-none"),
@@ -75,6 +79,30 @@
         } catch (e) {
             console.log("lic and iw are nowhere.");
         }
+        try {
+            pic.classList.add("p-inner-content-after");
+            pic.setAttribute('style', "display: block;");
+        } catch (e) {
+            console.log("pic is nowhere.");
+        }
+        try {
+            rlic.classList.add("rl-inner-content-after");
+            rlic.setAttribute('style', "display: block;");
+        } catch (e) {
+            console.log("rlic is nowhere.");
+        }
+        try {
+            rdic.classList.add("rd-inner-content-after");
+            rdic.setAttribute('style', "display: block;");
+        } catch (e) {
+            console.log("rdic is nowhere.");
+        }
+        try {
+            reic.classList.add("re-inner-content-after");
+            reic.setAttribute('style', "display: block;");
+        } catch (e) {
+            console.log("reic is nowhere.");
+        }
 
         topnav.setAttribute('style', "display: block;");
         // if (window.matchMedia("screen and (max-width: 450px)").matches) {
@@ -103,6 +131,26 @@
         } catch (e) {
             console.log("lic iw are nowhere.");
         }
+        try {
+            pic.classList.remove("p-inner-content-after");
+        } catch (e) {
+            console.log("pic is nowhere.");
+        }
+        try {
+            rlic.classList.remove("rl-inner-content-after");
+        } catch (e) {
+            console.log("rlic is nowhere.");
+        }
+        try {
+            rdic.classList.remove("rd-inner-content-after");
+        } catch (e) {
+            console.log("rdic is nowhere.");
+        }
+        try {
+            reic.classList.remove("re-inner-content-after");
+        } catch (e) {
+            console.log("reic is nowhere.");
+        }
 
         if (window.matchMedia("screen and (max-width: 700px)").matches) {
             try {
@@ -120,6 +168,27 @@
             } catch (e) {
                 console.log("lic is nowhere.");
             }
+            try {
+                pic.setAttribute('style', "display: none;");
+            } catch (e) {
+                console.log("pic is nowhere.");
+            }
+            try {
+                rlic.setAttribute('style', "display: none;");
+            } catch (e) {
+                console.log("rlic is nowhere.");
+            }
+            try {
+                rdic.setAttribute('style', "display: none;");
+            } catch (e) {
+                console.log("rdic is nowhere.");
+            }
+            try {
+                reic.setAttribute('style', "display: none;");
+            } catch (e) {
+                console.log("reic is nowhere.");
+            }
+
             topnav.setAttribute('style', "display: none;");
             // lmenu.classList.add("animation-after");
             // lmenu.classList.remove("animation-before");
@@ -135,6 +204,7 @@
         resizeContent3();
         resizeContent2();
         lResizeContent();
+        pResizeContent();
     } 
     if (window.matchMedia("screen and (max-width: 780px)").matches) {
         lmenu.setAttribute('style', "display: none;");
@@ -156,10 +226,31 @@
         } catch (e) {
             console.log("lic and iw are nowhere.");
         }
+        try {
+            pic.classList.add("p-inner-content-after");
+        } catch (e) {
+            console.log("pic is nowhere");
+        }
+        try {
+            rlic.classList.add("rl-inner-content-after");
+        } catch (e) {
+            console.log("rlic is nowhere.");
+        }
+        try {
+            rdic.classList.add("rd-inner-content-after");
+        } catch (e) {
+            console.log("rdic is nowhere.");
+        }
+        try {
+            reic.classList.add("re-inner-content-after");
+        } catch (e) {
+            console.log("reic is nowhere.");
+        }
     }
     if (window.matchMedia("screen and (max-width: 580px)").matches) {
         lResizeContent();
         lResizeContent2();
+        pResizeContent2();
     }
     if (window.matchMedia("screen and (max-width: 500px)").matches) {
         vResizeContent();
@@ -197,6 +288,7 @@
                 }
                 lRevertContent();
                 lRevertContent2();
+                pRevertContent();
             }, 0);
         } 
         if (e.target.innerWidth > 1500) {
@@ -217,6 +309,7 @@
                 }
                 lRevertContent();
                 lRevertContent2();
+                pRevertContent();
             }, 0);
         }
         if (e.target.innerWidth <= 1250) {
@@ -225,6 +318,7 @@
                 resizeContent2();
                 lResizeContent();
                 lRevertContent2();
+                pResizeContent();
             }, 0);
         }
         if (e.target.innerWidth > 780) {
@@ -247,6 +341,27 @@
             } catch (e) {
                 console.log("lic is nowhere.");
             }
+            try {
+                pic.classList.remove("p-inner-content-after");
+            } catch (e) {
+                console.log("pic is nowhere.");
+            }
+            try {
+                rlic.classList.remove("rl-inner-content-after");
+            } catch (e) {
+                console.log("rlic is nowhere.");
+            }
+            try {
+                rdic.classList.remove("rd-inner-content-after");
+            } catch (e) {
+                console.log("rdic is nowhere.");
+            }
+            try {
+                reic.classList.remove("re-inner-content-after");
+            } catch (e) {
+                console.log("reic is nowhere.");
+            }
+
         }
         if (e.target.innerWidth <= 780) {
             lmenu.setAttribute('style', "display: none;");
@@ -270,6 +385,26 @@
             } catch (e) {
                 console.log("lic and iw are nowhere.");
             }
+            try {
+                pic.classList.add("p-inner-content-after");
+            } catch (e) {
+                console.log("pic is nowhere.");
+            }
+            try {
+                rlic.classList.add("rl-inner-content-after");
+            } catch (e) {
+                console.log("rlic is nowhere.");
+            }
+            try {
+                rdic.classList.add("rd-inner-content-after");
+            } catch (e) {
+                console.log("rdic is nowhere.");
+            }
+            try {
+                reic.classList.add("re-inner-content-after");
+            } catch (e) {
+                console.log("reic is nowhere.");
+            }
 
             try {
                 if(di[1].parentNode == diwrap2) {
@@ -288,10 +423,12 @@
                 console.log("vi[1] is nowhere.");
             }
             lRevertContent2();
+            pRevertContent2();
         }
         if (e.target.innerWidth <= 580) {
             setTimeout(function() {
                 lResizeContent2();
+                pResizeContent2();
             }, 0)
         } 
         if (e.target.innerWidth <= 500) {
@@ -383,31 +520,31 @@
 
 
     // hover event of chat unit in lobby page 
-    for (let i = 0; i < 50; i++) {
-        try {
-            chatwrap[i].addEventListener("mouseenter", function() {
-                hovercontent[i].setAttribute('style', "display: block;");
-            }, false);
-    
-            chatwrap[i].addEventListener("mouseleave", function() {
-                hovercontent[i].setAttribute('style', "display: none;");
-            }, false);
-        } catch (e) {
-            console.log("chatwraps or event is not inspected.");
+        for (let i = 0; i < 50; i++) {
+            try {
+                chatwrap[i].addEventListener("mouseenter", function() {
+                    hovercontent[i].setAttribute('style', "display: block;");
+                }, false);
+        
+                chatwrap[i].addEventListener("mouseleave", function() {
+                    hovercontent[i].setAttribute('style', "display: none;");
+                }, false);
+            } catch (e) {
+                console.log("chatwraps or event is not inspected.");
+            }
         }
-    }
 
     
     //click event of report wraps in report list page
-    for (let i = 0; i < 50; i++) {
-        try {
-            reportwrap[i].addEventListener("click", function() {
-                location.replace("/report-detail.html");
-            }, false);
-        } catch (e) {
-            console.log("reportwrap is nowhere.");
+        for (let i = 0; i < 50; i++) {
+            try {
+                reportwrap[i].addEventListener("click", function() {
+                    location.replace("/report-detail.html");
+                }, false);
+            } catch (e) {
+                console.log("reportwrap is nowhere.");
+            }
         }
-    }
 
     // click event of save btn in report edit page
     if (sbtn != null) {
@@ -439,6 +576,8 @@
             percentNum[i].textContent = percent + "%";
         }
     }
+
+
     
 
     // content management functions in top page
@@ -588,6 +727,79 @@
             participant[2].setAttribute('style', "display: block;");
         } catch (e) {
             console.log("participant are nowhere.");
+        }
+    }
+
+    // content management functions in progress page
+    function pResizeContent() {
+        try {
+            let pCharts = document.getElementsByClassName("progresses-charts"),
+            chartWrap = document.getElementsByClassName("chart-wrap"),
+            pList = document.getElementsByClassName("progresses-list"),
+            pListInner = document.getElementsByClassName("p-list-inner");
+
+            pCharts[1].setAttribute('style', "display: flex;");
+            pList[1].setAttribute('style', "display: flex;");
+
+            pCharts[1].insertBefore(chartWrap[3], null);
+            pCharts[1].insertBefore(chartWrap[2], null);
+            pList[1].insertBefore(pListInner[1], null);
+        } catch (e) {
+            console.log("This is not the progress page.");
+        }
+    }
+
+    function pRevertContent() {
+        try {
+            let pCharts = document.getElementsByClassName("progresses-charts"),
+            chartWrap = document.getElementsByClassName("chart-wrap"),
+            pList = document.getElementsByClassName("progresses-list"),
+            pListInner = document.getElementsByClassName("p-list-inner");
+
+            pCharts[1].setAttribute('style', "display: none;");
+            pList[1].setAttribute('style', "display: none;");
+
+            pCharts[0].insertBefore(chartWrap[2], null);
+            pCharts[0].insertBefore(chartWrap[3], null);
+            pList[0].insertBefore(pListInner[1], null);
+        } catch (e) {
+            console.log("This is not the progress page.");
+        }
+    }
+
+    function pResizeContent2() {
+        try {
+            let pCharts = document.getElementsByClassName("progresses-charts"),
+            chartWrap = document.getElementsByClassName("chart-wrap"),
+            pList = document.getElementsByClassName("progresses-list"),
+            pListInner = document.getElementsByClassName("p-list-inner");
+
+        pCharts[2].setAttribute('style', "display: flex;");
+        pCharts[3].setAttribute('style', "display: flex;");
+
+        pCharts[3].insertBefore(chartWrap[3], null);
+        pCharts[2].insertBefore(chartWrap[2], null);
+        pCharts[1].insertBefore(chartWrap[1], null);
+        } catch (e) {
+            console.log("This is not the progress page.");
+        }
+    }
+
+    function pRevertContent2() {
+        try {
+            let pCharts = document.getElementsByClassName("progresses-charts"),
+            chartWrap = document.getElementsByClassName("chart-wrap"),
+            pList = document.getElementsByClassName("progresses-list"),
+            pListInner = document.getElementsByClassName("p-list-inner");
+
+        pCharts[2].setAttribute('style', "display: none;");
+        pCharts[3].setAttribute('style', "display: none;");
+
+        pCharts[0].insertBefore(chartWrap[1], null);
+        pCharts[1].insertBefore(chartWrap[2], null);
+        pCharts[1].insertBefore(chartWrap[3], null);
+        } catch (e) {
+            console.log("This is not the progress page.");
         }
     }
 

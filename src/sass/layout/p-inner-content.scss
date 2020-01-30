@@ -34,6 +34,7 @@
                     // display: inline-flex;
                     justify-content: space-evenly;
                     // width: 49%;
+                    margin-bottom: 33px;
                     .chart-wrap {
                         display: inline-block;
                         width: 250px;
@@ -123,7 +124,7 @@
                 .progresses-list {
                     display: flex;
                     justify-content: space-evenly;
-                    margin: 33px 0 0 0;
+                    margin: 0 0 33px 0;
                     .p-list-inner {
                         background: #fff;
                         // width: 37%;
@@ -247,6 +248,12 @@
     }
 }
 
+.p-inner-content-after {
+    left: 6% !important;
+    width: 94% !important;
+    transition: .6s;
+}
+
 @media screen and (max-width: 1800px) {
     #p-inner-content {
         .right-content {
@@ -366,5 +373,170 @@
 }
 
 @media screen and (max-width: 1250px) {
-    
+    #p-inner-content {
+        left: 27%;
+        width: 73%;
+        .right-content {
+            .inner-wrap {
+                #progresses-wrap {
+                    .progresses-list {
+                        .p-list-inner {
+                            width: 586px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    #p-inner-content {
+        .right-content {
+            .inner-wrap {
+                #progresses-wrap {
+                    .progresses-list {
+                        .p-list-inner {
+                            width: 553px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #p-inner-content {
+        .right-content {
+            .inner-wrap {
+                #progresses-wrap {
+                    .progresses-list {
+                        .p-list-inner {
+                            width: 527px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #p-inner-content {
+        .right-content {
+            .inner-wrap {
+                #progresses-wrap {
+                    .progresses-list {
+                        .p-list-inner {
+                            width: 500px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 780px) {
+    #p-inner-content {
+        left: 34%;
+        width: 66%;
+        .right-content {
+            .inner-wrap {
+                #progresses-wrap {
+                    .progresses-list {
+                        .p-list-inner {
+                            width: 526px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .p-inner-content-after {
+        left: 0% !important;
+        width: 100% !important;
+        transition: .6s;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #p-inner-content {
+        .right-content {
+            .inner-wrap {
+                #progresses-wrap {
+                    .progresses-list {
+                        .p-list-inner {
+                            width: 500px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 580px) {
+    #p-inner-content {
+        .right-content {
+            .inner-wrap {
+                padding-bottom: 22%;
+                #progresses-wrap {
+                    .progresses-charts {
+                        .chart-wrap {
+                            width: 280px;
+                            height: 280px;
+                            .top-text-box {
+                                margin-top: 20px;
+                            }
+                            .inner-border-bottom {
+                                width: 280px;
+                                height: 12px;
+                            }
+                            .progress-wrap {
+                                top: 96px;
+                            }
+                        }
+                    }
+                    .progresses-list {
+                        .p-list-inner {
+                            width: 280px;
+                            .main-progress {
+                                height: 80px;
+                                .img-wrap {
+                                    display: none;
+                                }
+                                .right-content {
+                                    .p-subject {
+                                        top: 15%;
+                                        left: 5.3%;
+                                        font-size: 13px;
+                                        width: 183px;
+                                    }
+                                }
+                            }
+                            .sub-progress {
+                                height: 64px;
+                                .img-wrap {
+                                    display: none;
+                                }
+                                .right-content {
+                                    .p-subject {
+                                        top: 5%;
+                                        left: 4.3%;
+                                        font-size: 13px;
+                                        width: 183px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

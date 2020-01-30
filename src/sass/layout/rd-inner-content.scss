@@ -16,7 +16,7 @@
     .center-content {
         display: inline-block;
         width: 74%;
-        height: 93%;
+        height: 95%;
         overflow-y: scroll;
         background: #e5e5e5;
         .top-text-box {
@@ -31,6 +31,7 @@
             }
         }
         .inner-wrap {
+            padding-bottom: 12%;
             .report-detail-wrap {
                 width: 89%;
                 height: 81%;
@@ -157,5 +158,53 @@
         border-left: 1px solid #eef1f1;
         overflow: hidden;
         background: #f6f6f9;
+    }
+}
+.rd-inner-content-after {
+    left: 6% !important;
+    width: 94% !important;
+    transition: .6s;
+}
+
+@media screen and (max-width: 1250px) {
+    #rd-inner-content {
+        left: 27%;
+        width: 73%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #rd-inner-content {
+        .center-content {
+            width: 100%;
+        }
+        .right-content {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 780px) {
+    #rd-inner-content {
+        left: 34%;
+        width: 66%;
+        top: 67px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #rd-inner-content {
+        .center-content {
+            .top-text-box {
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .rd-inner-content-after {
+        left: 0% !important;
+        width: 100% !important;
+        transition: .6s;
     }
 }

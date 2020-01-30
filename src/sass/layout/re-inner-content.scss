@@ -16,7 +16,7 @@
     .center-content {
         display: inline-block;
         width: 74%;
-        height: 93%;
+        height: 95%;
         overflow-y: scroll;
         background: #e5e5e5;
         .top-text-box {
@@ -198,5 +198,96 @@
         border-left: 1px solid #eef1f1;
         overflow: hidden;
         background: #f6f6f9;
+    }
+}
+.re-inner-content-after {
+    left: 6% !important;
+    width: 94% !important;
+    transition: .6s;
+}
+
+@media screen and (max-width: 1250px) {
+    #re-inner-content {
+        left: 27%;
+        width: 73%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #re-inner-content {
+        .center-content {
+            width: 100%;
+        }
+        .right-content {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 780px) {
+    #re-inner-content {
+        left: 34%;
+        width: 66%;
+        top: 67px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #re-inner-content {
+        .center-content {
+            .top-text-box {
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .re-inner-content-after {
+        left: 0% !important;
+        width: 100% !important;
+        transition: .6s;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #re-inner-content {
+        .center-content {
+            .inner-wrap {
+                .report-edit-wrap {
+                    form {
+                        textarea {
+                            height: 386px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #re-inner-content {
+        .center-content {
+            .inner-wrap {
+                padding-bottom: 17%;
+                .report-edit-wrap {
+                    form {
+                        textarea {
+                            height: 317px;
+                        }
+                        .add-tags-wrap {
+                            #add-tags {
+                                width: 184px;
+                            }
+                            #save-btn {
+                                width: 76px;
+                                height: 35px;
+                                line-height: 35px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

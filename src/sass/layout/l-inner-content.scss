@@ -783,6 +783,20 @@
     }
 }
 
+@media screen and (max-width: 1100px) {
+    #l-inner-content {
+        .center-content {
+            .chats-wrap {
+                .date-border {
+                    img {
+                        width: 39%;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 1000px) {
     #l-inner-content {
         .center-content {
@@ -905,8 +919,9 @@
             .top-wrap {
                 .top-text {
                     p {
-                        margin-top: 3px;
+                        margin-top: 5px;
                         margin-bottom: 10px;
+                        text-align: center;
                     }
                 }
                 .participants-wrap {
@@ -936,6 +951,7 @@
                 display: none;
             }
             .chats-wrap {
+                padding-top: 20px;
                 .date-border {
                     img {
                         width: 37%;

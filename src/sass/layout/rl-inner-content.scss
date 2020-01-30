@@ -16,7 +16,7 @@
     .center-content {
         display: inline-block;
         width: 74%;
-        height: 93%;
+        height: 95%;
         overflow-y: scroll;
         background: #e5e5e5;
         .top-text-box {
@@ -60,7 +60,7 @@
                 padding-bottom: 3%;
                 position: relative;
                 transition: .6s;
-                margin: 0 auto 3%;
+                margin: 0 auto 5%;
                 cursor: pointer;
                 .top-wrap {
                     .report-subject {
@@ -142,5 +142,112 @@
         border-left: 1px solid #eef1f1;
         overflow: hidden;
         background: #f6f6f9;
+    }
+}
+.rl-inner-content-after {
+    left: 6% !important;
+    width: 94% !important;
+    transition: .6s;
+}
+
+@media screen and (max-width: 1250px) {
+    #rl-inner-content {
+        left: 27%;
+        width: 73%;
+        .center-content {
+            .inner-wrap {
+                .report-wrap {
+                    .top-wrap {
+                        .report-date {
+                            top: 3%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #rl-inner-content {
+        .center-content {
+            width: 100%;
+        }
+        .right-content {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 780px) {
+    #rl-inner-content {
+        left: 34%;
+        width: 66%;
+        top: 67px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #rl-inner-content {
+        .center-content {
+            .top-text-box {
+                p {
+                    text-align: center;
+                }
+            }
+            .inner-wrap {
+                .date-border {
+                    img {
+                        display: none;
+                    }
+                    p {
+                        display: block;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    .rl-inner-content-after {
+        left: 0% !important;
+        width: 100% !important;
+        transition: .6s;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    #rl-inner-content {
+        .center-content {
+            .inner-wrap {
+                .report-wrap {
+                    .top-wrap {
+                        .report-date {
+                            top: 0%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #rl-inner-content {
+        .center-content {
+            .inner-wrap {
+                .report-wrap {
+                    .top-wrap {
+                        .report-subject {
+                            .report-subject-text {
+                                width: 225px;
+                            }
+                        }
+                        .report-date {
+                            top: -2%;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
