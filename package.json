@@ -17,12 +17,17 @@
   },
   "homepage": "https://github.com/aiinkiestism/GUILD-front#readme",
   "dependencies": {
-    "node-sass": "^4.13.0"
+    "@fullcalendar/list": "^4.3.0",
+    "@fullcalendar/timegrid": "^4.3.0",
+    "@types/gapi": "0.0.39",
+    "node-sass": "^4.13.1"
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.7.7",
     "@babel/preset-react": "^7.7.4",
+    "@fullcalendar/core": "^4.3.1",
+    "@fullcalendar/daygrid": "^4.3.0",
     "autoprefixer": "^9.7.3",
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
@@ -63,6 +68,8 @@
     "sass-lint": "^1.13.1",
     "stylelint-order": "^3.1.1",
     "vinyl-buffer": "^1.0.1",
-    "vinyl-source-stream": "^2.0.0"
+    "vinyl-source-stream": "^2.0.0",
+    "webpack": "^4.41.5",
+    "webpack-stream": "^5.2.1"
   }
 }

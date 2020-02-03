@@ -98,6 +98,7 @@ function styles() {
 		.pipe(
 			sass({
 				outputStyle: 'expanded',
+				includePaths: ['node_modules']
 			}),
 		)
 		.pipe(replace(/@charset "UTF-8";/g, ''))

@@ -2833,11 +2833,41 @@ a {
   background: #f6f6f9;
 }
 
+#rl-inner-content .right-content #calendar {
+  padding: 35px 12.3%;
+  font-family: "Roboto", sans-serif;
+}
+
+#rl-inner-content .right-content #calendar .fc-button-primary {
+  background-color: #f6f9f9;
+  border: none;
+  color: #939898;
+}
+
+#rl-inner-content .right-content #calendar .fc-toolbar h2 {
+  font-family: "Roboto", sans-serif;
+  color: #3d4444;
+  font-weight: 500;
+}
+
+#rl-inner-content .right-content #calendar td.fc-today {
+  background: #7ad2cc;
+}
+
 .rl-inner-content-after {
   left: 6% !important;
   width: 94% !important;
   -webkit-transition: .6s;
   transition: .6s;
+}
+
+@media screen and (max-width: 1500px) {
+  #rl-inner-content .center-content {
+    width: 100%;
+  }
+  #rl-inner-content .right-content {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1250px) {
@@ -3083,11 +3113,41 @@ a {
   background: #f6f6f9;
 }
 
+#rd-inner-content .right-content #calendar {
+  padding: 35px 12.3%;
+  font-family: "Roboto", sans-serif;
+}
+
+#rd-inner-content .right-content #calendar .fc-button-primary {
+  background-color: #f6f9f9;
+  border: none;
+  color: #939898;
+}
+
+#rd-inner-content .right-content #calendar .fc-toolbar h2 {
+  font-family: "Roboto", sans-serif;
+  color: #3d4444;
+  font-weight: 500;
+}
+
+#rd-inner-content .right-content #calendar td.fc-today {
+  background: #7ad2cc;
+}
+
 .rd-inner-content-after {
   left: 6% !important;
   width: 94% !important;
   -webkit-transition: .6s;
   transition: .6s;
+}
+
+@media screen and (max-width: 1500px) {
+  #rl-inner-content .center-content {
+    width: 100%;
+  }
+  #rl-inner-content .right-content {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1250px) {
@@ -3344,11 +3404,41 @@ a {
   background: #f6f6f9;
 }
 
+#re-inner-content .right-content #calendar {
+  padding: 35px 12.3%;
+  font-family: "Roboto", sans-serif;
+}
+
+#re-inner-content .right-content #calendar .fc-button-primary {
+  background-color: #f6f9f9;
+  border: none;
+  color: #939898;
+}
+
+#re-inner-content .right-content #calendar .fc-toolbar h2 {
+  font-family: "Roboto", sans-serif;
+  color: #3d4444;
+  font-weight: 500;
+}
+
+#re-inner-content .right-content #calendar td.fc-today {
+  background: #7ad2cc;
+}
+
 .re-inner-content-after {
   left: 6% !important;
   width: 94% !important;
   -webkit-transition: .6s;
   transition: .6s;
+}
+
+@media screen and (max-width: 1500px) {
+  #rl-inner-content .center-content {
+    width: 100%;
+  }
+  #rl-inner-content .right-content {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1250px) {

@@ -41,7 +41,7 @@
         vbtn2 = document.getElementById("vote-btn2"),
         sbtn = document.getElementById("save-btn");
 
-    // initialization process
+         // initialization process
     try {
         dinone[1].setAttribute('style', "opacity: 0;");
         dinone[2].setAttribute('style', "opacity: 0;");
@@ -554,27 +554,31 @@
     }
 
     // progress chart alignment in progress page
-    if (ppc != null) {
-        for (let i = 0; i < 50; i++) {
-            let percent = ppc[i].getAttribute("data-percent"),
-                pieDeg = 360 * percent / 100,
-                ppcProgress = document.getElementsByClassName("ppc-progress"),
-                ppf = document.getElementsByClassName("ppc-progress-fill"),
-                percentNum = document.getElementsByClassName("percent-num");
+    try {
+        if (ppc != null) {
+            for (let i = 0; i < 50; i++) {
+                let percent = ppc[i].getAttribute("data-percent"),
+                    pieDeg = 360 * percent / 100,
+                    ppcProgress = document.getElementsByClassName("ppc-progress"),
+                    ppf = document.getElementsByClassName("ppc-progress-fill"),
+                    percentNum = document.getElementsByClassName("percent-num");
+        
+                parseInt(percent);
+                if (percent > 50) {
+                    ppc[i].classList.add('gt-50');
+                    ppcProgress[i].classList.add('gt-50');
+                    // ppc[i].setAttribute('style', "background: linear-gradient(" + pieDeg/2 + "deg, #87d7c4, #c2e2a3, #87d7c4);");
+                }
+                // if (percent <= 50) {
+                //     ppf[i].setAttribute('style', "background: linear-gradient(" + pieDeg/2 + "deg, #87d7c4, #c2e2a3, #87d7c4);");
+                // }
     
-            parseInt(percent);
-            if (percent > 50) {
-                ppc[i].classList.add('gt-50');
-                ppcProgress[i].classList.add('gt-50');
-                // ppc[i].setAttribute('style', "background: linear-gradient(" + pieDeg/2 + "deg, #87d7c4, #c2e2a3, #87d7c4);");
+                ppf[i].setAttribute('style', "transform: rotate(" + pieDeg + "deg);");
+                percentNum[i].textContent = percent + "%";
             }
-            // if (percent <= 50) {
-            //     ppf[i].setAttribute('style', "background: linear-gradient(" + pieDeg/2 + "deg, #87d7c4, #c2e2a3, #87d7c4);");
-            // }
-
-            ppf[i].setAttribute('style', "transform: rotate(" + pieDeg + "deg);");
-            percentNum[i].textContent = percent + "%";
         }
+    } catch (e) {
+        console.log("This is not the progress page.");
     }
 
 
@@ -802,6 +806,7 @@
             console.log("This is not the progress page.");
         }
     }
+
 
 
 })();

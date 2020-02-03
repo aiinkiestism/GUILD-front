@@ -158,12 +158,48 @@
         border-left: 1px solid #eef1f1;
         overflow: hidden;
         background: #f6f6f9;
+
+        // fullcalendar's style
+        #calendar {
+            padding: 35px 12.3%;
+            font-family: $base-font-family;
+            .fc-button-primary {
+                background-color: #f6f9f9;
+                border: none;
+                color: #939898;
+            }
+            .fc-toolbar {
+                h2 {
+                    font-family: $base-font-family;
+                    color: #3d4444;
+                    font-weight: 500;
+                }
+            }
+            // .fc-scroller {
+            //     overflow: visible !important;
+            //     height: 385px !important;
+            // }
+            td.fc-today {
+                background: #7ad2cc;
+            }
+        }
     }
 }
 .rd-inner-content-after {
     left: 6% !important;
     width: 94% !important;
     transition: .6s;
+}
+
+@media screen and (max-width: 1500px) {
+    #rl-inner-content {
+        .center-content {
+            width: 100%;
+        }
+        .right-content {
+            display: none;
+        }
+    }
 }
 
 @media screen and (max-width: 1250px) {

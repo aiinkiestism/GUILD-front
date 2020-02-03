@@ -24,6 +24,10 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
+	<link href='fullcalendar/core/main.css' rel='stylesheet' />
+	<link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
+	<link href='fullcalendar/timegrid/main.css' rel='stylesheet' />
+	<link href='fullcalendar/list/main.css' rel='stylesheet' />
 	<link rel="stylesheet" href="css/main.css">
 	<!-- <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
@@ -38,6 +42,62 @@
 	<meta property="og:description" content="" />
 	<meta property="fb:app_id" content="" />    
 	<meta name="twitter:card" content="" />
+	<script src='fullcalendar/core/main.js'></script>
+	<script src='fullcalendar/daygrid/main.js'></script>
+	<script src='fullcalendar/timegrid/main.js'></script>
+	<script src='fullcalendar/list/main.js'></script>
+	<script src='fullcalendar/interaction/main.js'></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+		  plugins: [ 'dayGrid', 'timeGrid', 'list', 'interaction', 'googleCalendar' ],
+		  height: 500,
+		  header: {
+			  left: 'prev',
+			  center: 'title',
+			  right: 'next',
+		  },
+		  footer: {
+			  left: 'today',
+			  right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth',
+		  },
+		  weekNumbers: false,
+		  navLinks: true,
+		  editable: true,
+		  eventLimit: true,
+		  events: [
+			  {
+				  title: 'blah blah',
+				  start: '2020-02-03',
+			  },
+			  {
+				  title: 'conference',
+				  start: '2020-02-04',
+				  end: '2020-02-08',
+			  },
+			  {
+				  groupId: 999,
+				  title: 'Repeating Event',
+				  start: '2020-02-09T16:00:00'
+			  },
+			  {
+			      groupId: 999,
+			      title: 'Repeating Event',
+			      start: '2020-02-16T16:00:00'
+			  },
+			  {
+				  title: 'Click for Google',
+				  url: 'https://google.com/',
+				  start: '2020-02-28'
+			  }
+		  ]
+        });
+
+        calendar.render();
+      });
+	</script>
 </head>
 <body>
 	<div class="contents">
