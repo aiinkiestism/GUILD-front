@@ -1,0 +1,542 @@
+#pp-inner-content {
+    overflow-y: scroll;
+    position: absolute;
+    top: 67px;
+    left: 17%;
+    width: 83%;
+    height: 100%;
+    background: #e5e5e5;
+    transition: .6s;
+    .top-nav-border-wrap {
+        width: 100%;
+        .top-nav-border {
+            box-shadow: 0px 3px 7px rgba(166, 182, 182, 0.2);
+            height: 2px;
+        }
+    }
+    .right-content {
+        .top-text-box {
+            p {
+                font-family: $base-font-family;
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 35px;
+                letter-spacing: 0.03em;
+                color: #3d4444;
+                margin-left: 3%;
+            }
+        }
+        .inner-wrap {
+            padding-bottom: 9%;
+            #progresses-wrap {
+                .progresses-charts {
+                    display: flex;
+                    // display: inline-flex;
+                    justify-content: space-evenly;
+                    // width: 49%;
+                    margin-bottom: 33px;
+                    .chart-wrap {
+                        display: inline-block;
+                        width: 250px;
+                        height: 250px;
+                        background: #fff;
+                        box-shadow: 0px 0px 14px rgba(166, 182, 182, 0.3);
+                        border-radius: 10px;
+                        position: relative;
+                        .top-text-box {
+                            margin-top: 15px;
+                            padding: 0 15px;
+                            padding-bottom: 18px;
+                            // border-bottom: 1px solid #eee;
+                            p {
+                                margin: 0;
+                                font-family: $base-font-family;
+                                font-size: 14px;
+                                line-height: 18px;
+                                letter-spacing: 0.05em;
+                                color: #3d4444;
+                            }
+                        }
+                        .inner-border-bottom {
+                            position: absolute;
+                            top: 50px;
+                            left: 0;
+                            width: 250px;
+                            height: 21px;
+                            border-bottom: 1px solid #eee;
+                        }
+                        .progress-wrap {
+                            text-align: center;
+                            position: absolute;
+                            top: 87px;
+                            right: 0;
+                            left: 0;
+                            .progress-pie-chart {
+                                margin: 3% auto;
+                                width: $pie-size;
+                                height: $pie-size;
+                                border-radius: 50%;
+                                background: #f2f2f2;
+                                position: relative;
+                                &.gt-50 {
+                                    // background: linear-gradient(#87d7c4, #c2e2a3, #87d7c4);
+                                    background: linear-gradient(#87d7c4, #c2e2a3);
+                                }
+                                .ppc-progress {
+                                    @include circle($pie-size);
+                                    clip: rect(0, $pie-size, $pie-size, #{$pie-size / 2});
+                                    .ppc-progress-fill {
+                                        @include circle($pie-size);
+                                        clip: rect(0, #{$pie-size / 2}, $pie-size, 0);
+                                        background: linear-gradient(#c2e2a3, #87d7c4);
+                                        transform: rotate(60deg);
+                                    }
+                                    &.gt-50 {
+                                        clip: rect(0, #{$pie-size/2}, $pie-size, 0);
+                                        .ppc-progress-fill {
+                                          clip: rect(0, $pie-size, $pie-size, #{$pie-size / 2});
+                                          background: #f2f2f2;
+                                        }
+                                    }
+                                }
+                                .ppc-percent {
+                                    @include circle(#{$pie-size / 1.15});
+                                    background: #fff;
+                                    text-align: center;
+                                    display: table;
+                                    .percent-inner-wrap {
+                                        display: table-cell;
+                                        vertical-align: middle;
+                                        span {
+                                            display: block;
+                                            color: #9ea5a5;
+                                            font-family: $base-font-family;
+                                            font-weight: 300;
+                                            font-size: 26px;
+                                            line-height: 39px;
+                                        }
+                                    }
+                                }
+                            }                            
+                        }
+                    }
+                }
+                .progresses-list {
+                    display: flex;
+                    justify-content: space-evenly;
+                    margin: 0 0 33px 0;
+                    .p-list-inner {
+                        background: #fff;
+                        // width: 37%;
+                        width: 609px;
+                        // height: 53%;
+                        // height: 460px;
+                        box-shadow: 0px 0px 14px rgba(166, 182, 182, 0.3);
+                        border-radius: 10px;
+                        .main-progress {
+                            position: relative;
+                            border-bottom: 1px solid #eee;
+                            .img-wrap {
+                                display: inline-block;
+                                margin: 3% 0 3% 3%; 
+                                img {
+
+                                }
+                            }
+                            .right-content {
+                                display: inline-block;
+                                .p-subject {
+                                    position: absolute;
+                                    top: 22%;
+                                    left: 15.3%;
+                                }
+                                progress {
+                                    position: absolute;
+                                    top: 43%;
+                                    right: 3%;
+                                    width: 26%;
+                                    background: #e3e3e3;
+                                    border-radius: 20px;
+                                }
+                                progress::-moz-progress-bar {
+                                    background: #7ad2cc;
+                                    border-radius: 20px;
+                                }
+                                @media screen and (-webkit-min-device-pixel-ratio: 0) {
+                                    // progress {
+                                    //     height: 25px;
+                                    // }
+                                }
+                                progress::-webkit-progress-bar {
+                                    background: transparent;
+                                }
+                                progress::-webkit-progress-value {
+                                    border-radius: 20px;
+                                    background: #7ad2cc;
+                                }
+                                .outp-label {
+                                    position: absolute;
+                                    top: 29%;
+                                    right: 5%;
+                                    font-family: $base-font-family;
+                                    font-weight: 300;
+                                    font-size: 11px;
+                                    line-height: 170%;
+                                    letter-spacing: 0.04em;
+                                    color: #3d4444;
+                                }
+                            }
+                        }
+                        .sub-progress {
+                            position: relative;
+                            border-bottom: 1px solid #eee;
+                            .img-wrap {
+                                display: inline-block;
+                                margin: 3% 0 3% 4.7%;
+                                img {
+                                    width: 40px;
+                                }
+                            }
+                            .right-content {
+                                display: inline-block;
+                                .p-subject {
+                                    position: absolute;
+                                    top: 22%;
+                                    left: 15.3%;
+                                }
+                                progress {
+                                    position: absolute;
+                                    top: 43%;
+                                    right: 3%;
+                                    width: 26%;
+                                    background: #e3e3e3;
+                                    border-radius: 20px;
+                                }
+                                progress::-moz-progress-bar {
+                                    background: #7ad2cc;
+                                    border-radius: 20px;
+                                }
+                                @media screen and (-webkit-min-device-pixel-ratio: 0) {
+                                    // progress {
+                                    //     height: 25px;
+                                    // }
+                                }
+                                progress::-webkit-progress-bar {
+                                    background: transparent;
+                                }
+                                progress::-webkit-progress-value {
+                                    border-radius: 20px;
+                                    background: #7ad2cc;
+                                }
+                                .outp-label {
+                                    position: absolute;
+                                    top: 28%;
+                                    right: 5%;
+                                    font-family: $base-font-family;
+                                    font-weight: 300;
+                                    font-size: 11px;
+                                    line-height: 170%;
+                                    letter-spacing: 0.04em;
+                                    color: #3d4444;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.p-inner-content-after {
+    left: 6% !important;
+    width: 94% !important;
+    transition: .6s;
+}
+
+@media screen and (max-width: 1800px) {
+    #p-inner-content {
+        .right-content {
+            .inner-wrap {
+                #progresses-wrap {
+                    .progresses-list {
+                        .p-list-inner {
+                            width: 585px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1650px) {
+    #p-inner-content {
+        .right-content {
+            .inner-wrap {
+                #progresses-wrap {
+                    .progresses-list {
+                        .p-list-inner {
+                            width: 562px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1520px) {
+    #p-inner-content {
+        .right-content {
+            .inner-wrap {
+                #progresses-wrap {
+                    .progresses-list {
+                        .p-list-inner {
+                            width: 540px;
+                            .main-progress {
+                                .right-content {
+                                    .p-subject {
+                                        left: 17.3%;
+                                    }
+                                }
+                            }
+                            .sub-progress {
+                                .right-content {
+                                    .p-subject {
+                                        top: 12%;
+                                        left: 17.3%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    #p-inner-content {
+        .right-content {
+            .inner-wrap {
+                #progresses-wrap {
+                    .progresses-charts {
+                        .chart-wrap {
+                            width: 220px;
+                            height: 220px;
+                            .progress-wrap {
+                                top: 75px;
+                            }
+                        }
+                    }
+                    .progresses-list {
+                        .p-list-inner {
+                            width: 500px;
+                            .main-progress {
+                                .right-content {
+                                    progress {
+                                        width: 21%;
+                                    }
+                                }
+                            }
+                            .sub-progress {
+                                .right-content {
+                                    progress {
+                                        width: 21%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    #p-inner-content {
+        .right-content {
+            .inner-wrap {
+                #progresses-wrap {
+                    .progresses-list {
+                        .p-list-inner {
+                            width: 481px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    #p-inner-content {
+        left: 27%;
+        width: 73%;
+        .right-content {
+            .inner-wrap {
+                #progresses-wrap {
+                    .progresses-list {
+                        .p-list-inner {
+                            width: 586px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    #p-inner-content {
+        .right-content {
+            .inner-wrap {
+                #progresses-wrap {
+                    .progresses-list {
+                        .p-list-inner {
+                            width: 553px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #p-inner-content {
+        .right-content {
+            .inner-wrap {
+                #progresses-wrap {
+                    .progresses-list {
+                        .p-list-inner {
+                            width: 527px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #p-inner-content {
+        .right-content {
+            .inner-wrap {
+                #progresses-wrap {
+                    .progresses-list {
+                        .p-list-inner {
+                            width: 500px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 780px) {
+    #p-inner-content {
+        left: 34%;
+        width: 66%;
+        .right-content {
+            .inner-wrap {
+                #progresses-wrap {
+                    .progresses-list {
+                        .p-list-inner {
+                            width: 526px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .p-inner-content-after {
+        left: 0% !important;
+        width: 100% !important;
+        transition: .6s;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #p-inner-content {
+        .right-content {
+            .inner-wrap {
+                #progresses-wrap {
+                    .progresses-list {
+                        .p-list-inner {
+                            width: 500px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 580px) {
+    #p-inner-content {
+        .right-content {
+            .inner-wrap {
+                padding-bottom: 22%;
+                #progresses-wrap {
+                    .progresses-charts {
+                        .chart-wrap {
+                            width: 280px;
+                            height: 280px;
+                            .top-text-box {
+                                margin-top: 20px;
+                            }
+                            .inner-border-bottom {
+                                width: 280px;
+                                height: 12px;
+                            }
+                            .progress-wrap {
+                                top: 96px;
+                            }
+                        }
+                    }
+                    .progresses-list {
+                        .p-list-inner {
+                            width: 280px;
+                            .main-progress {
+                                height: 80px;
+                                .img-wrap {
+                                    display: none;
+                                }
+                                .right-content {
+                                    .p-subject {
+                                        top: 15%;
+                                        left: 5.3%;
+                                        font-size: 13px;
+                                        width: 183px;
+                                    }
+                                }
+                            }
+                            .sub-progress {
+                                height: 64px;
+                                .img-wrap {
+                                    display: none;
+                                }
+                                .right-content {
+                                    .p-subject {
+                                        top: 5%;
+                                        left: 4.3%;
+                                        font-size: 13px;
+                                        width: 183px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
