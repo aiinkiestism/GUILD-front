@@ -38,7 +38,7 @@
 	.top:after {
 		content: "";
 		position: absolute;
-		bottom: -12px;
+		bottom: -15px;
 		left: 24px;
 		margin: 0 auto;
 		width: 83%;
@@ -86,11 +86,67 @@
 				letter-spacing: 0.03em;
 				color: #9EA5A5;
 			}
+			// .down-arrow {
+			// 	position: absolute;
+			// 	top: 36%;
+			// 	right: 10%;
+			// }
+			#b4-arrow::after {
+				content: url(../img/angle-down.png);
+				margin-left: 8px;
+			}
 			.current {
 				color: #7ad2cc;
 			}
 			p:hover {
 				color: #7ad2cc;
+			}
+			.progress-after {
+				margin-bottom: 0 !important;
+			}
+		}
+		#pull-down {
+			display: none;
+			a {
+				text-decoration: none;
+				p {
+					font-family: $base-font-family;
+					font-weight: normal;
+					font-size: 14px;
+					color: #9ea5a5;
+					margin-left: 39%;
+					opacity: 0;
+					visibility: hidden;
+					margin: 0;
+					transition:
+					line-height .3s ease-out,
+					opacity     .1s linear,
+					visibility  .1s linear;
+					transition:
+					margin-top     .6s ease-out,
+					margin-bottom .6s ease-out;
+				}
+				p:hover {
+					color: #7ad2cc;
+				}
+			}
+		}
+		.open {
+			display: block !important;
+			p {
+				line-height: 20px !important;
+				margin-top: 14px !important;
+				margin-bottom: 14px !important;
+				margin-left: 39% !important;
+				opacity: 1 !important;
+				visibility: visible !important;
+				transition:
+				line-height .6s ease-out,
+				opacity     .1s linear .1s,
+				visibility  .1s linear .1s !important;
+				transition:
+				margin-top     .6s ease-out,
+				margin-bottom .6s ease-out;
 			}
 		}
 	}
@@ -103,6 +159,7 @@
 	background: #fff;
 	z-index: 5;
 	transition: .8s;
+	overflow-y: scroll;
 	.top {
 		height: 6%;
 		position: relative;
@@ -127,7 +184,7 @@
 	.top:after {
 		content: "";
 		position: absolute;
-		bottom: -8px;
+		bottom: -15px;
 		margin: 0 auto;
 		width: 100%;
 		border-bottom: 1px solid #ebeded;
@@ -174,6 +231,13 @@
 @media screen and (max-width: 1250px) {
 	#left-menu {
 		width: 27%;
+		.left-menu-item {
+			.item-wrap {
+				// .down-arrow {
+				// 	right: 26%;
+				// }
+			}
+		}
 	}
 }
 
@@ -194,7 +258,7 @@
 	#left-menu-after {
 		.top {
 			#toggle-menu-after {
-				top: 49%;
+				top: 28%;
 			}
 		}
 		.top:after {
@@ -220,7 +284,7 @@
 			}
 		}
 		.top:after {
-			bottom: -17px;
+			bottom: -33px;
 			left: 0;
 			width: 100%;
 		}
@@ -293,7 +357,7 @@
 	#left-menu-after {
 		.top {
 			#toggle-menu-after {
-				top: 59%;
+				top: 44%;
 				left: 58%;
 			}
 		}

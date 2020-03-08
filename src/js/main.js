@@ -28,7 +28,8 @@
         chatwrap = document.getElementsByClassName("chat-wrap"),
         hovercontent = document.getElementsByClassName("hover-content"),
         reportwrap = document.getElementsByClassName("report-wrap"),
-        ppc = document.getElementsByClassName("progress-pie-chart");
+        ppc = document.getElementsByClassName("progress-pie-chart"),
+        pToggle = document.getElementById('progress-toggle');
     
     const vinone = document.getElementById("voting-item-none"),
         vi = document.getElementsByClassName("voting-item"),
@@ -53,6 +54,15 @@
     // hover behaviours in left menu
     let currentUrl = location.href;
     // Promise
+
+
+    // pull-down menu in left menu
+    pToggle.onclick = () => {
+        let pullDown = document.getElementById('pull-down');
+        pullDown.classList.toggle('open');
+        let ba = document.getElementById('b4-arrow');
+        ba.classList.toggle('progress-after');
+    }
 
     // implement togglemenu
     toggle.addEventListener("click", function() {

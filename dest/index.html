@@ -61,14 +61,14 @@
           </div>
         </div>
         <div id="left-menu-item">
-          <a href="/index.html">
+          <!-- <a href="/index.html">
 			<div class="item-wrap">
 				<div class="img-wrap">
 					<img src="img/home.png" alt="HOME" id="l-menu-item-img">
 				</div>
 				<p>HOME</p>
 			</div>
-		</a>
+		</a> -->
           <a href="/lobby.html">
 			<div class="item-wrap">
 				<div class="img-wrap">
@@ -85,14 +85,29 @@
 				<p>REPORT</p>
 			</div>
 		</a>
-          <a href="/progress.html">
-			<div class="item-wrap">
-				<div class="img-wrap">
-					<img src="img/chart.png" alt="PROGRESS" id="l-menu-item-img">
-				</div>
-				<p>PROGRESS</p>
-			</div>
-		</a>
+          <div id="progress-toggle">
+            <div class="item-wrap">
+              <div class="img-wrap">
+                <img src="img/chart.png" alt="PROGRESS" id="l-menu-item-img">
+              </div>
+              <p id="b4-arrow">PROGRESS</p>
+              <!-- <img src="img/angle-down.png" alt="down arrow" class="down-arrow"> -->
+            </div>
+          </div>
+          <div id="pull-down">
+            <a href="/progress.html">
+				<p>PROGRESSトップ</p>
+			</a>
+            <a href="/goal-indicators.html">
+				<p>KGI KSF KPI</p>
+			</a>
+            <a href="/personal-acition.html">
+				<p>個人アクション</p>
+			</a>
+            <a href="/members-list.html">
+				<p>メンバー一覧</p>
+			</a>
+          </div>
           <a href="/voting.html">
 			<div class="item-wrap">
 				<div class="img-wrap">
@@ -160,36 +175,56 @@
       </div>
       <div id="top-nav">
         <div id="nav-wrap">
-          <div id="search-wrap">
-            <a href="#" id="search-btn">
+          <!-- <div id="search-wrap">
+			<a href="#" id="search-btn">
 				<div class="img-warp">
 					<img src="img/search.png" alt="検索" id="search-img">
 				</div>
 			</a>
-            <input type="text" placeholder="Search" id="search-input">
+			<input type="text" placeholder="Search" id="search-input">
+		</div> -->
+          <div id="top-link">
+            <a href="#">
+				<div class="img-wrap">
+					<img src="img/comment-alt.png" alt="" id="top-link-img">
+				</div>
+				<p class="title">NPSの向上のための施策の提案</p>
+				<p class="title-name">田中</p>
+			</a>
           </div>
-          <div id="select-btn">
-            <div class="img-wrap">
-              <img src="img/select_icon.png" alt="#" id="select-icon">
-            </div>
-            <select name="projects" id="projects">
-              <option value="DAO project">DAO project</option>
-            </select>
-            <div class="img-wrap-bottom">
-              <img src="img/angle-down.png" alt="下向きのアイコン" id="arrow-down">
-            </div>
-          </div>
+          <!-- <div id="select-btn">
+			<div class="img-wrap">
+				<img src="img/select_icon.png" alt="#" id="select-icon">
+			</div>
+			<select name="projects" id="projects">
+				<option value="DAO project">DAO project</option>
+			</select>
+			<div class="img-wrap-bottom">
+				<img src="img/angle-down.png" alt="下向きのアイコン" id="arrow-down">
+			</div>
+		</div> -->
           <div id="top-nav-right">
-            <div id="setting">
-              <div class="img-wrap">
-                <img src="img/setting.png" alt="" id="setting-img">
-              </div>
-            </div>
-            <div id="notice">
-              <div class="img-wrap">
-                <img src="img/notice.png" alt="" id="notice-img">
-              </div>
-            </div>
+            <a href="#">
+				<div id="people">
+					<div class="img-wrap">
+						<img src="img/people.png" alt="" id="people-img">
+					</div>
+				</div>
+			</a>
+            <a href="#">
+				<div id="setting">
+					<div class="img-wrap">
+						<img src="img/setting.png" alt="" id="setting-img">
+					</div>
+				</div>
+			</a>
+            <a href="#">
+				<div id="notice">
+					<div class="img-wrap">
+						<img src="img/notice.png" alt="" id="notice-img">
+					</div>
+				</div>
+			</a>
           </div>
         </div>
       </div>

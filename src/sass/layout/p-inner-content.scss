@@ -202,10 +202,12 @@
                 .members-progresses {
                     @extend %large-container;
                     position: relative;
-                    height: 240px;
+                    // height: 240px;
                     width: 93%;
                     overflow: hidden;
+                    overflow-y: visible;
                     .top-text {
+                        position: relative;
                         p {
                             font-family: $base-font-family;
                             font-weight: 600;
@@ -218,69 +220,131 @@
                             margin-left: 1.4%;
                             padding-top: 2%;
                         }
+                        a {
+                            position: absolute;
+                            top: 30%;
+                            right: 2%;
+                            p {
+                                font-family: $base-font-family;
+                                font-weight: 600;
+                                font-size: 14px;
+                                line-height: 21px;
+                                letter-spacing: 0.05em;
+                                color: #7ad2cc;
+                                background: #fff;
+                                border: 1px solid #7ad2cc;
+                                border-radius: 3px;
+                                width: 121px;
+                                padding: 5px;
+                            }
+                        }
                     }
-                    .glide__track {
-                        position: absolute;
-                        left: -9%;
-                        .glide__slides {
-                            // margin-left: 104%;
-                            // width: 100% !important;
-                            .member-wrap {
-                                width: 8.8% !important;
+                    // .regular {
+                    //     // margin: 100px auto;
+                    //     margin: 10px auto;
+                    //     padding: 0 30px;
+                    //     .member-wrap {
+                    //         margin: 6px;
+                    //         background: #fff;
+                    //         border: 1px solid #eee;
+                    //         box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+                    //         border-radius: 5px;
+                    //         padding: 0 10px;
+                    //         .member-name {
+                    //             font-family: $base-font-family;
+                    //             font-weight: bold;
+                    //             line-height: 26px;
+                    //             letter-spacing: 0.05em;
+                    //             color: #9ea5a5;
+                    //         }
+                    //         .task-name {
+                    //             font-family: $base-font-family;
+                    //             font-size: 16px;
+                    //             line-height: 26px;
+                    //             letter-spacing: 0.05em;
+                    //             color: #3d4444;
+                    //         }
+                    //         progress {
+                    //             // position: absolute;
+                    //             // top: 43%;
+                    //             // right: 3%;
+                    //             // width: 26%;
+                    //             background: #e3e3e3;
+                    //             border-radius: 20px;
+                    //             width: 82%;
+                    //             display: inline-block;
+                    //         }
+                    //         progress::-moz-progress-bar {
+                    //             background: #7ad2cc;
+                    //             border-radius: 20px;
+                    //         }
+                    //         @media screen and (-webkit-min-device-pixel-ratio: 0) {
+                    //             // progress {
+                    //             //     height: 25px;
+                    //             // }
+                    //         }
+                    //         progress::-webkit-progress-bar {
+                    //             background: transparent;
+                    //         }
+                    //         progress::-webkit-progress-value {
+                    //             border-radius: 20px;
+                    //             background: #7ad2cc;
+                    //         }
+                    //         .outp-label {
+                    //             // position: absolute;
+                    //             // top: 29%;
+                    //             // right: 5%;
+                    //             font-family: $base-font-family;
+                    //             font-weight: 300;
+                    //             font-size: 11px;
+                    //             line-height: 170%;
+                    //             letter-spacing: 0.04em;
+                    //             color: #3d4444;
+                    //             display: inline-block;
+                    //             vertical-align: middle;
+                    //         }
+                    //     }
+                    // }
+                    .p-wraps {
+                        padding: 0 3% 3%;
+                        .member-wrap {
+                            background: #fff;
+                            border: 1px solid #eee;
+                            box-sizing: border-box;
+                            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+                            border-radius: 5px;
+                            display: inline-block;
+                            width: 28.3%; 
+                            width: -webkit-calc(-webkit-calc(100% / 3) - 5%) ;
+                            width: calc(calc(100% / 3) - 5%) ;
+                            margin: 2.3%;
+                            padding-bottom: 10px;
+                            cursor: pointer;
+                            .top-content {
+                                display: flex;
+                                width: 94%;
+                                margin: 0 auto;
+                                border-bottom: 1px solid #eee;
+                                padding-top: 9px;
+                                .img-wrap {
+                                    img {
+                                        width: 40px;
+                                    }
+                                }
                                 .member-name {
-                                    font-family: $base-font-family;
-                                    font-weight: bold;
-                                    line-height: 26px;
-                                    letter-spacing: 0.05em;
-                                    color: #9ea5a5;
-                                }
-                                .task-name {
-                                    font-family: $base-font-family;
-                                    font-size: 16px;
-                                    line-height: 26px;
-                                    letter-spacing: 0.05em;
-                                    color: #3d4444;
-                                }
-                                progress {
-                                    // position: absolute;
-                                    // top: 43%;
-                                    // right: 3%;
-                                    // width: 26%;
-                                    background: #e3e3e3;
-                                    border-radius: 20px;
-                                    width: 57%;
-                                    display: inline-block;
-                                }
-                                progress::-moz-progress-bar {
-                                    background: #7ad2cc;
-                                    border-radius: 20px;
-                                }
-                                @media screen and (-webkit-min-device-pixel-ratio: 0) {
-                                    // progress {
-                                    //     height: 25px;
-                                    // }
-                                }
-                                progress::-webkit-progress-bar {
-                                    background: transparent;
-                                }
-                                progress::-webkit-progress-value {
-                                    border-radius: 20px;
-                                    background: #7ad2cc;
-                                }
-                                .outp-label {
-                                    // position: absolute;
-                                    // top: 29%;
-                                    // right: 5%;
-                                    font-family: $base-font-family;
-                                    font-weight: 300;
-                                    font-size: 11px;
-                                    line-height: 170%;
-                                    letter-spacing: 0.04em;
-                                    color: #3d4444;
-                                    display: inline-block;
-                                    vertical-align: middle;
+                                    margin-top: 8px;
+                                    margin-left: 10px;
                                 }
                             }
+                            .task-name {
+                                margin: 0 3%;
+                                p {
+
+                                }
+                            }
+                        }
+                        .member-wrap:hover {
+                            box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.6);
                         }
                     }
                 }
@@ -411,19 +475,19 @@
 //     }
 // }
 
-// @media screen and (max-width: 1250px) {
-//     #p-inner-content {
-//         left: 27%;
-//         width: 73%;
-//         .right-content {
-//             .inner-wrap {
-//                 #progresses-wrap {
+@media screen and (max-width: 1250px) {
+    #p-inner-content {
+        left: 27%;
+        width: 73%;
+        .right-content {
+            .inner-wrap {
+                #progresses-wrap {
                     
-//                 }
-//             }
-//         }
-//     }
-// }
+                }
+            }
+        }
+    }
+}
 
 // @media screen and (max-width: 1150px) {
 //     #p-inner-content {
@@ -436,6 +500,25 @@
 //         }
 //     }
 // }
+
+@media screen and (max-width: 1050px) {
+    #p-inner-content {
+        .right-content {
+            .inner-wrap {
+                #progresses-wrap {
+                    .members-progresses {
+                        .p-wraps {
+                            padding: 10px 3% 3%;
+                            .member-wrap {
+                                margin: 2%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 // @media screen and (max-width: 1000px) {
 //     #p-inner-content {
@@ -467,14 +550,7 @@
             .inner-wrap {
                 #progresses-wrap {
                     .members-progresses {
-                        .glide__track {
-                            // left: -56%;
-                            .glide__slides {
-                                .member-wrap {
-                                    width: 17% !important;
-                                }
-                            }
-                        }
+                        
                     }
                 }
             }
@@ -482,19 +558,19 @@
     }
 }
 
-// @media screen and (max-width: 780px) {
-//     #p-inner-content {
-//         left: 34%;
-//         width: 66%;
-//         .right-content {
-//             .inner-wrap {
-//                 #progresses-wrap {
+@media screen and (max-width: 780px) {
+    #p-inner-content {
+        left: 34%;
+        width: 66%;
+        .right-content {
+            .inner-wrap {
+                #progresses-wrap {
                     
-//                 }
-//             }
-//         }
-//     }
-// }
+                }
+            }
+        }
+    }
+}
 
 @media screen and (max-width: 700px) {
     .p-inner-content-after {
@@ -571,9 +647,16 @@
                     }
                     .members-progresses {
                         margin: 0 8% 7%;
+                        width: 84%;
                         .top-text {
                             padding-top: 1px;
                             padding-left: 6px;
+                        }
+                        .p-wraps {
+                            .member-wrap {
+                                width: 90%;
+                                margin: 5%;
+                            }
                         }
                     }
                     .reorg {

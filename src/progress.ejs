@@ -28,7 +28,7 @@
 	<!-- <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" /> -->
 	<!-- ogp setting -->
 	<meta property="og:title" content="PROGRESS | GUILD" />
 	<meta property="og:type" content="" />
@@ -38,6 +38,11 @@
 	<meta property="og:description" content="" />
 	<meta property="fb:app_id" content="" />    
 	<meta name="twitter:card" content="" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> -->
+
+	<script src="https://kit.fontawesome.com/05d054bd73.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<div class="contents">
@@ -46,37 +51,36 @@
 		<%- include('./inc/p-inner-content.ejs') %>
 	</div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+
 <script src="js/lib.min.js" async></script>
-<!-- <script src="../node_modules/@glidejs/glide/dist/glide.min.js"></script> -->
-<script>
+
+<!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+
+<!-- <script>
 	(function() {
 		'use strict';
 
-		const config = {
-		type: 'carousel',
-		starAt: 0,
-		perView: 3,
-		focusAt: 'center',
-		gap: 3,
-		keyboard: true,
-		breakpoints: {
-			800: {
-				perView: 2,
-			},
-			580: {
-				perView: 1,
-			}
-		}
-		};
-		new Glide('.glide', config).mount()
-
-		// const memberWrap = document.getElementsByClassName('member-wrap');
-		// for (let i = 0; i < memberWrap.length; i++) {
-		// 	memberWrap[3].setAttribute('style', "opacity: 0 !important");
-		// 	memberWrap[7].setAttribute('style', "opacity: 0 !important");
-		// }
+		$(".regular").slick({
+			// dots: true,
+			infinite: true,
+			slidesToShow: 3,
+			slidesToScroll: 3,
+			// arrows: false,
+			// mobileFirst: true,
+			responsive: [
+				{
+					breakpoint: 580,
+					settings: {
+						// infinite: true,
+						slidesToShow: 2,
+						slidesToScroll: 2,
+					}
+				}
+			]
+		});
 
 	})();
-</script>
+</script> -->
 </html>

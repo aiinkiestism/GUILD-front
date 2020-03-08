@@ -7,34 +7,71 @@
 	z-index: 10000;
 	#nav-wrap {
 		position: relative;
-		#search-wrap {
+		// #search-wrap {
+		// 	position: absolute;
+		// 	top: 20px;
+		// 	left: 24px;
+		// 	display: flex;
+		// 	#search-btn {
+		// 		.img-wrap {
+		// 			#search-img {
+		// 				position: static;
+		// 			}
+		// 		}
+		// 	}
+		// 	#search-input {
+		// 		border: none;
+		// 		position: absolute;
+		// 		top: -2px;
+		// 		left: 20px;
+		// 	}
+			
+		// 	#search-input::placeholder {
+		// 		font-family: $base-font-family;
+		// 		font-weight: 300;
+		// 		font-style: normal;
+		// 		font-size: $small-font-size;
+		// 		line-height: 18px;
+		// 		color: #ccc;
+		// 	}
+		// }
+		#top-link {
 			position: absolute;
 			top: 20px;
 			left: 24px;
-			display: flex;
-			#search-btn {
+			a {
+				display: flex;
 				.img-wrap {
-					#search-img {
+					#top-link-img {
 						position: static;
+						width: 20px;
 					}
 				}
-			}
-			#search-input {
-				border: none;
-				position: absolute;
-				top: -2px;
-				left: 20px;
-			}
-			
-			#search-input::placeholder {
-				font-family: $base-font-family;
-				font-weight: 300;
-				font-style: normal;
-				font-size: $small-font-size;
-				line-height: 18px;
-				color: #ccc;
+				.title {
+					font-family: $base-font-family;
+					font-weight: normal;
+					font-size: 12px;
+					line-height: 18px;
+					color: #3d4444;
+					vertical-align: middle;
+					margin-top: 1px;
+					margin-bottom: 0;
+					margin-left: 5px;
+				}
+				.title-name {
+					font-family: $base-font-family;
+					font-weight: normal;
+					font-size: 12px;
+					line-height: 18px;
+					color: #9ea5a5;
+					vertical-align: middle;
+					margin-top: 1px;
+					margin-bottom: 0;
+					margin-left: 5px;
+				}
 			}
 		}
+
 		#select-btn {
 			position: absolute;
 			top: 10px;
@@ -60,11 +97,15 @@
 			}
 		}
 		#top-nav-right {
-			border-left: 1px solid #ebeded;
+			// border-left: 1px solid #ebeded;
 			position: absolute;
 			top: 14px;
 			right: 25px;
 			display: flex;
+			#people {
+				margin-left: 15px;
+				cursor: pointer;
+			}
 			#setting {
 				margin-right: 15px;
 				margin-left: 15px;
@@ -85,7 +126,10 @@
 @media screen and (max-width: 1250px) {
 	#top-nav {
 		#nav-wrap {
-			#search-wrap {
+			// #search-wrap {
+			// 	left: 145px;
+			// }
+			#top-link {
 				left: 145px;
 			}
 		}
@@ -99,7 +143,10 @@
 @media screen and (max-width: 1000px) {
 	#top-nav {
 		#nav-wrap {
-			#search-wrap {
+			// #search-wrap {
+			// 	left: 110px;
+			// }
+			#top-link {
 				left: 110px;
 			}
 		}
@@ -109,11 +156,15 @@
 @media screen and (max-width: 780px) {
 	#top-nav {
 		#nav-wrap {
-			#search-wrap {
+			// #search-wrap {
+			// 	left: 145px;
+			// 	#search-input {
+			// 		width: 110px;
+			// 	}
+			// }
+			#top-link {
 				left: 145px;
-				#serach-input {
-					width: 110px;
-				}
+
 			}
 		}
 	}
@@ -122,8 +173,12 @@
 @media screen and (max-width: 700px) {
 	#top-nav {
 		#nav-wrap {
-			#search-wrap {
-				top: 26px;
+			// #search-wrap {
+			// 	top: 26px;
+			// 	left: 130px;
+			// }
+			#top-link {
+				top: 19px;
 				left: 130px;
 			}
 		}
@@ -133,11 +188,25 @@
 @media screen and (max-width: 580px) {
 	#top-nav {
 		#nav-wrap {
-			#search-wrap {
-				top: 27px;
+			// #search-wrap {
+			// 	top: 27px;
+			// 	left: 97px;
+			// 	width: 103px;
+			// }
+			#top-link {
+				top: 18px;
 				left: 97px;
-				width: 103px;
+				width: 223px;
+				a {
+					.title {
+						font-size: 10px;
+					}
+					.title-name {
+						font-size: 10px;
+					}
+				}
 			}
+
 			#select-btn {
 				right: 101px;
 				display: none;
@@ -149,6 +218,16 @@
 					margin-right: 15px;
 					margin-left: 15px;
 				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 440px) {
+	#top-nav {
+		#nav-wrap {
+			#top-link {
+				display: none;
 			}
 		}
 	}
