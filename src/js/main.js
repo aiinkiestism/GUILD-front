@@ -12,6 +12,7 @@
         vic = document.getElementById("v-inner-content"),
         lic = document.getElementById("l-inner-content"),
         pic = document.getElementById("p-inner-content"),
+        tlic = document.getElementById("tl-inner-content"),
         rlic = document.getElementById("rl-inner-content"),
         rdic = document.getElementById("rd-inner-content"),
         reic = document.getElementById("re-inner-content"),
@@ -48,7 +49,7 @@
         dinone[2].setAttribute('style', "opacity: 0;");
         dinone[3].setAttribute('style', "opacity: 0;");
     } catch (e) {
-        console.log("dinones are nowhere.");
+        // console.log("dinones are nowhere.");
     }
 
     // hover behaviours in left menu
@@ -73,13 +74,13 @@
             ic.classList.add("inner-content-after");
             ic.setAttribute('style', "display: block;");
         } catch (e) {
-            console.log("ic is nowhere.");
+            // console.log("ic is nowhere.");
         }
         try {
             vic.classList.add("v-inner-content-after");
             vic.setAttribute('style', "display: block;");
         } catch (e) {
-            console.log("vic is nowhere.");
+            // console.log("vic is nowhere.");
         }
         try {
             lic.classList.add("l-inner-content-after");
@@ -87,31 +88,37 @@
             iw.classList.add("input-wrap-after");
             iw.setAttribute('style', "display: block;");
         } catch (e) {
-            console.log("lic and iw are nowhere.");
+            // console.log("lic and iw are nowhere.");
         }
         try {
             pic.classList.add("p-inner-content-after");
             pic.setAttribute('style', "display: block;");
         } catch (e) {
-            console.log("pic is nowhere.");
+            // console.log("pic is nowhere.");
+        }
+        try {
+            tlic.classList.add("tl-inner-content-after");
+            tlic.setAttribute('style', "display: block;");
+        } catch (e) {
+            // console.log("tlic is nowhere.");
         }
         try {
             rlic.classList.add("rl-inner-content-after");
             rlic.setAttribute('style', "display: block;");
         } catch (e) {
-            console.log("rlic is nowhere.");
+            // console.log("rlic is nowhere.");
         }
         try {
             rdic.classList.add("rd-inner-content-after");
             rdic.setAttribute('style', "display: block;");
         } catch (e) {
-            console.log("rdic is nowhere.");
+            // console.log("rdic is nowhere.");
         }
         try {
             reic.classList.add("re-inner-content-after");
             reic.setAttribute('style', "display: block;");
         } catch (e) {
-            console.log("reic is nowhere.");
+            // console.log("reic is nowhere.");
         }
 
         topnav.setAttribute('style', "display: block;");
@@ -128,75 +135,85 @@
         try {
             ic.classList.remove("inner-content-after");
         } catch (e) {
-            console.log("ic is nowhere.");
+            // console.log("ic is nowhere.");
         }
         try {
             vic.classList.remove("v-inner-content-after");
         } catch (e) {
-            console.log("vic is nowhere.");
+            // console.log("vic is nowhere.");
         }
         try {
             lic.classList.remove("l-inner-content-after");
             iw.classList.remove("input-wrap-after");
         } catch (e) {
-            console.log("lic iw are nowhere.");
+            // console.log("lic iw are nowhere.");
         }
         try {
             pic.classList.remove("p-inner-content-after");
         } catch (e) {
-            console.log("pic is nowhere.");
+            // console.log("pic is nowhere.");
+        }
+        try {
+            tlic.classList.remove("tl-inner-content-after");
+        } catch (e) {
+            // console.log("tlic is nowhere.");
         }
         try {
             rlic.classList.remove("rl-inner-content-after");
         } catch (e) {
-            console.log("rlic is nowhere.");
+            // console.log("rlic is nowhere.");
         }
         try {
             rdic.classList.remove("rd-inner-content-after");
         } catch (e) {
-            console.log("rdic is nowhere.");
+            // console.log("rdic is nowhere.");
         }
         try {
             reic.classList.remove("re-inner-content-after");
         } catch (e) {
-            console.log("reic is nowhere.");
+            // console.log("reic is nowhere.");
         }
 
         if (window.matchMedia("screen and (max-width: 700px)").matches) {
             try {
                 ic.setAttribute('style', "display: none;");
             } catch (e) {
-                console.log("ic is nowhere.");
+                // console.log("ic is nowhere.");
             }
             try {
                 vic.setAttribute('style', "display: none;");
             } catch (e) {
-                console.log("vic is nowhere.");
+                // console.log("vic is nowhere.");
             }
             try {
                 lic.setAttribute('style', "display: none;");
             } catch (e) {
-                console.log("lic is nowhere.");
+                // console.log("lic is nowhere.");
             }
             try {
                 pic.setAttribute('style', "display: none;");
             } catch (e) {
-                console.log("pic is nowhere.");
+                // console.log("pic is nowhere.");
+            }
+            try {
+                tlic.setAttribute('style', "display: none;")
+            } catch (e) {
+                // console.log("tlic is nowhere.");
             }
             try {
                 rlic.setAttribute('style', "display: none;");
             } catch (e) {
-                console.log("rlic is nowhere.");
+                // console.log("rlic is nowhere.");
             }
             try {
                 rdic.setAttribute('style', "display: none;");
             } catch (e) {
-                console.log("rdic is nowhere.");
+                // console.log("rdic is nowhere.");
             }
             try {
                 reic.setAttribute('style', "display: none;");
             } catch (e) {
-                console.log("reic is nowhere.");
+                // console.log("reic is nowhere.");
             }
 
             topnav.setAttribute('style', "display: none;");
@@ -223,44 +240,65 @@
         try {
             ic.classList.add("inner-content-after");
         } catch (e) {
-            console.log("ic is nowhere.");
+            // console.log("ic is nowhere.");
         }
         try {
             vic.classList.add("v-inner-content-after");
         } catch (e) {
-            console.log("vic is nowhere.");
+            // console.log("vic is nowhere.");
         }
         try {
             lic.classList.add("l-inner-content-after");
             iw.classList.add("input-wrap-after");
         } catch (e) {
-            console.log("lic and iw are nowhere.");
+            // console.log("lic and iw are nowhere.");
         }
         try {
             pic.classList.add("p-inner-content-after");
         } catch (e) {
-            console.log("pic is nowhere");
+            // console.log("pic is nowhere");
+        }
+        try {
+            tlic.classList.add("tl-inner-content-after");
+        } catch (e) {
+            // console.log("tlic is nowhere.");
         }
         try {
             rlic.classList.add("rl-inner-content-after");
         } catch (e) {
-            console.log("rlic is nowhere.");
+            // console.log("rlic is nowhere.");
         }
         try {
             rdic.classList.add("rd-inner-content-after");
         } catch (e) {
-            console.log("rdic is nowhere.");
+            // console.log("rdic is nowhere.");
         }
         try {
             reic.classList.add("re-inner-content-after");
         } catch (e) {
-            console.log("reic is nowhere.");
+            // console.log("reic is nowhere.");
         }
     }
     if (window.matchMedia("screen and (max-width: 580px)").matches) {
         lResizeContent();
         lResizeContent2();
         pResizeContent2();
+
+        try {
+            let rmChildNodes = document.getElementById("right-menu").childNodes;
+            for (let i = 0; i < rmChildNodes.length; i++) {
+                let childNode = rmChildNodes[i]
+                if (childNode.nodeType == 1) {
+                    childNode.setAttribute('style', "display: none;");
+                }
+            }
+
+
+            let rs = document.getElementById("right-select");
+            rs.setAttribute('style', "display: block;");
+        } catch (e) {
+            console.log("This is not the task-log page.");
+        }
     }
     if (window.matchMedia("screen and (max-width: 500px)").matches) {
         vResizeContent();
@@ -279,14 +317,14 @@
                 try {
                     dinone[3].setAttribute('style', "display: none;");
                 } catch (e) {
-                    console.log("dinone[3] is nowehre.");
+                    // console.log("dinone[3] is nowehre.");
                 }
                 try {
                     if (di[2].parentNode == diwrap2) {
                         revertContent2();
                     }
                 } catch (e) {
-                    console.log("diwraps are nowhere.");
+                    // console.log("diwraps are nowhere.");
                 }
                 try {
                     if (dinone[1].parentNode == diwrap2 || dinone[2].parentNode == diwrap2) {
@@ -294,7 +332,7 @@
                         diwrap3.insertBefore(dinone[1], null);
                     }
                 } catch (e) {
-                    console.log("dinones are nowhere.");
+                    // console.log("dinones are nowhere.");
                 }
                 lRevertContent();
                 lRevertContent2();
@@ -308,14 +346,14 @@
                         revertContent2();
                     }
                 } catch (e) {
-                    console.log("diwraps are nowhere.");
+                    // console.log("diwraps are nowhere.");
                 }
                 revertContent();
                 try {
                     dinone[2].setAttribute('style', "display: block; opacity: 0;");
                     dinone[1].setAttribute('style', "display: block; opacity: 0;");
                 } catch (e) {
-                    console.log("dinone is nowhere.");
+                    // console.log("dinone is nowhere.");
                 }
                 lRevertContent();
                 lRevertContent2();
@@ -338,38 +376,43 @@
             try {
                 ic.classList.remove("inner-content-after");
             } catch (e) {
-                console.log("ic is nowhere.");
+                // console.log("ic is nowhere.");
             }
             try {
                 vic.classList.remove("v-inner-content-after");
             } catch (e) {
-                console.log("vic is nowhere.");
+                // console.log("vic is nowhere.");
             }
             try {
                 lic.classList.remove("l-inner-content-after");
                 iw.classList.remove("input-wrap-after");
             } catch (e) {
-                console.log("lic is nowhere.");
+                // console.log("lic is nowhere.");
             }
             try {
                 pic.classList.remove("p-inner-content-after");
             } catch (e) {
-                console.log("pic is nowhere.");
+                // console.log("pic is nowhere.");
+            }
+            try {
+                tlic.classList.remove("tl-inner-content-after");
+            } catch(e) {
+                // console.log("tlic is nowhere.");
             }
             try {
                 rlic.classList.remove("rl-inner-content-after");
             } catch (e) {
-                console.log("rlic is nowhere.");
+                // console.log("rlic is nowhere.");
             }
             try {
                 rdic.classList.remove("rd-inner-content-after");
             } catch (e) {
-                console.log("rdic is nowhere.");
+                // console.log("rdic is nowhere.");
             }
             try {
                 reic.classList.remove("re-inner-content-after");
             } catch (e) {
-                console.log("reic is nowhere.");
+                // console.log("reic is nowhere.");
             }
 
         }
@@ -380,40 +423,45 @@
             try {
                 ic.classList.add("inner-content-after");
             } catch (e) {
-                console.log("ic is nowhere.");
+                // console.log("ic is nowhere.");
             }
 
             try {
                 vic.classList.add("v-inner-content-after");
             } catch (e) {
-                console.log("vic is nowhere.");
+                // console.log("vic is nowhere.");
             }
 
             try {
                 lic.classList.add("l-inner-content-after");
                 iw.classList.add("input-wrap-after");
             } catch (e) {
-                console.log("lic and iw are nowhere.");
+                // console.log("lic and iw are nowhere.");
             }
             try {
                 pic.classList.add("p-inner-content-after");
             } catch (e) {
-                console.log("pic is nowhere.");
+                // console.log("pic is nowhere.");
+            }
+            try {
+                tlic.classList.add("tl-inner-content-after");
+            } catch (e) {
+                // console.log("tlic is nowhere.");
             }
             try {
                 rlic.classList.add("rl-inner-content-after");
             } catch (e) {
-                console.log("rlic is nowhere.");
+                // console.log("rlic is nowhere.");
             }
             try {
                 rdic.classList.add("rd-inner-content-after");
             } catch (e) {
-                console.log("rdic is nowhere.");
+                // console.log("rdic is nowhere.");
             }
             try {
                 reic.classList.add("re-inner-content-after");
             } catch (e) {
-                console.log("reic is nowhere.");
+                // console.log("reic is nowhere.");
             }
 
             try {
@@ -423,22 +471,52 @@
                     // lmenu.classList.remove("animation-after");
                 }
             } catch (e) {
-                console.log("di[1] is nowhere.");
+                // console.log("di[1] is nowhere.");
             }
             try {
                 if (vinone.parentNode == vw[3]) {
                     vRevertContent();
                 }
             } catch (e) {
-                console.log("vi[1] is nowhere.");
+                // console.log("vi[1] is nowhere.");
             }
             lRevertContent2();
             pRevertContent2();
+
+            try {
+                let rmChildNodes = document.getElementById("right-menu").childNodes;
+                for (let i = 0; i < rmChildNodes.length; i++) {
+                    let childNode = rmChildNodes[i];
+                    if (childNode.nodeType == 1) {
+                        childNode.setAttribute('style', "display: inline-block;");
+                    }
+                }
+    
+                let rs = document.getElementById("right-select");
+                rs.setAttribute('style', "display: none;");
+            } catch (e) {
+                // console.log("This is not the task-log page.");
+            }
         }
         if (e.target.innerWidth <= 580) {
             setTimeout(function() {
                 lResizeContent2();
                 pResizeContent2();
+
+                try {
+                    let rmChildNodes = document.getElementById("right-menu").childNodes;
+                    for (let i = 0; i < rmChildNodes.length; i++) {
+                        let childNode = rmChildNodes[i];
+                        if (childNode.nodeType == 1) {
+                            childNode.setAttribute('style', "display: none;");
+                        }
+                    }
+        
+                    let rs = document.getElementById("right-select");
+                    rs.setAttribute('style', "display: block;");
+                } catch (e) {
+                    // console.log("This is not the task-log page.");
+                }
             }, 0)
         } 
         if (e.target.innerWidth <= 500) {
@@ -525,7 +603,7 @@
         })
 
     } catch(e) {
-        console.log("this is not voting page.");
+        // console.log("this is not voting page.");
     }
 
 
@@ -540,7 +618,7 @@
                     hovercontent[i].setAttribute('style', "display: none;");
                 }, false);
             } catch (e) {
-                console.log("chatwraps or event is not inspected.");
+                // console.log("chatwraps or event is not inspected.");
             }
         }
 
@@ -552,7 +630,7 @@
                     location.replace("/report-detail.html");
                 }, false);
             } catch (e) {
-                console.log("reportwrap is nowhere.");
+                // console.log("reportwrap is nowhere.");
             }
         }
 
@@ -588,7 +666,7 @@
             }
         }
     } catch (e) {
-        console.log("This is not the progress page.");
+        // console.log("This is not the progress page.");
     }
 
 
@@ -601,7 +679,7 @@
         diwrap3.insertBefore(dinone[2], dinone[3]);
         diwrap3.insertBefore(dinone[1], dinone[2]);
         } catch {
-            console.log("diwraps are nowhere.");
+            // console.log("diwraps are nowhere.");
         }
     }
 
@@ -611,7 +689,7 @@
         diwrap2.insertBefore(dinone[1], null);
         diwrap2.insertBefore(dinone[2], null);
         } catch {
-            console.log("diwraps are nowhere.");
+            // console.log("diwraps are nowhere.");
         }
     }
 
@@ -621,7 +699,7 @@
             diwrap3.insertBefore(di[4], null);
             diwrap3.insertBefore(dinone[0], null);
         } catch (e) {
-            console.log("diwraps are nowhere.");
+            // console.log("diwraps are nowhere.");
         }
     }
 
@@ -639,7 +717,7 @@
             diwrap4.insertBefore(dinone[2], null);
             diwrap4.insertBefore(dinone[1], null);
         } catch (e) {
-            console.log("diwraps are nowhere.");
+            // console.log("diwraps are nowhere.");
         }
     }
 
@@ -665,7 +743,7 @@
 
         ic.insertBefore(hbtn, null);
         } catch (e) {
-            console.log("home page's process was ignored.");
+            // console.log("home page's process was ignored.");
         } 
     }
 
@@ -693,7 +771,7 @@
             vw[2].insertBefore(vi[2], null);
             vw[1].insertBefore(vi[1], null);
         } catch (e) {
-            console.log("voitng page's process was ignored");
+            // console.log("voitng page's process was ignored");
         }
     }
 
@@ -703,7 +781,7 @@
             vw[1].insertBefore(vi[2], null);
             vw[1].insertBefore(vinone, null);
         } catch (e) {
-            console.log("voting page's process was ignored.");
+            // console.log("voting page's process was ignored.");
         }
     }
 
@@ -713,7 +791,7 @@
             participant[4].setAttribute('style', "display: none;");
             participant[5].setAttribute('style', "display: none;");
         } catch (e) {
-            console.log("participant are nowhere.");
+            // console.log("participant are nowhere.");
         }
     }
 
@@ -722,7 +800,7 @@
             participant[4].setAttribute('style', "display: block;");
             participant[5].setAttribute('style', "display: block;");
         } catch (e) {
-            console.log("participant are nowhere.");
+            // console.log("participant are nowhere.");
         }
     }
 
@@ -731,7 +809,7 @@
             participant[3].setAttribute('style', "display: none;");
             participant[2].setAttribute('style', "display: none;");
         } catch (e) {
-            console.log("participant are nowhere.");
+            // console.log("participant are nowhere.");
         }
     }
 
@@ -740,7 +818,7 @@
             participant[3].setAttribute('style', "display: block;");
             participant[2].setAttribute('style', "display: block;");
         } catch (e) {
-            console.log("participant are nowhere.");
+            // console.log("participant are nowhere.");
         }
     }
 
@@ -759,7 +837,7 @@
             pCharts[1].insertBefore(chartWrap[2], null);
             pList[1].insertBefore(pListInner[1], null);
         } catch (e) {
-            console.log("This is not the progress page.");
+            // console.log("This is not the progress page.");
         }
     }
 
@@ -777,7 +855,7 @@
             pCharts[0].insertBefore(chartWrap[3], null);
             pList[0].insertBefore(pListInner[1], null);
         } catch (e) {
-            console.log("This is not the progress page.");
+            // console.log("This is not the progress page.");
         }
     }
 
@@ -795,7 +873,7 @@
         pCharts[2].insertBefore(chartWrap[2], null);
         pCharts[1].insertBefore(chartWrap[1], null);
         } catch (e) {
-            console.log("This is not the progress page.");
+            // console.log("This is not the progress page.");
         }
     }
 
@@ -813,7 +891,7 @@
         pCharts[1].insertBefore(chartWrap[2], null);
         pCharts[1].insertBefore(chartWrap[3], null);
         } catch (e) {
-            console.log("This is not the progress page.");
+            // console.log("This is not the progress page.");
         }
     }
 
