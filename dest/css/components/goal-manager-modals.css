@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+#goal-manager-modals #mask {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#goal-manager-modals #gmm-inner-wrap {
+  position: fixed;
+  top: 10%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 76.4%;
+  height: 515px;
+  background: #fff;
+  box-shadow: 0px 0px 20px rgba(50, 82, 82, 0.5);
+  border-radius: 10px;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: .6s;
+  overflow-y: scroll;
+}
+
+#goal-manager-modals .visible {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+/*# sourceMappingURL=../maps/components/goal-manager-modals.css.map */

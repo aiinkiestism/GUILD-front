@@ -1,5 +1,7 @@
-(function() {
+(function () {
     'use strict';
+
+    // document.addEventListener('DOMContentLoaded', function() {
 
     let diwrap = document.getElementById("d-item-wrap"),
         diwrap2 = document.getElementById("d-item-wrap2"),
@@ -32,19 +34,22 @@
         reportwrap = document.getElementsByClassName("report-wrap"),
         ppc = document.getElementsByClassName("progress-pie-chart"),
         pToggle = document.getElementById('progress-toggle');
-    
+
     const vinone = document.getElementById("voting-item-none"),
         vi = document.getElementsByClassName("voting-item"),
+        kiw = document.getElementsByClassName("kgi-inner-wrap"),
+        gmmiw = document.getElementById("gmm-inner-wrap"),
         ynbtn = document.getElementById("yn-btn"),
         cbtn = document.getElementById("confirm-btn"),
         mbtn = document.getElementById("modify-btn"),
         vbtn = document.getElementById("vote-btn"),
         clbtn = document.getElementById("close-btn"),
         mask = document.getElementById("mask"),
+        gmMask = document.getElementById("gm-mask"),
         vbtn2 = document.getElementById("vote-btn2"),
         sbtn = document.getElementById("save-btn");
 
-         // initialization process
+    // initialization process
     try {
         dinone[1].setAttribute('style', "opacity: 0;");
         dinone[2].setAttribute('style', "opacity: 0;");
@@ -67,7 +72,7 @@
     }
 
     // implement togglemenu
-    toggle.addEventListener("click", function() {
+    toggle.addEventListener("click", function () {
         lmenu.setAttribute('style', "display: none !important;");
         lmenua.setAttribute('style', "display: block;");
         topnav.classList.add("top-nav-after")
@@ -135,7 +140,7 @@
         // }
     });
 
-    togglea.addEventListener("click", function() {
+    togglea.addEventListener("click", function () {
         lmenua.setAttribute('style', "display: none");
         lmenu.setAttribute('style', "display: block !important;");
         topnav.classList.remove("top-nav-after");
@@ -242,14 +247,14 @@
     // deal with responsive
     if (window.matchMedia("screen and (max-width: 1500px)").matches) {
         resizeContent();
-    } 
+    }
     if (window.matchMedia("screen and (max-width: 1250px)").matches) {
         resizeContent();
         resizeContent3();
         resizeContent2();
         lResizeContent();
         pResizeContent();
-    } 
+    }
     if (window.matchMedia("screen and (max-width: 780px)").matches) {
         lmenu.setAttribute('style', "display: none;");
         lmenua.setAttribute('style', "display: block;");
@@ -319,7 +324,7 @@
             let rs = document.getElementById("right-select");
             rs.setAttribute('style', "display: block;");
         } catch (e) {
-            console.log("This is not the task-log page.");
+            // console.log("This is not the task-log page.");
         }
     }
     if (window.matchMedia("screen and (max-width: 500px)").matches) {
@@ -332,9 +337,9 @@
     }
 
 
-    window.addEventListener('resize', function(e) {
+    window.addEventListener('resize', function (e) {
         if (e.target.innerWidth <= 1500) {
-            setTimeout(function() {
+            setTimeout(function () {
                 resizeContent();
                 try {
                     dinone[3].setAttribute('style', "display: none;");
@@ -360,9 +365,9 @@
                 lRevertContent2();
                 pRevertContent();
             }, 0);
-        } 
+        }
         if (e.target.innerWidth > 1500) {
-            setTimeout(function() {
+            setTimeout(function () {
                 try {
                     if (di[2].parentNode == diwrap2) {
                         revertContent2();
@@ -383,7 +388,7 @@
             }, 0);
         }
         if (e.target.innerWidth <= 1250) {
-            setTimeout(function() {
+            setTimeout(function () {
                 resizeContent3();
                 resizeContent2();
                 lResizeContent();
@@ -418,12 +423,12 @@
             }
             try {
                 tlic.classList.remove("tl-inner-content-after");
-            } catch(e) {
+            } catch (e) {
                 // console.log("tlic is nowhere.");
             }
             try {
                 gmic.classList.remove("gm-inner-content-after");
-            } catch(e) {
+            } catch (e) {
                 // console.log("gmic is nowhere.");
             }
             try {
@@ -495,9 +500,9 @@
             } catch (e) {
                 // console.log("reic is nowhere.");
             }
-
+            e.stopPropagation();
             try {
-                if(di[1].parentNode == diwrap2) {
+                if (di[1].parentNode == diwrap2) {
                     revertContent4();
                     // lmenu.classList.remove("animation-before");
                     // lmenu.classList.remove("animation-after");
@@ -523,7 +528,7 @@
                         childNode.setAttribute('style', "display: inline-block;");
                     }
                 }
-    
+
                 let rs = document.getElementById("right-select");
                 rs.setAttribute('style', "display: none;");
             } catch (e) {
@@ -531,7 +536,7 @@
             }
         }
         if (e.target.innerWidth <= 580) {
-            setTimeout(function() {
+            setTimeout(function () {
                 lResizeContent2();
                 pResizeContent2();
 
@@ -543,21 +548,21 @@
                             childNode.setAttribute('style', "display: none;");
                         }
                     }
-        
+
                     let rs = document.getElementById("right-select");
                     rs.setAttribute('style', "display: block;");
                 } catch (e) {
                     // console.log("This is not the task-log page.");
                 }
             }, 0)
-        } 
+        }
         if (e.target.innerWidth <= 500) {
-            setTimeout(function() {
+            setTimeout(function () {
                 vResizeContent();
             }, 0);
         }
         if (e.target.innerWidth <= 450) {
-            setTimeout(function() {
+            setTimeout(function () {
                 resizeContent4();
                 // lmenu.classList.add("animation-before");
                 // lmenu.classList.remove("animation-after");
@@ -567,108 +572,133 @@
 
     // implememt new voting
     try {
-        vinone.addEventListener("click", function() {
-            modal[0].classList.toggle('visible');
-            mask.classList.toggle('visible');
-        });
-        ynbtn.addEventListener("click", function() {
-            modal[0].classList.toggle('visible');
-            modal[1].classList.toggle('visible');
-        });
-        cbtn.addEventListener("click", function() {
-            modal[1].classList.toggle('visible');
-            modal[2].classList.toggle('visible');
-        });
-        mbtn.addEventListener("click", function() {
-            modal[1].classList.toggle('visible');
-            modal[2].classList.toggle('visible');
-        });
-        vbtn.addEventListener("click", function() {
-            modal[2].classList.toggle('visible');
-            modal[3].classList.toggle('visible');
-        });
-        clbtn.addEventListener("click", function() {
-            modal[3].classList.toggle('visible');
-            mask.classList.toggle('visible');
-        });
-        if(mask.classList.contains("visible")) {
-            mask.addEventListener("click", function() {
-                console.log("clicked");
-                modal[0].classList.remove("visible");
-                modal[1].classList.remove("visible");
-                modal[2].classList.remove("visible");
-                modal[3].classList.remove("visible");
+        window.addEventListener("click", function (e) {
+            if (e.target == mask) {
+                for (let i = 0; i < modal.length; i++) {
+                    modal[i].classList.remove("visible");
+                    // console.log("clicked")
+                }
                 mask.classList.remove("visible");
-            });
-        }
-        // if(modal[0].classList.contains("visible") || 
-        // modal[1].classList.contains("visible") ||
-        // modal[2].classList.contains("visible") ||
-        // modal[3].classList.contains("visible")) {
-        //     window.addEventListener("click", function(e) {
-        //         if(e.target != modal) {
-        //             console.log("clicked");
-        //             modal[0].classList.remove("visible");
-        //             modal[1].classList.remove("visible");
-        //             modal[2].classList.remove("visible");
-        //             modal[3].classList.remove("visible");
-        //             mask.classList.remove("visible");
-        //         } 
-        //      });
-        // }
+                // console.log("clicked2")
+            }
+        });
 
-        vi[0].addEventListener("click", function() {
-            modal[4].classList.toggle("visible");
+        vinone.addEventListener("click", function (e) {
+            modal[0].classList.toggle('visible');
             mask.classList.toggle('visible');
+            e.stopPropagation();
+            // console.log(mask.classList.contains("visible"));
         });
-        vi[1].addEventListener("click", function() {
-            modal[4].classList.toggle("visible");
-            mask.classList.toggle('visible');
+        ynbtn.addEventListener("click", function (e) {
+            modal[0].classList.toggle('visible');
+            modal[1].classList.toggle('visible');
+            e.stopPropagation();
+            // console.log(mask.classList.contains("visible"));
         });
-        vi[2].addEventListener("click", function() {
-            modal[4].classList.toggle("visible");
-            mask.classList.toggle('visible');
+        cbtn.addEventListener("click", function (e) {
+            modal[1].classList.toggle('visible');
+            modal[2].classList.toggle('visible');
+            e.stopPropagation();
+            // console.log(mask.classList.contains("visible"));
         });
-        vbtn2.addEventListener("click", function() {
-            modal[4].classList.toggle("visible");
+        mbtn.addEventListener("click", function (e) {
+            modal[1].classList.toggle('visible');
+            modal[2].classList.toggle('visible');
+            e.stopPropagation();
+        });
+        vbtn.addEventListener("click", function (e) {
+            modal[2].classList.toggle('visible');
+            modal[3].classList.toggle('visible');
+            e.stopPropagation();
+        });
+        clbtn.addEventListener("click", function (e) {
+            modal[3].classList.toggle('visible');
             mask.classList.toggle('visible');
-        })
+            e.stopPropagation();
+        });
 
-    } catch(e) {
+        vi[0].addEventListener("click", function (e) {
+            modal[4].classList.toggle("visible");
+            mask.classList.toggle('visible');
+            e.stopPropagation();
+        });
+        vi[1].addEventListener("click", function (e) {
+            modal[4].classList.toggle("visible");
+            mask.classList.toggle('visible');
+            e.stopPropagation();
+        });
+        vi[2].addEventListener("click", function (e) {
+            modal[4].classList.toggle("visible");
+            mask.classList.toggle('visible');
+            e.stopPropagation();
+        });
+        vbtn2.addEventListener("click", function (e) {
+            modal[4].classList.toggle("visible");
+            mask.classList.toggle('visible');
+            e.stopPropagation();
+        });
+
+    } catch (e) {
         // console.log("this is not voting page.");
     }
 
+    // implement modal behaviors in the goal manager page
+    try {
+        window.addEventListener("click", function (e) {
+            // console.log(e.target);
+            if (e.target == gmMask) {
+                gmmiw.classList.remove("visible");
+                // console.log("clicked3");
+                gmMask.classList.remove("visible");
+                // console.log("clicked2");
+            }
+        }, false);
+
+        for (let i = 0; i < kiw.length; i++) {
+            kiw[i].addEventListener("click", function (e) {
+                gmmiw.classList.add("visible");
+                // console.log("clicked4")
+                gmMask.classList.add('visible');
+                // console.log("clicked5");
+                e.stopPropagation();
+                // console.log("clicked");
+            }, false);
+        }
+
+    } catch (e) {
+        // console.log("This is not goal manager page.");
+    }
 
     // hover event of chat unit in lobby page 
-        for (let i = 0; i < 50; i++) {
-            try {
-                chatwrap[i].addEventListener("mouseenter", function() {
-                    hovercontent[i].setAttribute('style', "display: block;");
-                }, false);
-        
-                chatwrap[i].addEventListener("mouseleave", function() {
-                    hovercontent[i].setAttribute('style', "display: none;");
-                }, false);
-            } catch (e) {
-                // console.log("chatwraps or event is not inspected.");
-            }
-        }
+    for (let i = 0; i < 50; i++) {
+        try {
+            chatwrap[i].addEventListener("mouseenter", function () {
+                hovercontent[i].setAttribute('style', "display: block;");
+            }, false);
 
-    
-    //click event of report wraps in report list page
-        for (let i = 0; i < 50; i++) {
-            try {
-                reportwrap[i].addEventListener("click", function() {
-                    location.replace("/report-detail.html");
-                }, false);
-            } catch (e) {
-                // console.log("reportwrap is nowhere.");
-            }
+            chatwrap[i].addEventListener("mouseleave", function () {
+                hovercontent[i].setAttribute('style', "display: none;");
+            }, false);
+        } catch (e) {
+            // console.log("chatwraps or event is not inspected.");
         }
+    }
+
+
+    //click event of report wraps in report list page
+    for (let i = 0; i < 50; i++) {
+        try {
+            reportwrap[i].addEventListener("click", function () {
+                location.replace("/report-detail.html");
+            }, false);
+        } catch (e) {
+            // console.log("reportwrap is nowhere.");
+        }
+    }
 
     // click event of save btn in report edit page
     if (sbtn != null) {
-        sbtn.addEventListener("click", function() {
+        sbtn.addEventListener("click", function () {
             location.replace("report-list.html");
         }, false);
     }
@@ -682,7 +712,7 @@
                     ppcProgress = document.getElementsByClassName("ppc-progress"),
                     ppf = document.getElementsByClassName("ppc-progress-fill"),
                     percentNum = document.getElementsByClassName("percent-num");
-        
+
                 parseInt(percent);
                 if (percent > 50) {
                     ppc[i].classList.add('gt-50');
@@ -692,7 +722,7 @@
                 // if (percent <= 50) {
                 //     ppf[i].setAttribute('style', "background: linear-gradient(" + pieDeg/2 + "deg, #87d7c4, #c2e2a3, #87d7c4);");
                 // }
-    
+
                 ppf[i].setAttribute('style', "transform: rotate(" + pieDeg + "deg);");
                 percentNum[i].textContent = percent + "%";
             }
@@ -702,14 +732,14 @@
     }
 
 
-    
+
 
     // content management functions in top page
     function resizeContent() {
         try {
-        diwrap2.insertBefore(di[3], di[4]);
-        diwrap3.insertBefore(dinone[2], dinone[3]);
-        diwrap3.insertBefore(dinone[1], dinone[2]);
+            diwrap2.insertBefore(di[3], di[4]);
+            diwrap3.insertBefore(dinone[2], dinone[3]);
+            diwrap3.insertBefore(dinone[1], dinone[2]);
         } catch {
             // console.log("diwraps are nowhere.");
         }
@@ -717,9 +747,9 @@
 
     function revertContent() {
         try {
-        diwrap.insertBefore(di[3], null);
-        diwrap2.insertBefore(dinone[1], null);
-        diwrap2.insertBefore(dinone[2], null);
+            diwrap.insertBefore(di[3], null);
+            diwrap2.insertBefore(dinone[1], null);
+            diwrap2.insertBefore(dinone[2], null);
         } catch {
             // console.log("diwraps are nowhere.");
         }
@@ -756,27 +786,27 @@
     function resizeContent4() {
         try {
             let diwrap4 = document.getElementById('d-item-wrap4'),
-            diwrap5 = document.getElementById('d-item-wrap5'),
-            diwrap6 = document.getElementById('d-item-wrap6'),
-            diwrap7 = document.getElementById('d-item-wrap7'),
-            diwrap8 = document.getElementById('d-item-wrap8'),
-            diwrap9 = document.getElementById('d-item-wrap9'),
-            diwrap10 = document.getElementById('d-item-wrap10');
+                diwrap5 = document.getElementById('d-item-wrap5'),
+                diwrap6 = document.getElementById('d-item-wrap6'),
+                diwrap7 = document.getElementById('d-item-wrap7'),
+                diwrap8 = document.getElementById('d-item-wrap8'),
+                diwrap9 = document.getElementById('d-item-wrap9'),
+                diwrap10 = document.getElementById('d-item-wrap10');
 
-        dinone[1].setAttribute('style', "display: none;");
-        dinone[2].setAttribute('style', "display: none;");
-        dinone[3].setAttribute('style', "display: none;");
+            dinone[1].setAttribute('style', "display: none;");
+            dinone[2].setAttribute('style', "display: none;");
+            dinone[3].setAttribute('style', "display: none;");
 
-        diwrap6.insertBefore(dinone[0], null);
-        diwrap5.insertBefore(di[4], null);
-        diwrap4.insertBefore(di[3], null);
-        diwrap3.insertBefore(di[2], null);
-        diwrap2.insertBefore(di[1], null);
+            diwrap6.insertBefore(dinone[0], null);
+            diwrap5.insertBefore(di[4], null);
+            diwrap4.insertBefore(di[3], null);
+            diwrap3.insertBefore(di[2], null);
+            diwrap2.insertBefore(di[1], null);
 
-        ic.insertBefore(hbtn, null);
+            ic.insertBefore(hbtn, null);
         } catch (e) {
             // console.log("home page's process was ignored.");
-        } 
+        }
     }
 
     function revertContent4() {
@@ -793,7 +823,7 @@
         diwrap2.insertBefore(di[3], null);
         diwrap3.insertBefore(di[4], null);
         diwrap3.insertBefore(dinone[0], null);
-        dinone[0].setAttribute('style', "display: block;");   
+        dinone[0].setAttribute('style', "display: block;");
     }
 
     // content management functions in voting page
@@ -858,9 +888,9 @@
     function pResizeContent() {
         try {
             let pCharts = document.getElementsByClassName("progresses-charts"),
-            chartWrap = document.getElementsByClassName("chart-wrap"),
-            pList = document.getElementsByClassName("progresses-list"),
-            pListInner = document.getElementsByClassName("p-list-inner");
+                chartWrap = document.getElementsByClassName("chart-wrap"),
+                pList = document.getElementsByClassName("progresses-list"),
+                pListInner = document.getElementsByClassName("p-list-inner");
 
             pCharts[1].setAttribute('style', "display: flex;");
             pList[1].setAttribute('style', "display: flex;");
@@ -876,9 +906,9 @@
     function pRevertContent() {
         try {
             let pCharts = document.getElementsByClassName("progresses-charts"),
-            chartWrap = document.getElementsByClassName("chart-wrap"),
-            pList = document.getElementsByClassName("progresses-list"),
-            pListInner = document.getElementsByClassName("p-list-inner");
+                chartWrap = document.getElementsByClassName("chart-wrap"),
+                pList = document.getElementsByClassName("progresses-list"),
+                pListInner = document.getElementsByClassName("p-list-inner");
 
             pCharts[1].setAttribute('style', "display: none;");
             pList[1].setAttribute('style', "display: none;");
@@ -894,16 +924,16 @@
     function pResizeContent2() {
         try {
             let pCharts = document.getElementsByClassName("progresses-charts"),
-            chartWrap = document.getElementsByClassName("chart-wrap"),
-            pList = document.getElementsByClassName("progresses-list"),
-            pListInner = document.getElementsByClassName("p-list-inner");
+                chartWrap = document.getElementsByClassName("chart-wrap"),
+                pList = document.getElementsByClassName("progresses-list"),
+                pListInner = document.getElementsByClassName("p-list-inner");
 
-        pCharts[2].setAttribute('style', "display: flex;");
-        pCharts[3].setAttribute('style', "display: flex;");
+            pCharts[2].setAttribute('style', "display: flex;");
+            pCharts[3].setAttribute('style', "display: flex;");
 
-        pCharts[3].insertBefore(chartWrap[3], null);
-        pCharts[2].insertBefore(chartWrap[2], null);
-        pCharts[1].insertBefore(chartWrap[1], null);
+            pCharts[3].insertBefore(chartWrap[3], null);
+            pCharts[2].insertBefore(chartWrap[2], null);
+            pCharts[1].insertBefore(chartWrap[1], null);
         } catch (e) {
             // console.log("This is not the progress page.");
         }
@@ -912,21 +942,21 @@
     function pRevertContent2() {
         try {
             let pCharts = document.getElementsByClassName("progresses-charts"),
-            chartWrap = document.getElementsByClassName("chart-wrap"),
-            pList = document.getElementsByClassName("progresses-list"),
-            pListInner = document.getElementsByClassName("p-list-inner");
+                chartWrap = document.getElementsByClassName("chart-wrap"),
+                pList = document.getElementsByClassName("progresses-list"),
+                pListInner = document.getElementsByClassName("p-list-inner");
 
-        pCharts[2].setAttribute('style', "display: none;");
-        pCharts[3].setAttribute('style', "display: none;");
+            pCharts[2].setAttribute('style', "display: none;");
+            pCharts[3].setAttribute('style', "display: none;");
 
-        pCharts[0].insertBefore(chartWrap[1], null);
-        pCharts[1].insertBefore(chartWrap[2], null);
-        pCharts[1].insertBefore(chartWrap[3], null);
+            pCharts[0].insertBefore(chartWrap[1], null);
+            pCharts[1].insertBefore(chartWrap[2], null);
+            pCharts[1].insertBefore(chartWrap[3], null);
         } catch (e) {
             // console.log("This is not the progress page.");
         }
     }
 
-
+    // }, false);
 
 })();

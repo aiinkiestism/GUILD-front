@@ -5081,6 +5081,7 @@ a {
   opacity: 0;
   visibility: hidden;
   transition: .6s;
+  overflow-y: scroll;
 }
 
 #voting-modals .visible {
@@ -6050,6 +6051,252 @@ a {
   }
   #login-content #login-modal form #login-btn {
     width: 192px;
+  }
+}
+
+@media screen and (min-width: 580px) {
+  #goal-manager-modals #gm-mask {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+  }
+  #goal-manager-modals #gmm-inner-wrap {
+    position: fixed;
+    top: 10%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 76.4%;
+    height: 515px;
+    background: #fff;
+    box-shadow: 0px 0px 14px rgba(166, 182, 182, 0.3);
+    border-radius: 5px;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: .6s;
+    overflow-y: scroll;
+    padding: 7px 7px 10px 7px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #goal-manager-modals #gmm-inner-wrap #m-kgi-wrap {
+    width: 28.3%;
+    width: calc(calc(100% / 3) - 5%);
+  }
+  #goal-manager-modals #gmm-inner-wrap #m-kgi-wrap .top-text .index-name {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    color: #9ea5a5;
+  }
+  #goal-manager-modals #gmm-inner-wrap #m-kgi-wrap .top-text .index-detail {
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: #3d4444;
+    text-align: center;
+  }
+  #goal-manager-modals #gmm-inner-wrap #m-kgi-wrap .index-body p {
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: #3d4444;
+  }
+  #goal-manager-modals #gmm-inner-wrap #m-kgi-wrap .index-chart {
+    margin-top: 30px;
+  }
+  #goal-manager-modals #gmm-inner-wrap #m-kgi-wrap .index-chart .progress-wrap {
+    text-align: center;
+  }
+  #goal-manager-modals #gmm-inner-wrap #m-kgi-wrap .index-chart .progress-wrap .progress-pie-chart {
+    margin: 3% auto;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #f2f2f2;
+    position: relative;
+  }
+  #goal-manager-modals #gmm-inner-wrap #m-kgi-wrap .index-chart .progress-wrap .progress-pie-chart.gt-50 {
+    background: linear-gradient(#87d7c4, #c2e2a3);
+  }
+  #goal-manager-modals #gmm-inner-wrap #m-kgi-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    top: calc(50% - 65px);
+    left: calc(50% - 65px);
+    width: 130px;
+    height: 130px;
+    clip: rect(0, 130px, 130px, 65px);
+  }
+  #goal-manager-modals #gmm-inner-wrap #m-kgi-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress .ppc-progress-fill {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    top: calc(50% - 65px);
+    left: calc(50% - 65px);
+    width: 130px;
+    height: 130px;
+    clip: rect(0, 65px, 130px, 0);
+    background: linear-gradient(#c2e2a3, #87d7c4);
+    transform: rotate(60deg);
+  }
+  #goal-manager-modals #gmm-inner-wrap #m-kgi-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50 {
+    clip: rect(0, 65px, 130px, 0);
+  }
+  #goal-manager-modals #gmm-inner-wrap #m-kgi-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50 .ppc-progress-fill {
+    clip: rect(0, 130px, 130px, 65px);
+    background: #f2f2f2;
+  }
+  #goal-manager-modals #gmm-inner-wrap #m-kgi-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    top: calc(50% - 113.04348px/2);
+    left: calc(50% - 113.04348px/2);
+    width: 113.04348px;
+    height: 113.04348px;
+    background: #fff;
+    text-align: center;
+    display: table;
+  }
+  #goal-manager-modals #gmm-inner-wrap #m-kgi-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  #goal-manager-modals #gmm-inner-wrap #m-kgi-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap span {
+    display: block;
+    color: #9ea5a5;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 39px;
+  }
+  #goal-manager-modals #gmm-inner-wrap #m-ksf-wrap {
+    width: 28.3%;
+    width: calc(calc(100% / 3) - 5%);
+    position: relative;
+  }
+  #goal-manager-modals #gmm-inner-wrap #m-ksf-wrap .top-text .index-name {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: #9ea5a5;
+  }
+  #goal-manager-modals #gmm-inner-wrap #m-ksf-wrap .top-text .index-detail {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    color: #3d4444;
+  }
+  #goal-manager-modals #gmm-inner-wrap #m-ksf-wrap .under-top-content .ksf-inner-wrap .top-text p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    color: #9ea5a5;
+  }
+  #goal-manager-modals #gmm-inner-wrap #m-ksf-wrap .under-top-content .ksf-inner-wrap .ksf-body p {
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    color: #3d4444;
+    margin: 12px;
+  }
+  #goal-manager-modals #gmm-inner-wrap #m-kpi-wrap {
+    width: 28.3%;
+    width: calc(calc(100% / 3) - 5%);
+  }
+  #goal-manager-modals #gmm-inner-wrap #m-kpi-wrap .top-text .index-name {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: #9ea5a5;
+  }
+  #goal-manager-modals #gmm-inner-wrap #m-kpi-wrap .top-text .index-detail {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    color: #3d4444;
+  }
+  #goal-manager-modals #gmm-inner-wrap #m-kpi-wrap .under-top-content {
+    margin-left: 6px;
+  }
+  #goal-manager-modals #gmm-inner-wrap #m-kpi-wrap .under-top-content .kpi-inner-wrap .kpi-title {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    color: #3d4444;
+  }
+  #goal-manager-modals #gmm-inner-wrap #m-kpi-wrap .under-top-content .kpi-inner-wrap .kpi-body {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    color: #3d4444;
+  }
+  #goal-manager-modals #gmm-inner-wrap #m-kpi-wrap .under-top-content .kpi-inner-wrap .progress-wrap .prog {
+    width: 87%;
+    background: #e3e3e3;
+    border-radius: 20px;
+    display: inline-block;
+  }
+  #goal-manager-modals #gmm-inner-wrap #m-kpi-wrap .under-top-content .kpi-inner-wrap .progress-wrap .prog::-moz-progress-bar {
+    background: #7ad2cc;
+    border-radius: 20px;
+  }
+  #goal-manager-modals #gmm-inner-wrap #m-kpi-wrap .under-top-content .kpi-inner-wrap .progress-wrap .prog::-webkit-progress-bar {
+    background: transparent;
+  }
+  #goal-manager-modals #gmm-inner-wrap #m-kpi-wrap .under-top-content .kpi-inner-wrap .progress-wrap .prog::-webkit-progress-value {
+    border-radius: 20px;
+    background: #7ad2cc;
+  }
+  #goal-manager-modals #gmm-inner-wrap #m-kpi-wrap .under-top-content .kpi-inner-wrap .progress-wrap .outp-label {
+    display: inline-block;
+    margin-left: 3px;
+  }
+  #goal-manager-modals #gmm-inner-wrap #m-kpi-wrap .under-top-content .kpi-inner-wrap .progress-wrap .outp-label p {
+    color: #3d4444;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 170%;
+    letter-spacing: 0.04em;
+  }
+  #goal-manager-modals .visible {
+    opacity: 1 !important;
+    visibility: visible !important;
   }
 }
 /*# sourceMappingURL=maps/main.css.map */
