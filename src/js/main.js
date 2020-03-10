@@ -13,6 +13,7 @@
         lic = document.getElementById("l-inner-content"),
         pic = document.getElementById("p-inner-content"),
         tlic = document.getElementById("tl-inner-content"),
+        gmic = document.getElementById("gm-inner-content"),
         rlic = document.getElementById("rl-inner-content"),
         rdic = document.getElementById("rd-inner-content"),
         reic = document.getElementById("re-inner-content"),
@@ -103,6 +104,12 @@
             // console.log("tlic is nowhere.");
         }
         try {
+            gmic.classList.add("gm-inner-content-after");
+            gmic.setAttribute('style', "display: block;");
+        } catch (e) {
+            // console.log("gmic is nowhere.");
+        }
+        try {
             rlic.classList.add("rl-inner-content-after");
             rlic.setAttribute('style', "display: block;");
         } catch (e) {
@@ -159,6 +166,11 @@
             // console.log("tlic is nowhere.");
         }
         try {
+            gmic.classList.remove("gm-inner-content-after");
+        } catch (e) {
+            // console.log("gmic is nowhere.");
+        }
+        try {
             rlic.classList.remove("rl-inner-content-after");
         } catch (e) {
             // console.log("rlic is nowhere.");
@@ -199,6 +211,11 @@
                 tlic.setAttribute('style', "display: none;")
             } catch (e) {
                 // console.log("tlic is nowhere.");
+            }
+            try {
+                gmic.setAttribute('style', "display: none;")
+            } catch (e) {
+                // console.log("gmic is nowhere.");
             }
             try {
                 rlic.setAttribute('style', "display: none;");
@@ -262,6 +279,11 @@
             tlic.classList.add("tl-inner-content-after");
         } catch (e) {
             // console.log("tlic is nowhere.");
+        }
+        try {
+            gmic.classList.add("gm-inner-content-after");
+        } catch (e) {
+            // console.log("gmic is nowhere.");
         }
         try {
             rlic.classList.add("rl-inner-content-after");
@@ -400,6 +422,11 @@
                 // console.log("tlic is nowhere.");
             }
             try {
+                gmic.classList.remove("gm-inner-content-after");
+            } catch(e) {
+                // console.log("gmic is nowhere.");
+            }
+            try {
                 rlic.classList.remove("rl-inner-content-after");
             } catch (e) {
                 // console.log("rlic is nowhere.");
@@ -447,6 +474,11 @@
                 tlic.classList.add("tl-inner-content-after");
             } catch (e) {
                 // console.log("tlic is nowhere.");
+            }
+            try {
+                gmic.classList.add("gm-inner-content-after");
+            } catch (e) {
+                // console.log("gmic is nowhere.");
             }
             try {
                 rlic.classList.add("rl-inner-content-after");

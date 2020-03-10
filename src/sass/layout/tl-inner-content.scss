@@ -103,6 +103,10 @@
                         display: flex;
                         padding: 15px;
                         padding-bottom: 0;
+                        cursor: pointer;
+                        &:hover {
+                            opacity: 0.6;
+                        }
                         .left-content {
                             // position: absolute;
                             img {
@@ -174,6 +178,9 @@
                                 border: 1px solid #ff7a5c;
                             }
                         }
+                    }
+                    .help {
+                        box-shadow: inset 0px 0px 10px rgba(255, 0, 0, 0.4);
                     }
                 }
                 .bottom-content {
