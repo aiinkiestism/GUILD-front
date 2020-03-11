@@ -16,6 +16,8 @@
         pic = document.getElementById("p-inner-content"),
         tlic = document.getElementById("tl-inner-content"),
         gmic = document.getElementById("gm-inner-content"),
+        ptic = document.getElementById("pt-inner-content"),
+        mlic = document.getElementById("ml-inner-content"),
         rlic = document.getElementById("rl-inner-content"),
         rdic = document.getElementById("rd-inner-content"),
         reic = document.getElementById("re-inner-content"),
@@ -30,7 +32,9 @@
         iw = document.getElementById("input-wrap"),
         participant = document.getElementsByClassName("participant"),
         chatwrap = document.getElementsByClassName("chat-wrap"),
+        taskUnit = document.getElementsByClassName("task-unit"),
         hovercontent = document.getElementsByClassName("hover-content"),
+        pthovercontent = document.getElementsByClassName("pt-hover-content"),
         reportwrap = document.getElementsByClassName("report-wrap"),
         ppc = document.getElementsByClassName("progress-pie-chart"),
         pToggle = document.getElementById('progress-toggle');
@@ -115,6 +119,18 @@
             // console.log("gmic is nowhere.");
         }
         try {
+            ptic.classList.add("pt-inner-content-after");
+            ptic.setAttribute('style', "display: block;");
+        } catch (e) {
+            // console.log("ptic is nowhere.");
+        }
+        try {
+            mlic.classList.add("ml-inner-content-after");
+            mlic.setAttribute('style', "display: block;");
+        } catch (e) {
+            // console.log("mlic is nowhere.");
+        }
+        try {
             rlic.classList.add("rl-inner-content-after");
             rlic.setAttribute('style', "display: block;");
         } catch (e) {
@@ -176,6 +192,16 @@
             // console.log("gmic is nowhere.");
         }
         try {
+            ptic.classList.remove("pt-inner-content-after");
+        } catch (e) {
+            // console.log("ptic is nowhere.");
+        }
+        try {
+            mlic.classList.remove("ml-inner-content-after");
+        } catch (e) {
+            // console.log("mlic is nowhere.");
+        }
+        try {
             rlic.classList.remove("rl-inner-content-after");
         } catch (e) {
             // console.log("rlic is nowhere.");
@@ -221,6 +247,16 @@
                 gmic.setAttribute('style', "display: none;")
             } catch (e) {
                 // console.log("gmic is nowhere.");
+            }
+            try {
+                ptic.setAttribute('style', "display: none;")
+            } catch (e) {
+                // console.log("ptic is nowhere.");
+            }
+            try {
+                mlic.setAttribute('style', "display: none;")
+            } catch (e) {
+                // console.log("mlic is nowhere.");
             }
             try {
                 rlic.setAttribute('style', "display: none;");
@@ -291,6 +327,16 @@
             // console.log("gmic is nowhere.");
         }
         try {
+            ptic.classList.add("pt-inner-content-after");
+        } catch (e) {
+            // console.log("ptic is nowhere.");
+        }
+        try {
+            mlic.classList.add("ml-inner-content-after");
+        } catch (e) {
+            // console.log("mlic is nowhere.");
+        }
+        try {
             rlic.classList.add("rl-inner-content-after");
         } catch (e) {
             // console.log("rlic is nowhere.");
@@ -339,6 +385,12 @@
 
     window.addEventListener('resize', function (e) {
         if (e.target.innerWidth <= 1500) {
+            // The link below should be changed on release!!!!
+            if (currentUrl == 'https://guild-dev.sakura.ne.jp/personal-tasks.html' ||
+            'http://guild-dev.sakura.ne.jp/personal-tasks.html') {
+                location.reload();
+            }
+
             setTimeout(function () {
                 resizeContent();
                 try {
@@ -432,6 +484,16 @@
                 // console.log("gmic is nowhere.");
             }
             try {
+                ptic.classList.remove("pt-inner-content-after");
+            } catch (e) {
+                // console.log("ptic is nowhere.");
+            }
+            try {
+                mlic.classList.remove("ml-inner-content-after");
+            } catch (e) {
+                // console.log("mlic is nowhere.");
+            }
+            try {
                 rlic.classList.remove("rl-inner-content-after");
             } catch (e) {
                 // console.log("rlic is nowhere.");
@@ -449,6 +511,12 @@
 
         }
         if (e.target.innerWidth <= 780) {
+            // The link below should be changed on release!!!!
+            if (currentUrl == 'https://guild-dev.sakura.ne.jp/personal-tasks.html' ||
+            'http://guild-dev.sakura.ne.jp/personal-tasks.html') {
+                location.reload();
+            }
+            
             lmenu.setAttribute('style', "display: none;");
             lmenua.setAttribute('style', "display: block;");
             topnav.classList.add("top-nav-after");
@@ -484,6 +552,16 @@
                 gmic.classList.add("gm-inner-content-after");
             } catch (e) {
                 // console.log("gmic is nowhere.");
+            }
+            try {
+                ptic.classList.add("pt-inner-content-after");
+            } catch (e) {
+                // console.log("ptic is nowhere.");
+            }
+            try {
+                mlic.classList.add("ml-inner-content-after");
+            } catch (e) {
+                // console.log("mlic is nowhere.");
             }
             try {
                 rlic.classList.add("rl-inner-content-after");
@@ -669,8 +747,25 @@
         // console.log("This is not goal manager page.");
     }
 
+    // hover event of task unit in personal tasks page
+    try {   
+        for (let i = 0; i < taskUnit.length; i++) {
+            taskUnit[i].addEventListener("mouseenter", function(e) {
+                pthovercontent[i].setAttribute('style', "display: block;");
+                e.target.firstElementChild.setAttribute('style', "opacity: 0.6;");
+            }, false);
+
+            taskUnit[i].addEventListener("mouseleave", function(e) {
+                pthovercontent[i].setAttribute('style', "display: none;");
+                e.target.firstElementChild.setAttribute('style', "opacity: 1;");
+            }, false);
+        }
+    } catch (e) {
+        // console.log("taskUnits or even is not inspected.");
+    }
+
     // hover event of chat unit in lobby page 
-    for (let i = 0; i < 50; i++) {
+    for (let i = 0; i < chatwrap.length; i++) {
         try {
             chatwrap[i].addEventListener("mouseenter", function () {
                 hovercontent[i].setAttribute('style', "display: block;");
@@ -686,7 +781,7 @@
 
 
     //click event of report wraps in report list page
-    for (let i = 0; i < 50; i++) {
+    for (let i = 0; i < reportwrap.length; i++) {
         try {
             reportwrap[i].addEventListener("click", function () {
                 location.replace("/report-detail.html");
