@@ -49,12 +49,14 @@
 		<%- include('./inc/left-menu.ejs') %>
 		<%- include('./inc/top-nav.ejs') %>
         <%- include('./inc/gm-inner-content.ejs') %>
-        <%- include('./inc/goal-manager-modals.ejs') %>
+		<%- include('./inc/gm-detail-modal.ejs') %>
+		<%- include('./inc/gm-edit-modal.ejs') %>
 	</div>
 </body>
 
 <script src="js/lib.min.js" async></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
@@ -88,8 +90,41 @@
                     }
                 ]
             });
-        }, 500);
+		}, 500);
+		
+		tooltipRange.options({
+			selecter: "#min-voting-rate-03",
+			tooltip: true,
+			value: 43,
+			min: 20,
+			step: 1
+		});
 
+		tooltipRange.options({
+			selecter: "#min-voting-rate-04",
+			tooltip: true,
+			value: 60,
+			min: 20,
+			max: 70,
+			step: 1
+		});
+
+		tooltipRange.options({
+			selecter: "#min-voting-rate-05",
+			tooltip: true,
+			value: 43,
+			min: 20,
+			step: 1
+		});
+
+		tooltipRange.options({
+			selecter: "#min-voting-rate-06",
+			tooltip: true,
+			value: 60,
+			min: 20,
+			max: 70,
+			step: 1
+		});
 
 	})();
 </script>

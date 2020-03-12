@@ -9,8 +9,6 @@
 @import './abstracts/mixins';
 
 @import './vendors/tooltip-range';
-// @import '../../node_modules/@glidejs/glide/src/assets/sass/glide.core';
-// @import '../../node_modules/@glidejs/glide/src/assets/sass/glide.theme';
 
 @import './base/reset';
 @import './base/typography';
@@ -40,4 +38,5 @@
 @import './components/dashboard-item';
 @import './components/voting-modals';
 @import './components/login-modal';
-@import './components/goal-manager-modals'
+@import './components/gm-detail-modal';
+@import './components/gm-edit-modal';

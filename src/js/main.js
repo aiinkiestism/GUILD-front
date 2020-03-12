@@ -32,9 +32,9 @@
         iw = document.getElementById("input-wrap"),
         participant = document.getElementsByClassName("participant"),
         chatwrap = document.getElementsByClassName("chat-wrap"),
-        taskUnit = document.getElementsByClassName("task-unit"),
+        // taskUnit = document.getElementsByClassName("task-unit"),
         hovercontent = document.getElementsByClassName("hover-content"),
-        pthovercontent = document.getElementsByClassName("pt-hover-content"),
+        // pthovercontent = document.getElementsByClassName("pt-hover-content"),
         reportwrap = document.getElementsByClassName("report-wrap"),
         ppc = document.getElementsByClassName("progress-pie-chart"),
         pToggle = document.getElementById('progress-toggle');
@@ -43,6 +43,8 @@
         vi = document.getElementsByClassName("voting-item"),
         kiw = document.getElementsByClassName("kgi-inner-wrap"),
         gmmiw = document.getElementById("gmm-inner-wrap"),
+        gmeiw = document.getElementById("gme-inner-wrap"),
+        kaw = document.getElementsByClassName("kgi-addition-wrap"),
         ynbtn = document.getElementById("yn-btn"),
         cbtn = document.getElementById("confirm-btn"),
         mbtn = document.getElementById("modify-btn"),
@@ -51,7 +53,8 @@
         mask = document.getElementById("mask"),
         gmMask = document.getElementById("gm-mask"),
         vbtn2 = document.getElementById("vote-btn2"),
-        sbtn = document.getElementById("save-btn");
+        sbtn = document.getElementById("save-btn"),
+        gmdEditBtn = document.getElementById("gmm-edit-btn");
 
     // initialization process
     try {
@@ -386,10 +389,10 @@
     window.addEventListener('resize', function (e) {
         if (e.target.innerWidth <= 1500) {
             // The link below should be changed on release!!!!
-            if (currentUrl == 'https://guild-dev.sakura.ne.jp/personal-tasks.html' ||
-            'http://guild-dev.sakura.ne.jp/personal-tasks.html') {
-                location.reload();
-            }
+            // if (currentUrl === 'https://guild-dev.sakura.ne.jp/personal-tasks.html' ||
+            // 'http://guild-dev.sakura.ne.jp/personal-tasks.html') {
+            //     location.reload();
+            // }
 
             setTimeout(function () {
                 resizeContent();
@@ -511,11 +514,11 @@
 
         }
         if (e.target.innerWidth <= 780) {
-            // The link below should be changed on release!!!!
-            if (currentUrl == 'https://guild-dev.sakura.ne.jp/personal-tasks.html' ||
-            'http://guild-dev.sakura.ne.jp/personal-tasks.html') {
-                location.reload();
-            }
+            // The link below should be changed on release!!!! why members-list page is also reloading
+            // if (currentUrl === 'https://guild-dev.sakura.ne.jp/personal-tasks.html' ||
+            // 'http://guild-dev.sakura.ne.jp/personal-tasks.html') {
+            //     location.reload();
+            // }
             
             lmenu.setAttribute('style', "display: none;");
             lmenua.setAttribute('style', "display: block;");
@@ -726,6 +729,7 @@
             // console.log(e.target);
             if (e.target == gmMask) {
                 gmmiw.classList.remove("visible");
+                gmeiw.classList.remove("visible");
                 // console.log("clicked3");
                 gmMask.classList.remove("visible");
                 // console.log("clicked2");
@@ -743,26 +747,40 @@
             }, false);
         }
 
+        gmdEditBtn.onclick = e => {
+            gmmiw.classList.remove("visible");
+            gmeiw.classList.add("visible");
+            e.stopPropagation();
+        }
+
+        // for (let i = 0; i < kaw.length; i++) {
+        //     kaw[i].addEventListener("click", function(e) {
+        //         gmeiw.classList.add("visble");
+        //         e.stopPropagation();
+        //     }, false);
+        // }
+
     } catch (e) {
         // console.log("This is not goal manager page.");
     }
 
     // hover event of task unit in personal tasks page
-    try {   
-        for (let i = 0; i < taskUnit.length; i++) {
-            taskUnit[i].addEventListener("mouseenter", function(e) {
-                pthovercontent[i].setAttribute('style', "display: block;");
-                e.target.firstElementChild.setAttribute('style', "opacity: 0.6;");
-            }, false);
+    // try {   
+    //     for (let i = 0; i < taskUnit.length; i++) {
+    //         taskUnit[i].addEventListener("mouseenter", function(e) {
+    //             console.log(pthovercontent[i]);
+    //             pthovercontent[i].setAttribute('style', "display: block !important;");
+    //             e.target.firstElementChild.setAttribute('style', "opacity: 0.6;");
+    //         }, false);
 
-            taskUnit[i].addEventListener("mouseleave", function(e) {
-                pthovercontent[i].setAttribute('style', "display: none;");
-                e.target.firstElementChild.setAttribute('style', "opacity: 1;");
-            }, false);
-        }
-    } catch (e) {
-        // console.log("taskUnits or even is not inspected.");
-    }
+    //         taskUnit[i].addEventListener("mouseleave", function(e) {
+    //             pthovercontent[i].setAttribute('style', "display: none !important;");
+    //             e.target.firstElementChild.setAttribute('style', "opacity: 1;");
+    //         }, false);
+    //     }
+    // } catch (e) {
+    //     // console.log("taskUnits or event is not inspected.");
+    // }
 
     // hover event of chat unit in lobby page 
     for (let i = 0; i < chatwrap.length; i++) {

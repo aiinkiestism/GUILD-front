@@ -174,29 +174,30 @@
                         }
                     }
                 }
-                // #bottom-content {
-                //     position: absolute;
-                //     // right: 0;
-                //     right: 26%;
-                //     bottom: -15%;
-                //     // left: 0;
-                //     #gmm-edit-btn {
-                //         width: 150px;
-                //         height: 40px;
-                //         background: #98a9a8;
-                //         border-radius: 5px;
-                //         p {
-                //             font-family: $base-font-family;
-                //             font-weight: normal;
-                //             font-size: 14px;
-                //             line-height: 170%;
-                //             text-align: center;
-                //             letter-spacing: 0.04em;
-                //             color: #fff;
-                //             padding-top: 8px;
-                //         }
-                //     }
-                // }
+                #bottom-content {
+                    position: absolute;
+                    // right: 0;
+                    right: -3%;
+                    bottom: -79%;
+                    // left: 0;
+                    #gmm-edit-btn {
+                        width: 150px;
+                        height: 40px;
+                        background: #98a9a8;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        p {
+                            font-family: $base-font-family;
+                            font-weight: normal;
+                            font-size: 14px;
+                            line-height: 170%;
+                            text-align: center;
+                            letter-spacing: 0.04em;
+                            color: #fff;
+                            padding-top: 8px;
+                        }
+                    }
+                }
             }
             #m-kpi-wrap {
                 width: 28.3%; 
@@ -245,7 +246,8 @@
                         }
                         .progress-wrap {
                             .prog {
-                                width: 87%;
+                                // width: 87%;
+                                width: 70%;
                                 background: #e3e3e3;
                                 border-radius: 20px;
                                 display: inline-block;;
@@ -288,6 +290,114 @@
         .visible {
             opacity: 1 !important;
             visibility: visible !important;
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    #goal-manager-modals {
+        #gmm-inner-wrap {
+            #m-ksf-wrap {
+                #bottom-content {
+                    right: -7%;
+                    bottom: -77%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 650px) {
+    #goal-manager-modals {
+        #gmm-inner-wrap {
+            #m-ksf-wrap {
+                #bottom-content {
+                    right: 4%;
+                    bottom: -64%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 780px) {
+    #goal-manager-modals {
+        #gmm-inner-wrap {
+            #m-ksf-wrap {
+                #bottom-content {
+                    right: 7%;
+                    bottom: -49%;
+                }
+            }
+            #m-kpi-wrap {
+                .under-top-content {
+                    .kpi-inner-wrap {
+                        .progress-wrap {
+                            .prog {
+                                width: 77%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 940px) {
+    #goal-manager-modals {
+        #gmm-inner-wrap {
+            #m-ksf-wrap {
+                #bottom-content {
+                    right: 13%;
+                    bottom: -35%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    #goal-manager-modals {
+        #gmm-inner-wrap {
+            #m-kpi-wrap {
+                .under-top-content {
+                    .kpi-inner-wrap {
+                        .progress-wrap {
+                            .prog {
+                                width: 85%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #goal-manager-modals {
+        #gmm-inner-wrap {
+            #m-ksf-wrap {
+                #bottom-content {
+                    right: 26%;
+                    bottom: -15%;
+                }
+            }
+        }
+    }    
+}
+
+@media screen and (min-width: 1350px) {
+    #goal-manager-modals {
+        #gmm-inner-wrap {
+            height: 700px;
+            #m-ksf-wrap {
+                #bottom-content {
+                    right: 26%;
+                    bottom: 0%;
+                }
+            }
         }
     }
 }

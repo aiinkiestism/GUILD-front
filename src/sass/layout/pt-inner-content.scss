@@ -214,7 +214,7 @@
                     }
                     .tasks-list-wrap {
                         .task-unit {
-                            padding: 6px 15px;
+                            padding: 6px 15px 20px;
                             border-bottom: 1px solid #eee;
                             position: relative;
                             &:hover {
@@ -232,9 +232,11 @@
                             }
                             .pt-hover-content {
                                 position: absolute;
-                                top: 15%;
+                                // top: 15%;
                                 right: 5%;
-                                display: none;
+                                bottom: 3%;
+                                // display: none;
+                                cursor: pointer;
                                 .hover-inner-wrap {
                                     position: relative;
                                     form {
@@ -255,6 +257,7 @@
                                             -webkit-appearance: none;
                                             -moz-appearance: none;
                                             appearance: none;
+                                            cursor: pointer;
                                             option {
                                                 border-color: rgba(0, 0, 0, 0.1);
                                                 font-family: $base-font-family;
