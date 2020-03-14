@@ -362,7 +362,7 @@
 
         try {
             let rmChildNodes = document.getElementById("right-menu").childNodes;
-            for (let i = 0; i < rmChildNodes.length; i++) {
+            for (let i = 0, max = rmChildNodes.length; i < max; i++) {
                 let childNode = rmChildNodes[i]
                 if (childNode.nodeType == 1) {
                     childNode.setAttribute('style', "display: none;");
@@ -603,7 +603,7 @@
 
             try {
                 let rmChildNodes = document.getElementById("right-menu").childNodes;
-                for (let i = 0; i < rmChildNodes.length; i++) {
+                for (let i = 0, max = rmChildNodes.length; i < max; i++) {
                     let childNode = rmChildNodes[i];
                     if (childNode.nodeType == 1) {
                         childNode.setAttribute('style', "display: inline-block;");
@@ -623,7 +623,7 @@
 
                 try {
                     let rmChildNodes = document.getElementById("right-menu").childNodes;
-                    for (let i = 0; i < rmChildNodes.length; i++) {
+                    for (let i = 0, max = rmChildNodes.length; i < max; i++) {
                         let childNode = rmChildNodes[i];
                         if (childNode.nodeType == 1) {
                             childNode.setAttribute('style', "display: none;");
@@ -655,7 +655,7 @@
     try {
         window.addEventListener("click", function (e) {
             if (e.target == mask) {
-                for (let i = 0; i < modal.length; i++) {
+                for (let i = 0, max = modal.length; i < max; i++) {
                     modal[i].classList.remove("visible");
                     // console.log("clicked")
                 }
@@ -736,7 +736,7 @@
             }
         }, false);
 
-        for (let i = 0; i < kiw.length; i++) {
+        for (let i = 0, max = kiw.length; i < max; i++) {
             kiw[i].addEventListener("click", function (e) {
                 gmmiw.classList.add("visible");
                 // console.log("clicked4")
@@ -753,7 +753,7 @@
             e.stopPropagation();
         }
 
-        // for (let i = 0; i < kaw.length; i++) {
+        // for (let i = 0, max = kaw.length; i < max; i++) {
         //     kaw[i].addEventListener("click", function(e) {
         //         gmeiw.classList.add("visble");
         //         e.stopPropagation();
@@ -766,7 +766,7 @@
 
     // hover event of task unit in personal tasks page
     // try {   
-    //     for (let i = 0; i < taskUnit.length; i++) {
+    //     for (let i = 0, max = taskUnit.length; i < max; i++) {
     //         taskUnit[i].addEventListener("mouseenter", function(e) {
     //             console.log(pthovercontent[i]);
     //             pthovercontent[i].setAttribute('style', "display: block !important;");
@@ -783,7 +783,7 @@
     // }
 
     // hover event of chat unit in lobby page 
-    for (let i = 0; i < chatwrap.length; i++) {
+    for (let i = 0, max = chatwrap.length; i < max; i++) {
         try {
             chatwrap[i].addEventListener("mouseenter", function () {
                 hovercontent[i].setAttribute('style', "display: block;");
@@ -799,7 +799,7 @@
 
 
     //click event of report wraps in report list page
-    for (let i = 0; i < reportwrap.length; i++) {
+    for (let i = 0, max = reportwrap.length; i < max; i++) {
         try {
             reportwrap[i].addEventListener("click", function () {
                 location.replace("/report-detail.html");
@@ -819,7 +819,7 @@
     // progress chart alignment in progress page
     try {
         if (ppc != null) {
-            for (let i = 0; i < 50; i++) {
+            for (let i = 0, max = ppc.length; i < max; i++) {
                 let percent = ppc[i].getAttribute("data-percent"),
                     pieDeg = 360 * percent / 100,
                     ppcProgress = document.getElementsByClassName("ppc-progress"),
