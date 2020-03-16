@@ -1,4 +1,4 @@
-(function () {
+(function (global) {
     'use strict';
 
     // document.addEventListener('DOMContentLoaded', function() {
@@ -364,7 +364,7 @@
             let rmChildNodes = document.getElementById("right-menu").childNodes;
             for (let i = 0, max = rmChildNodes.length; i < max; i++) {
                 let childNode = rmChildNodes[i]
-                if (childNode.nodeType == 1) {
+                if (childNode.nodeType === 1) {
                     childNode.setAttribute('style', "display: none;");
                 }
             }
@@ -402,14 +402,14 @@
                     // console.log("dinone[3] is nowehre.");
                 }
                 try {
-                    if (di[2].parentNode == diwrap2) {
+                    if (di[2].parentNode === diwrap2) {
                         revertContent2();
                     }
                 } catch (e) {
                     // console.log("diwraps are nowhere.");
                 }
                 try {
-                    if (dinone[1].parentNode == diwrap2 || dinone[2].parentNode == diwrap2) {
+                    if (dinone[1].parentNode === diwrap2 || dinone[2].parentNode === diwrap2) {
                         diwrap3.insertBefore(dinone[2], null);
                         diwrap3.insertBefore(dinone[1], null);
                     }
@@ -424,7 +424,7 @@
         if (e.target.innerWidth > 1500) {
             setTimeout(function () {
                 try {
-                    if (di[2].parentNode == diwrap2) {
+                    if (di[2].parentNode === diwrap2) {
                         revertContent2();
                     }
                 } catch (e) {
@@ -583,7 +583,7 @@
             }
             e.stopPropagation();
             try {
-                if (di[1].parentNode == diwrap2) {
+                if (di[1].parentNode == =diwrap2) {
                     revertContent4();
                     // lmenu.classList.remove("animation-before");
                     // lmenu.classList.remove("animation-after");
@@ -592,7 +592,7 @@
                 // console.log("di[1] is nowhere.");
             }
             try {
-                if (vinone.parentNode == vw[3]) {
+                if (vinone.parentNode === vw[3]) {
                     vRevertContent();
                 }
             } catch (e) {
@@ -605,7 +605,7 @@
                 let rmChildNodes = document.getElementById("right-menu").childNodes;
                 for (let i = 0, max = rmChildNodes.length; i < max; i++) {
                     let childNode = rmChildNodes[i];
-                    if (childNode.nodeType == 1) {
+                    if (childNode.nodeType === 1) {
                         childNode.setAttribute('style', "display: inline-block;");
                     }
                 }
@@ -625,7 +625,7 @@
                     let rmChildNodes = document.getElementById("right-menu").childNodes;
                     for (let i = 0, max = rmChildNodes.length; i < max; i++) {
                         let childNode = rmChildNodes[i];
-                        if (childNode.nodeType == 1) {
+                        if (childNode.nodeType === 1) {
                             childNode.setAttribute('style', "display: none;");
                         }
                     }
@@ -654,7 +654,7 @@
     // implememt new voting
     try {
         window.addEventListener("click", function (e) {
-            if (e.target == mask) {
+            if (e.target === mask) {
                 for (let i = 0, max = modal.length; i < max; i++) {
                     modal[i].classList.remove("visible");
                     // console.log("clicked")
@@ -727,7 +727,7 @@
     try {
         window.addEventListener("click", function (e) {
             // console.log(e.target);
-            if (e.target == gmMask) {
+            if (e.target === gmMask) {
                 gmmiw.classList.remove("visible");
                 gmeiw.classList.remove("visible");
                 // console.log("clicked3");
@@ -1072,4 +1072,4 @@
 
     // }, false);
 
-})();
+}(this));
