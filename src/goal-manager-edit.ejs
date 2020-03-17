@@ -40,7 +40,12 @@
     <meta name="twitter:card" content="" />
     
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 
 	<script src="https://kit.fontawesome.com/05d054bd73.js" crossorigin="anonymous"></script>
 </head>
@@ -55,15 +60,21 @@
 </body>
 
 <script src="js/lib.min.js" async></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
 <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
 <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
 
-<script>
+<script defer>
 	(function() {
 		'use strict';
 
+		$('#gm-range').daterangepicker({
+			opens: 'left',
+			endDate: moment().add(1, 'month'),
+		}, function(start, end, label) {
+			console.log("A new datae selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+		});
+		
         // setTimeout(function() {
         //     $(".regular").slick({
         //         // dots: true,
@@ -92,40 +103,41 @@
         //     });
 		// }, 500);
 		
-		tooltipRange.options({
-			selecter: "#min-voting-rate-03",
-			tooltip: true,
-			value: 43,
-			min: 20,
-			step: 1
-		});
+		// tooltipRange.options({
+		// 	selecter: "#min-voting-rate-03",
+		// 	tooltip: true,
+		// 	value: 43,
+		// 	min: 20,
+		// 	step: 1
+		// });
 
-		tooltipRange.options({
-			selecter: "#min-voting-rate-04",
-			tooltip: true,
-			value: 60,
-			min: 20,
-			max: 70,
-			step: 1
-		});
+		// tooltipRange.options({
+		// 	selecter: "#min-voting-rate-04",
+		// 	tooltip: true,
+		// 	value: 60,
+		// 	min: 20,
+		// 	max: 70,
+		// 	step: 1
+		// });
 
-		tooltipRange.options({
-			selecter: "#min-voting-rate-05",
-			tooltip: true,
-			value: 43,
-			min: 20,
-			step: 1
-		});
+		// tooltipRange.options({
+		// 	selecter: "#min-voting-rate-05",
+		// 	tooltip: true,
+		// 	value: 43,
+		// 	min: 20,
+		// 	step: 1
+		// });
 
-		tooltipRange.options({
-			selecter: "#min-voting-rate-06",
-			tooltip: true,
-			value: 60,
-			min: 20,
-			max: 70,
-			step: 1
-		});
+		// tooltipRange.options({
+		// 	selecter: "#min-voting-rate-06",
+		// 	tooltip: true,
+		// 	value: 60,
+		// 	min: 20,
+		// 	max: 70,
+		// 	step: 1
+		// });
 
-	})();
+
+	}());
 </script>
 </html>

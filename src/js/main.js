@@ -17,6 +17,7 @@
         tlic = document.getElementById("tl-inner-content"),
         gmic = document.getElementById("gm-inner-content"),
         gmdic = document.getElementById("gmd-inner-content"),
+        gmeic = document.getElementById("gme-inner-content"),
         ptic = document.getElementById("pt-inner-content"),
         mlic = document.getElementById("ml-inner-content"),
         rlic = document.getElementById("rl-inner-content"),
@@ -26,8 +27,8 @@
         di = document.getElementsByClassName("dashboard-item"),
         dinone = document.getElementsByClassName("dashboard-item-none"),
         hbtn = document.getElementById("help-btn"),
-        outp = document.getElementsByClassName("outp"),
-        prog = document.getElementsByClassName("prog"),
+        // outp = document.getElementsByClassName("outp"),
+        // prog = document.getElementsByClassName("prog"),
         modal = document.getElementsByClassName("modal"),
         vw = document.getElementsByClassName("voting-wrap"),
         iw = document.getElementById("input-wrap"),
@@ -42,20 +43,20 @@
 
     const vinone = document.getElementById("voting-item-none"),
         vi = document.getElementsByClassName("voting-item"),
-        kiw = document.getElementsByClassName("kgi-inner-wrap"),
-        gmmiw = document.getElementById("gmm-inner-wrap"),
-        gmeiw = document.getElementById("gme-inner-wrap"),
-        kaw = document.getElementsByClassName("kgi-addition-wrap"),
+        // kiw = document.getElementsByClassName("kgi-inner-wrap"),
+        // gmmiw = document.getElementById("gmm-inner-wrap"),
+        // gmeiw = document.getElementById("gme-inner-wrap"),
+        // kaw = document.getElementsByClassName("kgi-addition-wrap"),
         ynbtn = document.getElementById("yn-btn"),
         cbtn = document.getElementById("confirm-btn"),
         mbtn = document.getElementById("modify-btn"),
         vbtn = document.getElementById("vote-btn"),
         clbtn = document.getElementById("close-btn"),
         mask = document.getElementById("mask"),
-        gmMask = document.getElementById("gm-mask"),
+        // gmMask = document.getElementById("gm-mask"),
         vbtn2 = document.getElementById("vote-btn2"),
-        sbtn = document.getElementById("save-btn"),
-        gmdEditBtn = document.getElementById("gmm-edit-btn");
+        sbtn = document.getElementById("save-btn");
+        // gmdEditBtn = document.getElementById("gmm-edit-btn");
 
     // initialization process
     try {
@@ -127,6 +128,12 @@
             gmdic.setAttribute('style', "display: block;");
         } catch (e) {
             // console.log("gmdic is nowhere.");
+        }
+        try {
+            gmeic.classList.add("gme-inner-content-after");
+            gmeic.setAttribute('style', "display: block;");
+        } catch (e) {
+            // console.log("gmeic is nowhere.");
         }
         try {
             ptic.classList.add("pt-inner-content-after");
@@ -207,6 +214,11 @@
             // console.log("gmdic is nowhere.");
         }
         try {
+            gmeic.classList.remove("gme-inner-content-after");
+        } catch (e) {
+            // console.log("gmeic is nowhere.");
+        }
+        try {
             ptic.classList.remove("pt-inner-content-after");
         } catch (e) {
             // console.log("ptic is nowhere.");
@@ -254,27 +266,32 @@
                 // console.log("pic is nowhere.");
             }
             try {
-                tlic.setAttribute('style', "display: none;")
+                tlic.setAttribute('style', "display: none;");
             } catch (e) {
                 // console.log("tlic is nowhere.");
             }
             try {
-                gmic.setAttribute('style', "display: none;")
+                gmic.setAttribute('style', "display: none;");
             } catch (e) {
                 // console.log("gmic is nowhere.");
             }
             try {
-                gmdic.setAttribute('style', "display: none;")
+                gmdic.setAttribute('style', "display: none;");
             } catch (e) {
                 // console.log("gmdic is nowhere.");
             }
             try {
-                ptic.setAttribute('style', "display: none;")
+                gmeic.setAttribute('style', "display: none;");
+            } catch (e) {
+                // console.log("gmeic is nowhere.");
+            }
+            try {
+                ptic.setAttribute('style', "display: none;");
             } catch (e) {
                 // console.log("ptic is nowhere.");
             }
             try {
-                mlic.setAttribute('style', "display: none;")
+                mlic.setAttribute('style', "display: none;");
             } catch (e) {
                 // console.log("mlic is nowhere.");
             }
@@ -350,6 +367,11 @@
             gmdic.classList.add("gmd-inner-content-after");
         } catch (e) {
             // console.log("gmdic is nowhere.");
+        }
+        try {
+            gmeic.classList.add("gme-inner-content-after");
+        } catch (e) {
+            // console.log("gmeic is nowhere.");
         }
         try {
             ptic.classList.add("pt-inner-content-after");
@@ -509,6 +531,11 @@
                 // console.log("gmdic is nowhere.");
             }
             try {
+                gmeic.classList.remove("gme-inner-content-after");
+            } catch (e) {
+                // console.log("gmeic is nowhere.");
+            }
+            try {
                 ptic.classList.remove("pt-inner-content-after");
             } catch (e) {
                 // console.log("ptic is nowhere.");
@@ -577,6 +604,11 @@
                 gmdic.classList.add("gmd-inner-content-after");
             } catch (e) {
                 // console.log("gmdic is nowhere.");
+            }
+            try {
+                gmeic.classList.add("gme-inner-content-after");
+            } catch (e) {
+                // console.log("gmeic is nowhere.");
             }
             try {
                 ptic.classList.add("pt-inner-content-after");
@@ -746,45 +778,45 @@
     }
 
     // implement modal behaviors in the goal manager page
-    try {
-        window.addEventListener("click", function (e) {
-            // console.log(e.target);
-            if (e.target === gmMask) {
-                gmmiw.classList.remove("visible");
-                gmeiw.classList.remove("visible");
-                // console.log("clicked3");
-                gmMask.classList.remove("visible");
-                // console.log("clicked2");
-            }
-        }, false);
+    // try {
+    //     window.addEventListener("click", function (e) {
+    //         // console.log(e.target);
+    //         if (e.target === gmMask) {
+    //             gmmiw.classList.remove("visible");
+    //             gmeiw.classList.remove("visible");
+    //             // console.log("clicked3");
+    //             gmMask.classList.remove("visible");
+    //             // console.log("clicked2");
+    //         }
+    //     }, false);
 
-        for (let i = 0, max = kiw.length; i < max; i++) {
-            kiw[i].addEventListener("click", function (e) {
-                gmmiw.classList.add("visible");
-                // console.log("clicked4")
-                gmMask.classList.add('visible');
-                // console.log("clicked5");
-                e.stopPropagation();
-                // console.log("clicked");
-            }, false);
-        }
+    //     for (let i = 0, max = kiw.length; i < max; i++) {
+    //         kiw[i].addEventListener("click", function (e) {
+    //             gmmiw.classList.add("visible");
+    //             // console.log("clicked4")
+    //             gmMask.classList.add('visible');
+    //             // console.log("clicked5");
+    //             e.stopPropagation();
+    //             // console.log("clicked");
+    //         }, false);
+    //     }
 
-        gmdEditBtn.onclick = e => {
-            gmmiw.classList.remove("visible");
-            gmeiw.classList.add("visible");
-            e.stopPropagation();
-        }
+    //     gmdEditBtn.onclick = e => {
+    //         gmmiw.classList.remove("visible");
+    //         gmeiw.classList.add("visible");
+    //         e.stopPropagation();
+    //     }
 
-        // for (let i = 0, max = kaw.length; i < max; i++) {
-        //     kaw[i].addEventListener("click", function(e) {
-        //         gmeiw.classList.add("visble");
-        //         e.stopPropagation();
-        //     }, false);
-        // }
+    //     // for (let i = 0, max = kaw.length; i < max; i++) {
+    //     //     kaw[i].addEventListener("click", function(e) {
+    //     //         gmeiw.classList.add("visble");
+    //     //         e.stopPropagation();
+    //     //     }, false);
+    //     // }
 
-    } catch (e) {
-        // console.log("This is not goal manager page.");
-    }
+    // } catch (e) {
+    //     // console.log("This is not goal manager page.");
+    // }
 
     // hover event of task unit in personal tasks page
     // try {   

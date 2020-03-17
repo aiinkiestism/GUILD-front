@@ -40,6 +40,10 @@
     <meta name="twitter:card" content="" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <script src="https://kit.fontawesome.com/05d054bd73.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -239,82 +243,123 @@
         </div>
         <div class="right-content">
           <div class="top-text-box">
-            <p>ゴールマネージャー編集</p>
+            <p>ゴールマネージャー</p>
           </div>
           <div class="inner-wrap">
             <div id="gme-inner-wrap">
               <div id="m-kgi-wrap">
                 <div class="top-text">
-                  <p class="index-name">年間KGI</p>
-                  <textarea name="gme-index-detail" id="" class="gme-index-detail" cols="30" rows="10">ティール組織の浸透により、労働問題の解決に繋げる</textarea>
+                  <p class="index-name">月次KGI</p>
+                  <textarea name="gme-index-detail" id="" class="gme-index-detail" cols="30" rows="10" placeholder="ティール組織の浸透により、労働問題の解決に繋げる"></textarea>
                 </div>
                 <textarea name="" id="" cols="30" rows="10" class="gme-index-body"></textarea>
+                <div class="time-period-wrap">
+                  <div class="top-text">
+                    <p>期間</p>
+                  </div>
+                  <div id="daterange-wrap">
+                    <img src="img/calendar.png" alt="KGIの期間">
+                    <input type="text" id="gm-range" value="2020/02/20 ~ 2020/03/19">
+                  </div>
+                </div>
+                <div class="sp-bottom-content">
+                  <!-- <a href="/goal-manager.html"> -->
+                  <div class="gme-save-btn">
+                    <p>保存する</p>
+                  </div>
+                  <!-- </a> -->
+                </div>
               </div>
               <div id="m-ksf-wrap">
                 <div class="top-text">
                   <p class="index-name">KSF</p>
-                  <textarea name="gme-index-detail" id="" class="gme-index-detail" cols="30" rows="10">KGI達成に必要なプロセス</textarea>
+                  <textarea name="gme-index-detail" id="" class="gme-index-detail" cols="30" rows="10" placeholder="KGI達成に必要なプロセス"></textarea>
                 </div>
                 <div class="under-top-content">
                   <div class="ksf-inner-wrap">
                     <div class="top-text">
-                      <p>K-A</p>
+                      <p>KSF-A</p>
                     </div>
+                    <textarea name="" id="" cols="30" rows="10" class="gme-ksf-title" placeholder="円滑にすすめる"></textarea>
                     <textarea name="" id="" cols="30" rows="10" class="gme-ksf-body"></textarea>
                   </div>
                   <div class="ksf-inner-wrap">
                     <div class="top-text">
-                      <p>K-B</p>
+                      <p>KSF-B</p>
                     </div>
+                    <textarea name="" id="" cols="30" rows="10" class="gme-ksf-title" placeholder="円滑にすすめる"></textarea>
                     <textarea name="" id="" cols="30" rows="10" class="gme-ksf-body"></textarea>
                   </div>
                   <div class="ksf-inner-wrap">
                     <div class="top-text">
-                      <p>K-C</p>
+                      <p>KSF-C</p>
                     </div>
+                    <textarea name="" id="" cols="30" rows="10" class="gme-ksf-title" placeholder="円滑にすすめる"></textarea>
                     <textarea name="" id="" cols="30" rows="10" class="gme-ksf-body"></textarea>
                   </div>
+                </div>
+                <div class="sp-bottom-content">
+                  <!-- <a href="/goal-manager.html"> -->
+                  <div class="gme-save-btn">
+                    <p>保存する</p>
+                  </div>
+                  <!-- </a> -->
                 </div>
               </div>
               <div id="m-kpi-wrap">
                 <div class="top-text">
                   <p class="index-name">KPI</p>
-                  <textarea name="gme-index-detail" id="" class="gme-index-detail" cols="30" rows="10">KSF達成のための目標プロセス</textarea>
+                  <textarea name="gme-index-detail" id="" class="gme-index-detail" cols="30" rows="10" placeholder="KSF達成のための目標プロセス"></textarea>
                 </div>
                 <div class="under-top-content">
                   <div class="kpi-inner-wrap">
-                    <select name="ksf-select" id="" class="ksf-select">
-                      <option value="KSF-A" selected>KSF-A</option>
-                      <option value="KSF-B">KSF-B</option>
-                      <option value="KSF-C">KSF-C</option>
-                    </select>
-                    <textarea name="" id="" cols="30" rows="10" class="gme-kpi-title">円滑にすすめる</textarea>
-                    <textarea name="" id="" cols="30" rows="10" class="gme-kpi-body">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</textarea>
+                    <div class="select-wrap">
+                      <select name="ksf-select" id="" class="ksf-select">
+                        <option value="KSF-A" selected>KSF-A</option>
+                        <option value="KSF-B">KSF-B</option>
+                        <option value="KSF-C">KSF-C</option>
+                      </select>
+                    </div>
+                    <textarea name="" id="" cols="30" rows="10" class="gme-kpi-title" placeholder="円滑にすすめる"></textarea>
+                    <textarea name="" id="" cols="30" rows="10" class="gme-kpi-body"></textarea>
                   </div>
                   <div class="kpi-inner-wrap">
-                    <select name="ksf-select" id="" class="ksf-select">
-                      <option value="KSF-A" selected>KSF-A</option>
-                      <option value="KSF-B">KSF-B</option>
-                      <option value="KSF-C">KSF-C</option>
-                    </select>
-                    <textarea name="" id="" cols="30" rows="10" class="gme-kpi-title">20日で達成する</textarea>
-                    <textarea name="" id="" cols="30" rows="10" class="gme-kpi-body">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</textarea>
+                    <div class="select-wrap">
+                      <select name="ksf-select" id="" class="ksf-select">
+                        <option value="KSF-A" selected>KSF-A</option>
+                        <option value="KSF-B">KSF-B</option>
+                        <option value="KSF-C">KSF-C</option>
+                      </select>
+                    </div>
+                    <textarea name="" id="" cols="30" rows="10" class="gme-kpi-title" placeholder="20日で達成する"></textarea>
+                    <textarea name="" id="" cols="30" rows="10" class="gme-kpi-body"></textarea>
                   </div>
                   <div class="kpi-inner-wrap">
-                    <select name="ksf-select" id="" class="ksf-select">
-                      <option value="KSF-A">KSF-A</option>
-                      <option value="KSF-B" selected>KSF-B</option>
-                      <option value="KSF-C">KSF-C</option>
-                    </select>
-                    <textarea name="" id="" cols="30" rows="10" class="gme-kpi-title">10社に導入</textarea>
-                    <textarea name="" id="" cols="30" rows="10" class="gme-kpi-body">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</textarea>
+                    <div class="select-wrap">
+                      <select name="ksf-select" id="" class="ksf-select">
+                        <option value="KSF-A">KSF-A</option>
+                        <option value="KSF-B" selected>KSF-B</option>
+                        <option value="KSF-C">KSF-C</option>
+                      </select>
+                    </div>
+                    <textarea name="" id="" cols="30" rows="10" class="gme-kpi-title" placeholder="10社に導入"></textarea>
+                    <textarea name="" id="" cols="30" rows="10" class="gme-kpi-body"></textarea>
                   </div>
+                </div>
+                <div class="sp-bottom-content">
+                  <!-- <a href="/goal-manager.html"> -->
+                  <div class="gme-save-btn">
+                    <p>保存する</p>
+                  </div>
+                  <!-- </a> -->
                 </div>
               </div>
-              <div id="bottom-content">
-                <div id="gme-save-btn">
+              <div id="gme-bottom-content">
+                <!-- <a href="/goal-manager.html"> -->
+                <div class="gme-save-btn">
                   <p>保存する</p>
                 </div>
+                <!-- </a> -->
               </div>
             </div>
           </div>
@@ -531,14 +576,21 @@
     </div> --> </div>
   </body>
   <script src="js/lib.min.js" async></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
   <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
   <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
-  <script>
+  <script defer>
     (function()
     {
       'use strict';
+      $('#gm-range').daterangepicker(
+      {
+        opens: 'left',
+        endDate: moment().add(1, 'month'),
+      }, function(start, end, label)
+      {
+        console.log("A new datae selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+      });
       // setTimeout(function() {
       //     $(".regular").slick({
       //         // dots: true,
@@ -566,40 +618,36 @@
       //         ]
       //     });
       // }, 500);
-      tooltipRange.options(
-      {
-        selecter: "#min-voting-rate-03",
-        tooltip: true,
-        value: 43,
-        min: 20,
-        step: 1
-      });
-      tooltipRange.options(
-      {
-        selecter: "#min-voting-rate-04",
-        tooltip: true,
-        value: 60,
-        min: 20,
-        max: 70,
-        step: 1
-      });
-      tooltipRange.options(
-      {
-        selecter: "#min-voting-rate-05",
-        tooltip: true,
-        value: 43,
-        min: 20,
-        step: 1
-      });
-      tooltipRange.options(
-      {
-        selecter: "#min-voting-rate-06",
-        tooltip: true,
-        value: 60,
-        min: 20,
-        max: 70,
-        step: 1
-      });
-    })();
+      // tooltipRange.options({
+      // 	selecter: "#min-voting-rate-03",
+      // 	tooltip: true,
+      // 	value: 43,
+      // 	min: 20,
+      // 	step: 1
+      // });
+      // tooltipRange.options({
+      // 	selecter: "#min-voting-rate-04",
+      // 	tooltip: true,
+      // 	value: 60,
+      // 	min: 20,
+      // 	max: 70,
+      // 	step: 1
+      // });
+      // tooltipRange.options({
+      // 	selecter: "#min-voting-rate-05",
+      // 	tooltip: true,
+      // 	value: 43,
+      // 	min: 20,
+      // 	step: 1
+      // });
+      // tooltipRange.options({
+      // 	selecter: "#min-voting-rate-06",
+      // 	tooltip: true,
+      // 	value: 60,
+      // 	min: 20,
+      // 	max: 70,
+      // 	step: 1
+      // });
+    }());
   </script>
 </html>
