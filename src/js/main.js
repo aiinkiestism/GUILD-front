@@ -16,6 +16,7 @@
         pic = document.getElementById("p-inner-content"),
         tlic = document.getElementById("tl-inner-content"),
         gmic = document.getElementById("gm-inner-content"),
+        gmdic = document.getElementById("gmd-inner-content"),
         ptic = document.getElementById("pt-inner-content"),
         mlic = document.getElementById("ml-inner-content"),
         rlic = document.getElementById("rl-inner-content"),
@@ -122,6 +123,12 @@
             // console.log("gmic is nowhere.");
         }
         try {
+            gmdic.classList.add("gmd-inner-content-after");
+            gmdic.setAttribute('style', "display: block;");
+        } catch (e) {
+            // console.log("gmdic is nowhere.");
+        }
+        try {
             ptic.classList.add("pt-inner-content-after");
             ptic.setAttribute('style', "display: block;");
         } catch (e) {
@@ -195,6 +202,11 @@
             // console.log("gmic is nowhere.");
         }
         try {
+            gmdic.classList.remove("gmd-inner-content-after");
+        } catch (e) {
+            // console.log("gmdic is nowhere.");
+        }
+        try {
             ptic.classList.remove("pt-inner-content-after");
         } catch (e) {
             // console.log("ptic is nowhere.");
@@ -250,6 +262,11 @@
                 gmic.setAttribute('style', "display: none;")
             } catch (e) {
                 // console.log("gmic is nowhere.");
+            }
+            try {
+                gmdic.setAttribute('style', "display: none;")
+            } catch (e) {
+                // console.log("gmdic is nowhere.");
             }
             try {
                 ptic.setAttribute('style', "display: none;")
@@ -328,6 +345,11 @@
             gmic.classList.add("gm-inner-content-after");
         } catch (e) {
             // console.log("gmic is nowhere.");
+        }
+        try {
+            gmdic.classList.add("gmd-inner-content-after");
+        } catch (e) {
+            // console.log("gmdic is nowhere.");
         }
         try {
             ptic.classList.add("pt-inner-content-after");
@@ -482,9 +504,9 @@
                 // console.log("tlic is nowhere.");
             }
             try {
-                gmic.classList.remove("gm-inner-content-after");
+                gmdic.classList.remove("gmd-inner-content-after");
             } catch (e) {
-                // console.log("gmic is nowhere.");
+                // console.log("gmdic is nowhere.");
             }
             try {
                 ptic.classList.remove("pt-inner-content-after");
@@ -552,9 +574,9 @@
                 // console.log("tlic is nowhere.");
             }
             try {
-                gmic.classList.add("gm-inner-content-after");
+                gmdic.classList.add("gmd-inner-content-after");
             } catch (e) {
-                // console.log("gmic is nowhere.");
+                // console.log("gmdic is nowhere.");
             }
             try {
                 ptic.classList.add("pt-inner-content-after");
@@ -583,7 +605,7 @@
             }
             e.stopPropagation();
             try {
-                if (di[1].parentNode == =diwrap2) {
+                if (di[1].parentNode === diwrap2) {
                     revertContent4();
                     // lmenu.classList.remove("animation-before");
                     // lmenu.classList.remove("animation-after");
