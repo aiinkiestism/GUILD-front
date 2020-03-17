@@ -38,6 +38,9 @@
 	<meta property="og:description" content="" />
 	<meta property="fb:app_id" content="" />    
 	<meta name="twitter:card" content="" />
+
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 </head>
 <body>
 	<div class="contents">
@@ -51,8 +54,24 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js" async></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js" async></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script>
 $(function() {
+
+	setTimeout(function() {
+		$(".top-slider").slick({
+			infinite: true,
+			slideToShow: 1,
+			slideToScroll: 1,
+			accessibility: false,
+			autoplay: true,
+			autoplaySpeed: 4000,
+			arrows: false,
+			draggable: false,
+			swipe: false,
+		})
+	}, 200);
+
 	tooltipRange.options({
 		selecter: "#min-voting-rate-01",
 		tooltip: true,

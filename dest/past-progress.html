@@ -29,6 +29,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <!-- ogp setting -->
     <meta property="og:title" content="PROGRESS | GUILD" />
     <meta property="og:type" content="" />
@@ -185,14 +187,24 @@
 			</a>
 			<input type="text" placeholder="Search" id="search-input">
 		</div> -->
-          <div id="top-link">
-            <a href="#">
-				<div class="img-wrap">
-					<img src="img/comment-alt.png" alt="" id="top-link-img">
-				</div>
-				<p class="title">NPSの向上のための施策の提案</p>
-				<p class="title-name">田中</p>
-			</a>
+          <div id="top-slider" class="top-slider slider">
+            <!-- <a href="#"> -->
+            <div class="slider-inner-wrap">
+              <div class="img-wrap">
+                <img src="img/comment-alt.png" alt="" id="top-link-img">
+              </div>
+              <p class="title">Jonくんが個人タスクを完了しました！🎉</p>
+              <p class="title-name">11:25</p>
+            </div>
+            <!-- <a href="#"> -->
+            <div class="slider-inner-wrap">
+              <div class="img-wrap">
+                <img src="img/comment-alt.png" alt="" id="top-link-img">
+              </div>
+              <p class="title">Jonくんが個人タスクを完了しました！🎉</p>
+              <p class="title-name">11:25</p>
+            </div>
+            <!-- </a> -->
           </div>
           <!-- <div id="select-btn">
 			<div class="img-wrap">
@@ -481,4 +493,29 @@
     </div>
   </body>
   <script src="js/lib.min.js" async></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+  <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    (function()
+    {
+      'use strict';
+      setTimeout(function()
+      {
+        $(".top-slider").slick(
+        {
+          infinite: true,
+          slideToShow: 1,
+          slideToScroll: 1,
+          accessibility: false,
+          autoplay: true,
+          autoplaySpeed: 4000,
+          arrows: false,
+          draggable: false,
+          swipe: false,
+        })
+      }, 200);
+    }());
+  </script>
 </html>

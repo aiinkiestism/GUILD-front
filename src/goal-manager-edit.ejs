@@ -54,8 +54,6 @@
 		<%- include('./inc/left-menu.ejs') %>
 		<%- include('./inc/top-nav.ejs') %>
         <%- include('./inc/gme-inner-content.ejs') %>
-		<!-- <%- include('./inc/gm-detail-modal.ejs') %>
-		<%- include('./inc/gm-edit-modal.ejs') %> -->
 	</div>
 </body>
 
@@ -68,13 +66,27 @@
 	(function() {
 		'use strict';
 
+		setTimeout(function() {
+			$(".top-slider").slick({
+				infinite: true,
+				slideToShow: 1,
+				slideToScroll: 1,
+				accessibility: false,
+				autoplay: true,
+				autoplaySpeed: 4000,
+				arrows: false,
+				draggable: false,
+				swipe: false,
+			})
+		}, 200);
+
 		$('#gm-range').daterangepicker({
 			opens: 'left',
 			endDate: moment().add(1, 'month'),
 		}, function(start, end, label) {
 			console.log("A new datae selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
 		});
-		
+
         // setTimeout(function() {
         //     $(".regular").slick({
         //         // dots: true,

@@ -526,6 +526,11 @@
                 // console.log("tlic is nowhere.");
             }
             try {
+                gmic.classList.remove("gm-inner-content-after");
+            } catch (e) {
+                // console.log("gmic is nowhere.");
+            }
+            try {
                 gmdic.classList.remove("gmd-inner-content-after");
             } catch (e) {
                 // console.log("gmdic is nowhere.");
@@ -599,6 +604,11 @@
                 tlic.classList.add("tl-inner-content-after");
             } catch (e) {
                 // console.log("tlic is nowhere.");
+            }
+            try {
+                gmic.classList.add("gm-inner-content-after");
+            } catch (e) {
+                // console.log("gmic is nowhere.");
             }
             try {
                 gmdic.classList.add("gmd-inner-content-after");
