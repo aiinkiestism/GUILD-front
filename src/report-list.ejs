@@ -51,19 +51,17 @@
 	<script>
 		document.addEventListener('DOMContentLoaded', function() {
 
-		setTimeout(function() {
-			$(".top-slider").slick({
-				infinite: true,
-				slideToShow: 1,
-				slideToScroll: 1,
-				accessibility: false,
-				autoplay: true,
-				autoplaySpeed: 4000,
-				arrows: false,
-				draggable: false,
-				swipe: false,
-			})
-		}, 200);
+		$(".top-slider").slick({
+			infinite: true,
+			slideToShow: 1,
+			slideToScroll: 1,
+			accessibility: false,
+			autoplay: true,
+			autoplaySpeed: 4000,
+			arrows: false,
+			draggable: false,
+			swipe: false,
+		});
 
         var calendarEl = document.getElementById('calendar');
 

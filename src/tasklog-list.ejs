@@ -58,7 +58,7 @@
 	(function() {
 		'use strict';
 
-		setTimeout(function() {
+		document.addEventListener('DOMContentLoaded', function() {
 			$(".top-slider").slick({
 				infinite: true,
 				slideToShow: 1,
@@ -70,7 +70,7 @@
 				draggable: false,
 				swipe: false,
 			})
-		}, 200);
+		});
 		
 	}());
 </script>

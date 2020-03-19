@@ -62,7 +62,7 @@
 	(function() {
 		'use strict';
 
-		setTimeout(function() {
+		document.addEventListener('DOMContentLoaded', function() {
 			$(".top-slider").slick({
 				infinite: true,
 				slideToShow: 1,
@@ -73,27 +73,29 @@
 				arrows: false,
 				draggable: false,
 				swipe: false,
-			})
-		}, 200);
+			});
 
-		$(".regular").slick({
-			// dots: true,
-			infinite: true,
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			// arrows: false,
-			// mobileFirst: true,
-			// responsive: [
-			// 	{
-			// 		breakpoint: 580,
-			// 		settings: {
-			// 			// infinite: true,
-			// 			slidesToShow: 2,
-			// 			slidesToScroll: 2,
-			// 		}
-			// 	}
-			// ]
+			$(".regular").slick({
+				// dots: true,
+				infinite: true,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				// arrows: false,
+				// mobileFirst: true,
+				// responsive: [
+				// 	{
+				// 		breakpoint: 580,
+				// 		settings: {
+				// 			// infinite: true,
+				// 			slidesToShow: 2,
+				// 			slidesToScroll: 2,
+				// 		}
+				// 	}
+				// ]
+			});
+
 		});
+
 
 	})();
 </script>

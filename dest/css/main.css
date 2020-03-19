@@ -418,6 +418,7 @@ a {
 #left-menu .top {
   height: 6%;
   position: relative;
+  z-index: 99999;
 }
 
 #left-menu .top .img-wrap {
@@ -585,6 +586,7 @@ a {
 #left-menu-after .top {
   height: 6%;
   position: relative;
+  z-index: 99999;
 }
 
 #left-menu-after .top #toggle-menu-after {
@@ -777,22 +779,23 @@ a {
 }
 
 #top-nav #nav-wrap #top-slider {
-  position: absolute;
   top: 20px;
   left: 24px;
+  padding-top: 20px;
+  padding-left: 24px;
 }
 
-#top-nav #nav-wrap #top-slider .slider-inner-wrap {
+#top-nav #nav-wrap #top-slider .inner-wrap .slider-inner-wrap {
   display: -webkit-box;
   display: flex;
 }
 
-#top-nav #nav-wrap #top-slider .slider-inner-wrap .img-wrap #top-link-img {
+#top-nav #nav-wrap #top-slider .inner-wrap .slider-inner-wrap .img-wrap #top-link-img {
   position: static;
   width: 20px;
 }
 
-#top-nav #nav-wrap #top-slider .slider-inner-wrap .title {
+#top-nav #nav-wrap #top-slider .inner-wrap .slider-inner-wrap .title {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   font-size: 12px;
@@ -804,7 +807,7 @@ a {
   margin-left: 5px;
 }
 
-#top-nav #nav-wrap #top-slider .slider-inner-wrap .title-name {
+#top-nav #nav-wrap #top-slider .inner-wrap .slider-inner-wrap .title-name {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   font-size: 12px;
@@ -876,6 +879,7 @@ a {
 @media screen and (max-width: 1250px) {
   #top-nav #nav-wrap #top-slider {
     left: 155px;
+    padding-left: 155px;
   }
   .top-nav-after {
     margin-left: -6% !important;
@@ -886,12 +890,14 @@ a {
 @media screen and (max-width: 1000px) {
   #top-nav #nav-wrap #top-slider {
     left: 128px;
+    padding-left: 128px;
   }
 }
 
 @media screen and (max-width: 780px) {
   #top-nav #nav-wrap #top-slider {
     left: 112px;
+    padding-left: 112px;
   }
 }
 
@@ -899,6 +905,8 @@ a {
   #top-nav #nav-wrap #top-slider {
     top: 19px;
     left: 100px;
+    padding-top: 19px;
+    padding-left: 100px;
   }
 }
 

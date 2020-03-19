@@ -62,7 +62,7 @@
 	(function() {
 		'use strict';
 
-		setTimeout(function() {
+		document.addEventListener('DOMContentLoaded', function() {
 			$(".top-slider").slick({
 				infinite: true,
 				slideToShow: 1,
@@ -73,10 +73,8 @@
 				arrows: false,
 				draggable: false,
 				swipe: false,
-			})
-		}, 200);
+			});
 
-		setTimeout(function() {
 			$(".regular").slick({
 				// dots: true,
 				infinite: true,
@@ -85,7 +83,9 @@
 				// arrows: false,
 				// mobileFirst: true,
 			});
-		}, 500);
+			
+		});
+
 
 	})();
 </script>

@@ -8,6 +8,7 @@
     .top {
 		height: 6%;
 		position: relative;
+		z-index: 99999;
 		.img-wrap {
 			position: absolute;
 			top: 10px;
@@ -163,6 +164,7 @@
 	.top {
 		height: 6%;
 		position: relative;
+		z-index: 99999;
 		#toggle-menu-after {
 			width: 28px;
 			position: absolute;

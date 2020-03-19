@@ -187,24 +187,26 @@
 			</a>
 			<input type="text" placeholder="Search" id="search-input">
 		</div> -->
-          <div id="top-slider" class="top-slider slider">
-            <!-- <a href="#"> -->
-            <div class="slider-inner-wrap">
-              <div class="img-wrap">
-                <img src="img/comment-alt.png" alt="" id="top-link-img">
+          <div id="top-slider">
+            <div class="inner-wrap top-slider slider">
+              <!-- <a href="#"> -->
+              <div class="slider-inner-wrap">
+                <div class="img-wrap">
+                  <img src="img/comment-alt.png" alt="" id="top-link-img">
+                </div>
+                <p class="title">Jonくんが個人タスクを完了しました！🎉</p>
+                <p class="title-name">11:25</p>
               </div>
-              <p class="title">Jonくんが個人タスクを完了しました！🎉</p>
-              <p class="title-name">11:25</p>
-            </div>
-            <!-- <a href="#"> -->
-            <div class="slider-inner-wrap">
-              <div class="img-wrap">
-                <img src="img/comment-alt.png" alt="" id="top-link-img">
+              <!-- <a href="#"> -->
+              <div class="slider-inner-wrap">
+                <div class="img-wrap">
+                  <img src="img/comment-alt.png" alt="" id="top-link-img">
+                </div>
+                <p class="title">Jonくんが個人タスクを完了しました！🎉</p>
+                <p class="title-name">11:25</p>
               </div>
-              <p class="title">Jonくんが個人タスクを完了しました！🎉</p>
-              <p class="title-name">11:25</p>
+              <!-- </a> -->
             </div>
-            <!-- </a> -->
           </div>
           <!-- <div id="select-btn">
 			<div class="img-wrap">
@@ -253,7 +255,7 @@
     (function()
     {
       'use strict';
-      setTimeout(function()
+      document.addEventListener('DOMContentLoaded', function()
       {
         $(".top-slider").slick(
         {
@@ -267,7 +269,7 @@
           draggable: false,
           swipe: false,
         })
-      }, 200);
+      });
     }());
   </script>
 </html>

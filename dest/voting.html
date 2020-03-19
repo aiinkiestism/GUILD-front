@@ -187,24 +187,26 @@
 			</a>
 			<input type="text" placeholder="Search" id="search-input">
 		</div> -->
-          <div id="top-slider" class="top-slider slider">
-            <!-- <a href="#"> -->
-            <div class="slider-inner-wrap">
-              <div class="img-wrap">
-                <img src="img/comment-alt.png" alt="" id="top-link-img">
+          <div id="top-slider">
+            <div class="inner-wrap top-slider slider">
+              <!-- <a href="#"> -->
+              <div class="slider-inner-wrap">
+                <div class="img-wrap">
+                  <img src="img/comment-alt.png" alt="" id="top-link-img">
+                </div>
+                <p class="title">Jonくんが個人タスクを完了しました！🎉</p>
+                <p class="title-name">11:25</p>
               </div>
-              <p class="title">Jonくんが個人タスクを完了しました！🎉</p>
-              <p class="title-name">11:25</p>
-            </div>
-            <!-- <a href="#"> -->
-            <div class="slider-inner-wrap">
-              <div class="img-wrap">
-                <img src="img/comment-alt.png" alt="" id="top-link-img">
+              <!-- <a href="#"> -->
+              <div class="slider-inner-wrap">
+                <div class="img-wrap">
+                  <img src="img/comment-alt.png" alt="" id="top-link-img">
+                </div>
+                <p class="title">Jonくんが個人タスクを完了しました！🎉</p>
+                <p class="title-name">11:25</p>
               </div>
-              <p class="title">Jonくんが個人タスクを完了しました！🎉</p>
-              <p class="title-name">11:25</p>
+              <!-- </a> -->
             </div>
-            <!-- </a> -->
           </div>
           <!-- <div id="select-btn">
 			<div class="img-wrap">
@@ -508,7 +510,7 @@
   <script>
     $(function()
     {
-      setTimeout(function()
+      document.addEventListener('DOMContentLoaded', function()
       {
         $(".top-slider").slick(
         {
@@ -522,31 +524,31 @@
           draggable: false,
           swipe: false,
         })
-      }, 200);
-      tooltipRange.options(
-      {
-        selecter: "#min-voting-rate-01",
-        tooltip: true,
-        value: 43,
-        min: 20,
-        step: 1
-      });
-      tooltipRange.options(
-      {
-        selecter: "#min-voting-rate-02",
-        tooltip: true,
-        value: 60,
-        min: 20,
-        max: 70,
-        step: 1
-      });
-      $('#reportrange').daterangepicker(
-      {
-        opens: 'left',
-        endDate: moment().add(7, 'day'),
-      }, function(start, end, label)
-      {
-        console.log("A new datae selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+        tooltipRange.options(
+        {
+          selecter: "#min-voting-rate-01",
+          tooltip: true,
+          value: 43,
+          min: 20,
+          step: 1
+        });
+        tooltipRange.options(
+        {
+          selecter: "#min-voting-rate-02",
+          tooltip: true,
+          value: 60,
+          min: 20,
+          max: 70,
+          step: 1
+        });
+        $('#reportrange').daterangepicker(
+        {
+          opens: 'left',
+          endDate: moment().add(7, 'day'),
+        }, function(start, end, label)
+        {
+          console.log("A new datae selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+        });
       });
     });
   </script>

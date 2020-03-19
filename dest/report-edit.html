@@ -52,21 +52,18 @@
     <script>
       document.addEventListener('DOMContentLoaded', function()
       {
-        setTimeout(function()
+        $(".top-slider").slick(
         {
-          $(".top-slider").slick(
-          {
-            infinite: true,
-            slideToShow: 1,
-            slideToScroll: 1,
-            accessibility: false,
-            autoplay: true,
-            autoplaySpeed: 4000,
-            arrows: false,
-            draggable: false,
-            swipe: false,
-          })
-        }, 200);
+          infinite: true,
+          slideToShow: 1,
+          slideToScroll: 1,
+          accessibility: false,
+          autoplay: true,
+          autoplaySpeed: 4000,
+          arrows: false,
+          draggable: false,
+          swipe: false,
+        });
         var calendarEl = document.getElementById('calendar');
         var calendar = new FullCalendar.Calendar(calendarEl,
         {
@@ -263,24 +260,26 @@
 			</a>
 			<input type="text" placeholder="Search" id="search-input">
 		</div> -->
-          <div id="top-slider" class="top-slider slider">
-            <!-- <a href="#"> -->
-            <div class="slider-inner-wrap">
-              <div class="img-wrap">
-                <img src="img/comment-alt.png" alt="" id="top-link-img">
+          <div id="top-slider">
+            <div class="inner-wrap top-slider slider">
+              <!-- <a href="#"> -->
+              <div class="slider-inner-wrap">
+                <div class="img-wrap">
+                  <img src="img/comment-alt.png" alt="" id="top-link-img">
+                </div>
+                <p class="title">Jonくんが個人タスクを完了しました！🎉</p>
+                <p class="title-name">11:25</p>
               </div>
-              <p class="title">Jonくんが個人タスクを完了しました！🎉</p>
-              <p class="title-name">11:25</p>
-            </div>
-            <!-- <a href="#"> -->
-            <div class="slider-inner-wrap">
-              <div class="img-wrap">
-                <img src="img/comment-alt.png" alt="" id="top-link-img">
+              <!-- <a href="#"> -->
+              <div class="slider-inner-wrap">
+                <div class="img-wrap">
+                  <img src="img/comment-alt.png" alt="" id="top-link-img">
+                </div>
+                <p class="title">Jonくんが個人タスクを完了しました！🎉</p>
+                <p class="title-name">11:25</p>
               </div>
-              <p class="title">Jonくんが個人タスクを完了しました！🎉</p>
-              <p class="title-name">11:25</p>
+              <!-- </a> -->
             </div>
-            <!-- </a> -->
           </div>
           <!-- <div id="select-btn">
 			<div class="img-wrap">

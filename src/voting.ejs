@@ -58,7 +58,7 @@
 <script>
 $(function() {
 
-	setTimeout(function() {
+	document.addEventListener('DOMContentLoaded', function() {
 		$(".top-slider").slick({
 			infinite: true,
 			slideToShow: 1,
@@ -70,30 +70,31 @@ $(function() {
 			draggable: false,
 			swipe: false,
 		})
-	}, 200);
-
-	tooltipRange.options({
-		selecter: "#min-voting-rate-01",
-		tooltip: true,
-		value: 43,
-		min: 20,
-		step: 1
-	});
-
-	tooltipRange.options({
-		selecter: "#min-voting-rate-02",
-		tooltip: true,
-		value: 60,
-		min: 20,
-		max: 70,
-		step: 1
-	});
 		
-	$('#reportrange').daterangepicker({
-		opens: 'left',
-		endDate: moment().add(7, 'day'),
-	}, function(start, end, label) {
-		console.log("A new datae selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+		tooltipRange.options({
+			selecter: "#min-voting-rate-01",
+			tooltip: true,
+			value: 43,
+			min: 20,
+			step: 1
+		});
+		
+		tooltipRange.options({
+			selecter: "#min-voting-rate-02",
+			tooltip: true,
+			value: 60,
+			min: 20,
+			max: 70,
+			step: 1
+		});
+		
+		$('#reportrange').daterangepicker({
+			opens: 'left',
+			endDate: moment().add(7, 'day'),
+		}, function(start, end, label) {
+			console.log("A new datae selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+		});
+		
 	});
 
 });
