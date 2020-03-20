@@ -48,7 +48,7 @@
 	<div class="contents">
 		<%- include('./inc/left-menu.ejs') %>
 		<%- include('./inc/top-nav.ejs') %>
-        <%- include('./inc/gm-inner-content.ejs') %>
+        <%- include('./inc/kd-inner-content.ejs') %>
 	</div>
 </body>
 
@@ -63,7 +63,7 @@
 		'use strict';
 
 		document.addEventListener('DOMContentLoaded', function() {
-			
+
 			var ykgi = document.getElementsByClassName("yearly-kgi"),
 				qkgi = document.getElementsByClassName("quarterly-kgi"),
 				mkgi = document.getElementsByClassName("monthly-kgi");
@@ -355,6 +355,7 @@
 					break;
 				}
 			}
+			
 			
 			// tooltipRange.options({
 			// 	selecter: "#min-voting-rate-03",

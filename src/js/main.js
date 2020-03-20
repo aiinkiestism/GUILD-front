@@ -18,6 +18,7 @@
         gmic = document.getElementById("gm-inner-content"),
         gmdic = document.getElementById("gmd-inner-content"),
         gmeic = document.getElementById("gme-inner-content"),
+        kdic = document.getElementById("kd-inner-content"),
         ptic = document.getElementById("pt-inner-content"),
         mlic = document.getElementById("ml-inner-content"),
         rlic = document.getElementById("rl-inner-content"),
@@ -136,6 +137,12 @@
             // console.log("gmeic is nowhere.");
         }
         try {
+            kdic.classList.add("kd-inner-content-after");
+            kdic.setAttribute('style', "display: block;");
+        } catch (e) {
+            // console.log("kdic is nowhere.");
+        }
+        try {
             ptic.classList.add("pt-inner-content-after");
             ptic.setAttribute('style', "display: block;");
         } catch (e) {
@@ -219,6 +226,11 @@
             // console.log("gmeic is nowhere.");
         }
         try {
+            kdic.classList.remove("kd-inner-content-after");
+        } catch (e) {
+            // console.log("kdic is nowhere.");
+        }
+        try {
             ptic.classList.remove("pt-inner-content-after");
         } catch (e) {
             // console.log("ptic is nowhere.");
@@ -284,6 +296,11 @@
                 gmeic.setAttribute('style', "display: none;");
             } catch (e) {
                 // console.log("gmeic is nowhere.");
+            }
+            try {
+                kdic.setAttribute('style', "display: none;");
+            } catch (e) {
+                // console.log("kdic is nowhere.");
             }
             try {
                 ptic.setAttribute('style', "display: none;");
@@ -372,6 +389,11 @@
             gmeic.classList.add("gme-inner-content-after");
         } catch (e) {
             // console.log("gmeic is nowhere.");
+        }
+        try {
+            kdic.classList.add("kd-inner-content-after");
+        } catch (e) {
+            // console.log("kdic is nowhere.");
         }
         try {
             ptic.classList.add("pt-inner-content-after");
@@ -541,6 +563,11 @@
                 // console.log("gmeic is nowhere.");
             }
             try {
+                kdic.classList.remove("kd-inner-content-after");
+            } catch (e) {
+                // console.log("kdic is nowhere.");
+            }
+            try {
                 ptic.classList.remove("pt-inner-content-after");
             } catch (e) {
                 // console.log("ptic is nowhere.");
@@ -619,6 +646,11 @@
                 gmeic.classList.add("gme-inner-content-after");
             } catch (e) {
                 // console.log("gmeic is nowhere.");
+            }
+            try {
+                kdic.classList.add("kd-inner-content-after");
+            } catch (e) {
+                // console.log("kdic is nowhere.");
             }
             try {
                 ptic.classList.add("pt-inner-content-after");

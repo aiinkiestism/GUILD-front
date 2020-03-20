@@ -1,4 +1,4 @@
-#gm-inner-content {
+#kd-inner-content {
     overflow-y: scroll;
     position: absolute;
     // top: 67px;
@@ -299,14 +299,14 @@
     }
 }
 
-.gm-inner-content-after {
+.kd-inner-content-after {
     left: 6% !important;
     width: 94% !important;
     transition: .6s;
 }
 
 @media screen and (max-width: 1250px) {
-    #gm-inner-content {
+    #kd-inner-content {
         left: 27%;
         width: 73%;
         .right-content {
@@ -331,7 +331,7 @@
 }
 
 @media screen and (max-width: 1050px) {
-    #gm-inner-content {
+    #kd-inner-content {
         .right-content {
             .inner-wrap {
                 .kgi-wrap2, .kgi-wrap3 {
@@ -343,7 +343,7 @@
 }
 
 @media screen and (max-width: 780px) {
-    #gm-inner-content {
+    #kd-inner-content {
         left: 34%;
         width: 66%;
         .right-content {
@@ -360,7 +360,7 @@
 }
 
 @media screen and (max-width: 700px) {
-    #gm-inner-content {
+    #kd-inner-content {
         .right-content {
             .inner-wrap {
                 .kgi-wrap {
@@ -373,7 +373,7 @@
             }
         }
     }
-    .gm-inner-content-after {
+    .kd-inner-content-after {
         left: 0% !important;
         width: 100% !important;
         transition: .6s;
@@ -381,7 +381,7 @@
 }
 
 @media screen and (max-width: 580px) {
-    #gm-inner-content {
+    #kd-inner-content {
         .right-content {
             .inner-wrap {
                 padding-bottom: 22%;
@@ -402,7 +402,7 @@
 }
 
 @media screen and (max-width: 500px) {
-    #gm-inner-content {
+    #kd-inner-content {
         .right-content {
             .inner-wrap {
                 .kgi-wrap2, .kgi-wrap3 {
