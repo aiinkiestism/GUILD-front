@@ -40,14 +40,15 @@
         // pthovercontent = document.getElementsByClassName("pt-hover-content"),
         reportwrap = document.getElementsByClassName("report-wrap"),
         ppc = document.getElementsByClassName("progress-pie-chart"),
-        pToggle = document.getElementById('progress-toggle');
+        pToggle = document.getElementById('progress-toggle'),
+        mkgi = document.getElementById("mkgi");
 
     const vinone = document.getElementById("voting-item-none"),
         vi = document.getElementsByClassName("voting-item"),
-        // kiw = document.getElementsByClassName("kgi-inner-wrap"),
+        kiw = document.getElementsByClassName("kgi-inner-wrap"),
         // gmmiw = document.getElementById("gmm-inner-wrap"),
         // gmeiw = document.getElementById("gme-inner-wrap"),
-        // kaw = document.getElementsByClassName("kgi-addition-wrap"),
+        kaw = document.getElementsByClassName("kgi-addition-wrap"),
         ynbtn = document.getElementById("yn-btn"),
         cbtn = document.getElementById("confirm-btn"),
         mbtn = document.getElementById("modify-btn"),
@@ -56,8 +57,22 @@
         mask = document.getElementById("mask"),
         // gmMask = document.getElementById("gm-mask"),
         vbtn2 = document.getElementById("vote-btn2"),
-        sbtn = document.getElementById("save-btn");
+        sbtn = document.getElementById("save-btn"),
+        khw = document.getElementsByClassName("kgi-hover-wrap"),
+        kgiEditBtn = document.getElementsByClassName("kgi-edit-btn");
         // gmdEditBtn = document.getElementById("gmm-edit-btn");
+
+    // tagify setting
+    let tagifySetting = {
+        whitelist: ["組織全体", "マーケティング"],
+        maxTags: 3,
+        dropdown: {
+            maxItems: 6,
+            classname: "tag-dropdwon",
+            enabled: 0,
+            closeOnSelect: false
+        }
+    };
 
     // initialization process
     try {
@@ -940,7 +955,129 @@
         // console.log("This is not the progress page.");
     }
 
+    // new kgi addition behaviors in goal manager pages
+    try {
 
+        for (let i = 0, max = kaw.length; i < max; i++) {
+            if (i === 3) {
+                break;
+            }            
+
+            kaw[i].addEventListener("click", function() {
+                let kgiEditWrap = document.createElement("div"),
+                    kgiTextarea = document.createElement("textarea"),
+                    // kgiEditProgressWrap = document.createElement("div"),
+                    // progressBar = document.createElement("progress"),
+                    tagInput = document.createElement("input"),
+                    kgiAddBtn = document.createElement("div"),
+                    kgiAddBtnTxt = document.createElement("p");
+
+                
+                kaw[i].parentNode.insertBefore(kgiEditWrap, kaw[i]);
+                kgiEditWrap.setAttribute("id", "kgi-edit-wrap");
+    
+                kaw[i].setAttribute("style", "display: none;");
+    
+                kgiEditWrap.insertBefore(kgiTextarea, null);
+                kgiTextarea.setAttribute("name", "kgi-edit-title");
+                kgiTextarea.setAttribute("id", "kgi-edit-title");
+                kgiTextarea.setAttribute("placeholder", "KGIのタイトル");
+    
+                // kgiEditWrap.insertBefore(kgiEditProgressWrap, null);
+                // kgiEditProgressWrap.setAttribute("id", "kgi-edit-progress-wrap");
+                // kgitEditProgressWrap.insertBefore(progressBar, null);
+    
+                kgiEditWrap.insertBefore(tagInput, null);
+                tagInput.setAttribute("id", "tag-input");
+                // tagInput.setAttribute("value", "");
+                tagInput.setAttribute("placeholder", "KGIのタグ");
+                new Tagify(tagInput, tagifySetting);
+                // Tagify(tagInput, tagifySetting);
+                
+                kgiEditWrap.insertBefore(kgiAddBtn, null);
+                kgiAddBtn.setAttribute("id", "kgi-add-btn");
+                kgiAddBtn.insertBefore(kgiAddBtnTxt, null);
+                kgiAddBtnTxt.textContent = '追加する';
+    
+                kgiAddBtn.addEventListener("click", function(e) {
+                    kaw[i].parentNode.replaceChild(kaw[i], kgiEditWrap);
+                    kaw[i].setAttribute("style", "display: block; width: 347px;");
+                }, false);
+
+            }, false);
+
+        }
+        
+    } catch (e) {
+        // console.log("This is not the goal manager pages.");
+    }
+
+    // kgi hover wrap behaviors in the goal manager pages
+    try {
+        for (let i = 0, max = kiw.length; i < max; i++) {
+            kiw[i].addEventListener("mouseenter", function() {
+                khw[i].setAttribute("style", "display: block; opacity: 1;");
+            });
+
+            kiw[i].addEventListener("mouseleave", function() {
+                khw[i].setAttribute("style", "display: none;");
+            });
+        }
+    } catch (e) {
+        // console.log("This is not the goal pages.");
+    }
+
+    // kgi edit behaviors in the goal manager pages
+    // try {
+    //     for (let i = 0, max = kgiEditBtn.length; i < max; i++) {
+    //         kgiEditBtn[i].addEventListener("click", function() {
+    //             if (kgiEditBtn[i].parentNode.parentNode.parentNode === mkgi) {
+    //                 location.replace("monthly-kgi-edit.html");
+    //             } else {
+    //                 let kgiEditWrap = document.createElement("div"),
+    //                     kgiTextarea = document.createElement("textarea"),
+    //                     // kgiEditProgressWrap = document.createElement("div"),
+    //                     // progressBar = document.createElement("progress"),
+    //                     tagInput = document.createElement("input"),
+    //                     kgiAddBtn = document.createElement("div"),
+    //                     kgiAddBtnTxt = document.createElement("p");
+
+    //                 kgiEditBtn[i].parentNode.parentNode.insertBefore(kgiEditWrap, kiw[i]);
+    //                 kgiEditWrap.setAttribute("id", "kgi-edit-wrap");
+        
+    //                 kiw[i].setAttribute("style", "display: none;");
+        
+    //                 kgiEditWrap.insertBefore(kgiTextarea, null);
+    //                 kgiTextarea.setAttribute("name", "kgi-edit-title");
+    //                 kgiTextarea.setAttribute("id", "kgi-edit-title");
+    //                 kgiTextarea.setAttribute("placeholder", "KGIのタイトル");
+        
+    //                 // kgiEditWrap.insertBefore(kgiEditProgressWrap, null);
+    //                 // kgiEditProgressWrap.setAttribute("id", "kgi-edit-progress-wrap");
+    //                 // kgitEditProgressWrap.insertBefore(progressBar, null);
+        
+    //                 kgiEditWrap.insertBefore(tagInput, null);
+    //                 tagInput.setAttribute("id", "tag-input");
+    //                 // tagInput.setAttribute("value", "");
+    //                 tagInput.setAttribute("placeholder", "KGIのタグ");
+    //                 new Tagify(tagInput, tagifySetting);
+    //                 // Tagify(tagInput, tagifySetting);
+                    
+    //                 kgiEditWrap.insertBefore(kgiAddBtn, null);
+    //                 kgiAddBtn.setAttribute("id", "kgi-add-btn");
+    //                 kgiAddBtn.insertBefore(kgiAddBtnTxt, null);
+    //                 kgiAddBtnTxt.textContent = '追加する';
+        
+    //                 kgiAddBtn.addEventListener("click", function(e) {
+    //                     kgiEditWrap.parentNode.parentNode.replaceChild(kiw[i], kgiEditWrap);
+    //                     kiw[i].setAttribute("style", "display: block; width: 347px");
+    //                 }, false);
+    //             }
+    //         }, false);
+    //     }
+    // } catch (e) {
+    //     // console.log("This is not the goal manager pages.");
+    // }
 
 
     // content management functions in top page

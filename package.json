@@ -30,6 +30,7 @@
     "@babel/preset-react": "^7.7.4",
     "@fullcalendar/core": "^4.3.1",
     "@fullcalendar/daygrid": "^4.3.0",
+    "@yaireo/tagify": "^3.6.3",
     "autoprefixer": "^9.7.3",
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
