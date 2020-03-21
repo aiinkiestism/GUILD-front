@@ -68,32 +68,102 @@
 				qkgi = document.getElementsByClassName("quarterly-kgi"),
 				mkgi = document.getElementsByClassName("monthly-kgi");
 
-			for(var i = 0, max = ykgi.length; i < max; i++) {
-				// console.log(max);
-				if (max <= 4) {
-					if (window.matchMedia("screen and (max-width: 580px)").matches) {
-						break;						
+			slickResize();
+
+			function slickResize() {
+
+				for(var i = 0, max = ykgi.length; i < max; i++) {
+					// console.log(max);
+					if (max <= 4) {
+						if (window.matchMedia("screen and (max-width: 580px)").matches) {
+							// break;
+							setTimeout(function() {
+								$(".ykgi-regular").slick({
+									// dots: true,
+									infinite: true,
+									slidesToShow: 4,
+									slidesToScroll: 4,
+									// arrows: false,
+									// mobileFirst: true,
+									responsive: [
+										{
+											breakpoint: 1250,
+											settings: {
+												// infinite: true,
+												slidesToShow: 3,
+												slidesToScroll: 3,
+											}
+										},
+										{
+											breakpoint: 580,
+											settings: {
+												slidesToShow: 1,
+												slidesToScroll: 1,
+											}
+										}
+									]
+								});
+							}, 400);
+						} else {
+							$(".top-slider").slick({
+								infinite: true,
+								slideToShow: 1,
+								slideToScroll: 1,
+								accessibility: false,
+								autoplay: true,
+								autoplaySpeed: 4000,
+								arrows: false,
+								draggable: false,
+								swipe: false,
+							});
+						}
+						for (var i = 0, max = ykgi.length; i < max; i++) {
+							ykgi[i].setAttribute("style", "width: 347px");
+						}
+						// console.log("max3");
+						break;
 					} else {
-						$(".top-slider").slick({
-							infinite: true,
-							slideToShow: 1,
-							slideToScroll: 1,
-							accessibility: false,
-							autoplay: true,
-							autoplaySpeed: 4000,
-							arrows: false,
-							draggable: false,
-							swipe: false,
-						});
-					}
-					for (var i = 0, max = ykgi.length; i < max; i++) {
-						ykgi[i].setAttribute("style", "width: 347px");
-					}
-					// console.log("max3");
-					break;
-				} else {
-					if (window.matchMedia("screen and (max-width: 580px)").matches) {
-						setTimeout(function() {
+						if (window.matchMedia("screen and (max-width: 580px)").matches) {
+							setTimeout(function() {
+								$(".ykgi-regular").slick({
+									// dots: true,
+									infinite: true,
+									slidesToShow: 4,
+									slidesToScroll: 4,
+									// arrows: false,
+									// mobileFirst: true,
+									responsive: [
+										{
+											breakpoint: 1250,
+											settings: {
+												// infinite: true,
+												slidesToShow: 3,
+												slidesToScroll: 3,
+											}
+										},
+										{
+											breakpoint: 580,
+											settings: {
+												slidesToShow: 1,
+												slidesToScroll: 1,
+											}
+										}
+									]
+								});
+							}, 400);						
+						} else {
+							$(".top-slider").slick({
+								infinite: true,
+								slideToShow: 1,
+								slideToScroll: 1,
+								accessibility: false,
+								autoplay: true,
+								autoplaySpeed: 4000,
+								arrows: false,
+								draggable: false,
+								swipe: false,
+							});
+	
 							$(".ykgi-regular").slick({
 								// dots: true,
 								infinite: true,
@@ -103,7 +173,7 @@
 								// mobileFirst: true,
 								responsive: [
 									{
-										breakpoint: 850,
+										breakpoint: 1250,
 										settings: {
 											// infinite: true,
 											slidesToShow: 3,
@@ -113,83 +183,24 @@
 									{
 										breakpoint: 580,
 										settings: {
-											slidesToShow: 2,
-											slidesToScroll: 2,
+											slidesToShow: 1,
+											slidesToScroll: 1,
 										}
 									}
 								]
 							});
-						}, 400);						
-					} else {
-						$(".top-slider").slick({
-							infinite: true,
-							slideToShow: 1,
-							slideToScroll: 1,
-							accessibility: false,
-							autoplay: true,
-							autoplaySpeed: 4000,
-							arrows: false,
-							draggable: false,
-							swipe: false,
-						});
-
-						$(".ykgi-regular").slick({
-							// dots: true,
-							infinite: true,
-							slidesToShow: 4,
-							slidesToScroll: 4,
-							// arrows: false,
-							// mobileFirst: true,
-							responsive: [
-								{
-									breakpoint: 850,
-									settings: {
-										// infinite: true,
-										slidesToShow: 3,
-										slidesToScroll: 3,
-									}
-								},
-								{
-									breakpoint: 580,
-									settings: {
-										slidesToShow: 2,
-										slidesToScroll: 2,
-									}
-								}
-							]
-						});
+						}
+						// console.log("maxmt4");
+						break;
 					}
-					// console.log("maxmt4");
-					break;
 				}
-			}
-
-			for(var i = 0, max = qkgi.length; i < max; i++) {
-				// console.log(max);
-				if (max <= 4) {
-					if (window.matchMedia("screen and (max-width: 580px)").matches) {
-						break;						
-					} else {
-						// $(".top-slider").slick({
-						// 	infinite: true,
-						// 	slideToShow: 1,
-						// 	slideToScroll: 1,
-						// 	accessibility: false,
-						// 	autoplay: true,
-						// 	autoplaySpeed: 4000,
-						// 	arrows: false,
-						// 	draggable: false,
-						// 	swipe: false,
-						// });
-					}
-					for (var i = 0, max = qkgi.length; i < max; i++) {
-						qkgi[i].setAttribute("style", "width: 347px");
-					}
-					// console.log("max3");
-					break;
-				} else {
-					if (window.matchMedia("screen and (max-width: 580px)").matches) {
-						setTimeout(function() {
+	
+				for(var i = 0, max = qkgi.length; i < max; i++) {
+					// console.log(max);
+					if (max <= 4) {
+						if (window.matchMedia("screen and (max-width: 580px)").matches) {
+							// break;
+							setTimeout(function() {
 							$(".qkgi-regular").slick({
 								// dots: true,
 								infinite: true,
@@ -215,78 +226,68 @@
 									}
 								]
 							});
-						}, 400);						
+						}, 400);
+						} else {
+							// $(".top-slider").slick({
+							// 	infinite: true,
+							// 	slideToShow: 1,
+							// 	slideToScroll: 1,
+							// 	accessibility: false,
+							// 	autoplay: true,
+							// 	autoplaySpeed: 4000,
+							// 	arrows: false,
+							// 	draggable: false,
+							// 	swipe: false,
+							// });
+						}
+						for (var i = 0, max = qkgi.length; i < max; i++) {
+							qkgi[i].setAttribute("style", "width: 347px");
+						}
+						// console.log("max3");
+						break;
 					} else {
-						// $(".top-slider").slick({
-						// 	infinite: true,
-						// 	slideToShow: 1,
-						// 	slideToScroll: 1,
-						// 	accessibility: false,
-						// 	autoplay: true,
-						// 	autoplaySpeed: 4000,
-						// 	arrows: false,
-						// 	draggable: false,
-						// 	swipe: false,
-						// });
-
-						$(".qkgi-regular").slick({
-							// dots: true,
-							infinite: true,
-							slidesToShow: 4,
-							slidesToScroll: 4,
-							// arrows: false,
-							// mobileFirst: true,
-							responsive: [
-								{
-									breakpoint: 850,
-									settings: {
-										// infinite: true,
-										slidesToShow: 3,
-										slidesToScroll: 3,
-									}
-								},
-								{
-									breakpoint: 580,
-									settings: {
-										slidesToShow: 2,
-										slidesToScroll: 2,
-									}
-								}
-							]
-						});
-					}
-					// console.log("maxmt4");
-					break;
-				}
-			}
-
-			for(var i = 0, max = mkgi.length; i < max; i++) {
-				console.log(max);
-				if (max <= 4) {
-					if (window.matchMedia("screen and (max-width: 580px)").matches) {
-						break;					
-					} else {
-						// $(".top-slider").slick({
-						// 	infinite: true,
-						// 	slideToShow: 1,
-						// 	slideToScroll: 1,
-						// 	accessibility: false,
-						// 	autoplay: true,
-						// 	autoplaySpeed: 4000,
-						// 	arrows: false,
-						// 	draggable: false,
-						// 	swipe: false,
-						// });
-					}
-					for (var i = 0, max = qkgi.length; i < max; i++) {
-						qkgi[i].setAttribute("style", "width: 347px");
-					}
-					// console.log("max3");
-					break;
-				} else {
-					if (window.matchMedia("screen and (max-width: 580px)").matches) {
-						setTimeout(function() {
-							$(".mkgi-regular").slick({
+						if (window.matchMedia("screen and (max-width: 580px)").matches) {
+							setTimeout(function() {
+								$(".qkgi-regular").slick({
+									// dots: true,
+									infinite: true,
+									slidesToShow: 4,
+									slidesToScroll: 4,
+									// arrows: false,
+									// mobileFirst: true,
+									responsive: [
+										{
+											breakpoint: 1250,
+											settings: {
+												// infinite: true,
+												slidesToShow: 3,
+												slidesToScroll: 3,
+											}
+										},
+										{
+											breakpoint: 580,
+											settings: {
+												slidesToShow: 2,
+												slidesToScroll: 2,
+											}
+										}
+									]
+								});
+							}, 400);						
+						} else {
+							// $(".top-slider").slick({
+							// 	infinite: true,
+							// 	slideToShow: 1,
+							// 	slideToScroll: 1,
+							// 	accessibility: false,
+							// 	autoplay: true,
+							// 	autoplaySpeed: 4000,
+							// 	arrows: false,
+							// 	draggable: false,
+							// 	swipe: false,
+							// });
+	
+							$(".qkgi-regular").slick({
 								// dots: true,
 								infinite: true,
 								slidesToShow: 4,
@@ -295,7 +296,7 @@
 								// mobileFirst: true,
 								responsive: [
 									{
-										breakpoint: 850,
+										breakpoint: 1250,
 										settings: {
 											// infinite: true,
 											slidesToShow: 3,
@@ -311,50 +312,137 @@
 									}
 								]
 							});
-						}, 400);					
-					} else {
-						// $(".top-slider").slick({
-						// 	infinite: true,
-						// 	slideToShow: 1,
-						// 	slideToScroll: 1,
-						// 	accessibility: false,
-						// 	autoplay: true,
-						// 	autoplaySpeed: 4000,
-						// 	arrows: false,
-						// 	draggable: false,
-						// 	swipe: false,
-						// });
-
-						$(".mkgi-regular").slick({
-							// dots: true,
-							infinite: true,
-							slidesToShow: 4,
-							slidesToScroll: 4,
-							// arrows: false,
-							// mobileFirst: true,
-							responsive: [
-								{
-									breakpoint: 850,
-									settings: {
-										// infinite: true,
-										slidesToShow: 3,
-										slidesToScroll: 3,
-									}
-								},
-								{
-									breakpoint: 580,
-									settings: {
-										slidesToShow: 2,
-										slidesToScroll: 2,
-									}
-								}
-							]
-						});
+						}
+						// console.log("maxmt4");
+						break;
 					}
-					// console.log("maxmt4");
-					break;
 				}
+	
+				for(var i = 0, max = mkgi.length; i < max; i++) {
+					// console.log(max);
+					if (max <= 4) {
+						if (window.matchMedia("screen and (max-width: 580px)").matches) {
+							// break;
+							setTimeout(function() {
+								$(".mkgi-regular").slick({
+									// dots: true,
+									infinite: true,
+									slidesToShow: 4,
+									slidesToScroll: 4,
+									// arrows: false,
+									// mobileFirst: true,
+									responsive: [
+										{
+											breakpoint: 1250,
+											settings: {
+												// infinite: true,
+												slidesToShow: 3,
+												slidesToScroll: 3,
+											}
+										},
+										{
+											breakpoint: 580,
+											settings: {
+												slidesToShow: 2,
+												slidesToScroll: 2,
+											}
+										}
+									]
+								});
+							}, 400);
+						} else {
+							// $(".top-slider").slick({
+							// 	infinite: true,
+							// 	slideToShow: 1,
+							// 	slideToScroll: 1,
+							// 	accessibility: false,
+							// 	autoplay: true,
+							// 	autoplaySpeed: 4000,
+							// 	arrows: false,
+							// 	draggable: false,
+							// 	swipe: false,
+							// });
+						}
+						for (var i = 0, max = qkgi.length; i < max; i++) {
+							qkgi[i].setAttribute("style", "width: 347px");
+						}
+						// console.log("max3");
+						break;
+					} else {
+						if (window.matchMedia("screen and (max-width: 580px)").matches) {
+							setTimeout(function() {
+								$(".mkgi-regular").slick({
+									// dots: true,
+									infinite: true,
+									slidesToShow: 4,
+									slidesToScroll: 4,
+									// arrows: false,
+									// mobileFirst: true,
+									responsive: [
+										{
+											breakpoint: 1250,
+											settings: {
+												// infinite: true,
+												slidesToShow: 3,
+												slidesToScroll: 3,
+											}
+										},
+										{
+											breakpoint: 580,
+											settings: {
+												slidesToShow: 2,
+												slidesToScroll: 2,
+											}
+										}
+									]
+								});
+							}, 400);			
+						} else {
+							// $(".top-slider").slick({
+							// 	infinite: true,
+							// 	slideToShow: 1,
+							// 	slideToScroll: 1,
+							// 	accessibility: false,
+							// 	autoplay: true,
+							// 	autoplaySpeed: 4000,
+							// 	arrows: false,
+							// 	draggable: false,
+							// 	swipe: false,
+							// });
+	
+							$(".mkgi-regular").slick({
+								// dots: true,
+								infinite: true,
+								slidesToShow: 4,
+								slidesToScroll: 4,
+								// arrows: false,
+								// mobileFirst: true,
+								responsive: [
+									{
+										breakpoint: 1250,
+										settings: {
+											// infinite: true,
+											slidesToShow: 3,
+											slidesToScroll: 3,
+										}
+									},
+									{
+										breakpoint: 580,
+										settings: {
+											slidesToShow: 2,
+											slidesToScroll: 2,
+										}
+									}
+								]
+							});
+						}
+						// console.log("maxmt4");
+						break;
+					}
+				}
+
 			}
+
 			
 			// tooltipRange.options({
 			// 	selecter: "#min-voting-rate-03",

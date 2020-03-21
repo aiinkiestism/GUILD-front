@@ -41,11 +41,18 @@
         reportwrap = document.getElementsByClassName("report-wrap"),
         ppc = document.getElementsByClassName("progress-pie-chart"),
         pToggle = document.getElementById('progress-toggle'),
-        mkgi = document.getElementById("mkgi");
+        // mkgi = document.getElementById("mkgi"),
+        tagItem = document.getElementsByClassName("tag-item"),
+        mTagItem = document.getElementsByClassName("m-tag-item"),
+        indexDetail = document.getElementsByClassName("index-detail"),
+        qIndexDetail = document.getElementsByClassName("q-index-detail"),
+        kiw = document.getElementsByClassName("kgi-inner-wrap"),
+        mkgiTagInput = document.getElementById("mkgi-tag-input");
 
     const vinone = document.getElementById("voting-item-none"),
         vi = document.getElementsByClassName("voting-item"),
-        kiw = document.getElementsByClassName("kgi-inner-wrap"),
+        mkiw = document.getElementsByClassName("mkgi-inner-wrap"),
+        qkiw = document.getElementsByClassName("qkgi-inner-wrap"),
         // gmmiw = document.getElementById("gmm-inner-wrap"),
         // gmeiw = document.getElementById("gme-inner-wrap"),
         kaw = document.getElementsByClassName("kgi-addition-wrap"),
@@ -59,7 +66,9 @@
         vbtn2 = document.getElementById("vote-btn2"),
         sbtn = document.getElementById("save-btn"),
         khw = document.getElementsByClassName("kgi-hover-wrap"),
-        kgiEditBtn = document.getElementsByClassName("kgi-edit-btn");
+        mkhw = document.getElementsByClassName("mkgi-hover-wrap"),
+        kgiEditBtn = document.getElementsByClassName("kgi-edit-btn"),
+        mkgiEditBtn = document.getElementsByClassName("mkgi-edit-btn");
         // gmdEditBtn = document.getElementById("gmm-edit-btn");
 
     // tagify setting
@@ -73,6 +82,10 @@
             closeOnSelect: false
         }
     };
+
+    if (mkgiTagInput) {
+        new Tagify(mkgiTagInput, tagifySetting);
+    }
 
     // initialization process
     try {
@@ -959,52 +972,126 @@
     try {
 
         for (let i = 0, max = kaw.length; i < max; i++) {
-            if (i === 3) {
-                break;
-            }            
-
-            kaw[i].addEventListener("click", function() {
-                let kgiEditWrap = document.createElement("div"),
-                    kgiTextarea = document.createElement("textarea"),
-                    // kgiEditProgressWrap = document.createElement("div"),
-                    // progressBar = document.createElement("progress"),
-                    tagInput = document.createElement("input"),
-                    kgiAddBtn = document.createElement("div"),
-                    kgiAddBtnTxt = document.createElement("p");
-
+            
+            if (i === 0) {
                 
-                kaw[i].parentNode.insertBefore(kgiEditWrap, kaw[i]);
-                kgiEditWrap.setAttribute("id", "kgi-edit-wrap");
+                kaw[i].addEventListener("click", function() {
+                    let kgiEditWrap = document.createElement("div"),
+                        kgiTextarea = document.createElement("textarea"),
+                        // kgiEditProgressWrap = document.createElement("div"),
+                        // progressBar = document.createElement("progress"),
+                        tagInput = document.createElement("input"),
+                        kgiAddBtn = document.createElement("div"),
+                        kgiAddBtnTxt = document.createElement("p");
     
-                kaw[i].setAttribute("style", "display: none;");
+                    
+                    kaw[i].parentNode.insertBefore(kgiEditWrap, kaw[i]);
+                    kgiEditWrap.setAttribute("id", "kgi-edit-wrap");
+        
+                    kaw[i].setAttribute("style", "display: none;");
+        
+                    kgiEditWrap.insertBefore(kgiTextarea, null);
+                    kgiTextarea.setAttribute("name", "kgi-edit-title");
+                    kgiTextarea.setAttribute("id", "kgi-edit-title");
+                    kgiTextarea.setAttribute("placeholder", "KGIのタイトル");
+        
+                    // kgiEditWrap.insertBefore(kgiEditProgressWrap, null);
+                    // kgiEditProgressWrap.setAttribute("id", "kgi-edit-progress-wrap");
+                    // kgitEditProgressWrap.insertBefore(progressBar, null);
+        
+                    kgiEditWrap.insertBefore(tagInput, null);
+                    tagInput.setAttribute("id", "tag-input");
+                    // tagInput.setAttribute("value", "");
+                    tagInput.setAttribute("placeholder", "KGIのタグ");
+                    new Tagify(tagInput, tagifySetting);
+                    // Tagify(tagInput, tagifySetting);
+                    
+                    kgiEditWrap.insertBefore(kgiAddBtn, null);
+                    kgiAddBtn.setAttribute("id", "kgi-add-btn");
+                    kgiAddBtn.insertBefore(kgiAddBtnTxt, null);
+                    kgiAddBtnTxt.textContent = '追加する';
+        
+                    kgiAddBtn.addEventListener("click", function(e) {
+                        let newKiw = kiw[i].cloneNode(true);
+                        // if (indexDetail[i].parentNode.parentNode.parentNode === newKiw) {
+                            indexDetail[i].textContent = kgiTextarea.value;
+                        // }
     
-                kgiEditWrap.insertBefore(kgiTextarea, null);
-                kgiTextarea.setAttribute("name", "kgi-edit-title");
-                kgiTextarea.setAttribute("id", "kgi-edit-title");
-                kgiTextarea.setAttribute("placeholder", "KGIのタイトル");
+                        kaw[i].parentNode.replaceChild(kaw[i], kgiEditWrap);
+                        kaw[i].setAttribute("style", "display: block; width: 347px;");
     
-                // kgiEditWrap.insertBefore(kgiEditProgressWrap, null);
-                // kgiEditProgressWrap.setAttribute("id", "kgi-edit-progress-wrap");
-                // kgitEditProgressWrap.insertBefore(progressBar, null);
+                        kaw[i].parentNode.insertBefore(newKiw, kiw[i]);
+                        kaw[i].parentNode.insertBefore(kiw[1], kaw[i]);
+
+                        slickResize();
+                        
+                    }, false);
     
-                kgiEditWrap.insertBefore(tagInput, null);
-                tagInput.setAttribute("id", "tag-input");
-                // tagInput.setAttribute("value", "");
-                tagInput.setAttribute("placeholder", "KGIのタグ");
-                new Tagify(tagInput, tagifySetting);
-                // Tagify(tagInput, tagifySetting);
-                
-                kgiEditWrap.insertBefore(kgiAddBtn, null);
-                kgiAddBtn.setAttribute("id", "kgi-add-btn");
-                kgiAddBtn.insertBefore(kgiAddBtnTxt, null);
-                kgiAddBtnTxt.textContent = '追加する';
-    
-                kgiAddBtn.addEventListener("click", function(e) {
-                    kaw[i].parentNode.replaceChild(kaw[i], kgiEditWrap);
-                    kaw[i].setAttribute("style", "display: block; width: 347px;");
                 }, false);
 
-            }, false);
+            }
+
+            if (i === 1) {
+                
+                kaw[i].addEventListener("click", function() {
+                    let kgiEditWrap = document.createElement("div"),
+                        kgiTextarea = document.createElement("textarea"),
+                        // kgiEditProgressWrap = document.createElement("div"),
+                        // progressBar = document.createElement("progress"),
+                        tagInput = document.createElement("input"),
+                        kgiAddBtn = document.createElement("div"),
+                        kgiAddBtnTxt = document.createElement("p");
+    
+                    console.log(kaw[i].parentNode);
+                    kaw[i].parentNode.insertBefore(kgiEditWrap, kaw[i]);
+                    kgiEditWrap.setAttribute("id", "kgi-edit-wrap");
+        
+                    kaw[i].setAttribute("style", "display: none;");
+        
+                    kgiEditWrap.insertBefore(kgiTextarea, null);
+                    kgiTextarea.setAttribute("name", "kgi-edit-title");
+                    kgiTextarea.setAttribute("id", "kgi-edit-title");
+                    kgiTextarea.setAttribute("placeholder", "KGIのタイトル");
+        
+                    // kgiEditWrap.insertBefore(kgiEditProgressWrap, null);
+                    // kgiEditProgressWrap.setAttribute("id", "kgi-edit-progress-wrap");
+                    // kgitEditProgressWrap.insertBefore(progressBar, null);
+        
+                    kgiEditWrap.insertBefore(tagInput, null);
+                    tagInput.setAttribute("id", "tag-input");
+                    // tagInput.setAttribute("value", "");
+                    tagInput.setAttribute("placeholder", "KGIのタグ");
+                    new Tagify(tagInput, tagifySetting);
+                    // Tagify(tagInput, tagifySetting);
+                    
+                    kgiEditWrap.insertBefore(kgiAddBtn, null);
+                    kgiAddBtn.setAttribute("id", "kgi-add-btn");
+                    kgiAddBtn.insertBefore(kgiAddBtnTxt, null);
+                    kgiAddBtnTxt.textContent = '追加する';
+        
+                    kgiAddBtn.addEventListener("click", function(e) {
+                        let newQkiw = qkiw[i].cloneNode(true);
+                        // if (indexDetail[i].parentNode.parentNode.parentNode === newKiw) {
+                            qIndexDetail[i].textContent = kgiTextarea.value;
+                        // }
+    
+                        kaw[i].parentNode.replaceChild(kaw[i], kgiEditWrap);
+                        kaw[i].setAttribute("style", "display: block; width: 347px;");
+    
+                        kaw[i].parentNode.insertBefore(newQkiw, qkiw[i]);
+                        // kaw[i].parentNode.insertBefore(qkiw[1], kaw[i]);
+                        // kaw[i].parentNode.insertBefore(qkiw, kaw[1]);
+
+                        slickResize();
+                        
+                    }, false);
+    
+                }, false);
+
+            }
+            if (i === 2) {
+                break;
+            }
 
         }
         
@@ -1013,72 +1100,466 @@
     }
 
     // kgi hover wrap behaviors in the goal manager pages
-    try {
-        for (let i = 0, max = kiw.length; i < max; i++) {
-            kiw[i].addEventListener("mouseenter", function() {
-                khw[i].setAttribute("style", "display: block; opacity: 1;");
-            });
+    // try {
+    //     for (let i = 0, max = kiw.length; i < max; i++) {
+    //         kiw[i].addEventListener("mouseenter", function() {
+    //             khw[i].setAttribute("style", "display: block; opacity: 1;");
+    //         });
 
-            kiw[i].addEventListener("mouseleave", function() {
-                khw[i].setAttribute("style", "display: none;");
-            });
-        }
-    } catch (e) {
-        // console.log("This is not the goal pages.");
-    }
+    //         kiw[i].addEventListener("mouseleave", function() {
+    //             khw[i].setAttribute("style", "display: none;");
+    //         });
+    //     }
+
+    //     for (let i = 0, max = mkiw.length; i < max; i++) {
+    //         mkiw[i].addEventListener("mouseenter", function() {
+    //             mkhw[i].setAttribute("style", "display: block; opacity: 1;");
+    //         });
+
+    //         mkiw[i].addEventListener("mouseleave", function() {
+    //             mkhw[i].setAttribute("style", "display: none");
+    //         })
+    //     }
+    // } catch (e) {
+    //     // console.log("This is not the goal pages.");
+    // }
 
     // kgi edit behaviors in the goal manager pages
     // try {
     //     for (let i = 0, max = kgiEditBtn.length; i < max; i++) {
     //         kgiEditBtn[i].addEventListener("click", function() {
-    //             if (kgiEditBtn[i].parentNode.parentNode.parentNode === mkgi) {
-    //                 location.replace("monthly-kgi-edit.html");
-    //             } else {
-    //                 let kgiEditWrap = document.createElement("div"),
-    //                     kgiTextarea = document.createElement("textarea"),
-    //                     // kgiEditProgressWrap = document.createElement("div"),
-    //                     // progressBar = document.createElement("progress"),
-    //                     tagInput = document.createElement("input"),
-    //                     kgiAddBtn = document.createElement("div"),
-    //                     kgiAddBtnTxt = document.createElement("p");
+    //             let kgiEditWrap = document.createElement("div"),
+    //                 kgiTextarea = document.createElement("textarea"),
+    //                 // kgiEditProgressWrap = document.createElement("div"),
+    //                 // progressBar = document.createElement("progress"),
+    //                 tagInput = document.createElement("input"),
+    //                 kgiUpdateBtn = document.createElement("div"),
+    //                 kgiUpdateBtnTxt = document.createElement("p");
 
-    //                 kgiEditBtn[i].parentNode.parentNode.insertBefore(kgiEditWrap, kiw[i]);
-    //                 kgiEditWrap.setAttribute("id", "kgi-edit-wrap");
-        
-    //                 kiw[i].setAttribute("style", "display: none;");
-        
-    //                 kgiEditWrap.insertBefore(kgiTextarea, null);
-    //                 kgiTextarea.setAttribute("name", "kgi-edit-title");
-    //                 kgiTextarea.setAttribute("id", "kgi-edit-title");
-    //                 kgiTextarea.setAttribute("placeholder", "KGIのタイトル");
-        
-    //                 // kgiEditWrap.insertBefore(kgiEditProgressWrap, null);
-    //                 // kgiEditProgressWrap.setAttribute("id", "kgi-edit-progress-wrap");
-    //                 // kgitEditProgressWrap.insertBefore(progressBar, null);
-        
-    //                 kgiEditWrap.insertBefore(tagInput, null);
-    //                 tagInput.setAttribute("id", "tag-input");
-    //                 // tagInput.setAttribute("value", "");
-    //                 tagInput.setAttribute("placeholder", "KGIのタグ");
-    //                 new Tagify(tagInput, tagifySetting);
-    //                 // Tagify(tagInput, tagifySetting);
-                    
-    //                 kgiEditWrap.insertBefore(kgiAddBtn, null);
-    //                 kgiAddBtn.setAttribute("id", "kgi-add-btn");
-    //                 kgiAddBtn.insertBefore(kgiAddBtnTxt, null);
-    //                 kgiAddBtnTxt.textContent = '追加する';
-        
-    //                 kgiAddBtn.addEventListener("click", function(e) {
-    //                     kgiEditWrap.parentNode.parentNode.replaceChild(kiw[i], kgiEditWrap);
-    //                     kiw[i].setAttribute("style", "display: block; width: 347px");
-    //                 }, false);
-    //             }
+    //             kgiEditBtn[i].parentNode.parentNode.parentNode.insertBefore(kgiEditWrap, kiw[i]);
+    //             kgiEditWrap.setAttribute("id", "kgi-edit-wrap");
+    
+    //             kiw[i].setAttribute("style", "display: none;");
+    
+    //             kgiEditWrap.insertBefore(kgiTextarea, null);
+    //             kgiTextarea.setAttribute("name", "kgi-edit-title");
+    //             kgiTextarea.setAttribute("id", "kgi-edit-title");
+    //             kgiTextarea.setAttribute("placeholder", "KGIのタイトル");
+    //             kgiTextarea.textContent = indexDetail[i].textContent;
+    //             kgiTextarea.focus();
+    
+    //             // kgiEditWrap.insertBefore(kgiEditProgressWrap, null);
+    //             // kgiEditProgressWrap.setAttribute("id", "kgi-edit-progress-wrap");
+    //             // kgitEditProgressWrap.insertBefore(progressBar, null);
+    
+    //             kgiEditWrap.insertBefore(tagInput, null);
+    //             tagInput.setAttribute("id", "tag-input");
+    //             // tagInput.setAttribute("value", "");
+    //             tagInput.setAttribute("placeholder", "KGIのタグ");
+    //             // tagInput.value = 
+    //             new Tagify(tagInput, tagifySetting);
+                
+    //             kgiEditWrap.insertBefore(kgiUpdateBtn, null);
+    //             kgiUpdateBtn.setAttribute("id", "kgi-update-btn");
+    //             kgiUpdateBtn.insertBefore(kgiUpdateBtnTxt, null);
+    //             kgiUpdateBtnTxt.textContent = '更新する';
+    
+    //             kgiUpdateBtn.addEventListener("click", function(e) {
+    //                 indexDetail[i].textContent = kgiTextarea.value;
+    //                 kgiEditWrap.parentNode.replaceChild(kiw[i], kgiEditWrap);
+    //                 kiw[i].setAttribute("style", "display: block; width: 347px");
+    //             }, false);
+    //         }, false);
+    //     }
+
+    //     for (let i = 0, max = mkgiEditBtn.length; i < max; i++) {
+    //         mkgiEditBtn[i].addEventListener("click", function() {
+    //             // location.replace("monthly-kgi-edit.html");
+    //             location.href = 'monthly-kgi-edit.html';
     //         }, false);
     //     }
     // } catch (e) {
-    //     // console.log("This is not the goal manager pages.");
+    //     console.log("This is not the goal manager pages.");
     // }
 
+
+    // slick update function
+    
+    function slickResize() {
+        var ykgi = document.getElementsByClassName("yearly-kgi"),
+            qkgi = document.getElementsByClassName("quarterly-kgi"),
+            mkgi = document.getElementsByClassName("monthly-kgi");
+        
+        for(var i = 0, max = ykgi.length; i < max; i++) {
+            // console.log(max);
+            if (max <= 4) {
+                if (window.matchMedia("screen and (max-width: 580px)").matches) {
+                    // break;
+                    setTimeout(function() {
+                        $(".ykgi-regular").slick({
+                            // dots: true,
+                            infinite: true,
+                            slidesToShow: 4,
+                            slidesToScroll: 4,
+                            // arrows: false,
+                            // mobileFirst: true,
+                            responsive: [
+                                {
+                                    breakpoint: 1250,
+                                    settings: {
+                                        // infinite: true,
+                                        slidesToShow: 3,
+                                        slidesToScroll: 3,
+                                    }
+                                },
+                                {
+                                    breakpoint: 580,
+                                    settings: {
+                                        slidesToShow: 1,
+                                        slidesToScroll: 1,
+                                    }
+                                }
+                            ]
+                        });
+                    }, 400);
+                } else {
+                    $(".top-slider").slick({
+                        infinite: true,
+                        slideToShow: 1,
+                        slideToScroll: 1,
+                        accessibility: false,
+                        autoplay: true,
+                        autoplaySpeed: 4000,
+                        arrows: false,
+                        draggable: false,
+                        swipe: false,
+                    });
+                }
+                for (var i = 0, max = ykgi.length; i < max; i++) {
+                    ykgi[i].setAttribute("style", "width: 347px");
+                }
+                // console.log("max3");
+                break;
+            } else {
+                if (window.matchMedia("screen and (max-width: 580px)").matches) {
+                    setTimeout(function() {
+                        $(".ykgi-regular").slick({
+                            // dots: true,
+                            infinite: true,
+                            slidesToShow: 4,
+                            slidesToScroll: 4,
+                            // arrows: false,
+                            // mobileFirst: true,
+                            responsive: [
+                                {
+                                    breakpoint: 1250,
+                                    settings: {
+                                        // infinite: true,
+                                        slidesToShow: 3,
+                                        slidesToScroll: 3,
+                                    }
+                                },
+                                {
+                                    breakpoint: 580,
+                                    settings: {
+                                        slidesToShow: 1,
+                                        slidesToScroll: 1,
+                                    }
+                                }
+                            ]
+                        });
+                    }, 400);						
+                } else {
+                    $(".top-slider").slick({
+                        infinite: true,
+                        slideToShow: 1,
+                        slideToScroll: 1,
+                        accessibility: false,
+                        autoplay: true,
+                        autoplaySpeed: 4000,
+                        arrows: false,
+                        draggable: false,
+                        swipe: false,
+                    });
+
+                    $(".ykgi-regular").slick({
+                        // dots: true,
+                        infinite: true,
+                        slidesToShow: 4,
+                        slidesToScroll: 4,
+                        // arrows: false,
+                        // mobileFirst: true,
+                        responsive: [
+                            {
+                                breakpoint: 1250,
+                                settings: {
+                                    // infinite: true,
+                                    slidesToShow: 3,
+                                    slidesToScroll: 3,
+                                }
+                            },
+                            {
+                                breakpoint: 580,
+                                settings: {
+                                    slidesToShow: 1,
+                                    slidesToScroll: 1,
+                                }
+                            }
+                        ]
+                    });
+                }
+                // console.log("maxmt4");
+                break;
+            }
+        }
+
+        for(var i = 0, max = qkgi.length; i < max; i++) {
+            // console.log(max);
+            if (max <= 4) {
+                if (window.matchMedia("screen and (max-width: 580px)").matches) {
+                    // break;
+                    setTimeout(function() {
+                    $(".qkgi-regular").slick({
+                        // dots: true,
+                        infinite: true,
+                        slidesToShow: 4,
+                        slidesToScroll: 4,
+                        // arrows: false,
+                        // mobileFirst: true,
+                        responsive: [
+                            {
+                                breakpoint: 850,
+                                settings: {
+                                    // infinite: true,
+                                    slidesToShow: 3,
+                                    slidesToScroll: 3,
+                                }
+                            },
+                            {
+                                breakpoint: 580,
+                                settings: {
+                                    slidesToShow: 2,
+                                    slidesToScroll: 2,
+                                }
+                            }
+                        ]
+                    });
+                }, 400);
+                } else {
+                    // $(".top-slider").slick({
+                    // 	infinite: true,
+                    // 	slideToShow: 1,
+                    // 	slideToScroll: 1,
+                    // 	accessibility: false,
+                    // 	autoplay: true,
+                    // 	autoplaySpeed: 4000,
+                    // 	arrows: false,
+                    // 	draggable: false,
+                    // 	swipe: false,
+                    // });
+                }
+                for (var i = 0, max = qkgi.length; i < max; i++) {
+                    qkgi[i].setAttribute("style", "width: 347px");
+                }
+                // console.log("max3");
+                break;
+            } else {
+                if (window.matchMedia("screen and (max-width: 580px)").matches) {
+                    setTimeout(function() {
+                        $(".qkgi-regular").slick({
+                            // dots: true,
+                            infinite: true,
+                            slidesToShow: 4,
+                            slidesToScroll: 4,
+                            // arrows: false,
+                            // mobileFirst: true,
+                            responsive: [
+                                {
+                                    breakpoint: 1250,
+                                    settings: {
+                                        // infinite: true,
+                                        slidesToShow: 3,
+                                        slidesToScroll: 3,
+                                    }
+                                },
+                                {
+                                    breakpoint: 580,
+                                    settings: {
+                                        slidesToShow: 2,
+                                        slidesToScroll: 2,
+                                    }
+                                }
+                            ]
+                        });
+                    }, 400);						
+                } else {
+                    // $(".top-slider").slick({
+                    // 	infinite: true,
+                    // 	slideToShow: 1,
+                    // 	slideToScroll: 1,
+                    // 	accessibility: false,
+                    // 	autoplay: true,
+                    // 	autoplaySpeed: 4000,
+                    // 	arrows: false,
+                    // 	draggable: false,
+                    // 	swipe: false,
+                    // });
+
+                    $(".qkgi-regular").slick({
+                        // dots: true,
+                        infinite: true,
+                        slidesToShow: 4,
+                        slidesToScroll: 4,
+                        // arrows: false,
+                        // mobileFirst: true,
+                        responsive: [
+                            {
+                                breakpoint: 1250,
+                                settings: {
+                                    // infinite: true,
+                                    slidesToShow: 3,
+                                    slidesToScroll: 3,
+                                }
+                            },
+                            {
+                                breakpoint: 580,
+                                settings: {
+                                    slidesToShow: 2,
+                                    slidesToScroll: 2,
+                                }
+                            }
+                        ]
+                    });
+                }
+                // console.log("maxmt4");
+                break;
+            }
+        }
+
+        for(var i = 0, max = mkgi.length; i < max; i++) {
+            // console.log(max);
+            if (max <= 4) {
+                if (window.matchMedia("screen and (max-width: 580px)").matches) {
+                    // break;
+                    setTimeout(function() {
+                        $(".mkgi-regular").slick({
+                            // dots: true,
+                            infinite: true,
+                            slidesToShow: 4,
+                            slidesToScroll: 4,
+                            // arrows: false,
+                            // mobileFirst: true,
+                            responsive: [
+                                {
+                                    breakpoint: 1250,
+                                    settings: {
+                                        // infinite: true,
+                                        slidesToShow: 3,
+                                        slidesToScroll: 3,
+                                    }
+                                },
+                                {
+                                    breakpoint: 580,
+                                    settings: {
+                                        slidesToShow: 2,
+                                        slidesToScroll: 2,
+                                    }
+                                }
+                            ]
+                        });
+                    }, 400);
+                } else {
+                    // $(".top-slider").slick({
+                    // 	infinite: true,
+                    // 	slideToShow: 1,
+                    // 	slideToScroll: 1,
+                    // 	accessibility: false,
+                    // 	autoplay: true,
+                    // 	autoplaySpeed: 4000,
+                    // 	arrows: false,
+                    // 	draggable: false,
+                    // 	swipe: false,
+                    // });
+                }
+                for (var i = 0, max = qkgi.length; i < max; i++) {
+                    qkgi[i].setAttribute("style", "width: 347px");
+                }
+                // console.log("max3");
+                break;
+            } else {
+                if (window.matchMedia("screen and (max-width: 580px)").matches) {
+                    setTimeout(function() {
+                        $(".mkgi-regular").slick({
+                            // dots: true,
+                            infinite: true,
+                            slidesToShow: 4,
+                            slidesToScroll: 4,
+                            // arrows: false,
+                            // mobileFirst: true,
+                            responsive: [
+                                {
+                                    breakpoint: 1250,
+                                    settings: {
+                                        // infinite: true,
+                                        slidesToShow: 3,
+                                        slidesToScroll: 3,
+                                    }
+                                },
+                                {
+                                    breakpoint: 580,
+                                    settings: {
+                                        slidesToShow: 2,
+                                        slidesToScroll: 2,
+                                    }
+                                }
+                            ]
+                        });
+                    }, 400);			
+                } else {
+                    // $(".top-slider").slick({
+                    // 	infinite: true,
+                    // 	slideToShow: 1,
+                    // 	slideToScroll: 1,
+                    // 	accessibility: false,
+                    // 	autoplay: true,
+                    // 	autoplaySpeed: 4000,
+                    // 	arrows: false,
+                    // 	draggable: false,
+                    // 	swipe: false,
+                    // });
+
+                    $(".mkgi-regular").slick({
+                        // dots: true,
+                        infinite: true,
+                        slidesToShow: 4,
+                        slidesToScroll: 4,
+                        // arrows: false,
+                        // mobileFirst: true,
+                        responsive: [
+                            {
+                                breakpoint: 1250,
+                                settings: {
+                                    // infinite: true,
+                                    slidesToShow: 3,
+                                    slidesToScroll: 3,
+                                }
+                            },
+                            {
+                                breakpoint: 580,
+                                settings: {
+                                    slidesToShow: 2,
+                                    slidesToScroll: 2,
+                                }
+                            }
+                        ]
+                    });
+                }
+                // console.log("maxmt4");
+                break;
+            }
+        }
+
+    }
 
     // content management functions in top page
     function resizeContent() {

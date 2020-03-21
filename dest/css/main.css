@@ -5299,7 +5299,7 @@ a {
   width: 89%;
   overflow: hidden;
   padding: 20px;
-  padding-bottom: 0;
+  padding-bottom: 40px;
 }
 
 #gm-inner-content .right-content .inner-wrap .kgi-wrap .top-text, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .top-text, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .top-text {
@@ -5324,18 +5324,18 @@ a {
   justify-content: space-evenly;
 }
 
-#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap {
+#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap {
   width: 200px;
   cursor: pointer;
   position: relative;
   margin-top: 35px;
 }
 
-#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap:hover, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap:hover, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap:hover {
+#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap:hover, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap:hover, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap:hover, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap:hover, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap:hover, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap:hover, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap:hover, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap:hover, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap:hover {
   opacity: 0.6;
 }
 
-#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .top-text .index-detail, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .top-text .index-detail, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .top-text .index-detail {
+#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .top-text .index-detail, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .top-text .q-index-detail, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .top-text .index-detail, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .top-text .q-index-detail, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .top-text .index-detail, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .top-text .q-index-detail, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .top-text .index-detail, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .top-text .q-index-detail, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .top-text .index-detail, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .top-text .q-index-detail, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .top-text .index-detail, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .top-text .q-index-detail, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .top-text .index-detail, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .top-text .q-index-detail, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .top-text .index-detail, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .top-text .q-index-detail, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .top-text .index-detail, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .top-text .q-index-detail {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   font-size: 16px;
@@ -5346,11 +5346,11 @@ a {
   padding: 0 20px;
 }
 
-#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap {
+#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap {
   text-align: center;
 }
 
-#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart {
+#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart {
   margin: 3% auto;
   width: 130px;
   height: 130px;
@@ -5359,11 +5359,11 @@ a {
   position: relative;
 }
 
-#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart.gt-50, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart.gt-50, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart.gt-50 {
+#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart.gt-50, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart.gt-50, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart.gt-50, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart.gt-50, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart.gt-50, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart.gt-50, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart.gt-50, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart.gt-50, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart.gt-50 {
   background: linear-gradient(#87d7c4, #c2e2a3);
 }
 
-#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress {
+#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress {
   content: "";
   position: absolute;
   border-radius: 50%;
@@ -5374,7 +5374,7 @@ a {
   clip: rect(0, 130px, 130px, 65px);
 }
 
-#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress .ppc-progress-fill, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress .ppc-progress-fill, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress .ppc-progress-fill {
+#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress .ppc-progress-fill, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress .ppc-progress-fill, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress .ppc-progress-fill, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress .ppc-progress-fill, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress .ppc-progress-fill, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress .ppc-progress-fill, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress .ppc-progress-fill, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress .ppc-progress-fill, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress .ppc-progress-fill {
   content: "";
   position: absolute;
   border-radius: 50%;
@@ -5387,16 +5387,16 @@ a {
   transform: rotate(60deg);
 }
 
-#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50 {
+#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50 {
   clip: rect(0, 65px, 130px, 0);
 }
 
-#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50 .ppc-progress-fill, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50 .ppc-progress-fill, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50 .ppc-progress-fill {
+#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50 .ppc-progress-fill, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50 .ppc-progress-fill, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50 .ppc-progress-fill, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50 .ppc-progress-fill, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50 .ppc-progress-fill, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50 .ppc-progress-fill, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50 .ppc-progress-fill, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50 .ppc-progress-fill, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50 .ppc-progress-fill {
   clip: rect(0, 130px, 130px, 65px);
   background: #f2f2f2;
 }
 
-#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent {
+#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent {
   content: "";
   position: absolute;
   border-radius: 50%;
@@ -5409,12 +5409,12 @@ a {
   display: table;
 }
 
-#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap {
+#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap {
   display: table-cell;
   vertical-align: middle;
 }
 
-#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap span, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap span, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap span {
+#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap span, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap span, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap span, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap span, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap span, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap span, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap span, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap span, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap span {
   display: block;
   color: #9ea5a5;
   font-family: "Roboto", sans-serif;
@@ -5423,13 +5423,13 @@ a {
   line-height: 39px;
 }
 
-#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .gm-tags-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .gm-tags-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .gm-tags-wrap {
+#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .gm-tags-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .gm-tags-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .gm-tags-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .gm-tags-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .gm-tags-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .gm-tags-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .gm-tags-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .gm-tags-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .gm-tags-wrap {
   position: absolute;
   top: -29px;
   right: 25px;
 }
 
-#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .gm-tags-wrap .tag-item p, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .gm-tags-wrap .tag-item p, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .gm-tags-wrap .tag-item p {
+#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .gm-tags-wrap .tag-item p, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .gm-tags-wrap .m-tag-item p, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .gm-tags-wrap .tag-item p, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .gm-tags-wrap .m-tag-item p, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .gm-tags-wrap .tag-item p, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .gm-tags-wrap .m-tag-item p, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .gm-tags-wrap .tag-item p, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .gm-tags-wrap .m-tag-item p, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .gm-tags-wrap .tag-item p, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .gm-tags-wrap .m-tag-item p, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .gm-tags-wrap .tag-item p, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .gm-tags-wrap .m-tag-item p, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .gm-tags-wrap .tag-item p, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .gm-tags-wrap .m-tag-item p, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .gm-tags-wrap .tag-item p, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .gm-tags-wrap .m-tag-item p, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .gm-tags-wrap .tag-item p, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .gm-tags-wrap .m-tag-item p {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 12px;
@@ -5441,7 +5441,7 @@ a {
   padding: 4px 8px;
 }
 
-#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .kgi-hover-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .kgi-hover-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .kgi-hover-wrap {
+#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .kgi-hover-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .kgi-hover-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .kgi-hover-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .kgi-hover-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .kgi-hover-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .kgi-hover-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .kgi-hover-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .kgi-hover-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .kgi-hover-wrap {
   display: none;
   border: 1px solid #e4e7e7;
   box-sizing: border-box;
@@ -5452,7 +5452,7 @@ a {
   right: 25px;
 }
 
-#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .kgi-hover-wrap .kgi-edit-btn, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .kgi-hover-wrap .kgi-edit-btn, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .kgi-hover-wrap .kgi-edit-btn {
+#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .kgi-hover-wrap .kgi-edit-btn, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .kgi-hover-wrap .kgi-edit-btn, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .kgi-hover-wrap .kgi-edit-btn, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .kgi-hover-wrap .kgi-edit-btn, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .kgi-hover-wrap .kgi-edit-btn, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .kgi-hover-wrap .kgi-edit-btn, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .kgi-hover-wrap .kgi-edit-btn, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .kgi-hover-wrap .kgi-edit-btn, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .kgi-hover-wrap .kgi-edit-btn {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -5463,7 +5463,40 @@ a {
   font-size: 15px;
 }
 
-#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .kgi-hover-wrap .kgi-delete-btn, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .kgi-hover-wrap .kgi-delete-btn, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .kgi-hover-wrap .kgi-delete-btn {
+#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .kgi-hover-wrap .kgi-delete-btn, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .kgi-hover-wrap .kgi-delete-btn, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .kgi-hover-wrap .kgi-delete-btn, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .kgi-hover-wrap .kgi-delete-btn, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .kgi-hover-wrap .kgi-delete-btn, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .kgi-hover-wrap .kgi-delete-btn, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .kgi-hover-wrap .kgi-delete-btn, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .kgi-hover-wrap .kgi-delete-btn, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .kgi-hover-wrap .kgi-delete-btn {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #b1bbbb;
+  color: rgba(0, 0, 0, 0.7);
+  border-color: rgba(0, 0, 0, 0.7);
+  margin: 5px;
+  font-size: 15px;
+}
+
+#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .mkgi-hover-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .mkgi-hover-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .mkgi-hover-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .mkgi-hover-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .mkgi-hover-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .mkgi-hover-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .mkgi-hover-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .mkgi-hover-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .mkgi-hover-wrap {
+  display: none;
+  border: 1px solid #e4e7e7;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  position: absolute;
+  top: 78px;
+  right: 25px;
+}
+
+#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .mkgi-hover-wrap .mkgi-edit-btn, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .mkgi-hover-wrap .mkgi-edit-btn, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .mkgi-hover-wrap .mkgi-edit-btn, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .mkgi-hover-wrap .mkgi-edit-btn, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .mkgi-hover-wrap .mkgi-edit-btn, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .mkgi-hover-wrap .mkgi-edit-btn, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .mkgi-hover-wrap .mkgi-edit-btn, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .mkgi-hover-wrap .mkgi-edit-btn, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .mkgi-hover-wrap .mkgi-edit-btn {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #b1bbbb;
+  color: rgba(0, 0, 0, 0.7);
+  border-color: rgba(0, 0, 0, 0.7);
+  margin: 5px;
+  font-size: 15px;
+}
+
+#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .mkgi-hover-wrap .kgi-delete-btn, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .mkgi-hover-wrap .kgi-delete-btn, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .mkgi-hover-wrap .kgi-delete-btn, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .mkgi-hover-wrap .kgi-delete-btn, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .mkgi-hover-wrap .kgi-delete-btn, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .mkgi-hover-wrap .kgi-delete-btn, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .mkgi-hover-wrap .kgi-delete-btn, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .mkgi-hover-wrap .kgi-delete-btn, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .mkgi-hover-wrap .kgi-delete-btn {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -5476,8 +5509,11 @@ a {
 
 #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-addition-wrap .img-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-addition-wrap .img-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-addition-wrap .img-wrap {
   width: 100%;
-  height: 100%;
+  height: 98%;
   text-align: center;
+  background: #f6f8f8;
+  border-radius: 10px;
+  position: relative;
 }
 
 #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-addition-wrap .img-wrap:hover, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-addition-wrap .img-wrap:hover, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-addition-wrap .img-wrap:hover {
@@ -5486,7 +5522,46 @@ a {
 }
 
 #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-addition-wrap .img-wrap img, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-addition-wrap .img-wrap img, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-addition-wrap .img-wrap img {
-  width: 80%;
+  width: 60px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .monthly-kgi, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .monthly-kgi, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .monthly-kgi {
+  height: 255px;
+}
+
+#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .monthly-kgi a, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .monthly-kgi a, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .monthly-kgi a {
+  width: 100%;
+  height: 100%;
+}
+
+#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .monthly-kgi a .img-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .monthly-kgi a .img-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .monthly-kgi a .img-wrap {
+  width: 100%;
+  height: 98%;
+  text-align: center;
+  background: #f6f8f8;
+  border-radius: 10px;
+  position: relative;
+}
+
+#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .monthly-kgi a .img-wrap:hover, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .monthly-kgi a .img-wrap:hover, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .monthly-kgi a .img-wrap:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .monthly-kgi a .img-wrap img, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .monthly-kgi a .img-wrap img, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .monthly-kgi a .img-wrap img {
+  width: 60px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 #gm-inner-content .right-content #kgi-edit-wrap {
@@ -5546,6 +5621,27 @@ a {
   padding-top: 8px;
 }
 
+#gm-inner-content .right-content #kgi-edit-wrap #kgi-update-btn {
+  width: 150px;
+  height: 40px;
+  background: #98a9a8;
+  border-radius: 5px;
+  margin: 0 auto;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+#gm-inner-content .right-content #kgi-edit-wrap #kgi-update-btn p {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 170%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #fff;
+  padding-top: 8px;
+}
+
 .gm-inner-content-after {
   left: 6% !important;
   width: 94% !important;
@@ -5560,7 +5656,7 @@ a {
   #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap {
     width: 65%;
   }
-  #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap {
+  #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap {
     width: 20%;
   }
 }
@@ -5585,7 +5681,7 @@ a {
 }
 
 @media screen and (max-width: 700px) {
-  #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap {
+  #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap {
     width: 91%;
   }
   .gm-inner-content-after {
@@ -5607,6 +5703,19 @@ a {
   }
   #gm-inner-content .right-content .inner-wrap .kgi-wrap2, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 {
     width: 83%;
+  }
+  #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-addition-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-addition-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-addition-wrap {
+    height: 237px;
+    margin-top: 20px;
+  }
+  #gm-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-addition-wrap .img-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-addition-wrap .img-wrap, #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-addition-wrap .img-wrap {
+    background: transparent !important;
+  }
+  #gm-inner-content .right-content .inner-wrap .kgi-wrap3 {
+    height: 378px;
+  }
+  #gm-inner-content .right-content .inner-wrap .kgi-wrap3 .slick-list {
+    height: 350px;
   }
 }
 
@@ -6292,6 +6401,31 @@ a {
   letter-spacing: 0.05em;
   color: #3d4444;
   width: 90%;
+}
+
+#gme-inner-content .right-content .inner-wrap #gme-inner-wrap #m-kgi-wrap .mkgi-tags-wrap .top-text p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height, or 150% */
+  letter-spacing: 0.05em;
+  color: #9ea5a5;
+}
+
+#gme-inner-content .right-content .inner-wrap #gme-inner-wrap #m-kgi-wrap .mkgi-tags-wrap .tagify {
+  background: #fcfcfc;
+  border: 1px solid #eee;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 10px;
+  height: 96px;
+  overflow: scroll;
 }
 
 #gme-inner-content .right-content .inner-wrap #gme-inner-wrap #m-kgi-wrap .sp-bottom-content {
@@ -7519,7 +7653,7 @@ a {
   width: 89%;
   overflow: hidden;
   padding: 20px;
-  padding-bottom: 0;
+  padding-bottom: 40px;
 }
 
 #kd-inner-content .right-content .inner-wrap .kgi-wrap .top-text, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .top-text, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .top-text {
@@ -7544,13 +7678,18 @@ a {
   justify-content: space-evenly;
 }
 
-#kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap {
+#kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap {
   width: 200px;
+  cursor: pointer;
   position: relative;
   margin-top: 35px;
 }
 
-#kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .top-text .index-detail, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .top-text .index-detail, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .top-text .index-detail {
+#kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap:hover, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap:hover, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap:hover, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap:hover, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap:hover, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap:hover, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap:hover, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap:hover, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap:hover {
+  opacity: 0.6;
+}
+
+#kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .top-text .index-detail, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .top-text .q-index-detail, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .top-text .index-detail, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .top-text .q-index-detail, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .top-text .index-detail, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .top-text .q-index-detail, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .top-text .index-detail, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .top-text .q-index-detail, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .top-text .index-detail, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .top-text .q-index-detail, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .top-text .index-detail, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .top-text .q-index-detail, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .top-text .index-detail, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .top-text .q-index-detail, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .top-text .index-detail, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .top-text .q-index-detail, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .top-text .index-detail, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .top-text .q-index-detail {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   font-size: 16px;
@@ -7561,11 +7700,11 @@ a {
   padding: 0 20px;
 }
 
-#kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap {
+#kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap {
   text-align: center;
 }
 
-#kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart {
+#kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart {
   margin: 3% auto;
   width: 130px;
   height: 130px;
@@ -7574,11 +7713,11 @@ a {
   position: relative;
 }
 
-#kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart.gt-50, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart.gt-50, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart.gt-50 {
+#kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart.gt-50, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart.gt-50, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart.gt-50, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart.gt-50, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart.gt-50, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart.gt-50, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart.gt-50, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart.gt-50, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart.gt-50 {
   background: linear-gradient(#87d7c4, #c2e2a3);
 }
 
-#kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress {
+#kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress {
   content: "";
   position: absolute;
   border-radius: 50%;
@@ -7589,7 +7728,7 @@ a {
   clip: rect(0, 130px, 130px, 65px);
 }
 
-#kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress .ppc-progress-fill, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress .ppc-progress-fill, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress .ppc-progress-fill {
+#kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress .ppc-progress-fill, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress .ppc-progress-fill, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress .ppc-progress-fill, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress .ppc-progress-fill, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress .ppc-progress-fill, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress .ppc-progress-fill, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress .ppc-progress-fill, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress .ppc-progress-fill, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress .ppc-progress-fill {
   content: "";
   position: absolute;
   border-radius: 50%;
@@ -7602,16 +7741,16 @@ a {
   transform: rotate(60deg);
 }
 
-#kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50 {
+#kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50 {
   clip: rect(0, 65px, 130px, 0);
 }
 
-#kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50 .ppc-progress-fill, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50 .ppc-progress-fill, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50 .ppc-progress-fill {
+#kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50 .ppc-progress-fill, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50 .ppc-progress-fill, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50 .ppc-progress-fill, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50 .ppc-progress-fill, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50 .ppc-progress-fill, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50 .ppc-progress-fill, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50 .ppc-progress-fill, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50 .ppc-progress-fill, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-progress.gt-50 .ppc-progress-fill {
   clip: rect(0, 130px, 130px, 65px);
   background: #f2f2f2;
 }
 
-#kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent {
+#kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent {
   content: "";
   position: absolute;
   border-radius: 50%;
@@ -7624,12 +7763,12 @@ a {
   display: table;
 }
 
-#kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap {
+#kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap {
   display: table-cell;
   vertical-align: middle;
 }
 
-#kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap span, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap span, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap span {
+#kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap span, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap span, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap span, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap span, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap span, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap span, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap span, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap span, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .index-chart .progress-wrap .progress-pie-chart .ppc-percent .percent-inner-wrap span {
   display: block;
   color: #9ea5a5;
   font-family: "Roboto", sans-serif;
@@ -7638,13 +7777,13 @@ a {
   line-height: 39px;
 }
 
-#kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .gm-tags-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .gm-tags-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .gm-tags-wrap {
+#kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .gm-tags-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .gm-tags-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .gm-tags-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .gm-tags-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .gm-tags-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .gm-tags-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .gm-tags-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .gm-tags-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .gm-tags-wrap {
   position: absolute;
   top: -29px;
   right: 25px;
 }
 
-#kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .gm-tags-wrap .tag-item p, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .gm-tags-wrap .tag-item p, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .gm-tags-wrap .tag-item p {
+#kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .gm-tags-wrap .tag-item p, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .gm-tags-wrap .m-tag-item p, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .gm-tags-wrap .tag-item p, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .gm-tags-wrap .m-tag-item p, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .gm-tags-wrap .tag-item p, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .gm-tags-wrap .m-tag-item p, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .gm-tags-wrap .tag-item p, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .gm-tags-wrap .m-tag-item p, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .gm-tags-wrap .tag-item p, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .gm-tags-wrap .m-tag-item p, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .gm-tags-wrap .tag-item p, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .gm-tags-wrap .m-tag-item p, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .gm-tags-wrap .tag-item p, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .gm-tags-wrap .m-tag-item p, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .gm-tags-wrap .tag-item p, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .gm-tags-wrap .m-tag-item p, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .gm-tags-wrap .tag-item p, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .gm-tags-wrap .m-tag-item p {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 12px;
@@ -7656,10 +7795,79 @@ a {
   padding: 4px 8px;
 }
 
+#kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .kgi-hover-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .kgi-hover-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .kgi-hover-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .kgi-hover-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .kgi-hover-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .kgi-hover-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .kgi-hover-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .kgi-hover-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .kgi-hover-wrap {
+  display: none;
+  border: 1px solid #e4e7e7;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  position: absolute;
+  top: 78px;
+  right: 25px;
+}
+
+#kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .kgi-hover-wrap .kgi-edit-btn, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .kgi-hover-wrap .kgi-edit-btn, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .kgi-hover-wrap .kgi-edit-btn, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .kgi-hover-wrap .kgi-edit-btn, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .kgi-hover-wrap .kgi-edit-btn, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .kgi-hover-wrap .kgi-edit-btn, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .kgi-hover-wrap .kgi-edit-btn, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .kgi-hover-wrap .kgi-edit-btn, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .kgi-hover-wrap .kgi-edit-btn {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #b1bbbb;
+  color: rgba(0, 0, 0, 0.7);
+  border-color: rgba(0, 0, 0, 0.7);
+  margin: 5px;
+  font-size: 15px;
+}
+
+#kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .kgi-hover-wrap .kgi-delete-btn, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .kgi-hover-wrap .kgi-delete-btn, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .kgi-hover-wrap .kgi-delete-btn, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .kgi-hover-wrap .kgi-delete-btn, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .kgi-hover-wrap .kgi-delete-btn, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .kgi-hover-wrap .kgi-delete-btn, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .kgi-hover-wrap .kgi-delete-btn, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .kgi-hover-wrap .kgi-delete-btn, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .kgi-hover-wrap .kgi-delete-btn {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #b1bbbb;
+  color: rgba(0, 0, 0, 0.7);
+  border-color: rgba(0, 0, 0, 0.7);
+  margin: 5px;
+  font-size: 15px;
+}
+
+#kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .mkgi-hover-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .mkgi-hover-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .mkgi-hover-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .mkgi-hover-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .mkgi-hover-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .mkgi-hover-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .mkgi-hover-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .mkgi-hover-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .mkgi-hover-wrap {
+  display: none;
+  border: 1px solid #e4e7e7;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  position: absolute;
+  top: 78px;
+  right: 25px;
+}
+
+#kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .mkgi-hover-wrap .mkgi-edit-btn, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .mkgi-hover-wrap .mkgi-edit-btn, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .mkgi-hover-wrap .mkgi-edit-btn, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .mkgi-hover-wrap .mkgi-edit-btn, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .mkgi-hover-wrap .mkgi-edit-btn, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .mkgi-hover-wrap .mkgi-edit-btn, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .mkgi-hover-wrap .mkgi-edit-btn, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .mkgi-hover-wrap .mkgi-edit-btn, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .mkgi-hover-wrap .mkgi-edit-btn {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #b1bbbb;
+  color: rgba(0, 0, 0, 0.7);
+  border-color: rgba(0, 0, 0, 0.7);
+  margin: 5px;
+  font-size: 15px;
+}
+
+#kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap .mkgi-hover-wrap .kgi-delete-btn, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap .mkgi-hover-wrap .kgi-delete-btn, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap .mkgi-hover-wrap .kgi-delete-btn, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap .mkgi-hover-wrap .kgi-delete-btn, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap .mkgi-hover-wrap .kgi-delete-btn, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap .mkgi-hover-wrap .kgi-delete-btn, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap .mkgi-hover-wrap .kgi-delete-btn, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap .mkgi-hover-wrap .kgi-delete-btn, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap .mkgi-hover-wrap .kgi-delete-btn {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #b1bbbb;
+  color: rgba(0, 0, 0, 0.7);
+  border-color: rgba(0, 0, 0, 0.7);
+  margin: 5px;
+  font-size: 15px;
+}
+
 #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-addition-wrap .img-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-addition-wrap .img-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-addition-wrap .img-wrap {
   width: 100%;
-  height: 100%;
+  height: 98%;
   text-align: center;
+  background: #f6f8f8;
+  border-radius: 10px;
+  position: relative;
 }
 
 #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-addition-wrap .img-wrap:hover, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-addition-wrap .img-wrap:hover, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-addition-wrap .img-wrap:hover {
@@ -7668,7 +7876,46 @@ a {
 }
 
 #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-addition-wrap .img-wrap img, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-addition-wrap .img-wrap img, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-addition-wrap .img-wrap img {
-  width: 80%;
+  width: 60px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+#kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .monthly-kgi, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .monthly-kgi, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .monthly-kgi {
+  height: 255px;
+}
+
+#kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .monthly-kgi a, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .monthly-kgi a, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .monthly-kgi a {
+  width: 100%;
+  height: 100%;
+}
+
+#kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .monthly-kgi a .img-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .monthly-kgi a .img-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .monthly-kgi a .img-wrap {
+  width: 100%;
+  height: 98%;
+  text-align: center;
+  background: #f6f8f8;
+  border-radius: 10px;
+  position: relative;
+}
+
+#kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .monthly-kgi a .img-wrap:hover, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .monthly-kgi a .img-wrap:hover, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .monthly-kgi a .img-wrap:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .monthly-kgi a .img-wrap img, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .monthly-kgi a .img-wrap img, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .monthly-kgi a .img-wrap img {
+  width: 60px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 #kd-inner-content .right-content #kgi-edit-wrap {
@@ -7728,6 +7975,27 @@ a {
   padding-top: 8px;
 }
 
+#kd-inner-content .right-content #kgi-edit-wrap #kgi-update-btn {
+  width: 150px;
+  height: 40px;
+  background: #98a9a8;
+  border-radius: 5px;
+  margin: 0 auto;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+#kd-inner-content .right-content #kgi-edit-wrap #kgi-update-btn p {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 170%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #fff;
+  padding-top: 8px;
+}
+
 .kd-inner-content-after {
   left: 6% !important;
   width: 94% !important;
@@ -7742,7 +8010,7 @@ a {
   #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap {
     width: 65%;
   }
-  #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap {
+  #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-inner-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .qkgi-inner-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .mkgi-inner-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-inner-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .qkgi-inner-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .mkgi-inner-wrap {
     width: 20%;
   }
 }
@@ -7767,7 +8035,7 @@ a {
 }
 
 @media screen and (max-width: 700px) {
-  #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap {
+  #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-inner-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .qkgi-inner-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .mkgi-inner-wrap {
     width: 91%;
   }
   .kd-inner-content-after {
@@ -7795,6 +8063,19 @@ a {
 @media screen and (max-width: 500px) {
   #kd-inner-content .right-content .inner-wrap .kgi-wrap2, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 {
     padding: 20px 20px 20px 17px;
+  }
+  #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-addition-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-addition-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-addition-wrap {
+    height: 237px;
+    margin-top: 20px;
+  }
+  #kd-inner-content .right-content .inner-wrap .kgi-wrap .kgi-large-wrap .kgi-addition-wrap .img-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap2 .kgi-large-wrap .kgi-addition-wrap .img-wrap, #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .kgi-large-wrap .kgi-addition-wrap .img-wrap {
+    background: transparent;
+  }
+  #kd-inner-content .right-content .inner-wrap .kgi-wrap3 {
+    height: 378px;
+  }
+  #kd-inner-content .right-content .inner-wrap .kgi-wrap3 .slick-list {
+    height: 350px;
   }
 }
 

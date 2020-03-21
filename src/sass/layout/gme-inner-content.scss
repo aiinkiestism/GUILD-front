@@ -135,6 +135,33 @@
                             }
                         }
                     }
+                    .mkgi-tags-wrap {
+                        .top-text {
+                            p {
+                                font-family: $base-font-family;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 14px;
+                                line-height: 21px;
+                                /* identical to box height, or 150% */
+                                letter-spacing: 0.05em;
+                                color: #9ea5a5; 
+                            }
+                        }
+                        .tagify {
+                            background: #fcfcfc;
+                            border: 1px solid #eee;
+                            box-sizing: border-box;
+                            border-radius: 5px;
+                            font-family: $base-font-family;
+                            font-weight: normal;
+                            width: 100%;
+                            margin: 0 auto;
+                            margin-top: 10px;
+                            height: 96px;
+                            overflow: scroll;
+                        }
+                    }
                     .sp-bottom-content {
                         display: none;
                         position: absolute;
