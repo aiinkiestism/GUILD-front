@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PROJECT REGISTER | GUILD</title>
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> -->
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="img/logo.png" /> -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <!-- ogp setting -->
+    <meta property="og:title" content="PROJECT REGISTER | GUILD" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="PROJECT REGISTER | GUILD" />
+    <meta property="og:description" content="" />
+    <meta property="fb:app_id" content="" />
+    <meta name="twitter:card" content="" />
+  </head>
+  <body>
+    <div class="contents">
+      <div id="pr-inner-content">
+        <div class="p-top-nav">
+          <div class="logo-wrap">
+            <div class="img-wrap">
+              <img src="img/logo.png" alt="logo">
+            </div>
+            <p>GUILD</p>
+          </div>
+        </div>
+        <div id="p-inner-wrap">
+          <div class="top-text">
+            <p class="large-text">プロジェクト登録</p>
+            <p class="small-text">プロジェクトを登録してください。</p>
+          </div>
+          <form action="#" method="POST" enctype="multipart/form-data">
+            <div id="project-id-wrap">
+              <p class="left-text">プロジェクトID</p>
+              <textarea name="projectid-text" id="projectid-text" cols="30" rows="10"></textarea>
+            </div>
+            <div id="project-name-wrap">
+              <p class="left-text">プロジェクト名</p>
+              <textarea name="projectname-text" id="projectname-text" cols="30" rows="10"></textarea>
+            </div>
+            <div id="agenda-wrap">
+              <p class="left-text">議題</p>
+              <textarea name="agenda-text" id="agenda-text" cols="30" rows="10"></textarea>
+            </div>
+            <div id="minimum-entry-ratio">
+              <p class="left-text">コントラクト投票の最低参加率</p>
+              <div class="tooltip-wrap">
+                <input type="range" id="pr-min-voting-rate">
+              </div>
+            </div>
+            <div id="minimum-agree-ratio">
+              <p class="left-text">コントラクト投票の最低賛成率</p>
+              <div class="tooltip-wrap">
+                <input type="range" id="pr-min-agree-rate">
+              </div>
+            </div>
+            <div id="project-image">
+              <p class="left-text">プロジェクトのプロフィール画像</p>
+              <input type="file" id="image-select-input">
+            </div>
+            <button type="submit" id="submit-btn">登録する</button>
+            <!-- <div id="register-btn">
+                        <p>登録する</p>
+                    </div> -->
+          </form>
+        </div>
+        <!-- <div class="copyright">
+				<small>Copyright &copy; 2020 GUILD All Rights Reserved.</small>
+			</div> -->
+      </div>
+    </div>
+  </body>
+  <!-- <script src="js/lib.min.js" async></script> -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script src="js/tooltip-range.min.js" defer></script>
+  <script defer>
+    (function()
+    {
+      'use strict';
+      document.addEventListener("DOMContentLoaded", function()
+      {
+        tooltipRange.options(
+        {
+          selecter: "#pr-min-voting-rate",
+          tooltip: true,
+          value: 43,
+          min: 0,
+          max: 100,
+          step: 1
+        });
+        tooltipRange.options(
+        {
+          selecter: "#pr-min-agree-rate",
+          tooltip: true,
+          value: 60,
+          min: 0,
+          max: 100,
+          step: 1
+        });
+      }, false);
+    }());
+  </script>
+</html>

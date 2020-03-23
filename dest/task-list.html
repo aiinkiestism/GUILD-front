@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TASKLOG | GUILD</title>
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> -->
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="img/logo.png" /> -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" /> -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- ogp setting -->
+    <meta property="og:title" content="TASKLOG | GUILD" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="TASKLOG | GUILD" />
+    <meta property="og:description" content="" />
+    <meta property="fb:app_id" content="" />
+    <meta name="twitter:card" content="" />
+    <script src="https://kit.fontawesome.com/05d054bd73.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="contents">
+      <div id="left-menu">
+        <div class="top">
+          <div class="img-wrap">
+            <img src="./img/logo.png" alt="GUILDのロゴ" id="left-menu-logo">
+          </div>
+          <div id="toggle-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div id="profile">
+          <div class="img-wrap">
+            <img src="img/profile.png" alt="プロフィール画像" id="profile-img">
+          </div>
+          <div class="text-box">
+            <p class="p-text-large">Jon Done</p>
+            <p class="p-text-small">developer</p>
+          </div>
+        </div>
+        <div id="left-menu-item">
+          <!-- <a href="/index.html">
+			<div class="item-wrap">
+				<div class="img-wrap">
+					<img src="img/home.png" alt="HOME" id="l-menu-item-img">
+				</div>
+				<p>HOME</p>
+			</div>
+		</a> -->
+          <a href="/lobby.html">
+			<div class="item-wrap">
+				<div class="img-wrap">
+					<img src="img/comment-alt.png" alt="LOBBY" id="l-menu-item-img">
+				</div>
+				<p>LOBBY</p>
+			</div>
+		</a>
+          <a href="/report-list.html">
+			<div class="item-wrap">
+				<div class="img-wrap">
+					<img src="img/clipboard.png" alt="REPORT" id="l-menu-item-img">
+				</div>
+				<p>REPORT</p>
+			</div>
+		</a>
+          <div id="progress-toggle">
+            <div class="item-wrap">
+              <div class="img-wrap">
+                <img src="img/chart.png" alt="PROGRESS" id="l-menu-item-img">
+              </div>
+              <p id="b4-arrow">PROGRESS</p>
+              <!-- <img src="img/angle-down.png" alt="down arrow" class="down-arrow"> -->
+            </div>
+          </div>
+          <div id="pull-down">
+            <a href="/progress.html">
+				<p>PROGRESSトップ</p>
+			</a>
+            <a href="/goal-manager.html">
+				<p>ゴールマネージャー</p>
+			</a>
+            <a href="/personal-tasks.html">
+				<p>個人タスク管理</p>
+			</a>
+            <a href="/members-list.html">
+				<p>メンバー一覧</p>
+			</a>
+          </div>
+          <a href="/voting.html">
+			<div class="item-wrap">
+				<div class="img-wrap">
+					<img src="img/write.png" alt="VOTING" id="l-menu-item-img">
+				</div>
+				<p>VOTING</p>
+			</div>
+		</a>
+          <!-- <a href="/funding.html">
+			<div class="item-wrap">
+				<div class="img-wrap">
+					<img src="img/money.png" alt="FUNDING" id="l-menu-item-img">
+				</div>
+				<p>FUNDING</p>
+			</div>
+		</a> -->
+        </div>
+      </div>
+      <div id="left-menu-after">
+        <div class="top">
+          <div id="toggle-menu-after">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div id="profile">
+          <div class="img-wrap">
+            <img src="img/profile.png" alt="プロフィール画像" id="profile-img">
+          </div>
+        </div>
+        <div id="left-menu-item">
+          <div class="item-wrap">
+            <div class="img-wrap">
+              <img src="img/home.png" alt="HOME" id="l-menu-item-img">
+            </div>
+          </div>
+          <div class="item-wrap">
+            <div class="img-wrap">
+              <img src="img/write.png" alt="VOTING" id="l-menu-item-img">
+            </div>
+          </div>
+          <div class="item-wrap">
+            <div class="img-wrap">
+              <img src="img/comment-alt.png" alt="DISCUSSION" id="l-menu-item-img">
+            </div>
+          </div>
+          <div class="item-wrap">
+            <div class="img-wrap">
+              <img src="img/clipboard.png" alt="REPORT" id="l-menu-item-img">
+            </div>
+          </div>
+          <div class="item-wrap">
+            <div class="img-wrap">
+              <img src="img/money.png" alt="FUNDING" id="l-menu-item-img">
+            </div>
+          </div>
+          <div class="item-wrap">
+            <div class="img-wrap">
+              <img src="img/chart.png" alt="DASHBOARD" id="l-menu-item-img">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="top-nav">
+        <div id="nav-wrap">
+          <!-- <div id="search-wrap">
+			<a href="#" id="search-btn">
+				<div class="img-warp">
+					<img src="img/search.png" alt="検索" id="search-img">
+				</div>
+			</a>
+			<input type="text" placeholder="Search" id="search-input">
+		</div> -->
+          <div id="top-slider">
+            <div class="inner-wrap top-slider slider">
+              <!-- <a href="#"> -->
+              <div class="slider-inner-wrap">
+                <div class="img-wrap">
+                  <img src="img/comment-alt.png" alt="" id="top-link-img">
+                </div>
+                <p class="title">Jonくんが個人タスクを完了しました！🎉</p>
+                <p class="title-name">11:25</p>
+              </div>
+              <!-- <a href="#"> -->
+              <div class="slider-inner-wrap">
+                <div class="img-wrap">
+                  <img src="img/comment-alt.png" alt="" id="top-link-img">
+                </div>
+                <p class="title">Jonくんが個人タスクを完了しました！🎉</p>
+                <p class="title-name">11:25</p>
+              </div>
+              <!-- </a> -->
+            </div>
+          </div>
+          <!-- <div id="select-btn">
+			<div class="img-wrap">
+				<img src="img/select_icon.png" alt="#" id="select-icon">
+			</div>
+			<select name="projects" id="projects">
+				<option value="DAO project">DAO project</option>
+			</select>
+			<div class="img-wrap-bottom">
+				<img src="img/angle-down.png" alt="下向きのアイコン" id="arrow-down">
+			</div>
+		</div> -->
+          <div id="top-nav-right">
+            <a href="#">
+				<div id="people">
+					<div class="img-wrap">
+						<img src="img/people.png" alt="" id="people-img">
+					</div>
+				</div>
+			</a>
+            <a href="#">
+				<div id="setting">
+					<div class="img-wrap">
+						<img src="img/setting.png" alt="" id="setting-img">
+					</div>
+				</div>
+			</a>
+            <a href="#">
+				<div id="notice">
+					<div class="img-wrap">
+						<img src="img/notice.png" alt="" id="notice-img">
+					</div>
+				</div>
+			</a>
+          </div>
+        </div>
+      </div>
+      <div id="tl-inner-content">
+        <div class="top-nav-border-wrap">
+          <div class="top-nav-border"></div>
+        </div>
+        <div class="right-content">
+          <div class="top-text-box">
+            <p>メンバー一覧</p>
+          </div>
+          <div class="inner-wrap">
+            <div id="ml-inner-wrap">
+              <div class="ml-member-wrap">
+                <div class="top-content">
+                  <div class="img-wrap">
+                    <img src="img/sely-large.png" alt="sely">
+                  </div>
+                  <p class="ml-member-name">加藤 沙織</p>
+                  <div class="role">
+                    <p class="role-text">エンジニア</p>
+                  </div>
+                </div>
+                <div class="member-detail-wrap">
+                  <p class="detail-text">自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。</p>
+                </div>
+              </div>
+              <div class="ml-member-wrap">
+                <div class="top-content">
+                  <div class="img-wrap">
+                    <img src="img/sely-large.png" alt="sely">
+                  </div>
+                  <p class="ml-member-name">加藤 沙織</p>
+                  <div class="role">
+                    <p class="role-text">エンジニア</p>
+                  </div>
+                </div>
+                <div class="member-detail-wrap">
+                  <p class="detail-text">自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。</p>
+                </div>
+              </div>
+              <div class="ml-member-wrap">
+                <div class="top-content">
+                  <div class="img-wrap">
+                    <img src="img/sely-large.png" alt="sely">
+                  </div>
+                  <p class="ml-member-name">加藤 沙織</p>
+                  <div class="role">
+                    <p class="role-text">エンジニア</p>
+                  </div>
+                </div>
+                <div class="member-detail-wrap">
+                  <p class="detail-text">自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。</p>
+                </div>
+              </div>
+              <div class="ml-member-wrap">
+                <div class="top-content">
+                  <div class="img-wrap">
+                    <img src="img/sely-large.png" alt="sely">
+                  </div>
+                  <p class="ml-member-name">加藤 沙織</p>
+                  <div class="role">
+                    <p class="role-text">エンジニア</p>
+                  </div>
+                </div>
+                <div class="member-detail-wrap">
+                  <p class="detail-text">自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。</p>
+                </div>
+              </div>
+              <div class="ml-member-wrap">
+                <div class="top-content">
+                  <div class="img-wrap">
+                    <img src="img/sely-large.png" alt="sely">
+                  </div>
+                  <p class="ml-member-name">加藤 沙織</p>
+                  <div class="role">
+                    <p class="role-text">エンジニア</p>
+                  </div>
+                </div>
+                <div class="member-detail-wrap">
+                  <p class="detail-text">自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。</p>
+                </div>
+              </div>
+              <div class="ml-member-wrap">
+                <div class="top-content">
+                  <div class="img-wrap">
+                    <img src="img/sely-large.png" alt="sely">
+                  </div>
+                  <p class="ml-member-name">加藤 沙織</p>
+                  <div class="role">
+                    <p class="role-text">エンジニア</p>
+                  </div>
+                </div>
+                <div class="member-detail-wrap">
+                  <p class="detail-text">自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。</p>
+                </div>
+              </div>
+              <div class="ml-member-wrap">
+                <div class="top-content">
+                  <div class="img-wrap">
+                    <img src="img/sely-large.png" alt="sely">
+                  </div>
+                  <p class="ml-member-name">加藤 沙織</p>
+                  <div class="role">
+                    <p class="role-text">エンジニア</p>
+                  </div>
+                </div>
+                <div class="member-detail-wrap">
+                  <p class="detail-text">自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。</p>
+                </div>
+              </div>
+              <div class="ml-member-wrap">
+                <div class="top-content">
+                  <div class="img-wrap">
+                    <img src="img/sely-large.png" alt="sely">
+                  </div>
+                  <p class="ml-member-name">加藤 沙織</p>
+                  <div class="role">
+                    <p class="role-text">エンジニア</p>
+                  </div>
+                </div>
+                <div class="member-detail-wrap">
+                  <p class="detail-text">自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。</p>
+                </div>
+              </div>
+              <div class="ml-member-wrap">
+                <div class="top-content">
+                  <div class="img-wrap">
+                    <img src="img/sely-large.png" alt="sely">
+                  </div>
+                  <p class="ml-member-name">加藤 沙織</p>
+                  <div class="role">
+                    <p class="role-text">エンジニア</p>
+                  </div>
+                </div>
+                <div class="member-detail-wrap">
+                  <p class="detail-text">自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。</p>
+                </div>
+              </div>
+              <div class="ml-member-wrap">
+                <div class="top-content">
+                  <div class="img-wrap">
+                    <img src="img/sely-large.png" alt="sely">
+                  </div>
+                  <p class="ml-member-name">加藤 沙織</p>
+                  <div class="role">
+                    <p class="role-text">エンジニア</p>
+                  </div>
+                </div>
+                <div class="member-detail-wrap">
+                  <p class="detail-text">自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。</p>
+                </div>
+              </div>
+              <div class="ml-member-wrap">
+                <div class="top-content">
+                  <div class="img-wrap">
+                    <img src="img/sely-large.png" alt="sely">
+                  </div>
+                  <p class="ml-member-name">加藤 沙織</p>
+                  <div class="role">
+                    <p class="role-text">エンジニア</p>
+                  </div>
+                </div>
+                <div class="member-detail-wrap">
+                  <p class="detail-text">自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。</p>
+                </div>
+              </div>
+              <div class="ml-member-wrap">
+                <div class="top-content">
+                  <div class="img-wrap">
+                    <img src="img/sely-large.png" alt="sely">
+                  </div>
+                  <p class="ml-member-name">加藤 沙織</p>
+                  <div class="role">
+                    <p class="role-text">エンジニア</p>
+                  </div>
+                </div>
+                <div class="member-detail-wrap">
+                  <p class="detail-text">自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。</p>
+                </div>
+              </div>
+              <div class="ml-member-wrap">
+                <div class="top-content">
+                  <div class="img-wrap">
+                    <img src="img/sely-large.png" alt="sely">
+                  </div>
+                  <p class="ml-member-name">加藤 沙織</p>
+                  <div class="role">
+                    <p class="role-text">エンジニア</p>
+                  </div>
+                </div>
+                <div class="member-detail-wrap">
+                  <p class="detail-text">自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。</p>
+                </div>
+              </div>
+              <div class="ml-member-wrap">
+                <div class="top-content">
+                  <div class="img-wrap">
+                    <img src="img/sely-large.png" alt="sely">
+                  </div>
+                  <p class="ml-member-name">加藤 沙織</p>
+                  <div class="role">
+                    <p class="role-text">エンジニア</p>
+                  </div>
+                </div>
+                <div class="member-detail-wrap">
+                  <p class="detail-text">自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。</p>
+                </div>
+              </div>
+              <div class="ml-member-wrap">
+                <div class="top-content">
+                  <div class="img-wrap">
+                    <img src="img/sely-large.png" alt="sely">
+                  </div>
+                  <p class="ml-member-name">加藤 沙織</p>
+                  <div class="role">
+                    <p class="role-text">エンジニア</p>
+                  </div>
+                </div>
+                <div class="member-detail-wrap">
+                  <p class="detail-text">自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。自己紹介が入ります。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/lib.min.js" async></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+  <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    (function()
+    {
+      'use strict';
+      document.addEventListener('DOMContentLoaded', function()
+      {
+        $(".top-slider").slick(
+        {
+          infinite: true,
+          slideToShow: 1,
+          slideToScroll: 1,
+          accessibility: false,
+          autoplay: true,
+          autoplaySpeed: 4000,
+          arrows: false,
+          draggable: false,
+          swipe: false,
+        })
+      });
+    }());
+  </script>
+</html>

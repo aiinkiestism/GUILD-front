@@ -19,6 +19,7 @@
 @import './pages/dashboard';
 @import './pages/login';
 @import './pages/project-list';
+@import './pages/project-register';
 
 @import './layout/left-menu';
 @import './layout/top-nav';
@@ -32,12 +33,15 @@
 @import './layout/p-inner-content';
 @import './layout/re-inner-content';
 @import './layout/tl-inner-content';
+@import './layout/tll-inner-content';
 @import './layout/gm-inner-content';
 @import './layout/gmd-inner-content';
 @import './layout/gme-inner-content';
 @import './layout/pt-inner-content';
 @import './layout/ml-inner-content';
 @import './layout/kd-inner-content';
+@import './layout/u-inner-content';
+@import './layout/ue-inner-content';
 
 @import './components/dashboard-item';
 @import './components/voting-modals';

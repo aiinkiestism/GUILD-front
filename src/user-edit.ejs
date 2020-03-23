@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>VOTING | GUILD</title>
+	<title>USER EDIT | GUILD</title>
 	<!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> -->
 	<!-- <link rel="apple-touch-icon" sizes="180x180" href="img/logo.png" /> -->
 	<link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
@@ -28,77 +28,75 @@
 	<!-- <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" /> -->
 	<!-- ogp setting -->
-	<meta property="og:title" content="VOTING | GUILD" />
+	<meta property="og:title" content="USER EDIT | GUILD" />
 	<meta property="og:type" content="" />
 	<meta property="og:url" content="" />
 	<meta property="og:image" content="" />
-	<meta property="og:site_name" content="VOTING | GUILD" />
+	<meta property="og:site_name" content="USER EDIT | GUILD" />
 	<meta property="og:description" content="" />
 	<meta property="fb:app_id" content="" />    
 	<meta name="twitter:card" content="" />
 
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+	<script src="https://kit.fontawesome.com/05d054bd73.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<div class="contents">
 		<%- include('./inc/left-menu.ejs') %>
 		<%- include('./inc/top-nav.ejs') %>
-		<%- include('./inc/v-inner-content.ejs') %>
-		<%- include('./inc/voting-modals.ejs') %>
+		<%- include('./inc/ue-inner-content.ejs') %>
 	</div>
 </body>
+
 <script src="js/lib.min.js" async></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 <script>
-(function() {
-	'use strict';
+	(function() {
+		'use strict';
 
-	document.addEventListener('DOMContentLoaded', function() {
-		$(".top-slider").slick({
-			infinite: true,
-			slideToShow: 1,
-			slideToScroll: 1,
-			accessibility: false,
-			autoplay: true,
-			autoplaySpeed: 4000,
-			arrows: false,
-			draggable: false,
-			swipe: false,
-		});
-		
-		tooltipRange.options({
-			selecter: "#min-voting-rate-01",
-			tooltip: true,
-			value: 43,
-			min: 20,
-			step: 1
-		});
-		
-		tooltipRange.options({
-			selecter: "#min-voting-rate-02",
-			tooltip: true,
-			value: 60,
-			min: 20,
-			max: 70,
-			step: 1
-		});
-		
-		$('#reportrange').daterangepicker({
-			opens: 'left',
-			endDate: moment().add(7, 'day'),
-		}, function(start, end, label) {
-			console.log("A new datae selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
-		});
-		
-	});
+		document.addEventListener('DOMContentLoaded', function() {
+			$(".top-slider").slick({
+				infinite: true,
+				slideToShow: 1,
+				slideToScroll: 1,
+				accessibility: false,
+				autoplay: true,
+				autoplaySpeed: 4000,
+				arrows: false,
+				draggable: false,
+				swipe: false,
+			});
 
-}());
+			$(".regular").slick({
+				// dots: true,
+				infinite: true,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				// arrows: false,
+				// mobileFirst: true,
+				// responsive: [
+				// 	{
+				// 		breakpoint: 580,
+				// 		settings: {
+				// 			// infinite: true,
+				// 			slidesToShow: 2,
+				// 			slidesToScroll: 2,
+				// 		}
+				// 	}
+				// ]
+			});
+
+		});
+
+
+	})();
 </script>
 </html>

@@ -15,6 +15,9 @@
         lic = document.getElementById("l-inner-content"),
         pic = document.getElementById("p-inner-content"),
         tlic = document.getElementById("tl-inner-content"),
+        tllic = document.getElementById("tll-inner-content"),
+        uic = document.getElementById("u-inner-content"),
+        ueic = document.getElementById("ue-inner-content"),
         gmic = document.getElementById("gm-inner-content"),
         gmdic = document.getElementById("gmd-inner-content"),
         gmeic = document.getElementById("gme-inner-content"),
@@ -102,11 +105,13 @@
 
 
     // pull-down menu in left menu
-    pToggle.onclick = () => {
-        let pullDown = document.getElementById('pull-down');
-        pullDown.classList.toggle('open');
-        let ba = document.getElementById('b4-arrow');
-        ba.classList.toggle('progress-after');
+    if (pToggle) {
+        pToggle.onclick = () => {
+            let pullDown = document.getElementById('pull-down');
+            pullDown.classList.toggle('open');
+            let ba = document.getElementById('b4-arrow');
+            ba.classList.toggle('progress-after');
+        }
     }
 
     // implement togglemenu
@@ -145,6 +150,24 @@
             tlic.setAttribute('style', "display: block;");
         } catch (e) {
             // console.log("tlic is nowhere.");
+        }
+        try {
+            tllic.classList.add("tll-inner-content-after");
+            tllic.setAttribute('style', "display: block;");
+        } catch (e) {
+            // console.log("tllic is nowhere.");
+        }
+        try {
+            uic.classList.add("u-inner-content-after");
+            uic.setAttribute('style', "display: block;");
+        } catch (e) {
+            // console.log("uic is nowhere.");
+        }
+        try {
+            ueic.classList.add("ue-inner-content-after");
+            ueic.setAttribute('style', "display: block;");
+        } catch (e) {
+            // console.log("ueic is nowhere.");
         }
         try {
             gmic.classList.add("gm-inner-content-after");
@@ -239,6 +262,21 @@
             // console.log("tlic is nowhere.");
         }
         try {
+            tllic.classList.remove("tll-inner-content-after");
+        } catch (e) {
+            // console.log("tllic is nowhere.");
+        }
+        try {
+            uic.classList.remove("u-inner-content-after");
+        } catch (e) {
+            // console.log("uic is nowhere.");
+        }
+        try {
+            ueic.classList.remove("ue-inner-content-after");
+        } catch (e) {
+            // console.log("ueic is nowhere.");
+        }
+        try {
             gmic.classList.remove("gm-inner-content-after");
         } catch (e) {
             // console.log("gmic is nowhere.");
@@ -309,6 +347,21 @@
                 tlic.setAttribute('style', "display: none;");
             } catch (e) {
                 // console.log("tlic is nowhere.");
+            }
+            try {
+                tllic.setAttribute('style', "display: none;");
+            } catch (e) {
+                // console.log("tllic is nowhere.");
+            }
+            try {
+                uic.setAttribute('style', "display: none;");
+            } catch (e) {
+                // console.log("uic is nowhere.");
+            }
+            try {
+                ueic.setAttribute('style', "display: none;");
+            } catch (e) {
+                // console.log("ueic is nowhere.");
             }
             try {
                 gmic.setAttribute('style', "display: none;");
@@ -402,6 +455,21 @@
             tlic.classList.add("tl-inner-content-after");
         } catch (e) {
             // console.log("tlic is nowhere.");
+        }
+        try {
+            tllic.classList.add("tll-inner-content-after");
+        } catch (e) {
+            // console.log("tllic is nowhere.");
+        }
+        try {
+            uic.classList.add("u-inner-content-after");
+        } catch (e) {
+            // console.log("uic is nowhere.");
+        }
+        try {
+            ueic.classList.add("ue-inner-content-after");
+        } catch (e) {
+            // console.log("ueic is nowhere.");
         }
         try {
             gmic.classList.add("gm-inner-content-after");
@@ -576,6 +644,21 @@
                 // console.log("tlic is nowhere.");
             }
             try {
+                tllic.classList.remove("tll-inner-content-after");
+            } catch (e) {
+                // console.log("tllic is nowhere.");
+            }
+            try {
+                uic.classList.remove("u-inner-content-after");
+            } catch (e) {
+                // console.log("uic is nowhere.");
+            }
+            try {
+                ueic.classList.remove("ue-inner-content-after");
+            } catch (e) {
+                // console.log("ueic is nowhere.");
+            }
+            try {
                 gmic.classList.remove("gm-inner-content-after");
             } catch (e) {
                 // console.log("gmic is nowhere.");
@@ -659,6 +742,21 @@
                 tlic.classList.add("tl-inner-content-after");
             } catch (e) {
                 // console.log("tlic is nowhere.");
+            }
+            try {
+                tllic.classList.add("tll-inner-content-after");
+            } catch (e) {
+                // console.log("tllic is nowhere.");
+            }
+            try {
+                uic.classList.add("u-inner-content-after");
+            } catch (e) {
+                // console.log("uic is nowhere.");
+            }
+            try {
+                ueic.classList.add("ue-inner-content-after");
+            } catch (e) {
+                // console.log("ueic is nowhere.");
             }
             try {
                 gmic.classList.add("gm-inner-content-after");

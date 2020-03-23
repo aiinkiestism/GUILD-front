@@ -50,12 +50,16 @@
                 margin: 0;
             }
             .small-text {
-                font-family: $base-font-family;
-                color: #a5aaaa;
+                // font-family: $base-font-family;
+                font-family: "Helvetica Neue", $base-font-family;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 28px;
+                color: #3d4444;
                 margin-bottom: 8px;
             }
             #change-email {
-                font-famaily: $base-font-family;
+                font-family: $base-font-family;
                 font-weight: 300;
                 font-size: 14px;
                 line-height: 170%;

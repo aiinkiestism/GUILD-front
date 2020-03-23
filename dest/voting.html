@@ -504,12 +504,14 @@
   </body>
   <script src="js/lib.min.js" async></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js" async></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js" async></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script>
-    $(function()
+    (function()
     {
+      'use strict';
       document.addEventListener('DOMContentLoaded', function()
       {
         $(".top-slider").slick(
@@ -523,7 +525,7 @@
           arrows: false,
           draggable: false,
           swipe: false,
-        })
+        });
         tooltipRange.options(
         {
           selecter: "#min-voting-rate-01",
@@ -550,6 +552,6 @@
           console.log("A new datae selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
         });
       });
-    });
+    }());
   </script>
 </html>
