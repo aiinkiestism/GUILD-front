@@ -73,6 +73,7 @@
                         color: #9ea5a5;
                         display: inline-block;
                         vertical-align: middle;
+                        cursor: pointer;
                     }
                     #user-name-input {
                         font-family: $base-font-family;
@@ -105,6 +106,7 @@
                         color: #9ea5a5;
                         display: inline-block;
                         vertical-align: middle;
+                        cursor: pointer;
                     }
                     #user-role-input {
                         font-family: $base-font-family;
@@ -137,6 +139,7 @@
                         color: #9ea5a5;
                         display: inline-block;
                         vertical-align: middle;
+                        cursor: pointer;
                     }
                     #user-intro-input {
                         font-family: $base-font-family;
@@ -175,6 +178,7 @@
                         width: 105px;
                         height: 40px;
                         margin-right: 2%;
+                        cursor: pointer;
                         p {
                             font-family: $base-font-family;
                             font-style: normal;
@@ -200,6 +204,7 @@
                         color: #fff;
                         width: 150px;
                         height: 40px;
+                        cursor: pointer;
                     }
                 }
             }

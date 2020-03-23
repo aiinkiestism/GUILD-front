@@ -8886,6 +8886,7 @@ a {
   background: #98a9a8;
   border-radius: 5px;
   margin: 43px auto 40px;
+  cursor: pointer;
 }
 
 #u-inner-content .right-content .inner-wrap #user-wrap #user-edit-btn p {
@@ -9091,6 +9092,7 @@ a {
   color: #9ea5a5;
   display: inline-block;
   vertical-align: middle;
+  cursor: pointer;
 }
 
 #ue-inner-content .right-content .inner-wrap #user-edit-wrap .user-name-wrap #user-name-input {
@@ -9126,6 +9128,7 @@ a {
   color: #9ea5a5;
   display: inline-block;
   vertical-align: middle;
+  cursor: pointer;
 }
 
 #ue-inner-content .right-content .inner-wrap #user-edit-wrap .user-role-wrap #user-role-input {
@@ -9161,6 +9164,7 @@ a {
   color: #9ea5a5;
   display: inline-block;
   vertical-align: middle;
+  cursor: pointer;
 }
 
 #ue-inner-content .right-content .inner-wrap #user-edit-wrap .user-intro-wrap #user-intro-input {
@@ -9198,6 +9202,7 @@ a {
   width: 105px;
   height: 40px;
   margin-right: 2%;
+  cursor: pointer;
 }
 
 #ue-inner-content .right-content .inner-wrap #user-edit-wrap #ue-btn-wrap #cancel-btn p {
@@ -9225,6 +9230,7 @@ a {
   color: #fff;
   width: 150px;
   height: 40px;
+  cursor: pointer;
 }
 
 .ue-inner-content-after {

@@ -16,21 +16,29 @@
                         </label>
                     </div>
                     <div class="user-name-wrap">
-                        <p class="left-text">ユーザー名</p>
+                        <label for="user-name-input">
+                            <p class="left-text">ユーザー名</p>
+                        </label>
                         <input type="text" name="user-name-input" id="user-name-input" placeholder="ユーザー名を入力">
                     </div>
                     <div class="user-role-wrap">
-                        <p class="left-text">役割</p>
+                        <label for="user-role-input">
+                            <p class="left-text">役割</p>
+                        </label>
                         <input type="text" name="user-role-input" id="user-role-input" placeholder="役割を入力">
                     </div>
                     <div class="user-intro-wrap">
-                        <p class="left-text">自己紹介</p>
+                        <label for="user-intro-input">
+                            <p class="left-text">自己紹介</p>
+                        </label>
                         <textarea name="user-intro-input" id="user-intro-input" cols="30" rows="10" placeholder="あなたの自己紹介を書きましょう"></textarea>
                     </div>
                     <div id="ue-btn-wrap">
-                        <div id="cancel-btn">
-                            <p>キャンセル</p>
-                        </div>
+                        <a href="#" onclick="javascript:window.history.back(-1);return false;" style="margin-right: 2%;">
+                            <div id="cancel-btn">
+                                <p>キャンセル</p>
+                            </div>
+                        </a>
                         <button type="submit">保存する</button>
                     </div>
                 </div>
