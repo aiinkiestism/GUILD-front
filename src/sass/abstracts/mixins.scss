@@ -7,3 +7,21 @@
     width: $pie-size;
     height: $pie-size;
 }
+
+@mixin unitColor($color) {
+    background: $color;
+    border-radius: 50%;
+    border-color: $color;
+    width: 20px;
+    height: 20px;
+    padding-top: 2px;
+    padding-left: 2px;
+}
+
+@mixin unitColorInner($color) {
+    border: 2px solid #fff;
+    background: $color;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+}

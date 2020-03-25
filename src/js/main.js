@@ -51,6 +51,8 @@
         qIndexDetail = document.getElementsByClassName("q-index-detail"),
         kiw = document.getElementsByClassName("kgi-inner-wrap"),
         mkgiTagInput = document.getElementById("mkgi-tag-input");
+        // taskWrap = document.getElementsByClassName("task-wrap"),
+        // thw = document.getElementsByClassName("task-hover-wrap");
 
     const vinone = document.getElementById("voting-item-none"),
         vi = document.getElementsByClassName("voting-item"),
@@ -1002,6 +1004,21 @@
     //     }
     // } catch (e) {
     //     // console.log("taskUnits or event is not inspected.");
+    // }
+
+    //hover event of task unit in task list page
+    // try {
+    //     for (let i = 0, max = taskWrap.length; i < max; i++) {
+    //         taskWrap[i].addEventListener("mouseenter", function() {
+    //             thw[i].setAttribute("style", "display: block;");
+    //         }, false);
+
+    //         taskWrap[i].addEventListener("mouseleave", function() {
+    //             thw[i].setAttribute("style", "display: none;");
+    //         }, false);
+    //     }
+    // } catch (e) {
+    //     // console.log("This is not the task list page.");
     // }
 
     // hover event of chat unit in lobby page 
