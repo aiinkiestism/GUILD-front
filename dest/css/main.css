@@ -5780,12 +5780,19 @@ a {
     width: calc(calc(100% / 2) - 10%);
     margin: 0 0 6% 6%;
   }
+  #tl-inner-content .right-content .inner-wrap #tl-inner-wrap .task-wrap .top-content {
+    height: 38px;
+  }
+  #tl-inner-content .right-content .inner-wrap #tl-inner-wrap .task-wrap .top-content .business-unit-mark {
+    top: -8%;
+  }
   #tl-inner-content .right-content .inner-wrap #tl-inner-wrap .task-wrap .top-content .tl-task-name {
     margin-left: 4px;
     font-size: 10px;
     position: absolute;
     top: 0;
     right: 25%;
+    line-height: normal;
   }
   #tl-inner-content .right-content .inner-wrap #tl-inner-wrap .task-wrap .top-content .role {
     top: 37%;
