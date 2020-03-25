@@ -45,14 +45,14 @@
         ppc = document.getElementsByClassName("progress-pie-chart"),
         pToggle = document.getElementById('progress-toggle'),
         // mkgi = document.getElementById("mkgi"),
-        tagItem = document.getElementsByClassName("tag-item"),
-        mTagItem = document.getElementsByClassName("m-tag-item"),
+        // tagItem = document.getElementsByClassName("tag-item"),
+        // mTagItem = document.getElementsByClassName("m-tag-item"),
         indexDetail = document.getElementsByClassName("index-detail"),
         qIndexDetail = document.getElementsByClassName("q-index-detail"),
         kiw = document.getElementsByClassName("kgi-inner-wrap"),
         mkgiTagInput = document.getElementById("mkgi-tag-input");
         // taskWrap = document.getElementsByClassName("task-wrap"),
-        // thw = document.getElementsByClassName("task-hover-wrap");
+        // thw = document.getElementsByClassName("task-hover-wrap");        
 
     const vinone = document.getElementById("voting-item-none"),
         vi = document.getElementsByClassName("voting-item"),
@@ -69,11 +69,11 @@
         mask = document.getElementById("mask"),
         // gmMask = document.getElementById("gm-mask"),
         vbtn2 = document.getElementById("vote-btn2"),
-        sbtn = document.getElementById("save-btn"),
-        khw = document.getElementsByClassName("kgi-hover-wrap"),
-        mkhw = document.getElementsByClassName("mkgi-hover-wrap"),
-        kgiEditBtn = document.getElementsByClassName("kgi-edit-btn"),
-        mkgiEditBtn = document.getElementsByClassName("mkgi-edit-btn");
+        sbtn = document.getElementById("save-btn");
+        // khw = document.getElementsByClassName("kgi-hover-wrap"),
+        // mkhw = document.getElementsByClassName("mkgi-hover-wrap"),
+        // kgiEditBtn = document.getElementsByClassName("kgi-edit-btn"),
+        // mkgiEditBtn = document.getElementsByClassName("mkgi-edit-btn");
         // gmdEditBtn = document.getElementById("gmm-edit-btn");
 
     // tagify setting
@@ -102,9 +102,7 @@
     }
 
     // hover behaviours in left menu
-    let currentUrl = location.href;
-    // Promise
-
+    leftMenuHover();
 
     // pull-down menu in left menu
     if (pToggle) {
@@ -1297,6 +1295,42 @@
     //     console.log("This is not the goal manager pages.");
     // }
 
+
+    function leftMenuHover() {
+        let progressToggle = document.getElementById("progress-toggle"),
+        lMenuProgressImg = document.getElementById("l-menu-progress-img"),
+        // lmLobbyLink = document.getElementById("lm-lobby-link"),
+        // lMenuLobbyImg = document.getElementById("l-menu-lobby-img"),
+        // lmReportLink = document.getElementById("lm-report-link"),
+        // lMenuReportImg = document.getElementById("l-menu-report-link"),
+        lmVotingLink = document.getElementById("lm-voting-link"),
+        lMenuVotingImg = document.getElementById("l-menu-voting-img");
+
+        progressToggle.addEventListener("mouseenter", function() {
+            lMenuProgressImg.src = 'img/chart-hover.png';
+        });
+        progressToggle.addEventListener("mouseleave", function() {
+            lMenuProgressImg.src = 'img/chart.png';
+        });
+        // lmLobbyLink.addEventListener("mouseenter", function() {
+        //     lMenuLobbyImg.src = 'img/comment-alt-hover.png';
+        // });
+        // lmLobbyLink.addEventListener("mouseleave", function() {
+        //     lMenuLobbyImg.src = 'img/comment-alt.png';
+        // });
+        // lmReportLink.addEventListener("mouseenter", function() {
+        //     lMenuReportImg.src = 'img/clipboard-hover.png';
+        // });
+        // lmReportLink.addEventListener("mouseleave", function() {
+        //     lMenuReportImg.src = 'img/clipboard.png';
+        // });
+        lmVotingLink.addEventListener("mouseenter", function() {
+            lMenuVotingImg.src = 'img/write-hover.png';
+        });
+        lmVotingLink.addEventListener("mouseleave", function() {
+            lMenuVotingImg.src = 'img/write.png';
+        });
+    }
 
     // slick update function
     

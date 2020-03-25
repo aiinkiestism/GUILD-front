@@ -1694,7 +1694,7 @@ a {
     overflow-y: scroll;
   }
   #left-menu .top:after {
-    bottom: -17px;
+    bottom: -30px;
     left: 0;
     width: 100%;
   }
@@ -4570,7 +4570,7 @@ a {
 #p-inner-content {
   overflow-y: scroll;
   position: absolute;
-  top: 52px;
+  top: 67px;
   left: 17%;
   width: 83%;
   height: 100%;
@@ -5381,7 +5381,7 @@ a {
 #tl-inner-content {
   overflow-y: scroll;
   position: absolute;
-  top: 52px;
+  top: 67px;
   left: 17%;
   width: 83%;
   height: 100%;
@@ -5793,6 +5793,7 @@ a {
     top: 0;
     right: 25%;
     line-height: normal;
+    margin-top: 10px;
   }
   #tl-inner-content .right-content .inner-wrap #tl-inner-wrap .task-wrap .top-content .role {
     top: 37%;
@@ -5812,7 +5813,7 @@ a {
 #tll-inner-content {
   overflow-y: scroll;
   position: absolute;
-  top: 52px;
+  top: 67px;
   left: 17%;
   width: 83%;
   height: 100%;
@@ -6098,7 +6099,7 @@ a {
 #gm-inner-content {
   overflow-y: scroll;
   position: absolute;
-  top: 52px;
+  top: 67px;
   left: 17%;
   width: 83%;
   height: 100%;
@@ -6564,7 +6565,7 @@ a {
 #gmd-inner-content {
   overflow-y: scroll;
   position: absolute;
-  top: 52px;
+  top: 67px;
   left: 17%;
   width: 83%;
   height: 100%;
@@ -7098,7 +7099,7 @@ a {
 #gme-inner-content {
   overflow-y: scroll;
   position: absolute;
-  top: 52px;
+  top: 67px;
   left: 17%;
   width: 83%;
   height: 100%;
@@ -7773,7 +7774,7 @@ a {
 #pt-inner-content {
   overflow-y: scroll;
   position: absolute;
-  top: 52px;
+  top: 67px;
   left: 17%;
   width: 83%;
   height: 100%;
@@ -8203,7 +8204,7 @@ a {
 #ml-inner-content {
   overflow-y: scroll;
   position: absolute;
-  top: 52px;
+  top: 67px;
   left: 17%;
   width: 83%;
   height: 100%;
@@ -8453,7 +8454,7 @@ a {
 #kd-inner-content {
   overflow-y: scroll;
   position: absolute;
-  top: 52px;
+  top: 67px;
   left: 17%;
   width: 83%;
   height: 100%;
@@ -8919,7 +8920,7 @@ a {
 #u-inner-content {
   overflow-y: scroll;
   position: absolute;
-  top: 52px;
+  top: 67px;
   left: 17%;
   width: 83%;
   height: 100%;
@@ -9192,7 +9193,7 @@ a {
 #ue-inner-content {
   overflow-y: scroll;
   position: absolute;
-  top: 52px;
+  top: 67px;
   left: 17%;
   width: 83%;
   height: 100%;
