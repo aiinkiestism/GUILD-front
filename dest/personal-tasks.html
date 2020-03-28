@@ -574,20 +574,45 @@
           end: '2020-04-19',
           progress: 40,
           dependencies: null,
-        }];
+        },
+        {
+          id: 'Task 5',
+          name: 'リリース後ヒアリング',
+          start: '2020-04-03',
+          end: '2020-04-20',
+          progress: 0,
+          dependencies: 'Task 2',
+        },
+        {
+          id: 'Task 6',
+          name: 'リリース後修正・追加機能開発',
+          start: '2020-04-03',
+          end: '2020-04-30',
+          progress: 0,
+          dependencies: 'Task 2, Task 5',
+        },
+        {
+          id: 'Task 7',
+          name: '社会保険完備',
+          start: '2020-04-28',
+          end: '2020-05-04',
+          progress: 10,
+          dependencies: null,
+        }, ];
         var gantt = new Gantt("#gantt", tasks,
         {
+          // view_modes: ['Quarter Day', 'Half Day', 'Day', 'Week', 'Month'],
           custom_popup_html: function(task)
           {
             // const end_date = task._end.format('MMM D');
             return `
 						<div class="details-container">
 							<h5>${task.name}</h5>
-							<p>Expecte to finish by ${task.end}</p>
+							<p>Expected to finish by ${task.end}</p>
 							<p>${task.progress}% completed!</p>
 						</div>
 					`;
-          }
+          },
         });
         // gantt.change_view_mode('Month');
       });
