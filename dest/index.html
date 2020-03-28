@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HOME | GUILD</title>
+    <title>PROGRESS | GUILD</title>
     <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> -->
     <!-- <link rel="apple-touch-icon" sizes="180x180" href="img/logo.png" /> -->
     <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
@@ -27,17 +27,20 @@
     <link rel="stylesheet" href="css/main.css">
     <!-- <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" /> -->
     <!-- ogp setting -->
-    <meta property="og:title" content="HOME | GUILD" />
+    <meta property="og:title" content="PROGRESS | GUILD" />
     <meta property="og:type" content="" />
     <meta property="og:url" content="" />
     <meta property="og:image" content="" />
-    <meta property="og:site_name" content="HOME | GUILD" />
+    <meta property="og:site_name" content="PROGRESS | GUILD" />
     <meta property="og:description" content="" />
     <meta property="fb:app_id" content="" />
     <meta name="twitter:card" content="" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script src="https://kit.fontawesome.com/05d054bd73.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="contents">
@@ -217,124 +220,300 @@
 				<img src="img/angle-down.png" alt="下向きのアイコン" id="arrow-down">
 			</div>
 		</div> -->
-          <div id="top-nav-right">
-            <a href="#">
+          <!-- <div id="top-nav-right">
+			<a href="#">
 				<div id="people">
 					<div class="img-wrap">
 						<img src="img/people.png" alt="" id="people-img">
 					</div>
 				</div>
 			</a>
-            <a href="#">
+			<a href="#">
 				<div id="setting">
 					<div class="img-wrap">
 						<img src="img/setting.png" alt="" id="setting-img">
 					</div>
 				</div>
 			</a>
-            <a href="#">
+			<a href="#">
 				<div id="notice">
 					<div class="img-wrap">
 						<img src="img/notice.png" alt="" id="notice-img">
 					</div>
 				</div>
 			</a>
-          </div>
+		</div> -->
         </div>
       </div>
-      <div id="inner-content">
+      <div id="p-inner-content">
         <div class="top-nav-border-wrap">
           <div class="top-nav-border"></div>
         </div>
-        <div class="top-text-box">
-          <h2>What would you like to do?</h2>
+        <div class="right-content">
+          <div class="top-text-box">
+            <p>PROGRESS</p>
+          </div>
+          <div class="inner-wrap">
+            <div id="progresses-wrap">
+              <div class="p-indexes">
+                <div class="index-wrap">
+                  <div class="top-text">
+                    <p class="index-name">KGI</p>
+                    <p class="index-detail">ティール組織の浸透により労働問題の解決に繋げる</p>
+                  </div>
+                  <div class="index-chart">
+                    <div class="progress-wrap">
+                      <div class="progress-pie-chart" data-percent="60">
+                        <div class="ppc-progress">
+                          <div class="ppc-progress-fill"></div>
+                        </div>
+                        <div class="ppc-percent">
+                          <div class="percent-inner-wrap">
+                            <span class="percent-num">%</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="index-wrap">
+                  <div class="top-text">
+                    <p class="index-name">四半期KPI</p>
+                    <p class="index-detail">ティール組織の問題を解決するGUILDの開発</p>
+                  </div>
+                  <div class="index-chart">
+                    <div class="progress-wrap">
+                      <div class="progress-pie-chart" data-percent="75">
+                        <div class="ppc-progress">
+                          <div class="ppc-progress-fill"></div>
+                        </div>
+                        <div class="ppc-percent">
+                          <div class="percent-inner-wrap">
+                            <span class="percent-num">%</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="index-wrap">
+                  <div class="top-text">
+                    <p class="index-name">月次KPI</p>
+                    <p class="index-detail">仕様の洗い出しと、フレームの設計</p>
+                  </div>
+                  <div class="index-chart">
+                    <div class="progress-wrap">
+                      <div class="progress-pie-chart" data-percent="45">
+                        <div class="ppc-progress">
+                          <div class="ppc-progress-fill"></div>
+                        </div>
+                        <div class="ppc-percent">
+                          <div class="percent-inner-wrap">
+                            <span class="percent-num">%</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="personal-progress">
+                    <div class="left-content">
+                        <div class="top-text">
+                            <p>個人の進捗</p>
+                        </div>
+                        <progress class="p-prog" value="73" max="100">73%</progress>
+                        <label class="outp-label"><p><output class="p-outp">73</output>%</p></label>
+                    </div>
+                    <div class="right-content">
+                        <div class="top-text">
+                            <p>個人のタスク</p>
+                        </div>
+                        <div class="bottom-text">
+                            <p>フロント開発/企画書作成</p>
+                        </div>
+                    </div>
+                </div> -->
+              <div class="members-progresses">
+                <div class="top-text">
+                  <p>みんなの進捗</p>
+                  <a href="/tasklog-list.html">
+                            <p>タスクのログ一覧</p>
+                        </a>
+                </div>
+                <!-- <div class="regular slider">
+                        <div class="member-wrap">
+                            <p class="member-name">田中</p>
+                            <p class="task-name">開発サーバーでNginx, puma, rails, nvm, rbenvの設定</p>
+                            <progress class="p-prog" value="73" max="100">73%</progress>
+                            <label class="outp-label"><p><output class="p-outp">73</output>%</p></label>
+                        </div>
+                    </div>
+
+                    <div class="regular slider">
+                        <div class="member-wrap">
+                            <p class="member-name">田中</p>
+                            <p class="task-name">開発サーバーでNginx, puma, rails, nvm, rbenvの設定</p>
+                            <progress class="p-prog" value="73" max="100">73%</progress>
+                            <label class="outp-label"><p><output class="p-outp">73</output>%</p></label>
+                        </div>
+                    </div> -->
+                <div class="p-wraps">
+                  <div class="member-wrap help">
+                    <div class="top-content">
+                      <div class="img-wrap">
+                        <img src="img/sely-large.png" alt="sely">
+                      </div>
+                      <p class="member-name">田中</p>
+                    </div>
+                    <div class="task-name">
+                      <p>開発サーバーでNginx, puma, rails, nvm, rbenvの設定</p>
+                    </div>
+                  </div>
+                  <div class="member-wrap">
+                    <div class="top-content">
+                      <div class="img-wrap">
+                        <img src="img/sely-large.png" alt="sely">
+                      </div>
+                      <p class="member-name">田中</p>
+                    </div>
+                    <div class="task-name">
+                      <p>開発サーバーでNginx, puma, rails, nvm, rbenvの設定</p>
+                    </div>
+                  </div>
+                  <div class="member-wrap">
+                    <div class="top-content">
+                      <div class="img-wrap">
+                        <img src="img/sely-large.png" alt="sely">
+                      </div>
+                      <p class="member-name">田中</p>
+                    </div>
+                    <div class="task-name">
+                      <p>開発サーバーでNginx, puma, rails, nvm, rbenvの設定</p>
+                    </div>
+                  </div>
+                  <div class="member-wrap">
+                    <div class="top-content">
+                      <div class="img-wrap">
+                        <img src="img/sely-large.png" alt="sely">
+                      </div>
+                      <p class="member-name">田中</p>
+                    </div>
+                    <div class="task-name">
+                      <p>開発サーバーでNginx, puma, rails, nvm, rbenvの設定</p>
+                    </div>
+                  </div>
+                  <div class="member-wrap">
+                    <div class="top-content">
+                      <div class="img-wrap">
+                        <img src="img/sely-large.png" alt="sely">
+                      </div>
+                      <p class="member-name">田中</p>
+                    </div>
+                    <div class="task-name">
+                      <p>開発サーバーでNginx, puma, rails, nvm, rbenvの設定</p>
+                    </div>
+                  </div>
+                  <div class="member-wrap">
+                    <div class="top-content">
+                      <div class="img-wrap">
+                        <img src="img/sely-large.png" alt="sely">
+                      </div>
+                      <p class="member-name">田中</p>
+                    </div>
+                    <div class="task-name">
+                      <p>開発サーバーでNginx, puma, rails, nvm, rbenvの設定</p>
+                    </div>
+                  </div>
+                  <div class="member-wrap">
+                    <div class="top-content">
+                      <div class="img-wrap">
+                        <img src="img/sely-large.png" alt="sely">
+                      </div>
+                      <p class="member-name">田中</p>
+                    </div>
+                    <div class="task-name">
+                      <p>開発サーバーでNginx, puma, rails, nvm, rbenvの設定</p>
+                    </div>
+                  </div>
+                  <div class="member-wrap">
+                    <div class="top-content">
+                      <div class="img-wrap">
+                        <img src="img/sely-large.png" alt="sely">
+                      </div>
+                      <p class="member-name">田中</p>
+                    </div>
+                    <div class="task-name">
+                      <p>開発サーバーでNginx, puma, rails, nvm, rbenvの設定</p>
+                    </div>
+                  </div>
+                  <div class="member-wrap">
+                    <div class="top-content">
+                      <div class="img-wrap">
+                        <img src="img/sely-large.png" alt="sely">
+                      </div>
+                      <p class="member-name">田中</p>
+                    </div>
+                    <div class="task-name">
+                      <p>開発サーバーでNginx, puma, rails, nvm, rbenvの設定</p>
+                    </div>
+                  </div>
+                  <div class="member-wrap">
+                    <div class="top-content">
+                      <div class="img-wrap">
+                        <img src="img/sely-large.png" alt="sely">
+                      </div>
+                      <p class="member-name">田中</p>
+                    </div>
+                    <div class="task-name">
+                      <p>開発サーバーでNginx, puma, rails, nvm, rbenvの設定</p>
+                    </div>
+                  </div>
+                  <div class="member-wrap">
+                    <div class="top-content">
+                      <div class="img-wrap">
+                        <img src="img/sely-large.png" alt="sely">
+                      </div>
+                      <p class="member-name">田中</p>
+                    </div>
+                    <div class="task-name">
+                      <p>開発サーバーでNginx, puma, rails, nvm, rbenvの設定</p>
+                    </div>
+                  </div>
+                  <div class="member-wrap">
+                    <div class="top-content">
+                      <div class="img-wrap">
+                        <img src="img/sely-large.png" alt="sely">
+                      </div>
+                      <p class="member-name">田中</p>
+                    </div>
+                    <div class="task-name">
+                      <p>開発サーバーでNginx, puma, rails, nvm, rbenvの設定</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="reorg">
+                    <div class="left-content">
+                        <div class="top-text">
+                            <p>チェックイン会議</p>
+                        </div>
+                        <div class="bottom-text">
+                            <p>DAOに関する資料を集める</p>
+                        </div>
+                    </div>
+                    <div class="right-content">
+                        <div class="top-text">
+                            <p>ウィンセッション</p>
+                        </div>
+                        <div class="bottom-text">
+                            <p>進捗はみんな進んでいる</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+          </div>
         </div>
-        <div id="d-item-wrap">
-          <div class="dashboard-item">
-            <a href="/voting.html">
-                <div class="img-wrap">
-                    <img src="img/vote.png" alt="VOTING" id="voting-img">
-                </div>
-                <div class="text-box">
-                    <p>VOTING</p>
-                </div>
-            </a>
-          </div>
-          <div class="dashboard-item">
-            <a href="/lobby.html">
-                <div class="img-wrap">
-                    <img src="img/discussion.png" alt="LOBBY" id="lobby-img">
-                </div>
-                <div class="text-box">
-                    <p>LOBBY</p>
-                </div>
-            </a>
-          </div>
-          <div class="dashboard-item">
-            <a href="/report-list.html">
-                <div class="img-wrap">
-                    <img src="img/report.png" alt="REPORT" id="report-img">
-                </div>
-                <div class="text-box">
-                    <p>REPORT</p>
-                </div>
-            </a>
-          </div>
-          <div class="dashboard-item">
-            <a href="/funding.html">
-                <div class="img-wrap">
-                    <img src="img/exchange.png" alt="FUNDING" id="funding-img">
-                </div>
-                <div class="text-box">
-                    <p>FUNDING</p>
-                </div>
-            </a>
-          </div>
-        </div>
-        <div id="d-item-wrap2">
-          <div class="dashboard-item">
-            <div class="img-wrap">
-              <img src="img/dashboard.png" alt="DASHBOARD" id="dashboard-img">
-            </div>
-            <div class="text-box">
-              <p>DASHBOARD</p>
-            </div>
-          </div>
-          <div class="dashboard-item-none">
-            <div class="img-wrap">
-              <img src="img/plus.png" alt="plus" id="plus-img">
-            </div>
-          </div>
-          <div class="dashboard-item-none">
-            <div class="img-wrap">
-              <img src="img/plus.png" alt="plus" id="plus-img">
-            </div>
-          </div>
-          <div class="dashboard-item-none">
-            <div class="img-wrap">
-              <img src="img/plus.png" alt="plus" id="plus-img">
-            </div>
-          </div>
-        </div>
-        <div id="help-btn">
-          <div class="img-wrap">
-            <img src="img/help.png" alt="help">
-          </div>
-        </div>
-        <div id="d-item-wrap3">
-          <div class="dashboard-item-none">
-            <div class="img-wrap">
-              <img src="img/plus.png" alt="plus" id="plus-img">
-            </div>
-          </div>
-        </div>
-        <div id="d-item-wrap4"></div>
-        <div id="d-item-wrap5"></div>
-        <div id="d-item-wrap6"></div>
-        <div id="d-item-wrap7"></div>
-        <div id="d-item-wrap8"></div>
-        <div id="d-item-wrap9"></div>
-        <div id="d-item-wrap10"></div>
       </div>
     </div>
   </body>
@@ -344,20 +523,43 @@
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script>
-    document.addEventListener('DOMContentLoaded', function()
+    (function()
     {
-      $(".top-slider").slick(
+      'use strict';
+      document.addEventListener('DOMContentLoaded', function()
       {
-        infinite: true,
-        slideToShow: 1,
-        slideToScroll: 1,
-        accessibility: false,
-        autoplay: true,
-        autoplaySpeed: 4000,
-        arrows: false,
-        draggable: false,
-        swipe: false,
-      })
-    });
+        $(".top-slider").slick(
+        {
+          infinite: true,
+          slideToShow: 1,
+          slideToScroll: 1,
+          accessibility: false,
+          autoplay: true,
+          autoplaySpeed: 4000,
+          arrows: false,
+          draggable: false,
+          swipe: false,
+        });
+        $(".regular").slick(
+        {
+          // dots: true,
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          // arrows: false,
+          // mobileFirst: true,
+          // responsive: [
+          // 	{
+          // 		breakpoint: 580,
+          // 		settings: {
+          // 			// infinite: true,
+          // 			slidesToShow: 2,
+          // 			slidesToScroll: 2,
+          // 		}
+          // 	}
+          // ]
+        });
+      });
+    })();
   </script>
 </html>

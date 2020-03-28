@@ -1473,11 +1473,6 @@ a {
   color: #9EA5A5;
 }
 
-#left-menu #left-menu-item .item-wrap #b4-arrow::after {
-  content: url(../img/angle-down.png);
-  margin-left: 8px;
-}
-
 #left-menu #left-menu-item .item-wrap .current {
   color: #7ad2cc;
 }
