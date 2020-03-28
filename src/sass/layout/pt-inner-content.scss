@@ -367,13 +367,15 @@
                     }
                 }
             }
-            #chart_div {
-                // path {
-                //     fill: #7ad2cc;
-                // }
-                // rect {
-                //     // fill: #e3e3e3;
-                // }
+            .gantt-container {
+                margin: 3% 2.1%;
+                .popup-wrapper {
+                    width: 200px;
+                    padding-left: 30px;
+                }
+                .bar-progress {
+                    fill: #7ad2cc;
+                }
             }
         }
     }
@@ -493,6 +495,9 @@
                         margin: 0 auto;
                         margin-bottom: 6%;
                     }
+                }
+                .gantt-container {
+                    display: none;
                 }
             }
         }
