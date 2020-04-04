@@ -13,6 +13,7 @@
         ic = document.getElementById("inner-content"),
         vic = document.getElementById("v-inner-content"),
         lic = document.getElementById("l-inner-content"),
+        gmapic = document.getElementById("gmap-inner-content"),
         pic = document.getElementById("p-inner-content"),
         tlic = document.getElementById("tl-inner-content"),
         tllic = document.getElementById("tll-inner-content"),
@@ -140,6 +141,12 @@
             // console.log("lic and iw are nowhere.");
         }
         try {
+            gmapic.classList.add("gmap-inner-content-after");
+            gmapic.setAttribute('style', "display: block;");
+        } catch (e) {
+            // console.log("gmapic is nowhere.");
+        }
+        try {
             pic.classList.add("p-inner-content-after");
             pic.setAttribute('style', "display: block;");
         } catch (e) {
@@ -252,6 +259,11 @@
             // console.log("lic iw are nowhere.");
         }
         try {
+            gmapic.classList.remove("gmap-inner-content-after");
+        } catch (e) {
+            // console.log("gmapic is nowhere.");
+        }
+        try {
             pic.classList.remove("p-inner-content-after");
         } catch (e) {
             // console.log("pic is nowhere.");
@@ -337,6 +349,11 @@
                 lic.setAttribute('style', "display: none;");
             } catch (e) {
                 // console.log("lic is nowhere.");
+            }
+            try {
+                gmapic.setAttribute('style', "display: none;");
+            } catch (e) {
+                // console.log("gmapic is nowhere.");
             }
             try {
                 pic.setAttribute('style', "display: none;");
@@ -445,6 +462,11 @@
             iw.classList.add("input-wrap-after");
         } catch (e) {
             // console.log("lic and iw are nowhere.");
+        }
+        try {
+            gmapic.classList.add("gmap-inner-content-after");
+        } catch (e) {
+            // console.log("gmapic is nowhere");
         }
         try {
             pic.classList.add("p-inner-content-after");
@@ -634,6 +656,11 @@
                 // console.log("lic is nowhere.");
             }
             try {
+                gmapic.classList.remove("gmap-inner-content-after");
+            } catch (e) {
+                // console.log("gmapic is nowhere.");
+            }
+            try {
                 pic.classList.remove("p-inner-content-after");
             } catch (e) {
                 // console.log("pic is nowhere.");
@@ -732,6 +759,11 @@
                 iw.classList.add("input-wrap-after");
             } catch (e) {
                 // console.log("lic and iw are nowhere.");
+            }
+            try {
+                gmapic.classList.add("gmap-inner-content-after");
+            } catch (e) {
+                // console.log("gmapic is nowhere.");
             }
             try {
                 pic.classList.add("p-inner-content-after");
@@ -1303,6 +1335,8 @@
         // lMenuLobbyImg = document.getElementById("l-menu-lobby-img"),
         // lmReportLink = document.getElementById("lm-report-link"),
         // lMenuReportImg = document.getElementById("l-menu-report-link"),
+        // lmGmapLink = document.getElementById("lm-gmap-link"),
+        // lMenuGmapImg = document.getElementById("l-menu-gmap-link"),
         lmVotingLink = document.getElementById("lm-voting-link"),
         lMenuVotingImg = document.getElementById("l-menu-voting-img");
 
@@ -1323,6 +1357,12 @@
         // });
         // lmReportLink.addEventListener("mouseleave", function() {
         //     lMenuReportImg.src = 'img/clipboard.png';
+        // });
+        // lmGmapLink.addEventListener("mouseenter", function() {
+        //     lMenuGmapImg.src = 'img/map-hover.png';
+        // });
+        // lmGmapLink.addEventListener("mouseleave", function() {
+        //     lMenuGmapImg.src = 'img/map.png';
         // });
         lmVotingLink.addEventListener("mouseenter", function() {
             lMenuVotingImg.src = 'img/write-hover.png';

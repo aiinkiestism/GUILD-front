@@ -9734,6 +9734,74 @@ a {
   }
 }
 
+#gmap-inner-content {
+  overflow-y: scroll;
+  position: absolute;
+  top: 67px;
+  left: 17%;
+  width: 83%;
+  height: 100%;
+  background: #e5e5e5;
+  transition: .6s;
+}
+
+#gmap-inner-content .top-nav-border-wrap {
+  width: 100%;
+}
+
+#gmap-inner-content .top-nav-border-wrap .top-nav-border {
+  box-shadow: 0px 3px 7px rgba(166, 182, 182, 0.2);
+  height: 2px;
+}
+
+#gmap-inner-content .right-content .top-text-box p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: 0.03em;
+  color: #3d4444;
+  margin-left: 3%;
+}
+
+#gmap-inner-content .right-content .inner-wrap {
+  padding-bottom: 9%;
+}
+
+.gmap-inner-content-after {
+  left: 6% !important;
+  width: 94% !important;
+  transition: .6s;
+}
+
+@media screen and (max-width: 1250px) {
+  #gmap-inner-content {
+    left: 27%;
+    width: 73%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  #gmap-inner-content {
+    left: 34%;
+    width: 66%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .gmap-inner-content-after {
+    left: 0% !important;
+    width: 100% !important;
+    transition: .6s;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  #p-inner-content .right-content .inner-wrap {
+    padding-bottom: 22%;
+  }
+}
+
 #voting-modals #mask {
   background: rgba(0, 0, 0, 0.5);
   position: fixed;
