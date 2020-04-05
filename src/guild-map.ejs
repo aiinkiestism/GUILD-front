@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>GUILD MAP | GUILD</title>
+	<title>ORG MAP | GUILD</title>
 	<!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> -->
 	<!-- <link rel="apple-touch-icon" sizes="180x180" href="img/logo.png" /> -->
 	<link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
@@ -30,11 +30,11 @@
 	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 	<!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" /> -->
 	<!-- ogp setting -->
-	<meta property="og:title" content="GUILD MAP | GUILD" />
+	<meta property="og:title" content="ORG MAP | GUILD" />
 	<meta property="og:type" content="" />
 	<meta property="og:url" content="" />
 	<meta property="og:image" content="" />
-	<meta property="og:site_name" content="GUILD MAP | GUILD" />
+	<meta property="og:site_name" content="ORG MAP | GUILD" />
 	<meta property="og:description" content="" />
 	<meta property="fb:app_id" content="" />    
 	<meta name="twitter:card" content="" />
@@ -453,19 +453,33 @@
 		guildMap(sampleData, d3);
 
 		function guildMap(data, d3, pack, width = 932, height = 932, color) {
-			const root = pack(data);
+			// const pack = d3
+			// 	.pack()
+			// 	.size([width, height])
+			// 	.padding(3);
+			const root = d3
+				// .hierarchy(data, d => d.children)
+				.hierarchy(data)
+				.sum(d => d.value)
+				.sort((a, b) => b.value - a.value);
+			// let root = pack(root);
 			let focus = root;
 			let view;
 
-			console.log(root);
+			// console.log(root);
+			// console.log(root.x);
+			// console.log(root.r);
 			// console.log(root.descendants());
-			console.log(d3);
-			
-			const svg = d3.select("body").selectAll("svg");
-			console.log(svg);
+			// console.log(typeof(root.descendants));
+			// console.log(d3);
 
-			// const svg = d3.select("body").selectAll("svg")
-			svg
+			// root = 	d3
+			// 	// .hierarchy(root, d => d.children)
+			// 	.hierarchy(data)
+			// 	.sum(d => d.value)
+			// 	.sort((a, b) => b.value - a.value)
+			
+			const svg = d3.select("body").selectAll("svg")
 				.attr("viewBox", `-${width / 2} -${height / 2} ${width} ${height}`)
 				.style("display", "block")
 				.style("margin", "0 -14px")
@@ -494,6 +508,9 @@
 				.style("display", d => d.parent === root ? "inline" : "none")
 				.text(d => d.data.name);
 
+			console.log(root.x);
+			console.log(root);
+			console.log(root.r);
 			zoomTo([root.x, root.y, root.r * 2]);
 
 			function zoomTo(v) {
@@ -526,14 +543,14 @@
 					.on("end", function(d) { if (d.parent !== focus) this.style.display = "none"; });
 			}
 
-			function pack(data) {
+			function pack() {
 				return(
 					data => d3.pack()
 						.size([932, 932])
 						.padding(3)
-					(d3.hierarchy(data)
-						.sum(d => d.value)
-						.sort((a, b) => b.value - a.value))
+					// (d3.hierarchy(data)
+					// 	.sum(d => d.value)
+					// 	.sort((a, b) => b.value - a.value))
 				);
 			}
 
@@ -545,6 +562,20 @@
 						.interpolate(d3.interpolateHcl)
 				);
 			}
+
+			// childrenとvalueがあるとばぐるなう、再帰関数
+			// function r(_directory, _data) {
+			// 	const directory = `${_directory}/${_data.name}`;
+			// 	if (Array.isArray(_data.children)) {
+			// 		_data.children.forEach(element => {
+			// 			r(directory, element)
+			// 		});
+			// 	} else {
+			// 		const value = _data.value;
+			// 		console.log({ directory, value })
+			// 	}
+			// }
+			// r('', root_data)
 
 			return svg.node();
 		}
